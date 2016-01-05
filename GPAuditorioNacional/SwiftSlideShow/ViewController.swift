@@ -45,15 +45,14 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width * 4, self.scrollView.frame.height)
         self.scrollView.delegate = self
         self.pageControl.currentPage = 0
-        
-        UIView.animateWithDuration(1.0, animations: { () -> Void in
-            self.startButton.alpha = 1.0
-        })
     }
-
+    @IBAction func cambiarRegistro(sender: UIButton) {
+        print("Dentro del boton")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+
     }
     //MARK: UIScrollViewDelegate
     func scrollViewDidEndDecelerating(scrollView: UIScrollView){
@@ -69,6 +68,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             textView.text = "I write mobile tutorials mainly targeting iOS"
         }else if Int(currentPage) == 2{
             textView.text = "And sometimes I write games tutorials about Unity"
+            UIView.animateWithDuration(1.0, animations: { () -> Void in
+                self.startButton.alpha = 1.0
+            })
         }else{
             textView.text = "Keep visiting sweettutos.com for new coming tutorials, and don't forget to subscribe to be notified by email :)"
             
