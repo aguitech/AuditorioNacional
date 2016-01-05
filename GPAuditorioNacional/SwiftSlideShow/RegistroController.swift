@@ -37,7 +37,7 @@ class RegistroController: UIViewController {
         
         let request = NSMutableURLRequest(URL: NSURL(string: "http://emocionganar.com/admin/panel/registro_ios.php")!)
             request.HTTPMethod = "POST"
-            let postString = "email=\(emailField)&nombre=\(nombreField)"
+            let postString = "email=\(emailField!)&nombre=\(nombreField!)"
             request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
             let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
                 guard error == nil && data != nil else {                                                          // check for fundamental networking error
