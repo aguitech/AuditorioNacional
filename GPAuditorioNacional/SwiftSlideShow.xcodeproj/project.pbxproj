@@ -81,11 +81,11 @@
 			children = (
 				C4C6FE471ADBF8B200EAA7A9 /* AppDelegate.swift */,
 				C4C6FE491ADBF8B200EAA7A9 /* ViewController.swift */,
+				DC5856E31C3B425D00DFDC5F /* RegistroController.swift */,
 				C4C6FE4B1ADBF8B200EAA7A9 /* Main.storyboard */,
 				C4C6FE4E1ADBF8B200EAA7A9 /* Images.xcassets */,
 				C4C6FE501ADBF8B200EAA7A9 /* LaunchScreen.xib */,
 				C4C6FE451ADBF8B200EAA7A9 /* Supporting Files */,
-				DC5856E31C3B425D00DFDC5F /* RegistroController.swift */,
 			);
 			path = SwiftSlideShow;
 			sourceTree = "<group>";

@@ -14,7 +14,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var textView: UITextView!
     @IBOutlet var pageControl: UIPageControl!
     
-    @IBOutlet var startButton: UIButton!
+//    @IBOutlet var startButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,7 +26,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         textView.textAlignment = .Center
         textView.text = "Sweettutos.com is your blog of choice for Mobile tutorials"
         textView.textColor = .blackColor()
-        self.startButton.layer.cornerRadius = 4.0
+//        self.startButton.layer.cornerRadius = 4.0
         //3
         let imgOne = UIImageView(frame: CGRectMake(0, 0,scrollViewWidth, scrollViewHeight))
         imgOne.image = UIImage(named: "Slide 1")
@@ -40,15 +40,25 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.addSubview(imgOne)
         self.scrollView.addSubview(imgTwo)
         self.scrollView.addSubview(imgThree)
-        self.scrollView.addSubview(imgFour)
+        //self.scrollView.addSubview(imgFour)
         //4
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width * 4, self.scrollView.frame.height)
+//        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width * 4, self.scrollView.frame.height)
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width * 3, self.scrollView.frame.height)
         self.scrollView.delegate = self
         self.pageControl.currentPage = 0
     }
+    
+    /**
     @IBAction func cambiarRegistro(sender: UIButton) {
         print("Dentro del boton")
+        let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        
+        let pantallaRegistro = nuestroStoryBoard.instantiateViewControllerWithIdentifier("") as! RegistroController
+        
+        self.presentViewController(pantallaRegistro, animated: true, completion:nil)
     }
+    */
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -68,9 +78,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             textView.text = "I write mobile tutorials mainly targeting iOS"
         }else if Int(currentPage) == 2{
             textView.text = "And sometimes I write games tutorials about Unity"
+            /*
             UIView.animateWithDuration(1.0, animations: { () -> Void in
                 self.startButton.alpha = 1.0
             })
+*/
         }else{
             textView.text = "Keep visiting sweettutos.com for new coming tutorials, and don't forget to subscribe to be notified by email :)"
             
