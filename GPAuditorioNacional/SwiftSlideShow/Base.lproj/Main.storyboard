@@ -21,13 +21,13 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-Ji-u2K">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="37E28E72-1394-4DB1-AC11-999F6D598237" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="2CC31715-0E65-45DE-A0A9-976C4747B13B" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
                                 <rect key="frame" x="106" y="64" width="164" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="DMT-AW-H3g"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="A3602B4F-2B90-4332-A5E9-0FD7E4B75290" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="5678DF22-2CDD-487B-A077-71FB57FB3551" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
                                 <rect key="frame" x="40" y="174" width="295" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="2hL-7l-d6z"/>
@@ -104,7 +104,7 @@
                                 <rect key="frame" x="159" y="528" width="57" height="30"/>
                                 <state key="normal" title="Registro"/>
                                 <connections>
-                                    <segue destination="GUl-Tq-Bxh" kind="presentation" id="frx-NE-4nM"/>
+                                    <action selector="crearRegistro:" destination="iKN-rs-40U" eventType="touchUpInside" id="kDx-ZC-DXP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOMBRE COMPLETO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tf1-DR-Pmm">
@@ -198,6 +198,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="0Fi-eq-Z4N"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="celularValue" destination="cXl-o1-A8Q" id="qRd-iY-YoH"/>
+                        <outlet property="emailValue" destination="Hcc-ub-X4b" id="6xU-rI-8P1"/>
+                        <outlet property="nombreValue" destination="Rww-JD-pgL" id="z7w-NW-Oop"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NpG-Xc-4rP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,7 +260,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="37E28E72-1394-4DB1-AC11-999F6D598237" width="182" height="204">
+        <image name="2CC31715-0E65-45DE-A0A9-976C4747B13B" width="182" height="204">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -2784,7 +2789,7 @@ AAJOQAACTkIAAk5EAAJOSQACTlEAAk5UAAJOWQACTmEAAk5kAAJOdgACTnkAAk5+AAAAAAAABAEAAAAA
 AAAAQQAAAAAAAAAAAAAAAAACToA
 </mutableData>
         </image>
-        <image name="A3602B4F-2B90-4332-A5E9-0FD7E4B75290" width="223" height="54">
+        <image name="5678DF22-2CDD-487B-A077-71FB57FB3551" width="223" height="54">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
