@@ -59,6 +59,13 @@ class RegistroController: UIViewController {
             
                 let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
                 print("responseString = \(responseString)")
+                if(responseString! == "success"){
+                    print("Debe de continuar la app")
+                }
+                if(responseString! == "Registro duplicado"){
+                    print("El registro ya esta registrado")
+                }
+                
             }
             task.resume()
         
