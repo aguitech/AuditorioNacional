@@ -21,13 +21,13 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-Ji-u2K">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="33A6E278-9E17-4923-B426-C66D9E9C7988" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="37E28E72-1394-4DB1-AC11-999F6D598237" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
                                 <rect key="frame" x="106" y="64" width="164" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="DMT-AW-H3g"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="375AAD52-6F41-494A-83F1-49742C260261" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="A3602B4F-2B90-4332-A5E9-0FD7E4B75290" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
                                 <rect key="frame" x="40" y="174" width="295" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="2hL-7l-d6z"/>
@@ -221,7 +221,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gk7-02-Twx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gif.gif" translatesAutoresizingMaskIntoConstraints="NO" id="gk7-02-Twx">
                                 <rect key="frame" x="67" y="335" width="240" height="128"/>
                             </imageView>
                         </subviews>
@@ -255,7 +255,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="33A6E278-9E17-4923-B426-C66D9E9C7988" width="182" height="204">
+        <image name="37E28E72-1394-4DB1-AC11-999F6D598237" width="182" height="204">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -2784,7 +2784,7 @@ AAJOQAACTkIAAk5EAAJOSQACTlEAAk5UAAJOWQACTmEAAk5kAAJOdgACTnkAAk5+AAAAAAAABAEAAAAA
 AAAAQQAAAAAAAAAAAAAAAAACToA
 </mutableData>
         </image>
-        <image name="375AAD52-6F41-494A-83F1-49742C260261" width="223" height="54">
+        <image name="A3602B4F-2B90-4332-A5E9-0FD7E4B75290" width="223" height="54">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -3638,5 +3638,6 @@ rcW4xcHF1MXYxePF7MXxxfnF/MYBxhDGFMYbxiPGMMY1xjfGOcY+xkbGScZOxlbGWcZrxm7GcwAAAAAA
 AAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAMZ1A
 </mutableData>
         </image>
+        <image name="gif.gif" width="400" height="400"/>
     </resources>
 </document>

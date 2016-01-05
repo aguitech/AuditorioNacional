@@ -14,6 +14,7 @@
 		C4C6FE521ADBF8B200EAA7A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4C6FE501ADBF8B200EAA7A9 /* LaunchScreen.xib */; };
 		C4C6FE5E1ADBF8B200EAA7A9 /* SwiftSlideShowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6FE5D1ADBF8B200EAA7A9 /* SwiftSlideShowTests.swift */; };
 		DC5856E41C3B425D00DFDC5F /* RegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5856E31C3B425D00DFDC5F /* RegistroController.swift */; };
+		DC5856E61C3B579200DFDC5F /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC5856E51C3B579200DFDC5F /* gif.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C4C6FE5C1ADBF8B200EAA7A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4C6FE5D1ADBF8B200EAA7A9 /* SwiftSlideShowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlideShowTests.swift; sourceTree = "<group>"; };
 		DC5856E31C3B425D00DFDC5F /* RegistroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroController.swift; sourceTree = "<group>"; };
+		DC5856E51C3B579200DFDC5F /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				C4C6FE4B1ADBF8B200EAA7A9 /* Main.storyboard */,
 				C4C6FE4E1ADBF8B200EAA7A9 /* Images.xcassets */,
 				C4C6FE501ADBF8B200EAA7A9 /* LaunchScreen.xib */,
+				DC5856E51C3B579200DFDC5F /* gif.gif */,
 				C4C6FE451ADBF8B200EAA7A9 /* Supporting Files */,
 			);
 			path = SwiftSlideShow;
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4C6FE4D1ADBF8B200EAA7A9 /* Main.storyboard in Resources */,
+				DC5856E61C3B579200DFDC5F /* gif.gif in Resources */,
 				C4C6FE521ADBF8B200EAA7A9 /* LaunchScreen.xib in Resources */,
 				C4C6FE4F1ADBF8B200EAA7A9 /* Images.xcassets in Resources */,
 			);
