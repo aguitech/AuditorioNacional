@@ -12,8 +12,11 @@ class RegistroController: UIViewController {
 
     @IBOutlet weak var nombreValue: UITextField!
     @IBOutlet weak var celularValue: UITextField!
+    @IBOutlet weak var telefonoValue: UITextField!
     @IBOutlet weak var emailValue: UITextField!
-    
+    @IBOutlet weak var codigoPostalValue: UITextField!
+    @IBOutlet weak var confirmarEmailValue: UITextField!
+    @IBOutlet weak var edadValue: UITextField!
     
     
     override func viewDidLoad() {
@@ -31,13 +34,17 @@ class RegistroController: UIViewController {
     @IBAction func crearRegistro(sender: AnyObject) {
         
         let nombreField = nombreValue.text
+        let celularField = celularValue.text
+        let telefonoField = telefonoValue.text
         let emailField = emailValue.text
+        let codigoPostalField = codigoPostalValue.text
+        let edadField = edadValue.text
         
         
         
         let request = NSMutableURLRequest(URL: NSURL(string: "http://emocionganar.com/admin/panel/registro_ios.php")!)
             request.HTTPMethod = "POST"
-            let postString = "email=\(emailField!)&nombre=\(nombreField!)"
+            let postString = "email=\(emailField!)&nombre=\(nombreField!)&celular=\(celularField!)&telefono=\(telefonoField!)&codigo_postal=\(codigoPostalField!)&edad=\(edadField!)"
             request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
             let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
                 guard error == nil && data != nil else {                                                          // check for fundamental networking error
