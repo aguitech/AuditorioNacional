@@ -15,6 +15,7 @@
 		C4C6FE5E1ADBF8B200EAA7A9 /* SwiftSlideShowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6FE5D1ADBF8B200EAA7A9 /* SwiftSlideShowTests.swift */; };
 		DC5856E41C3B425D00DFDC5F /* RegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5856E31C3B425D00DFDC5F /* RegistroController.swift */; };
 		DC5856E61C3B579200DFDC5F /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC5856E51C3B579200DFDC5F /* gif.gif */; };
+		DC5856E81C3BC07800DFDC5F /* RegistroExitosoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5856E71C3BC07800DFDC5F /* RegistroExitosoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		C4C6FE5D1ADBF8B200EAA7A9 /* SwiftSlideShowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlideShowTests.swift; sourceTree = "<group>"; };
 		DC5856E31C3B425D00DFDC5F /* RegistroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroController.swift; sourceTree = "<group>"; };
 		DC5856E51C3B579200DFDC5F /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
+		DC5856E71C3BC07800DFDC5F /* RegistroExitosoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroExitosoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				C4C6FE471ADBF8B200EAA7A9 /* AppDelegate.swift */,
+				DC5856E71C3BC07800DFDC5F /* RegistroExitosoController.swift */,
 				C4C6FE491ADBF8B200EAA7A9 /* ViewController.swift */,
 				DC5856E31C3B425D00DFDC5F /* RegistroController.swift */,
 				C4C6FE4B1ADBF8B200EAA7A9 /* Main.storyboard */,
@@ -224,6 +227,7 @@
 			files = (
 				C4C6FE4A1ADBF8B200EAA7A9 /* ViewController.swift in Sources */,
 				DC5856E41C3B425D00DFDC5F /* RegistroController.swift in Sources */,
+				DC5856E81C3BC07800DFDC5F /* RegistroExitosoController.swift in Sources */,
 				C4C6FE481ADBF8B200EAA7A9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

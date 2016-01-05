@@ -21,13 +21,13 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-Ji-u2K">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="0FF5D9C5-3B81-40F4-B943-C89B14B875B8" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1D47C9D0-F1B5-408C-84D1-7AB4AC687325" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
                                 <rect key="frame" x="106" y="64" width="164" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="DMT-AW-H3g"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="B7C8DDDF-9567-4C3F-8A0B-C2BB0ADCFAB4" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="9624D44F-D294-4C30-902E-A5B190295644" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
                                 <rect key="frame" x="40" y="174" width="295" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="2hL-7l-d6z"/>
@@ -212,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="2051.5" y="427.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Registro Exitoso Controller-->
         <scene sceneID="cfH-j5-uqs">
             <objects>
-                <viewController id="GUl-Tq-Bxh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registroExitoso" id="GUl-Tq-Bxh" customClass="RegistroExitosoController" customModule="SwiftSlideShow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rJB-CR-9Sm"/>
                         <viewControllerLayoutGuide type="bottom" id="yvS-6R-DcJ"/>
@@ -264,7 +264,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="0FF5D9C5-3B81-40F4-B943-C89B14B875B8" width="182" height="204">
+        <image name="1D47C9D0-F1B5-408C-84D1-7AB4AC687325" width="182" height="204">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -2793,7 +2793,7 @@ AAJOQAACTkIAAk5EAAJOSQACTlEAAk5UAAJOWQACTmEAAk5kAAJOdgACTnkAAk5+AAAAAAAABAEAAAAA
 AAAAQQAAAAAAAAAAAAAAAAACToA
 </mutableData>
         </image>
-        <image name="B7C8DDDF-9567-4C3F-8A0B-C2BB0ADCFAB4" width="223" height="54">
+        <image name="9624D44F-D294-4C30-902E-A5B190295644" width="223" height="54">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
