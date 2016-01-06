@@ -21,13 +21,13 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-Ji-u2K">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="B68259EF-391B-4020-8E6F-BC43805A08B1" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="6B4DBCC8-9BC5-4A60-9C14-DFDA6EBB9C2B" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
                                 <rect key="frame" x="106" y="64" width="164" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="DMT-AW-H3g"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="AB000ACD-9101-48E4-89B7-91C117ACECAE" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="2BAA397B-8CBD-476B-9384-1DA0C8715B4E" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
                                 <rect key="frame" x="40" y="174" width="295" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="2hL-7l-d6z"/>
@@ -248,7 +248,10 @@
                         <outlet property="edadValue" destination="9a1-zB-Gp0" id="Qmt-JF-Jc0"/>
                         <outlet property="emailValue" destination="Hcc-ub-X4b" id="6xU-rI-8P1"/>
                         <outlet property="nombreValue" destination="Rww-JD-pgL" id="z7w-NW-Oop"/>
+                        <outlet property="passwordConfirmValue" destination="Nmu-JK-Tkb" id="Tc4-TK-bTS"/>
+                        <outlet property="passwordValue" destination="Awh-2Q-8nT" id="PmT-Tb-AQG"/>
                         <outlet property="telefonoValue" destination="Xyn-Ci-Aje" id="R8C-fV-C67"/>
+                        <outlet property="usernameValue" destination="LTu-Yi-Qea" id="7xZ-k8-eHG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NpG-Xc-4rP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -450,7 +453,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AB000ACD-9101-48E4-89B7-91C117ACECAE" width="223" height="54">
+        <image name="2BAA397B-8CBD-476B-9384-1DA0C8715B4E" width="223" height="54">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -1304,7 +1307,7 @@ rcW4xcHF1MXYxePF7MXxxfnF/MYBxhDGFMYbxiPGMMY1xjfGOcY+xkbGScZOxlbGWcZrxm7GcwAAAAAA
 AAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAMZ1A
 </mutableData>
         </image>
-        <image name="B68259EF-391B-4020-8E6F-BC43805A08B1" width="182" height="204">
+        <image name="6B4DBCC8-9BC5-4A60-9C14-DFDA6EBB9C2B" width="182" height="204">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
