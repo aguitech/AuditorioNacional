@@ -58,27 +58,39 @@ class RegistroController: UIViewController {
                 }
             
                 let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-                print("responseString = \(responseString)")
+                
+                print("responseString Esto imprime = \(responseString!)")
+                
+                
                 if(responseString! == "success"){
                     print("Debe de continuar la app")
                     
                     
-                    
+                
                     /*
                     NSOperationQueue.mainQueue().addOperationWithBlock {
                     self.performSegueWithIdentifier("registroExitoso", sender: self)
                     }
-
+                    */
                     
                     let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
                     let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("registroExitoso") as! RegistroExitosoController
+                    dispatch_async(dispatch_get_main_queue(), {
+                    
+                    
                     self.presentViewController(registroExitosoPantalla, animated:true, completion:nil)
-*/
+                    })
 
                 }
                 if(responseString! == "Registro duplicado"){
                     print("El registro ya esta registrado")
                 }
+                if(responseString! == "false"){
+                    print("Debe de continuar la app")
+                    
+                    
+                    
+                                    }
                 
             }
             task.resume()
