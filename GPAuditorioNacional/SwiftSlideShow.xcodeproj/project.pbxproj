@@ -23,6 +23,7 @@
 		DC5B99511C3CE6A200E947B5 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99501C3CE6A200E947B5 /* MyNavigationController.swift */; };
 		DC5B99531C3CE71B00E947B5 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99521C3CE71B00E947B5 /* MyMenuTableViewController.swift */; };
 		DC5B99551C3CE8A600E947B5 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B99541C3CE8A600E947B5 /* background.png */; };
+		DC5B99591C3D0D4700E947B5 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99581C3D0D4700E947B5 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		DC5B99501C3CE6A200E947B5 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		DC5B99521C3CE71B00E947B5 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableViewController.swift; sourceTree = "<group>"; };
 		DC5B99541C3CE8A600E947B5 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		DC5B99581C3D0D4700E947B5 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				DC5B994E1C3CE5C700E947B5 /* ENSideMenuNavigationController.swift */,
 				DC5B99501C3CE6A200E947B5 /* MyNavigationController.swift */,
 				DC5B99521C3CE71B00E947B5 /* MyMenuTableViewController.swift */,
+				DC5B99581C3D0D4700E947B5 /* ViewController2.swift */,
 			);
 			name = CosasMenu;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				DC5B99511C3CE6A200E947B5 /* MyNavigationController.swift in Sources */,
 				C4C6FE4A1ADBF8B200EAA7A9 /* ViewController.swift in Sources */,
 				DC5856E41C3B425D00DFDC5F /* RegistroController.swift in Sources */,
+				DC5B99591C3D0D4700E947B5 /* ViewController2.swift in Sources */,
 				DC5856EA1C3CFC0100DFDC5F /* IniciarSesionController.swift in Sources */,
 				DC5B99531C3CE71B00E947B5 /* MyMenuTableViewController.swift in Sources */,
 				DC5B994F1C3CE5C700E947B5 /* ENSideMenuNavigationController.swift in Sources */,

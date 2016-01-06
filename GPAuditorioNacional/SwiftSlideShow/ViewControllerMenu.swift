@@ -20,8 +20,13 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
     
     
     @IBAction func toggleSideMenu(sender: AnyObject) {
+        
         toggleSideMenuView()
+
     }
+    /*@IBAction func toggleSideMenu(sender: AnyObject) {
+        toggleSideMenuView()
+    }*/
     
     // MARK: - ENSideMenu Delegate
     func sideMenuWillOpen() {
