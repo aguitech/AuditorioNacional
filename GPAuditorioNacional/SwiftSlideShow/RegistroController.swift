@@ -87,10 +87,7 @@ class RegistroController: UIViewController {
                 }
                 if(responseString! == "false"){
                     print("Debe de continuar la app")
-                    
-                    
-                    
-                                    }
+                }
                 
             }
             task.resume()
