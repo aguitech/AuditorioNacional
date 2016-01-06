@@ -26,9 +26,12 @@ class IniciarSesionController: UIViewController {
     
     @IBAction func iniciarSesion(sender: UIButton) {
 
-        let request = NSMutableURLRequest(URL: NSURL(string: "http://emocionganar.com/admin/panel/registro_ios.php")!)
+        let emailField = emailValue.text
+        let passwordField = passwordValue.text
+        
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://emocionganar.com/admin/panel/login_ios.php")!)
         request.HTTPMethod = "POST"
-        let postString = "email=\(emailField!)&nombre=\(nombreField!)&celular=\(celularField!)&telefono=\(telefonoField!)&codigo_postal=\(codigoPostalField!)&edad=\(edadField!)&username=\(usernameField!)&password=\(passwordField!)"
+        let postString = "email=\(emailField!)&password=\(passwordField!)"
         request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
             guard error == nil && data != nil else {                                                          // check for fundamental networking error
@@ -68,7 +71,7 @@ class IniciarSesionController: UIViewController {
             if(responseString! == "Registro duplicado"){
                 print("El registro ya esta registrado")
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.avisoLabel.text = "El usuario ya ha sido registrado"
+                    //self.avisoLabel.text = "El usuario ya ha sido registrado"
                 })
                 
             }
@@ -77,7 +80,7 @@ class IniciarSesionController: UIViewController {
                 print("Debe de continuar la app")
                 
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.avisoLabel.text = "Es necesario llenar todos los campos."
+                    //self.avisoLabel.text = "Es necesario llenar todos los campos."
                 })
                 
                 
