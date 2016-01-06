@@ -17,6 +17,7 @@ class RegistroController: UIViewController {
     @IBOutlet weak var codigoPostalValue: UITextField!
     @IBOutlet weak var confirmarEmailValue: UITextField!
     @IBOutlet weak var edadValue: UITextField!
+    @IBOutlet weak var avisoLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -75,22 +76,25 @@ class RegistroController: UIViewController {
                     
                     let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
                     let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("registroExitoso") as! RegistroExitosoController
+                    
                     dispatch_async(dispatch_get_main_queue(), {
-                    
-                    
-                    self.presentViewController(registroExitosoPantalla, animated:true, completion:nil)
+                        self.presentViewController(registroExitosoPantalla, animated:true, completion:nil)
                     })
 
                 }
                 if(responseString! == "Registro duplicado"){
                     print("El registro ya esta registrado")
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.avisoLabel.text = "El usuario ya ha sido registrado"
+                    })
+                    
                 }
                 if(responseString! == "false"){
-                    print("Debe de continuar la app")
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.avisoLabel.text = "Es necesario llenar todos los campos."
+                    })
                     
-                    
-                    
-                                    }
+                }
                 
             }
             task.resume()
