@@ -17,7 +17,7 @@
                BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
                BuildableName = "SwiftSlideShow.app"
                BlueprintName = "SwiftSlideShow"
-               ReferencedContainer = "container:SwiftSlideShow.xcodeproj">
+               ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "C4C6FE561ADBF8B200EAA7A9"
                BuildableName = "SwiftSlideShowTests.xctest"
                BlueprintName = "SwiftSlideShowTests"
-               ReferencedContainer = "container:SwiftSlideShow.xcodeproj">
+               ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
             BuildableName = "SwiftSlideShow.app"
             BlueprintName = "SwiftSlideShow"
-            ReferencedContainer = "container:SwiftSlideShow.xcodeproj">
+            ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
             BuildableName = "SwiftSlideShow.app"
             BlueprintName = "SwiftSlideShow"
-            ReferencedContainer = "container:SwiftSlideShow.xcodeproj">
+            ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
             BuildableName = "SwiftSlideShow.app"
             BlueprintName = "SwiftSlideShow"
-            ReferencedContainer = "container:SwiftSlideShow.xcodeproj">
+            ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
