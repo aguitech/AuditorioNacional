@@ -78,7 +78,7 @@ class RegistroController: UIViewController {
                     let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("registroExitoso") as! RegistroExitosoController
                     
                     dispatch_async(dispatch_get_main_queue(), {
-                        self.presentViewController(registroExitosoPantalla, animated:true, completion:nil)
+                        self.navigationController!.pushViewController(registroExitosoPantalla, animated:true)
                     })
 
                 }
@@ -90,10 +90,14 @@ class RegistroController: UIViewController {
                     
                 }
                 if(responseString! == "false"){
+
+                    print("Debe de continuar la app")
+
                     dispatch_async(dispatch_get_main_queue(), {
                         self.avisoLabel.text = "Es necesario llenar todos los campos."
                     })
                     
+
                 }
                 
             }
