@@ -40,7 +40,7 @@ class MyMenuTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 4
+        return 8
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -56,7 +56,33 @@ class MyMenuTableViewController: UITableViewController {
             cell!.selectedBackgroundView = selectedBackgroundView
         }
         
-        cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
+        //cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
+        if(indexPath.row == 0){
+            cell!.textLabel?.text = "Blog"
+        }
+        if(indexPath.row == 1){
+            cell!.textLabel?.text = "Eventos"
+        }
+        if(indexPath.row == 2){
+            cell!.textLabel?.text = "Trivias"
+        }
+        if(indexPath.row == 3){
+            cell!.textLabel?.text = "¿Cómo participar?"
+        }
+        if(indexPath.row == 4){
+            cell!.textLabel?.text = "Vincular Redes"
+        }
+        if(indexPath.row == 5){
+            cell!.textLabel?.text = "Terminos y Condiciones"
+        }
+        if(indexPath.row == 6){
+            cell!.textLabel?.text = "Aviso de Privacidad"
+        }
+        if(indexPath.row == 7){
+            cell!.textLabel?.text = "Cerrar sesión"
+        }
+        
+        
         
         return cell!
     }

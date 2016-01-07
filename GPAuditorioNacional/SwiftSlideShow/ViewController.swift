@@ -24,7 +24,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let scrollViewHeight:CGFloat = self.scrollView.frame.height
         //2
         textView.textAlignment = .Center
-        textView.text = "Sweettutos.com is your blog of choice for Mobile tutorials"
+        textView.text = ""
         textView.textColor = .blackColor()
 //        self.startButton.layer.cornerRadius = 4.0
         //3
@@ -83,18 +83,22 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.pageControl.currentPage = Int(currentPage);
         // Change the text accordingly
         if Int(currentPage) == 0{
-            textView.text = "Sweettutos.com is your blog of choice for Mobile tutorials"
+            //textView.text = "Sweettutos.com is your blog of choice for Mobile tutorials"
+            textView.text = ""
         }else if Int(currentPage) == 1{
-            textView.text = "I write mobile tutorials mainly targeting iOS"
+            //textView.text = "I write mobile tutorials mainly targeting iOS"
+            textView.text = ""
         }else if Int(currentPage) == 2{
-            textView.text = "And sometimes I write games tutorials about Unity"
+            //textView.text = "And sometimes I write games tutorials about Unity"
+            textView.text = ""
             /*
             UIView.animateWithDuration(1.0, animations: { () -> Void in
                 self.startButton.alpha = 1.0
             })
 */
         }else{
-            textView.text = "Keep visiting sweettutos.com for new coming tutorials, and don't forget to subscribe to be notified by email :)"
+            //textView.text = "Keep visiting sweettutos.com for new coming tutorials, and don't forget to subscribe to be notified by email :)"
+            textView.text = ""
             
         }
         // Show the "Let's Start" button in the last slide (with a fade in animation)
