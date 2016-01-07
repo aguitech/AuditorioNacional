@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C4C6FE561ADBF8B200EAA7A9"
-               BuildableName = "SwiftSlideShowTests.xctest"
-               BlueprintName = "SwiftSlideShowTests"
-               ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -53,7 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C4C6FE421ADBF8B200EAA7A9 /* SwiftSlideShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSlideShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C6FE421ADBF8B200EAA7A9 /* Comparte tu Experiencia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Comparte tu Experiencia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C6FE461ADBF8B200EAA7A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4C6FE471ADBF8B200EAA7A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C6FE491ADBF8B200EAA7A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		C4C6FE431ADBF8B200EAA7A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4C6FE421ADBF8B200EAA7A9 /* SwiftSlideShow.app */,
+				C4C6FE421ADBF8B200EAA7A9 /* Comparte tu Experiencia.app */,
 				C4C6FE571ADBF8B200EAA7A9 /* SwiftSlideShowTests.xctest */,
 			);
 			name = Products;
@@ -218,7 +218,7 @@
 			);
 			name = SwiftSlideShow;
 			productName = SwiftSlideShow;
-			productReference = C4C6FE421ADBF8B200EAA7A9 /* SwiftSlideShow.app */;
+			productReference = C4C6FE421ADBF8B200EAA7A9 /* Comparte tu Experiencia.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C4C6FE561ADBF8B200EAA7A9 /* SwiftSlideShowTests */ = {
@@ -462,7 +462,7 @@
 				INFOPLIST_FILE = SwiftSlideShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aguitech.GPAuditorioNacional;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Comparte tu Experiencia";
 			};
 			name = Debug;
 		};
@@ -474,7 +474,7 @@
 				INFOPLIST_FILE = SwiftSlideShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aguitech.GPAuditorioNacional;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Comparte tu Experiencia";
 			};
 			name = Release;
 		};
