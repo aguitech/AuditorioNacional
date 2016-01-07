@@ -40,7 +40,7 @@ class MyMenuTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 8
+        return 9
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -58,27 +58,30 @@ class MyMenuTableViewController: UITableViewController {
         
         //cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
         if(indexPath.row == 0){
-            cell!.textLabel?.text = "Blog"
+            cell!.textLabel?.text = "USERNAME"
         }
         if(indexPath.row == 1){
-            cell!.textLabel?.text = "Eventos"
+            cell!.textLabel?.text = "Blog"
         }
         if(indexPath.row == 2){
-            cell!.textLabel?.text = "Trivias"
+            cell!.textLabel?.text = "Eventos"
         }
         if(indexPath.row == 3){
-            cell!.textLabel?.text = "¿Cómo participar?"
+            cell!.textLabel?.text = "Trivias"
         }
         if(indexPath.row == 4){
-            cell!.textLabel?.text = "Vincular Redes"
+            cell!.textLabel?.text = "¿Cómo participar?"
         }
         if(indexPath.row == 5){
-            cell!.textLabel?.text = "Terminos y Condiciones"
+            cell!.textLabel?.text = "Vincular Redes"
         }
         if(indexPath.row == 6){
-            cell!.textLabel?.text = "Aviso de Privacidad"
+            cell!.textLabel?.text = "Terminos y Condiciones"
         }
         if(indexPath.row == 7){
+            cell!.textLabel?.text = "Aviso de Privacidad"
+        }
+        if(indexPath.row == 8){
             cell!.textLabel?.text = "Cerrar sesión"
         }
         
@@ -103,15 +106,39 @@ class MyMenuTableViewController: UITableViewController {
         switch (indexPath.row) {
         case 0:
             print("Entra a esta parte 0")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewControllerUsername")
             break
         case 1:
+            print("Entra a esta parte 0")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1")
+            break
+        case 2:
             print("Entra a esta parte 1")
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2")
             break
-        case 2:
+        case 3:
             print("Entra a esta parte 2")
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3")
+            break
+        case 4:
+            print("Entra a esta parte 2")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController")
+            break
+        case 5:
+            print("Entra a esta parte 2")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("registroExitoso")
+            break
+        case 6:
+            print("Entra a esta parte 2")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4")
+            break
+        case 7:
+            print("Entra a esta parte 2")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5")
+            break
+        case 8:
+            print("Entra a esta parte 2")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController")
             break
         default:
             print("Entra a esta parte default")
