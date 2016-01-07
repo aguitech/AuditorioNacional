@@ -25,6 +25,11 @@
 		DC5B99551C3CE8A600E947B5 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B99541C3CE8A600E947B5 /* background.png */; };
 		DC5B99591C3D0D4700E947B5 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99581C3D0D4700E947B5 /* ViewController2.swift */; };
 		DC5B995B1C3D51F100E947B5 /* logosLaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B995A1C3D51F000E947B5 /* logosLaunch.png */; };
+		DC5B995D1C3DC18900E947B5 /* MyNavigationController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B995C1C3DC18900E947B5 /* MyNavigationController2.swift */; };
+		DC5B995F1C3DDBD400E947B5 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B995E1C3DDBD400E947B5 /* ViewController3.swift */; };
+		DC5B99611C3DDBEC00E947B5 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99601C3DDBEC00E947B5 /* ViewController4.swift */; };
+		DC5B99631C3DDC0300E947B5 /* MyNavigationController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99621C3DDC0300E947B5 /* MyNavigationController3.swift */; };
+		DC5B99651C3DDC1500E947B5 /* MyNavigationController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99641C3DDC1500E947B5 /* MyNavigationController4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,11 @@
 		DC5B99541C3CE8A600E947B5 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		DC5B99581C3D0D4700E947B5 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		DC5B995A1C3D51F000E947B5 /* logosLaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logosLaunch.png; sourceTree = "<group>"; };
+		DC5B995C1C3DC18900E947B5 /* MyNavigationController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController2.swift; sourceTree = "<group>"; };
+		DC5B995E1C3DDBD400E947B5 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		DC5B99601C3DDBEC00E947B5 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		DC5B99621C3DDC0300E947B5 /* MyNavigationController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController3.swift; sourceTree = "<group>"; };
+		DC5B99641C3DDC1500E947B5 /* MyNavigationController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,12 +156,17 @@
 		DC5B994B1C3CE4C300E947B5 /* CosasMenu */ = {
 			isa = PBXGroup;
 			children = (
-				DC5B99481C3CE40E00E947B5 /* ViewControllerMenu.swift */,
 				DC5B994C1C3CE50B00E947B5 /* ENSideMenu.swift */,
 				DC5B994E1C3CE5C700E947B5 /* ENSideMenuNavigationController.swift */,
-				DC5B99501C3CE6A200E947B5 /* MyNavigationController.swift */,
 				DC5B99521C3CE71B00E947B5 /* MyMenuTableViewController.swift */,
+				DC5B99481C3CE40E00E947B5 /* ViewControllerMenu.swift */,
 				DC5B99581C3D0D4700E947B5 /* ViewController2.swift */,
+				DC5B995E1C3DDBD400E947B5 /* ViewController3.swift */,
+				DC5B99601C3DDBEC00E947B5 /* ViewController4.swift */,
+				DC5B99501C3CE6A200E947B5 /* MyNavigationController.swift */,
+				DC5B995C1C3DC18900E947B5 /* MyNavigationController2.swift */,
+				DC5B99621C3DDC0300E947B5 /* MyNavigationController3.swift */,
+				DC5B99641C3DDC1500E947B5 /* MyNavigationController4.swift */,
 			);
 			name = CosasMenu;
 			sourceTree = "<group>";
@@ -262,8 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5B995F1C3DDBD400E947B5 /* ViewController3.swift in Sources */,
+				DC5B99611C3DDBEC00E947B5 /* ViewController4.swift in Sources */,
+				DC5B995D1C3DC18900E947B5 /* MyNavigationController2.swift in Sources */,
 				DC5B994D1C3CE50B00E947B5 /* ENSideMenu.swift in Sources */,
 				DC5B99511C3CE6A200E947B5 /* MyNavigationController.swift in Sources */,
+				DC5B99631C3DDC0300E947B5 /* MyNavigationController3.swift in Sources */,
+				DC5B99651C3DDC1500E947B5 /* MyNavigationController4.swift in Sources */,
 				C4C6FE4A1ADBF8B200EAA7A9 /* ViewController.swift in Sources */,
 				DC5856E41C3B425D00DFDC5F /* RegistroController.swift in Sources */,
 				DC5B99591C3D0D4700E947B5 /* ViewController2.swift in Sources */,

@@ -48,6 +48,16 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.pageControl.currentPage = 0
     }
     
+    
+    @IBAction func iniciarRegistro(sender: UIButton) {
+        let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        let registroPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("pantallaRegistro") as! RegistroController
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.presentViewController(registroPantalla, animated:true, completion: nil)
+        })
+    }
+    
     /**
     @IBAction func cambiarRegistro(sender: UIButton) {
         print("Dentro del boton")

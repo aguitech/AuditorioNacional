@@ -69,10 +69,6 @@ class MyMenuTableViewController: UITableViewController {
         
         print("did select row: \(indexPath.row)")
         
-        if (indexPath.row == selectedMenuItem) {
-            return
-        }
-        
         selectedMenuItem = indexPath.row
         
         //Present new view controller
@@ -80,19 +76,27 @@ class MyMenuTableViewController: UITableViewController {
         var destViewController : UIViewController
         switch (indexPath.row) {
         case 0:
+            print("Entra a esta parte 0")
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1")
             break
         case 1:
+            print("Entra a esta parte 1")
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2")
             break
         case 2:
+            print("Entra a esta parte 2")
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3")
             break
         default:
+            print("Entra a esta parte default")
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4")
             break
         }
+        
+        self.presentViewController(destViewController, animated: true, completion: nil)
+        /*
         sideMenuController()?.setContentViewController(destViewController)
+*/
     }
     
     

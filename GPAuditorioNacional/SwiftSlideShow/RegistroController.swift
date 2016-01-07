@@ -83,7 +83,7 @@ class RegistroController: UIViewController {
                     let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("registroExitoso") as! RegistroExitosoController
                     
                     dispatch_async(dispatch_get_main_queue(), {
-                        self.navigationController!.pushViewController(registroExitosoPantalla, animated:true)
+                        self.presentViewController(registroExitosoPantalla, animated:true, completion: nil)
                     })
 
                 }
