@@ -21,13 +21,13 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-Ji-u2K">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CBA72EFB-5E8B-413C-9A1C-BDE98EA52C06" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EE9AFBEA-7C6F-4C57-9CDD-4AB597BF1051" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
                                 <rect key="frame" x="106" y="64" width="164" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="DMT-AW-H3g"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="25300ABF-D66A-4E94-88CB-2D7D0A92AEC1" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B62AD370-E4D0-4586-A4AA-A55B59FBA7E8" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
                                 <rect key="frame" x="40" y="174" width="295" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="2hL-7l-d6z"/>
@@ -341,7 +341,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkc-eK-4wz">
-                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registro Exitoso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmd-83-uSx">
                                 <rect key="frame" x="125" y="107" width="124" height="21"/>
@@ -367,7 +367,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="zkc-eK-4wz" secondAttribute="trailing" constant="-20" id="6Ph-QC-VKl"/>
-                            <constraint firstItem="zkc-eK-4wz" firstAttribute="top" secondItem="rJB-CR-9Sm" secondAttribute="bottom" constant="38" id="9Y5-2n-HwZ"/>
+                            <constraint firstItem="zkc-eK-4wz" firstAttribute="top" secondItem="rJB-CR-9Sm" secondAttribute="bottom" id="9Y5-2n-HwZ"/>
                             <constraint firstItem="yvS-6R-DcJ" firstAttribute="top" secondItem="zkc-eK-4wz" secondAttribute="bottom" id="S0q-Kd-cyg"/>
                             <constraint firstItem="yvS-6R-DcJ" firstAttribute="top" secondItem="uv2-ux-yQO" secondAttribute="bottom" constant="99" id="e62-d0-6mR"/>
                             <constraint firstItem="zkc-eK-4wz" firstAttribute="leading" secondItem="ACh-f0-rX5" secondAttribute="leadingMargin" constant="-20" id="fBn-gA-9O1"/>
@@ -946,7 +946,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="25300ABF-D66A-4E94-88CB-2D7D0A92AEC1" width="223" height="54">
+        <image name="B62AD370-E4D0-4586-A4AA-A55B59FBA7E8" width="223" height="54">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -1800,7 +1800,7 @@ rcW4xcHF1MXYxePF7MXxxfnF/MYBxhDGFMYbxiPGMMY1xjfGOcY+xkbGScZOxlbGWcZrxm7GcwAAAAAA
 AAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAMZ1A
 </mutableData>
         </image>
-        <image name="CBA72EFB-5E8B-413C-9A1C-BDE98EA52C06" width="182" height="204">
+        <image name="EE9AFBEA-7C6F-4C57-9CDD-4AB597BF1051" width="182" height="204">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
