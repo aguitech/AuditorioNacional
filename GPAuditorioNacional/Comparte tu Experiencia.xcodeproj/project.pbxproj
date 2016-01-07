@@ -30,6 +30,16 @@
 		DC5B99611C3DDBEC00E947B5 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99601C3DDBEC00E947B5 /* ViewController4.swift */; };
 		DC5B99631C3DDC0300E947B5 /* MyNavigationController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99621C3DDC0300E947B5 /* MyNavigationController3.swift */; };
 		DC5B99651C3DDC1500E947B5 /* MyNavigationController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99641C3DDC1500E947B5 /* MyNavigationController4.swift */; };
+		DC5B99671C3E3AB600E947B5 /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99661C3E3AB600E947B5 /* ViewController5.swift */; };
+		DC5B99691C3E3AC500E947B5 /* ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99681C3E3AC500E947B5 /* ViewController6.swift */; };
+		DC5B996B1C3E3AD000E947B5 /* ViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B996A1C3E3AD000E947B5 /* ViewController7.swift */; };
+		DC5B996D1C3E3ADE00E947B5 /* ViewController8.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B996C1C3E3ADE00E947B5 /* ViewController8.swift */; };
+		DC5B996F1C3E3B3A00E947B5 /* ViewControllerUsername.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B996E1C3E3B3A00E947B5 /* ViewControllerUsername.swift */; };
+		DC5B99711C3E3B8200E947B5 /* MyNavigationController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99701C3E3B8200E947B5 /* MyNavigationController5.swift */; };
+		DC5B99731C3E3B9E00E947B5 /* MyNavigationController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99721C3E3B9E00E947B5 /* MyNavigationController6.swift */; };
+		DC5B99751C3E3BC300E947B5 /* MyNavigationController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99741C3E3BC300E947B5 /* MyNavigationController7.swift */; };
+		DC5B99771C3E3BF200E947B5 /* MyNavigationController8.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99761C3E3BF200E947B5 /* MyNavigationController8.swift */; };
+		DC5B99791C3E3C1500E947B5 /* MyNavigationControllerUsername.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99781C3E3C1500E947B5 /* MyNavigationControllerUsername.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +80,16 @@
 		DC5B99601C3DDBEC00E947B5 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		DC5B99621C3DDC0300E947B5 /* MyNavigationController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController3.swift; sourceTree = "<group>"; };
 		DC5B99641C3DDC1500E947B5 /* MyNavigationController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController4.swift; sourceTree = "<group>"; };
+		DC5B99661C3E3AB600E947B5 /* ViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
+		DC5B99681C3E3AC500E947B5 /* ViewController6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController6.swift; sourceTree = "<group>"; };
+		DC5B996A1C3E3AD000E947B5 /* ViewController7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController7.swift; sourceTree = "<group>"; };
+		DC5B996C1C3E3ADE00E947B5 /* ViewController8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController8.swift; sourceTree = "<group>"; };
+		DC5B996E1C3E3B3A00E947B5 /* ViewControllerUsername.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUsername.swift; sourceTree = "<group>"; };
+		DC5B99701C3E3B8200E947B5 /* MyNavigationController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController5.swift; sourceTree = "<group>"; };
+		DC5B99721C3E3B9E00E947B5 /* MyNavigationController6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController6.swift; sourceTree = "<group>"; };
+		DC5B99741C3E3BC300E947B5 /* MyNavigationController7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController7.swift; sourceTree = "<group>"; };
+		DC5B99761C3E3BF200E947B5 /* MyNavigationController8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController8.swift; sourceTree = "<group>"; };
+		DC5B99781C3E3C1500E947B5 /* MyNavigationControllerUsername.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationControllerUsername.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,10 +183,20 @@
 				DC5B99581C3D0D4700E947B5 /* ViewController2.swift */,
 				DC5B995E1C3DDBD400E947B5 /* ViewController3.swift */,
 				DC5B99601C3DDBEC00E947B5 /* ViewController4.swift */,
+				DC5B99661C3E3AB600E947B5 /* ViewController5.swift */,
+				DC5B99681C3E3AC500E947B5 /* ViewController6.swift */,
+				DC5B996A1C3E3AD000E947B5 /* ViewController7.swift */,
+				DC5B996C1C3E3ADE00E947B5 /* ViewController8.swift */,
+				DC5B996E1C3E3B3A00E947B5 /* ViewControllerUsername.swift */,
 				DC5B99501C3CE6A200E947B5 /* MyNavigationController.swift */,
 				DC5B995C1C3DC18900E947B5 /* MyNavigationController2.swift */,
 				DC5B99621C3DDC0300E947B5 /* MyNavigationController3.swift */,
 				DC5B99641C3DDC1500E947B5 /* MyNavigationController4.swift */,
+				DC5B99701C3E3B8200E947B5 /* MyNavigationController5.swift */,
+				DC5B99721C3E3B9E00E947B5 /* MyNavigationController6.swift */,
+				DC5B99741C3E3BC300E947B5 /* MyNavigationController7.swift */,
+				DC5B99761C3E3BF200E947B5 /* MyNavigationController8.swift */,
+				DC5B99781C3E3C1500E947B5 /* MyNavigationControllerUsername.swift */,
 			);
 			name = CosasMenu;
 			sourceTree = "<group>";
@@ -278,19 +308,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC5B995F1C3DDBD400E947B5 /* ViewController3.swift in Sources */,
+				DC5B99671C3E3AB600E947B5 /* ViewController5.swift in Sources */,
 				DC5B99611C3DDBEC00E947B5 /* ViewController4.swift in Sources */,
 				DC5B995D1C3DC18900E947B5 /* MyNavigationController2.swift in Sources */,
 				DC5B994D1C3CE50B00E947B5 /* ENSideMenu.swift in Sources */,
+				DC5B99731C3E3B9E00E947B5 /* MyNavigationController6.swift in Sources */,
 				DC5B99511C3CE6A200E947B5 /* MyNavigationController.swift in Sources */,
 				DC5B99631C3DDC0300E947B5 /* MyNavigationController3.swift in Sources */,
+				DC5B996D1C3E3ADE00E947B5 /* ViewController8.swift in Sources */,
 				DC5B99651C3DDC1500E947B5 /* MyNavigationController4.swift in Sources */,
 				C4C6FE4A1ADBF8B200EAA7A9 /* ViewController.swift in Sources */,
+				DC5B99791C3E3C1500E947B5 /* MyNavigationControllerUsername.swift in Sources */,
 				DC5856E41C3B425D00DFDC5F /* RegistroController.swift in Sources */,
+				DC5B99711C3E3B8200E947B5 /* MyNavigationController5.swift in Sources */,
 				DC5B99591C3D0D4700E947B5 /* ViewController2.swift in Sources */,
 				DC5856EA1C3CFC0100DFDC5F /* IniciarSesionController.swift in Sources */,
 				DC5B99531C3CE71B00E947B5 /* MyMenuTableViewController.swift in Sources */,
+				DC5B99771C3E3BF200E947B5 /* MyNavigationController8.swift in Sources */,
+				DC5B996F1C3E3B3A00E947B5 /* ViewControllerUsername.swift in Sources */,
+				DC5B99751C3E3BC300E947B5 /* MyNavigationController7.swift in Sources */,
 				DC5B994F1C3CE5C700E947B5 /* ENSideMenuNavigationController.swift in Sources */,
+				DC5B996B1C3E3AD000E947B5 /* ViewController7.swift in Sources */,
 				DC5B99491C3CE40E00E947B5 /* ViewControllerMenu.swift in Sources */,
+				DC5B99691C3E3AC500E947B5 /* ViewController6.swift in Sources */,
 				DC5856E81C3BC07800DFDC5F /* RegistroExitosoController.swift in Sources */,
 				C4C6FE481ADBF8B200EAA7A9 /* AppDelegate.swift in Sources */,
 			);

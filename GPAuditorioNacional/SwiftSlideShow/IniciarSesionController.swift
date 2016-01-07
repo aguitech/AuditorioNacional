@@ -59,12 +59,12 @@ class IniciarSesionController: UIViewController {
                 self.performSegueWithIdentifier("registroExitoso", sender: self)
                 }
                 */
-                
+                print("--------------------------")
                 let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
                 let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("registroExitoso") as! RegistroExitosoController
                 
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.navigationController!.pushViewController(registroExitosoPantalla, animated:true)
+                    self.presentViewController(registroExitosoPantalla, animated:true, completion: nil)
                 })
                 
             }
