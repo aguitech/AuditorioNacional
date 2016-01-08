@@ -14,6 +14,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var textView: UITextView!
     @IBOutlet var pageControl: UIPageControl!
     
+    @IBOutlet weak var logoImagen: UIImageView!
+    @IBOutlet weak var logoTextoImagen: UIImageView!
 //    @IBOutlet var startButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         textView.textAlignment = .Center
         textView.text = ""
         textView.textColor = .blackColor()
+        logoImagen.image = nil
+        logoTextoImagen.image = nil
+        
 //        self.startButton.layer.cornerRadius = 4.0
         //3
         let imgOne = UIImageView(frame: CGRectMake(0, 0,scrollViewWidth, scrollViewHeight))

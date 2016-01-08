@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
-               BuildableName = "SwiftSlideShow.app"
+               BuildableName = "Comparte tu Experiencia.app"
                BlueprintName = "SwiftSlideShow"
                ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
-            BuildableName = "SwiftSlideShow.app"
+            BuildableName = "Comparte tu Experiencia.app"
             BlueprintName = "SwiftSlideShow"
             ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
-            BuildableName = "SwiftSlideShow.app"
+            BuildableName = "Comparte tu Experiencia.app"
             BlueprintName = "SwiftSlideShow"
             ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
-            BuildableName = "SwiftSlideShow.app"
+            BuildableName = "Comparte tu Experiencia.app"
             BlueprintName = "SwiftSlideShow"
             ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
          </BuildableReference>
