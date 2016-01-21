@@ -66,7 +66,7 @@ class IniciarSesionController: UIViewController {
                 */
                 print("--------------------------")
                 let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
-                let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("registroExitoso") as! RegistroExitosoController
+                let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MyNavigationControllerSeleccion
                 
                 dispatch_async(dispatch_get_main_queue(), {
                     self.presentViewController(registroExitosoPantalla, animated:true, completion: nil)

@@ -7,6 +7,9 @@ import UIKit
 
 class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
     
+    var color = UIColor(red: 0.234375, green: 0.74609375, blue: 0.6640625, alpha: 1.0)
+    var colorBar = UIColor(red: 0.0, green: 0.0, blue: 0.4, alpha: 1.0)
+    
     @IBOutlet weak var informacion: UITextView!
     @IBOutlet weak var informacion2: UITextView!
     @IBOutlet weak var imagen: UIImageView!
@@ -63,6 +66,11 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.navigationController?.navigationBar.tintColor = color
+        self.navigationController?.navigationBar.barTintColor = colorBar
+        
         self.sideMenuController()?.sideMenu?.delegate = self
         
         

@@ -12,9 +12,13 @@ import UIKit
 
 class ViewController3: UIViewController, ENSideMenuDelegate {
     
+    var color = UIColor(red: 0.234375, green: 0.74609375, blue: 0.6640625, alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.tintColor = color
+        
         self.sideMenuController()?.sideMenu?.delegate = self
     }
     
