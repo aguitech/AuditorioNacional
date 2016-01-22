@@ -20,16 +20,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-Ji-u2K">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-Ji-u2K">
+                                <rect key="frame" x="-9" y="0.0" width="375" height="667"/>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Di-5ok">
                                 <rect key="frame" x="106" y="64" width="164" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="DMT-AW-H3g"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Text Icon" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Text Icon" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Bh-YDm">
                                 <rect key="frame" x="40" y="174" width="295" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="2hL-7l-d6z"/>
@@ -45,6 +45,17 @@
                                     <rect key="frame" x="44" y="264" width="579" height="227"/>
                                 </variation>
                             </textView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" restorationIdentifier="btnComenzar" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGc-Ak-wFL">
+                                <rect key="frame" x="133" y="550" width="109" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="7wt-Ta-sJc"/>
+                                    <constraint firstAttribute="height" constant="35" id="M6S-AL-OjV"/>
+                                </constraints>
+                                <state key="normal" title="Registro" image="comenzar.png"/>
+                                <connections>
+                                    <action selector="iniciarRegistro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h5-4Z-1kM"/>
+                                </connections>
+                            </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="J4l-JI-2mZ">
                                 <rect key="frame" x="155" y="580" width="67" height="37"/>
                                 <constraints>
@@ -52,18 +63,10 @@
                                 </constraints>
                                 <color key="pageIndicatorTintColor" red="0.87058823529411766" green="0.20784313725490197" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGc-Ak-wFL">
-                                <rect key="frame" x="159" y="523" width="57" height="30"/>
-                                <state key="normal" title="Registro"/>
-                                <connections>
-                                    <action selector="iniciarRegistro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h5-4Z-1kM"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KsA-Bh-YDm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="06s-JM-Uax"/>
-                            <constraint firstItem="J4l-JI-2mZ" firstAttribute="top" secondItem="GGc-Ak-wFL" secondAttribute="bottom" constant="27" id="6qJ-SM-egu"/>
                             <constraint firstItem="Jip-0l-jdX" firstAttribute="trailing" secondItem="KsA-Bh-YDm" secondAttribute="trailing" id="FUZ-1q-LIU"/>
                             <constraint firstItem="fi7-Ji-u2K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="G6x-Hd-0Ng"/>
                             <constraint firstItem="4AZ-Di-5ok" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="JYr-TO-lOz"/>
@@ -74,16 +77,18 @@
                             <constraint firstItem="KsA-Bh-YDm" firstAttribute="top" secondItem="4AZ-Di-5ok" secondAttribute="bottom" constant="10" id="jND-iN-CvK"/>
                             <constraint firstItem="KsA-Bh-YDm" firstAttribute="centerX" secondItem="4AZ-Di-5ok" secondAttribute="centerX" id="jPv-Op-Vvi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J4l-JI-2mZ" secondAttribute="bottom" constant="50" id="mtE-Gt-AuE"/>
+                            <constraint firstItem="GGc-Ak-wFL" firstAttribute="centerX" secondItem="fi7-Ji-u2K" secondAttribute="centerX" id="nGL-ca-Qln"/>
+                            <constraint firstItem="J4l-JI-2mZ" firstAttribute="top" secondItem="GGc-Ak-wFL" secondAttribute="bottom" constant="-5" id="tUq-ef-o3T"/>
                             <constraint firstItem="fi7-Ji-u2K" firstAttribute="centerX" secondItem="4AZ-Di-5ok" secondAttribute="centerX" id="uV6-qD-TVt"/>
                             <constraint firstItem="4AZ-Di-5ok" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="uW0-ED-aD2"/>
                             <constraint firstItem="fi7-Ji-u2K" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="vuE-br-Bxl"/>
-                            <constraint firstItem="GGc-Ak-wFL" firstAttribute="centerX" secondItem="fi7-Ji-u2K" secondAttribute="centerX" id="w31-RK-4l0"/>
                             <constraint firstItem="KsA-Bh-YDm" firstAttribute="leading" secondItem="Jip-0l-jdX" secondAttribute="leading" id="wSW-Zx-5as"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jtz-5y-SrN"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="btnComenzar" destination="GGc-Ak-wFL" id="Uaf-vz-HEC"/>
                         <outlet property="logoImagen" destination="4AZ-Di-5ok" id="YTT-kT-q2M"/>
                         <outlet property="logoTextoImagen" destination="KsA-Bh-YDm" id="Isl-uB-Qdj"/>
                         <outlet property="pageControl" destination="J4l-JI-2mZ" id="lW6-Ml-ht1"/>
@@ -1088,7 +1093,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mnw-1b-RUq">
                                         <rect key="frame" x="175" y="159" width="160" height="82"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -1498,6 +1503,7 @@
         <image name="Text Icon" width="223" height="54"/>
         <image name="background.png" width="821" height="1158"/>
         <image name="calendario.png" width="507" height="699"/>
+        <image name="comenzar.png" width="653" height="172"/>
         <image name="enviarRespuesta.png" width="447" height="186"/>
         <image name="facebook.png" width="395" height="198"/>
         <image name="fondoSinMenu.png" width="1242" height="2208"/>

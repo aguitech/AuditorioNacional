@@ -26,6 +26,7 @@
 		DC4AC5351C516980006A1995 /* respuesta2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC52C1C516980006A1995 /* respuesta2.png */; };
 		DC4AC5361C516980006A1995 /* respuesta3.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC52D1C516980006A1995 /* respuesta3.png */; };
 		DC4AC5371C516980006A1995 /* respuesta4.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC52E1C516980006A1995 /* respuesta4.png */; };
+		DC4AC5781C51E850006A1995 /* comenzar.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC5771C51E850006A1995 /* comenzar.png */; };
 		DC5856E41C3B425D00DFDC5F /* RegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5856E31C3B425D00DFDC5F /* RegistroController.swift */; };
 		DC5856E61C3B579200DFDC5F /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC5856E51C3B579200DFDC5F /* gif.gif */; };
 		DC5856E81C3BC07800DFDC5F /* RegistroExitosoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5856E71C3BC07800DFDC5F /* RegistroExitosoController.swift */; };
@@ -107,6 +108,7 @@
 		DC4AC52C1C516980006A1995 /* respuesta2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = respuesta2.png; sourceTree = "<group>"; };
 		DC4AC52D1C516980006A1995 /* respuesta3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = respuesta3.png; sourceTree = "<group>"; };
 		DC4AC52E1C516980006A1995 /* respuesta4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = respuesta4.png; sourceTree = "<group>"; };
+		DC4AC5771C51E850006A1995 /* comenzar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comenzar.png; sourceTree = "<group>"; };
 		DC5856E31C3B425D00DFDC5F /* RegistroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroController.swift; sourceTree = "<group>"; };
 		DC5856E51C3B579200DFDC5F /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
 		DC5856E71C3BC07800DFDC5F /* RegistroExitosoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroExitosoController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				DC4AC51E1C5098E7006A1995 /* AvisoDePrivacidad.png */,
 				DC4AC5201C5098FC006A1995 /* terminosYCondiciones.png */,
 				DC4AC5221C50990E006A1995 /* menuSolo.png */,
+				DC4AC5771C51E850006A1995 /* comenzar.png */,
 				DC4AC5381C51698B006A1995 /* trivia */,
 				DCBFA1031C4F0AF00078F320 /* Seleccion */,
 				DCBFA0F41C4D7B0A0078F320 /* RegistroExitoso */,
@@ -412,6 +415,7 @@
 				DCBFA1091C4F3B2E0078F320 /* Demuestra Que tanto sabes..png in Resources */,
 				DCBFA10D1C5063DB0078F320 /* calendario.png in Resources */,
 				DC4AC5321C516980006A1995 /* mecanica.png in Resources */,
+				DC4AC5781C51E850006A1995 /* comenzar.png in Resources */,
 				DCBFA0EF1C4D7AD60078F320 /* rectanguloRedesSociales.png in Resources */,
 				DCBFA0FC1C4DFFA60078F320 /* home.png in Resources */,
 				DCBFA10B1C5063C40078F320 /* preguntaDeHoy.png in Resources */,

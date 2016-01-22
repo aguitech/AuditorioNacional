@@ -16,6 +16,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var logoImagen: UIImageView!
     @IBOutlet weak var logoTextoImagen: UIImageView!
+
+    @IBOutlet weak var btnComenzar: UIButton!
 //    @IBOutlet var startButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,6 +98,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         }else if Int(currentPage) == 2{
             //textView.text = "And sometimes I write games tutorials about Unity"
             textView.text = ""
+            UIView.animateWithDuration(1.0, animations: { () -> Void in
+                self.btnComenzar.alpha = 1.0
+            })
             /*
             UIView.animateWithDuration(1.0, animations: { () -> Void in
                 self.startButton.alpha = 1.0
