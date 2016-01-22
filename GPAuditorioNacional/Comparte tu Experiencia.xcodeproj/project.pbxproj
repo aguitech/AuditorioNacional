@@ -16,6 +16,16 @@
 		DC4AC51F1C5098E8006A1995 /* AvisoDePrivacidad.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC51E1C5098E7006A1995 /* AvisoDePrivacidad.png */; };
 		DC4AC5211C5098FC006A1995 /* terminosYCondiciones.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC5201C5098FC006A1995 /* terminosYCondiciones.png */; };
 		DC4AC5231C50990E006A1995 /* menuSolo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC5221C50990E006A1995 /* menuSolo.png */; };
+		DC4AC5251C50A80D006A1995 /* MyNavigationControllerRegistroExitoso.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4AC5241C50A80D006A1995 /* MyNavigationControllerRegistroExitoso.swift */; };
+		DC4AC52F1C516980006A1995 /* enviarRespuesta.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC5261C516980006A1995 /* enviarRespuesta.png */; };
+		DC4AC5301C516980006A1995 /* ganaExperiencia.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC5271C516980006A1995 /* ganaExperiencia.png */; };
+		DC4AC5311C516980006A1995 /* imagenPregunta.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC5281C516980006A1995 /* imagenPregunta.png */; };
+		DC4AC5321C516980006A1995 /* mecanica.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC5291C516980006A1995 /* mecanica.png */; };
+		DC4AC5331C516980006A1995 /* pregunta.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC52A1C516980006A1995 /* pregunta.png */; };
+		DC4AC5341C516980006A1995 /* respuesta1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC52B1C516980006A1995 /* respuesta1.png */; };
+		DC4AC5351C516980006A1995 /* respuesta2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC52C1C516980006A1995 /* respuesta2.png */; };
+		DC4AC5361C516980006A1995 /* respuesta3.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC52D1C516980006A1995 /* respuesta3.png */; };
+		DC4AC5371C516980006A1995 /* respuesta4.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4AC52E1C516980006A1995 /* respuesta4.png */; };
 		DC5856E41C3B425D00DFDC5F /* RegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5856E31C3B425D00DFDC5F /* RegistroController.swift */; };
 		DC5856E61C3B579200DFDC5F /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC5856E51C3B579200DFDC5F /* gif.gif */; };
 		DC5856E81C3BC07800DFDC5F /* RegistroExitosoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5856E71C3BC07800DFDC5F /* RegistroExitosoController.swift */; };
@@ -87,6 +97,16 @@
 		DC4AC51E1C5098E7006A1995 /* AvisoDePrivacidad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AvisoDePrivacidad.png; sourceTree = "<group>"; };
 		DC4AC5201C5098FC006A1995 /* terminosYCondiciones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terminosYCondiciones.png; sourceTree = "<group>"; };
 		DC4AC5221C50990E006A1995 /* menuSolo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuSolo.png; sourceTree = "<group>"; };
+		DC4AC5241C50A80D006A1995 /* MyNavigationControllerRegistroExitoso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationControllerRegistroExitoso.swift; sourceTree = "<group>"; };
+		DC4AC5261C516980006A1995 /* enviarRespuesta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enviarRespuesta.png; sourceTree = "<group>"; };
+		DC4AC5271C516980006A1995 /* ganaExperiencia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ganaExperiencia.png; sourceTree = "<group>"; };
+		DC4AC5281C516980006A1995 /* imagenPregunta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagenPregunta.png; sourceTree = "<group>"; };
+		DC4AC5291C516980006A1995 /* mecanica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mecanica.png; sourceTree = "<group>"; };
+		DC4AC52A1C516980006A1995 /* pregunta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pregunta.png; sourceTree = "<group>"; };
+		DC4AC52B1C516980006A1995 /* respuesta1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = respuesta1.png; sourceTree = "<group>"; };
+		DC4AC52C1C516980006A1995 /* respuesta2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = respuesta2.png; sourceTree = "<group>"; };
+		DC4AC52D1C516980006A1995 /* respuesta3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = respuesta3.png; sourceTree = "<group>"; };
+		DC4AC52E1C516980006A1995 /* respuesta4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = respuesta4.png; sourceTree = "<group>"; };
 		DC5856E31C3B425D00DFDC5F /* RegistroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroController.swift; sourceTree = "<group>"; };
 		DC5856E51C3B579200DFDC5F /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
 		DC5856E71C3BC07800DFDC5F /* RegistroExitosoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroExitosoController.swift; sourceTree = "<group>"; };
@@ -192,6 +212,7 @@
 				DC4AC51E1C5098E7006A1995 /* AvisoDePrivacidad.png */,
 				DC4AC5201C5098FC006A1995 /* terminosYCondiciones.png */,
 				DC4AC5221C50990E006A1995 /* menuSolo.png */,
+				DC4AC5381C51698B006A1995 /* trivia */,
 				DCBFA1031C4F0AF00078F320 /* Seleccion */,
 				DCBFA0F41C4D7B0A0078F320 /* RegistroExitoso */,
 				C4C6FE451ADBF8B200EAA7A9 /* Supporting Files */,
@@ -225,6 +246,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DC4AC5381C51698B006A1995 /* trivia */ = {
+			isa = PBXGroup;
+			children = (
+				DC4AC5271C516980006A1995 /* ganaExperiencia.png */,
+				DC4AC5281C516980006A1995 /* imagenPregunta.png */,
+				DC4AC5291C516980006A1995 /* mecanica.png */,
+				DC4AC52A1C516980006A1995 /* pregunta.png */,
+				DC4AC52B1C516980006A1995 /* respuesta1.png */,
+				DC4AC52C1C516980006A1995 /* respuesta2.png */,
+				DC4AC52D1C516980006A1995 /* respuesta3.png */,
+				DC4AC52E1C516980006A1995 /* respuesta4.png */,
+				DC4AC5261C516980006A1995 /* enviarRespuesta.png */,
+			);
+			name = trivia;
+			sourceTree = "<group>";
+		};
 		DC5B994B1C3CE4C300E947B5 /* CosasMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +288,7 @@
 				DC5B99761C3E3BF200E947B5 /* MyNavigationController8.swift */,
 				DC5B99781C3E3C1500E947B5 /* MyNavigationControllerUsername.swift */,
 				DCBFA10E1C5067280078F320 /* MyNavigationControllerSeleccion.swift */,
+				DC4AC5241C50A80D006A1995 /* MyNavigationControllerRegistroExitoso.swift */,
 			);
 			name = CosasMenu;
 			sourceTree = "<group>";
@@ -363,27 +401,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4AC5361C516980006A1995 /* respuesta3.png in Resources */,
 				DCBFA0ED1C4D7ACE0078F320 /* fondoSinMenu.png in Resources */,
 				DCBFA1071C4F3B2E0078F320 /* Proximos Eventos..png in Resources */,
 				DCBFA1001C4F0ADF0078F320 /* botton1.png in Resources */,
 				DC4AC5211C5098FC006A1995 /* terminosYCondiciones.png in Resources */,
+				DC4AC5311C516980006A1995 /* imagenPregunta.png in Resources */,
+				DC4AC5331C516980006A1995 /* pregunta.png in Resources */,
 				DCBFA1081C4F3B2E0078F320 /* Descubre más..png in Resources */,
 				DCBFA1091C4F3B2E0078F320 /* Demuestra Que tanto sabes..png in Resources */,
 				DCBFA10D1C5063DB0078F320 /* calendario.png in Resources */,
+				DC4AC5321C516980006A1995 /* mecanica.png in Resources */,
 				DCBFA0EF1C4D7AD60078F320 /* rectanguloRedesSociales.png in Resources */,
 				DCBFA0FC1C4DFFA60078F320 /* home.png in Resources */,
 				DCBFA10B1C5063C40078F320 /* preguntaDeHoy.png in Resources */,
 				DCBFA1021C4F0ADF0078F320 /* botton3.png in Resources */,
 				C4C6FE4D1ADBF8B200EAA7A9 /* Main.storyboard in Resources */,
+				DC4AC5351C516980006A1995 /* respuesta2.png in Resources */,
 				DC5B99551C3CE8A600E947B5 /* background.png in Resources */,
+				DC4AC5341C516980006A1995 /* respuesta1.png in Resources */,
 				DC4AC51F1C5098E8006A1995 /* AvisoDePrivacidad.png in Resources */,
 				DCBFA1011C4F0ADF0078F320 /* botton2.png in Resources */,
+				DC4AC5371C516980006A1995 /* respuesta4.png in Resources */,
 				DC5856E61C3B579200DFDC5F /* gif.gif in Resources */,
+				DC4AC5301C516980006A1995 /* ganaExperiencia.png in Resources */,
 				DCBFA0F31C4D7AEB0078F320 /* vincula.png in Resources */,
 				DCBFA0F81C4DC0510078F320 /* menu44.png in Resources */,
 				DCBFA0EB1C4D7AC40078F320 /* facebook.png in Resources */,
 				C4C6FE521ADBF8B200EAA7A9 /* LaunchScreen.xib in Resources */,
 				DCBFA0F11C4D7AE10078F320 /* twitter.png in Resources */,
+				DC4AC52F1C516980006A1995 /* enviarRespuesta.png in Resources */,
 				DCBFA0FA1C4DC26D0078F320 /* menu22.png in Resources */,
 				C4C6FE4F1ADBF8B200EAA7A9 /* Images.xcassets in Resources */,
 				DC5B995B1C3D51F100E947B5 /* logosLaunch.png in Resources */,
@@ -410,6 +457,7 @@
 				DC5B99611C3DDBEC00E947B5 /* ViewController4.swift in Sources */,
 				DC5B995D1C3DC18900E947B5 /* MyNavigationController2.swift in Sources */,
 				DC5B994D1C3CE50B00E947B5 /* ENSideMenu.swift in Sources */,
+				DC4AC5251C50A80D006A1995 /* MyNavigationControllerRegistroExitoso.swift in Sources */,
 				DC5B99731C3E3B9E00E947B5 /* MyNavigationController6.swift in Sources */,
 				DC5B99511C3CE6A200E947B5 /* MyNavigationController.swift in Sources */,
 				DC5B99631C3DDC0300E947B5 /* MyNavigationController3.swift in Sources */,
