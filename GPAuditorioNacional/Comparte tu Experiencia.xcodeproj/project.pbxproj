@@ -372,7 +372,7 @@
 				TargetAttributes = {
 					C4C6FE411ADBF8B200EAA7A9 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = C3487HKTAR;
+						DevelopmentTeam = AC5V69576P;
 					};
 					C4C6FE561ADBF8B200EAA7A9 = {
 						CreatedOnToolsVersion = 6.2;
@@ -614,7 +614,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftSlideShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.canseko.GPAuditorioNacional;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aguitech.GPAuditorioNacional;
 				PRODUCT_NAME = "Comparte tu Experiencia";
 				PROVISIONING_PROFILE = "";
 			};
@@ -628,7 +628,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftSlideShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.canseko.GPAuditorioNacional;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aguitech.GPAuditorioNacional;
 				PRODUCT_NAME = "Comparte tu Experiencia";
 				PROVISIONING_PROFILE = "";
 			};

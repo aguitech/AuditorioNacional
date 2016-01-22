@@ -92,9 +92,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         if Int(currentPage) == 0{
             //textView.text = "Sweettutos.com is your blog of choice for Mobile tutorials"
             textView.text = ""
+            UIView.animateWithDuration(1.0, animations: { () -> Void in
+                self.btnComenzar.alpha = 0
+            })
         }else if Int(currentPage) == 1{
             //textView.text = "I write mobile tutorials mainly targeting iOS"
             textView.text = ""
+            UIView.animateWithDuration(1.0, animations: { () -> Void in
+                self.btnComenzar.alpha = 0
+            })
         }else if Int(currentPage) == 2{
             //textView.text = "And sometimes I write games tutorials about Unity"
             textView.text = ""
