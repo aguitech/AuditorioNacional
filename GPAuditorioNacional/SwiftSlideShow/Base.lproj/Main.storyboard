@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -242,7 +242,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Awh-2Q-8nT">
                                 <rect key="frame" x="6" y="408" width="147" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="10" y="408" width="147" height="30"/>
                                 </variation>
@@ -250,7 +250,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nmu-JK-Tkb">
                                 <rect key="frame" x="175" y="408" width="180" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74N-bN-3Sv">
                                 <rect key="frame" x="53" y="459" width="91" height="30"/>
@@ -427,6 +427,11 @@
                                 <action selector="toggleSideMenu:" destination="GUl-Tq-Bxh" id="Hqn-Ub-Kgk"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="home.png" id="3Ii-PH-dZg">
+                            <connections>
+                                <segue destination="m0S-wi-CYc" kind="show" id="Cqk-r0-oA7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -473,7 +478,7 @@
                                     <constraint firstAttribute="width" constant="230" id="dj0-eM-EEw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oON-PR-BmR">
                                 <rect key="frame" x="72" y="363" width="57" height="30"/>
@@ -556,20 +561,31 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="preguntaDeHoy.png" translatesAutoresizingMaskIntoConstraints="NO" id="nJo-eN-c6M">
                                                 <rect key="frame" x="175" y="0.0" width="160" height="241"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxP-5S-PQ5">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="241"/>
+                                                <connections>
+                                                    <action selector="entrada1:" destination="0U9-K9-uxf" eventType="touchUpInside" id="Et4-pb-lRt"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="pSp-mz-TQJ" firstAttribute="top" secondItem="svc-2v-8Rh" secondAttribute="top" id="7Nu-JU-QML"/>
                                             <constraint firstItem="SJ3-Pf-s6s" firstAttribute="top" secondItem="pSp-mz-TQJ" secondAttribute="bottom" constant="-1" id="AN8-pi-7nN"/>
+                                            <constraint firstItem="xxP-5S-PQ5" firstAttribute="leading" secondItem="svc-2v-8Rh" secondAttribute="leading" id="Bth-pa-lLN"/>
                                             <constraint firstAttribute="bottom" secondItem="nJo-eN-c6M" secondAttribute="bottom" id="I1q-Xr-5co"/>
                                             <constraint firstItem="nJo-eN-c6M" firstAttribute="height" secondItem="svc-2v-8Rh" secondAttribute="height" id="NwH-HM-ycl"/>
+                                            <constraint firstAttribute="bottom" secondItem="xxP-5S-PQ5" secondAttribute="bottom" id="TZJ-D2-0RF"/>
                                             <constraint firstItem="SJ3-Pf-s6s" firstAttribute="leading" secondItem="svc-2v-8Rh" secondAttribute="leading" id="Tmt-PT-0eK"/>
                                             <constraint firstItem="nJo-eN-c6M" firstAttribute="top" secondItem="svc-2v-8Rh" secondAttribute="top" id="Usb-0Y-RbY"/>
+                                            <constraint firstItem="xxP-5S-PQ5" firstAttribute="height" secondItem="svc-2v-8Rh" secondAttribute="height" id="axX-FJ-G0T"/>
                                             <constraint firstItem="pSp-mz-TQJ" firstAttribute="height" secondItem="svc-2v-8Rh" secondAttribute="height" multiplier="0.66" id="b5r-Jh-N1H"/>
                                             <constraint firstAttribute="trailing" secondItem="nJo-eN-c6M" secondAttribute="trailing" id="bcB-xm-6t1"/>
                                             <constraint firstItem="nJo-eN-c6M" firstAttribute="width" secondItem="svc-2v-8Rh" secondAttribute="width" multiplier="0.48" id="big-Se-izh"/>
+                                            <constraint firstItem="xxP-5S-PQ5" firstAttribute="width" secondItem="svc-2v-8Rh" secondAttribute="width" multiplier="0.48" id="cii-2G-lBT"/>
                                             <constraint firstItem="SJ3-Pf-s6s" firstAttribute="width" secondItem="pSp-mz-TQJ" secondAttribute="width" id="hB1-vd-Q9k"/>
                                             <constraint firstItem="pSp-mz-TQJ" firstAttribute="leading" secondItem="svc-2v-8Rh" secondAttribute="leading" id="lj0-AN-aov"/>
                                             <constraint firstAttribute="bottom" secondItem="SJ3-Pf-s6s" secondAttribute="bottom" id="lk3-bO-KgB"/>
+                                            <constraint firstItem="xxP-5S-PQ5" firstAttribute="top" secondItem="svc-2v-8Rh" secondAttribute="top" id="tV2-gZ-3uP"/>
                                             <constraint firstItem="SJ3-Pf-s6s" firstAttribute="centerX" secondItem="pSp-mz-TQJ" secondAttribute="centerX" id="thV-wb-LTi"/>
                                             <constraint firstItem="pSp-mz-TQJ" firstAttribute="width" secondItem="svc-2v-8Rh" secondAttribute="width" multiplier="0.48" id="xjx-Dh-876"/>
                                         </constraints>
@@ -590,6 +606,12 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="calendario.png" translatesAutoresizingMaskIntoConstraints="NO" id="HVf-EY-UHM">
                                                 <rect key="frame" x="175" y="0.0" width="160" height="241"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq1-8M-EDo">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="241"/>
+                                                <connections>
+                                                    <action selector="entrada2:" destination="0U9-K9-uxf" eventType="touchUpInside" id="nkZ-gs-HpQ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="HVf-EY-UHM" secondAttribute="bottom" id="0sE-e3-F6p"/>
@@ -601,7 +623,9 @@
                                             <constraint firstAttribute="bottom" secondItem="DxI-uq-4PP" secondAttribute="bottom" id="Yd4-0o-9Cg"/>
                                             <constraint firstItem="HVf-EY-UHM" firstAttribute="width" secondItem="8Yf-70-f27" secondAttribute="width" multiplier="0.48" id="bIv-G4-ym4"/>
                                             <constraint firstItem="DxI-uq-4PP" firstAttribute="leading" secondItem="8Yf-70-f27" secondAttribute="leading" id="cOl-ZS-lqe"/>
+                                            <constraint firstItem="oq1-8M-EDo" firstAttribute="width" secondItem="8Yf-70-f27" secondAttribute="width" multiplier="0.48" id="g2m-gQ-O9X"/>
                                             <constraint firstItem="HVf-EY-UHM" firstAttribute="top" secondItem="8Yf-70-f27" secondAttribute="top" id="pr4-vV-1mn"/>
+                                            <constraint firstItem="oq1-8M-EDo" firstAttribute="height" secondItem="8Yf-70-f27" secondAttribute="height" id="sqg-lg-Wpx"/>
                                             <constraint firstItem="DxI-uq-4PP" firstAttribute="top" secondItem="Aj2-IR-WsM" secondAttribute="bottom" constant="-1" id="suU-m3-v6M"/>
                                             <constraint firstItem="DxI-uq-4PP" firstAttribute="centerX" secondItem="Aj2-IR-WsM" secondAttribute="centerX" id="zDV-iB-Nss"/>
                                             <constraint firstItem="Aj2-IR-WsM" firstAttribute="width" secondItem="8Yf-70-f27" secondAttribute="width" multiplier="0.48" id="zYY-KJ-NwJ"/>
@@ -638,7 +662,11 @@
                                 <action selector="toggleSideMenu:" destination="0U9-K9-uxf" id="t50-js-hZK"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="home.png" id="6aN-Z4-ECp"/>
+                        <barButtonItem key="rightBarButtonItem" image="home.png" id="6aN-Z4-ECp">
+                            <connections>
+                                <segue destination="m0S-wi-CYc" kind="show" id="9u3-dl-9vp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -811,6 +839,11 @@
                                 <action selector="toggleSideMenu:" destination="7Rj-1l-QQE" id="rtr-7v-ZDz"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="home.png" id="raF-ct-xlw">
+                            <connections>
+                                <segue destination="m0S-wi-CYc" kind="show" id="c8s-mb-h4O"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -879,6 +912,11 @@
                                 <action selector="toggleSideMenu:" destination="rCc-dq-8je" id="sI9-iC-trW"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="home.png" id="5CW-Q1-gQ1">
+                            <connections>
+                                <segue destination="m0S-wi-CYc" kind="show" id="aa6-0a-nmZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -945,6 +983,11 @@
                                 <action selector="toggleSideMenu:" destination="Iot-mD-Jri" id="9aV-fW-9LB"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="home.png" id="czc-v8-YHO">
+                            <connections>
+                                <segue destination="m0S-wi-CYc" kind="show" id="gS3-a4-r3z"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -982,6 +1025,7 @@
                                 <action selector="toggleSideMenu:" destination="tTT-ot-FVg" id="MEC-QT-6D6"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="home.png" id="paG-bZ-xy5"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1065,6 +1109,7 @@
                                 <action selector="toggleSideMenu:" destination="m0S-wi-CYc" id="P7N-HE-Bcy"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="home.png" id="dK6-jQ-FiH"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1161,6 +1206,11 @@
                                 <action selector="toggleSideMenu:" destination="IkV-zz-jeS" id="l4w-fZ-B2X"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="home.png" id="FTS-FO-MZ5">
+                            <connections>
+                                <segue destination="m0S-wi-CYc" kind="show" id="kub-ze-7Wg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -1191,7 +1241,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4j-RM-ean" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2498.5" y="427.5"/>
+            <point key="canvasLocation" x="2467.5" y="427.5"/>
         </scene>
         <!--My Navigation Controller2-->
         <scene sceneID="kZO-U5-I9H">
@@ -1210,7 +1260,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fOk-bc-FVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3573.5" y="-291.5"/>
+            <point key="canvasLocation" x="3572.5" y="-291.5"/>
         </scene>
         <!--My Navigation Controller3-->
         <scene sceneID="ATA-Ht-vVU">
@@ -1524,8 +1574,9 @@
         <image name="vincula.png" width="1106" height="177"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="teF-gq-oPd"/>
         <segue reference="LtK-ws-bc8"/>
-        <segue reference="ird-kz-Fot"/>
+        <segue reference="9u3-dl-9vp"/>
+        <segue reference="Jsp-qb-vt0"/>
+        <segue reference="Tly-6t-9kZ"/>
     </inferredMetricsTieBreakers>
 </document>

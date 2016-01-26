@@ -295,6 +295,26 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
         task.resume()
     }
 
+    @IBAction func entrada1(sender: AnyObject) {
+        let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        let nuevoView = nuestroStoryBoard.instantiateViewControllerWithIdentifier("ViewController6") as! MyNavigationControllerSeleccion
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.presentViewController(nuevoView, animated:true, completion: nil)
+        })
+    }
+    
+  
+    @IBAction func entrada2(sender: AnyObject) {
+        
+        let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        let nuevoView = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MyNavigationControllerSeleccion
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.presentViewController(nuevoView, animated:true, completion: nil)
+        })
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
