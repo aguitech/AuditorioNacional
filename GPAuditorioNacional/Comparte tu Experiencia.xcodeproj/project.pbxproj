@@ -72,6 +72,12 @@
 		DCBFA10D1C5063DB0078F320 /* calendario.png in Resources */ = {isa = PBXBuildFile; fileRef = DCBFA10C1C5063DB0078F320 /* calendario.png */; };
 		DCBFA10F1C5067280078F320 /* MyNavigationControllerSeleccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFA10E1C5067280078F320 /* MyNavigationControllerSeleccion.swift */; };
 		DCBFA1111C50682B0078F320 /* ViewControllerSeleccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFA1101C50682B0078F320 /* ViewControllerSeleccion.swift */; };
+		E8F157BC1C57E9B9005D7A09 /* ViewInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */; };
+		E8F157BE1C58230B005D7A09 /* ViewControllerParticipar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F157BD1C58230B005D7A09 /* ViewControllerParticipar.swift */; };
+		E8F157C01C5823F5005D7A09 /* MyNavigationControllerParticipar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F157BF1C5823F5005D7A09 /* MyNavigationControllerParticipar.swift */; };
+		E8F157C21C58361C005D7A09 /* nombreDelPost.png in Resources */ = {isa = PBXBuildFile; fileRef = E8F157C11C58361C005D7A09 /* nombreDelPost.png */; };
+		E8F157C41C583DF9005D7A09 /* bePartOf.png in Resources */ = {isa = PBXBuildFile; fileRef = E8F157C31C583DF9005D7A09 /* bePartOf.png */; };
+		E8F157C71C584147005D7A09 /* fondoBePartOf.png in Resources */ = {isa = PBXBuildFile; fileRef = E8F157C61C584147005D7A09 /* fondoBePartOf.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +160,13 @@
 		DCBFA10C1C5063DB0078F320 /* calendario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendario.png; sourceTree = "<group>"; };
 		DCBFA10E1C5067280078F320 /* MyNavigationControllerSeleccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationControllerSeleccion.swift; sourceTree = "<group>"; };
 		DCBFA1101C50682B0078F320 /* ViewControllerSeleccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSeleccion.swift; sourceTree = "<group>"; };
+		E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInicio.swift; sourceTree = "<group>"; };
+		E8F157BD1C58230B005D7A09 /* ViewControllerParticipar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerParticipar.swift; sourceTree = "<group>"; };
+		E8F157BF1C5823F5005D7A09 /* MyNavigationControllerParticipar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationControllerParticipar.swift; sourceTree = "<group>"; };
+		E8F157C11C58361C005D7A09 /* nombreDelPost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nombreDelPost.png; sourceTree = "<group>"; };
+		E8F157C31C583DF9005D7A09 /* bePartOf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bePartOf.png; sourceTree = "<group>"; };
+		E8F157C51C583FA5005D7A09 /* bePartOfComplete */ = {isa = PBXFileReference; lastKnownFileType = file; path = bePartOfComplete; sourceTree = "<group>"; };
+		E8F157C61C584147005D7A09 /* fondoBePartOf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoBePartOf.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +210,7 @@
 			children = (
 				C4C6FE471ADBF8B200EAA7A9 /* AppDelegate.swift */,
 				DC5856E71C3BC07800DFDC5F /* RegistroExitosoController.swift */,
+				E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */,
 				C4C6FE491ADBF8B200EAA7A9 /* ViewController.swift */,
 				DC5856E31C3B425D00DFDC5F /* RegistroController.swift */,
 				DC5856E91C3CFC0100DFDC5F /* IniciarSesionController.swift */,
@@ -215,6 +229,10 @@
 				DC4AC5201C5098FC006A1995 /* terminosYCondiciones.png */,
 				DC4AC5221C50990E006A1995 /* menuSolo.png */,
 				DC4AC5771C51E850006A1995 /* comenzar.png */,
+				E8F157C11C58361C005D7A09 /* nombreDelPost.png */,
+				E8F157C31C583DF9005D7A09 /* bePartOf.png */,
+				E8F157C51C583FA5005D7A09 /* bePartOfComplete */,
+				E8F157C61C584147005D7A09 /* fondoBePartOf.png */,
 				DC4AC5381C51698B006A1995 /* trivia */,
 				DCBFA1031C4F0AF00078F320 /* Seleccion */,
 				DCBFA0F41C4D7B0A0078F320 /* RegistroExitoso */,
@@ -279,6 +297,7 @@
 				DC5B99681C3E3AC500E947B5 /* ViewController6.swift */,
 				DC5B996A1C3E3AD000E947B5 /* ViewController7.swift */,
 				DC5B996C1C3E3ADE00E947B5 /* ViewController8.swift */,
+				E8F157BD1C58230B005D7A09 /* ViewControllerParticipar.swift */,
 				DCBFA1101C50682B0078F320 /* ViewControllerSeleccion.swift */,
 				DC5B996E1C3E3B3A00E947B5 /* ViewControllerUsername.swift */,
 				DC5B99501C3CE6A200E947B5 /* MyNavigationController.swift */,
@@ -292,6 +311,7 @@
 				DC5B99781C3E3C1500E947B5 /* MyNavigationControllerUsername.swift */,
 				DCBFA10E1C5067280078F320 /* MyNavigationControllerSeleccion.swift */,
 				DC4AC5241C50A80D006A1995 /* MyNavigationControllerRegistroExitoso.swift */,
+				E8F157BF1C5823F5005D7A09 /* MyNavigationControllerParticipar.swift */,
 			);
 			name = CosasMenu;
 			sourceTree = "<group>";
@@ -414,9 +434,12 @@
 				DCBFA1081C4F3B2E0078F320 /* Descubre más..png in Resources */,
 				DCBFA1091C4F3B2E0078F320 /* Demuestra Que tanto sabes..png in Resources */,
 				DCBFA10D1C5063DB0078F320 /* calendario.png in Resources */,
+				E8F157C21C58361C005D7A09 /* nombreDelPost.png in Resources */,
 				DC4AC5321C516980006A1995 /* mecanica.png in Resources */,
 				DC4AC5781C51E850006A1995 /* comenzar.png in Resources */,
+				E8F157C71C584147005D7A09 /* fondoBePartOf.png in Resources */,
 				DCBFA0EF1C4D7AD60078F320 /* rectanguloRedesSociales.png in Resources */,
+				E8F157C41C583DF9005D7A09 /* bePartOf.png in Resources */,
 				DCBFA0FC1C4DFFA60078F320 /* home.png in Resources */,
 				DCBFA10B1C5063C40078F320 /* preguntaDeHoy.png in Resources */,
 				DCBFA1021C4F0ADF0078F320 /* botton3.png in Resources */,
@@ -461,9 +484,12 @@
 				DC5B99611C3DDBEC00E947B5 /* ViewController4.swift in Sources */,
 				DC5B995D1C3DC18900E947B5 /* MyNavigationController2.swift in Sources */,
 				DC5B994D1C3CE50B00E947B5 /* ENSideMenu.swift in Sources */,
+				E8F157BC1C57E9B9005D7A09 /* ViewInicio.swift in Sources */,
 				DC4AC5251C50A80D006A1995 /* MyNavigationControllerRegistroExitoso.swift in Sources */,
 				DC5B99731C3E3B9E00E947B5 /* MyNavigationController6.swift in Sources */,
 				DC5B99511C3CE6A200E947B5 /* MyNavigationController.swift in Sources */,
+				E8F157BE1C58230B005D7A09 /* ViewControllerParticipar.swift in Sources */,
+				E8F157C01C5823F5005D7A09 /* MyNavigationControllerParticipar.swift in Sources */,
 				DC5B99631C3DDC0300E947B5 /* MyNavigationController3.swift in Sources */,
 				DC5B996D1C3E3ADE00E947B5 /* ViewController8.swift in Sources */,
 				DC5B99651C3DDC1500E947B5 /* MyNavigationController4.swift in Sources */,

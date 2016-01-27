@@ -65,6 +65,15 @@ class IniciarSesionController: UIViewController {
                 }
                 */
                 print("--------------------------")
+                
+                
+                //Código que guarda el nombre de usuario
+                let nombreDefault = NSUserDefaults.standardUserDefaults()
+                nombreDefault.setValue(self.emailValue.text!, forKey: "usuario")
+                nombreDefault.synchronize()
+                
+                
+                //Código que liga a otro View
                 let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
                 let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MyNavigationControllerSeleccion
                 

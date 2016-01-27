@@ -58,7 +58,14 @@ class MyMenuTableViewController: UITableViewController {
         
         //cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
         if(indexPath.row == 0){
-            cell!.textLabel?.text = "USERNAME"
+            let nombreDefault = NSUserDefaults.standardUserDefaults()
+            
+            if (nombreDefault.valueForKey("usuario") != nil){
+                let nombre = nombreDefault.valueForKey("usuario") as! String
+                cell!.textLabel?.text = nombre
+            }
+            
+            
         }
         if(indexPath.row == 1){
             cell!.textLabel?.text = "Blog"
@@ -122,7 +129,7 @@ class MyMenuTableViewController: UITableViewController {
             break
         case 4:
             print("Entra a esta parte 2")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewControllerParticipa")
             break
         case 5:
             print("Entra a esta parte 2")
@@ -136,10 +143,17 @@ class MyMenuTableViewController: UITableViewController {
             print("Entra a esta parte 2")
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5")
             break
+            
+        //Cerrar Sesión
         case 8:
             print("Entra a esta parte 2")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController")
+            let nombreDefault = NSUserDefaults.standardUserDefaults()
+            nombreDefault.setValue(nil, forKey: "usuario")
+            nombreDefault.synchronize()
+            
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewInicio")
             break
+            
         default:
             print("Entra a esta parte default")
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4")

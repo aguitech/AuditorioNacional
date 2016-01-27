@@ -87,6 +87,14 @@ class RegistroController: UIViewController {
                     }
                     */
                     
+                    
+                    //Codigo para guardar Usuario
+                    let nombreDefault = NSUserDefaults.standardUserDefaults()
+                    nombreDefault.setValue(self.emailValue.text!, forKey: "usuario")
+                    nombreDefault.synchronize()
+                    
+                    
+                    //Codigo que envia al menu
                     let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
                     let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MyNavigationControllerSeleccion
                     

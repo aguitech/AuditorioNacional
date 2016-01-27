@@ -9,10 +9,17 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
     
     var color = UIColor(red: 0.234375, green: 0.74609375, blue: 0.6640625, alpha: 1.0)
     
-    @IBOutlet weak var informacion: UITextView!
-    @IBOutlet weak var informacion2: UITextView!
+    //@IBOutlet weak var informacion: UITextView!
+    //@IBOutlet weak var informacion2: UITextView!
     @IBOutlet weak var imagen: UIImageView!
     @IBOutlet weak var imagen2: UIImageView!
+    
+    @IBOutlet weak var titulo: UILabel!
+    
+    @IBOutlet weak var titulo2: UILabel!
+    
+    @IBOutlet weak var informacion: UILabel!
+    @IBOutlet weak var informacion2: UILabel!
     
     
     func load_image(urlString:String)
@@ -139,17 +146,25 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
                             
                             dispatch_async(dispatch_get_main_queue(), {
                                 if index==0{
-                                    let descripcion = objeto["descripcion"] as! String
+                                    let descripcion = objeto["blog"] as! String
                                     self.informacion.text = descripcion
+                                    let titulo = objeto["titulo"] as! String
+                                    self.titulo.text = titulo
+                                    let id_blog = objeto["id_blog"] as! String
                                     let imagen_url = objeto["imagen"] as! String
                                     //self.load_image("http://www.kaleidosblog.com/tutorial/kaleidosblog.png")
                                     //self.load_image("http://enobra.com.mx/images/Imagen2.jpg")
                                     self.load_image("\(imagen_url)")
                                     
+                                    
                                 }
                                 if index==1{
-                                    let descripcion = objeto["descripcion"] as! String
+                                    let descripcion = objeto["blog"] as! String
                                     self.informacion2.text = descripcion
+                                    let titulo = objeto["titulo"] as! String
+                                    self.titulo2.text = titulo
+                                    let id_blog = objeto["id_blog"] as! String
+                                    //self.titulo2.text = titulo
                                     let imagen_url = objeto["imagen"] as! String
                                     self.load_image2("\(imagen_url)")
                                 }
@@ -297,7 +312,7 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
 
     @IBAction func entrada1(sender: AnyObject) {
         let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
-        let nuevoView = nuestroStoryBoard.instantiateViewControllerWithIdentifier("ViewController6") as! MyNavigationControllerSeleccion
+        let nuevoView = nuestroStoryBoard.instantiateViewControllerWithIdentifier("ViewController6") as! MyNavigationController6
         
         dispatch_async(dispatch_get_main_queue(), {
             self.presentViewController(nuevoView, animated:true, completion: nil)
@@ -308,7 +323,7 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
     @IBAction func entrada2(sender: AnyObject) {
         
         let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
-        let nuevoView = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MyNavigationControllerSeleccion
+        let nuevoView = nuestroStoryBoard.instantiateViewControllerWithIdentifier("ViewController6") as! MyNavigationController6
         
         dispatch_async(dispatch_get_main_queue(), {
             self.presentViewController(nuevoView, animated:true, completion: nil)
