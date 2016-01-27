@@ -33,7 +33,7 @@ class ViewController6: UIViewController, ENSideMenuDelegate {
         print("asdfasdfasdfasdfasdfasdfasdfasdfsadfasdfasdfsdfasdf")
         print(id)
         
-        let apiUrl = "http://emocionganar.com/admin/panel/webservice_blog.php"
+        let apiUrl = "http://emocionganar.com/admin/panel/webservice_blog_detalle.php?id=\(id)"
         
         
         
