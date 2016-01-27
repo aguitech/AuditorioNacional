@@ -78,6 +78,7 @@
 		E8F157C21C58361C005D7A09 /* nombreDelPost.png in Resources */ = {isa = PBXBuildFile; fileRef = E8F157C11C58361C005D7A09 /* nombreDelPost.png */; };
 		E8F157C41C583DF9005D7A09 /* bePartOf.png in Resources */ = {isa = PBXBuildFile; fileRef = E8F157C31C583DF9005D7A09 /* bePartOf.png */; };
 		E8F157C71C584147005D7A09 /* fondoBePartOf.png in Resources */ = {isa = PBXBuildFile; fileRef = E8F157C61C584147005D7A09 /* fondoBePartOf.png */; };
+		E8F157C91C588541005D7A09 /* BePartOfComplete2.png in Resources */ = {isa = PBXBuildFile; fileRef = E8F157C81C588541005D7A09 /* BePartOfComplete2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +168,7 @@
 		E8F157C31C583DF9005D7A09 /* bePartOf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bePartOf.png; sourceTree = "<group>"; };
 		E8F157C51C583FA5005D7A09 /* bePartOfComplete */ = {isa = PBXFileReference; lastKnownFileType = file; path = bePartOfComplete; sourceTree = "<group>"; };
 		E8F157C61C584147005D7A09 /* fondoBePartOf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoBePartOf.png; sourceTree = "<group>"; };
+		E8F157C81C588541005D7A09 /* BePartOfComplete2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BePartOfComplete2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 				E8F157C11C58361C005D7A09 /* nombreDelPost.png */,
 				E8F157C31C583DF9005D7A09 /* bePartOf.png */,
 				E8F157C51C583FA5005D7A09 /* bePartOfComplete */,
+				E8F157C81C588541005D7A09 /* BePartOfComplete2.png */,
 				E8F157C61C584147005D7A09 /* fondoBePartOf.png */,
 				DC4AC5381C51698B006A1995 /* trivia */,
 				DCBFA1031C4F0AF00078F320 /* Seleccion */,
@@ -456,6 +459,7 @@
 				DCBFA0F81C4DC0510078F320 /* menu44.png in Resources */,
 				DCBFA0EB1C4D7AC40078F320 /* facebook.png in Resources */,
 				C4C6FE521ADBF8B200EAA7A9 /* LaunchScreen.xib in Resources */,
+				E8F157C91C588541005D7A09 /* BePartOfComplete2.png in Resources */,
 				DCBFA0F11C4D7AE10078F320 /* twitter.png in Resources */,
 				DC4AC52F1C516980006A1995 /* enviarRespuesta.png in Resources */,
 				DCBFA0FA1C4DC26D0078F320 /* menu22.png in Resources */,

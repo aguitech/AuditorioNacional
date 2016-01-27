@@ -97,7 +97,7 @@ class ViewControllerParticipar: UIViewController, UIScrollViewDelegate {
         // Change the indicator
         self.pageControl.currentPage = Int(currentPage);
         // Change the text accordingly
-        if Int(currentPage) == 0{
+        /*if Int(currentPage) == 0{
             //textView.text = "Sweettutos.com is your blog of choice for Mobile tutorials"
             textView.text = ""
             UIView.animateWithDuration(1.0, animations: { () -> Void in
@@ -124,7 +124,7 @@ class ViewControllerParticipar: UIViewController, UIScrollViewDelegate {
             //textView.text = "Keep visiting sweettutos.com for new coming tutorials, and don't forget to subscribe to be notified by email :)"
             textView.text = ""
             
-        }
+        }*/
         // Show the "Let's Start" button in the last slide (with a fade in animation)
         
     }

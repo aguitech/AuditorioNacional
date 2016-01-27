@@ -22,6 +22,11 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
     @IBOutlet weak var informacion2: UILabel!
     
     
+    var id_blog_sup = String()
+    var id_blog_inf = String()
+    var id_a_blog = String()
+    
+    
     func load_image(urlString:String)
     {
         let imgURL: NSURL = NSURL(string: urlString)!
@@ -150,7 +155,13 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
                                     self.informacion.text = descripcion
                                     let titulo = objeto["titulo"] as! String
                                     self.titulo.text = titulo
-                                    let id_blog = objeto["id_blog"] as! String
+                                    
+                                    
+                                   
+                                    self.id_blog_sup = objeto["id_blog"] as! String
+                                    print(self.id_blog_sup)
+                                    
+                                    
                                     let imagen_url = objeto["imagen"] as! String
                                     //self.load_image("http://www.kaleidosblog.com/tutorial/kaleidosblog.png")
                                     //self.load_image("http://enobra.com.mx/images/Imagen2.jpg")
@@ -163,7 +174,15 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
                                     self.informacion2.text = descripcion
                                     let titulo = objeto["titulo"] as! String
                                     self.titulo2.text = titulo
-                                    let id_blog = objeto["id_blog"] as! String
+                                    
+                                    
+                                    dispatch_async(dispatch_get_main_queue(), {
+                                        print("----------------------------------------Bandera")
+                                        self.id_blog_inf = objeto["id_blog"] as! String
+                                        print(self.id_blog_inf)
+                                        print("----------------------------------------Bandera")
+                                    
+                                    })
                                     //self.titulo2.text = titulo
                                     let imagen_url = objeto["imagen"] as! String
                                     self.load_image2("\(imagen_url)")
@@ -311,23 +330,37 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
     }
 
     @IBAction func entrada1(sender: AnyObject) {
-        let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
-        let nuevoView = nuestroStoryBoard.instantiateViewControllerWithIdentifier("ViewController6") as! MyNavigationController6
+        
+        id_a_blog = id_blog_sup
+        print("Al oprimir el boton-----------")
+        print(id_a_blog)
+        
+        
+        /*let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        let nuevoView = nuestroStoryBoard.instantiateViewControllerWithIdentifier("ViewController6") as!MyNavigationController6
         
         dispatch_async(dispatch_get_main_queue(), {
             self.presentViewController(nuevoView, animated:true, completion: nil)
-        })
+        })*/
+        let VC1 = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController6id") as! ViewController6
+        self.navigationController!.pushViewController(VC1, animated: true)
     }
     
   
     @IBAction func entrada2(sender: AnyObject) {
         
-        let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        id_a_blog = id_blog_inf
+        print("Al oprimir el boton-----------")
+        print(id_a_blog)
+        /*let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
         let nuevoView = nuestroStoryBoard.instantiateViewControllerWithIdentifier("ViewController6") as! MyNavigationController6
         
         dispatch_async(dispatch_get_main_queue(), {
             self.presentViewController(nuevoView, animated:true, completion: nil)
-        })
+        })*/
+        
+        let VC1 = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController6id") as! ViewController6
+        self.navigationController!.pushViewController(VC1, animated: true)
     }
     
     
@@ -366,6 +399,14 @@ class ViewControllerMenu: UIViewController, ENSideMenuDelegate {
     
     func sideMenuDidOpen() {
         print("sideMenuDidOpen")
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destViewController: ViewController6 = segue.destinationViewController as! ViewController6
+        print("Dentro del Segue")
+        print(id_a_blog)
+        destViewController.id = id_a_blog
+        
     }
 }
 

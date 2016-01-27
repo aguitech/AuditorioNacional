@@ -60,8 +60,8 @@ class MyMenuTableViewController: UITableViewController {
         if(indexPath.row == 0){
             let nombreDefault = NSUserDefaults.standardUserDefaults()
             
-            if (nombreDefault.valueForKey("usuario") != nil){
-                let nombre = nombreDefault.valueForKey("usuario") as! String
+            if (nombreDefault.valueForKey("nombre") != nil){
+                let nombre = nombreDefault.valueForKey("nombre") as! String
                 cell!.textLabel?.text = nombre
             }
             
@@ -149,6 +149,8 @@ class MyMenuTableViewController: UITableViewController {
             print("Entra a esta parte 2")
             let nombreDefault = NSUserDefaults.standardUserDefaults()
             nombreDefault.setValue(nil, forKey: "usuario")
+            nombreDefault.setValue(nil, forKey: "id")
+            nombreDefault.setValue(nil, forKey: "nombre")
             nombreDefault.synchronize()
             
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewInicio")

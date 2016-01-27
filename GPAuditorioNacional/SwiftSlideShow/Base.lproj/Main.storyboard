@@ -396,7 +396,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondoSinMenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkc-eK-4wz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondoBePartOf.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkc-eK-4wz">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rectanguloRedesSociales.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Kk-C5-6WI">
@@ -585,9 +585,6 @@
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="svc-2v-8Rh" userLabel="divSuperior">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="241"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSp-mz-TQJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
-                                            </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="preguntaDeHoy.png" translatesAutoresizingMaskIntoConstraints="NO" id="nJo-eN-c6M">
                                                 <rect key="frame" x="175" y="0.0" width="160" height="241"/>
                                             </imageView>
@@ -616,8 +613,12 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="entrada1:" destination="0U9-K9-uxf" eventType="touchUpInside" id="ObO-GW-yYi"/>
+                                                    <segue destination="tTT-ot-FVg" kind="show" id="4NO-c4-0Ee"/>
                                                 </connections>
                                             </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSp-mz-TQJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="pSp-mz-TQJ" firstAttribute="top" secondItem="svc-2v-8Rh" secondAttribute="top" id="7Nu-JU-QML"/>
@@ -680,6 +681,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="entrada2:" destination="0U9-K9-uxf" eventType="touchUpInside" id="YF0-1P-kQb"/>
+                                                    <segue destination="tTT-ot-FVg" kind="show" id="KkQ-3y-YRs"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -776,7 +778,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="60z-y3-7TG">
                                 <rect key="frame" x="-5" y="64" width="380" height="603"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bePartOfComplete" translatesAutoresizingMaskIntoConstraints="NO" id="25K-4c-igZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BePartOfComplete2.png" translatesAutoresizingMaskIntoConstraints="NO" id="25K-4c-igZ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="Ksx-BY-O1z"/>
@@ -954,7 +956,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bePartOfComplete" translatesAutoresizingMaskIntoConstraints="NO" id="fXC-HV-ni7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BePartOfComplete2.png" translatesAutoresizingMaskIntoConstraints="NO" id="fXC-HV-ni7">
                                 <rect key="frame" x="0.0" y="64" width="375" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="gK9-bS-PFs"/>
@@ -1022,12 +1024,12 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L02-cs-CUF">
                                 <rect key="frame" x="20" y="201" width="335" height="458"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bePartOfComplete" translatesAutoresizingMaskIntoConstraints="NO" id="vtd-Nw-Sk3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BePartOfComplete2.png" translatesAutoresizingMaskIntoConstraints="NO" id="vtd-Nw-Sk3">
                                 <rect key="frame" x="0.0" y="64" width="375" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="Dct-HX-ct7"/>
@@ -1079,7 +1081,7 @@
         <!--Blog-->
         <scene sceneID="6W8-u6-aJX">
             <objects>
-                <viewController id="tTT-ot-FVg" customClass="ViewController6" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController6id" id="tTT-ot-FVg" customClass="ViewController6" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NRg-Dg-ihE"/>
                         <viewControllerLayoutGuide type="bottom" id="Zeg-7l-sky"/>
@@ -1091,7 +1093,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="CD9-nD-hok">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bePartOfComplete" translatesAutoresizingMaskIntoConstraints="NO" id="9dB-Gf-V8q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BePartOfComplete2.png" translatesAutoresizingMaskIntoConstraints="NO" id="9dB-Gf-V8q">
                                 <rect key="frame" x="0.0" y="64" width="375" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="Lkp-0V-98e"/>
@@ -1109,16 +1111,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPR-vw-hDU">
-                                <rect key="frame" x="20" y="355" width="335" height="292"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="292" id="N5c-iP-5JM"/>
-                                </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Descubre más..png" translatesAutoresizingMaskIntoConstraints="NO" id="y63-ca-BKC">
                                 <rect key="frame" x="20" y="196" width="335" height="151"/>
                                 <constraints>
@@ -1131,6 +1123,16 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPR-vw-hDU">
+                                <rect key="frame" x="20" y="355" width="335" height="292"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="292" id="N5c-iP-5JM"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1166,7 +1168,13 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="home.png" id="paG-bZ-xy5"/>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imagen" destination="y63-ca-BKC" id="5HQ-Vd-43w"/>
+                        <outlet property="informacion" destination="IPR-vw-hDU" id="RdW-qD-Vh0"/>
+                        <outlet property="titulo" destination="TXY-aZ-Bp5" id="P6D-bq-wG2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmw-7N-eZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1307,7 +1315,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g2G-Bn-8wc">
                                 <rect key="frame" x="20" y="143" width="160" height="160"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bePartOfComplete" translatesAutoresizingMaskIntoConstraints="NO" id="KUa-nq-xX1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BePartOfComplete2.png" translatesAutoresizingMaskIntoConstraints="NO" id="KUa-nq-xX1">
                                 <rect key="frame" x="0.0" y="64" width="375" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="YmA-bs-hE9"/>
@@ -1687,7 +1695,7 @@
             </objects>
             <point key="canvasLocation" x="2117" y="1247"/>
         </scene>
-        <!--View Controller Participar-->
+        <!--Title-->
         <scene sceneID="QGg-cg-HFg">
             <objects>
                 <viewController id="8s9-ZM-eXb" customClass="ViewControllerParticipar" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
@@ -1764,7 +1772,18 @@
                             <constraint firstItem="Upd-9k-UMU" firstAttribute="bottom" secondItem="I4D-UR-hq7" secondAttribute="top" id="y2Q-hU-mZC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rcG-L9-5f9"/>
+                    <navigationItem key="navigationItem" title="Title" id="7ew-BU-Jmv">
+                        <barButtonItem key="leftBarButtonItem" image="menu22.png" id="d97-x7-7im">
+                            <connections>
+                                <action selector="toggleSideMenu:" destination="8s9-ZM-eXb" id="c74-0U-npZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="home.png" id="B5J-gd-Fob">
+                            <connections>
+                                <segue destination="m0S-wi-CYc" kind="show" id="hWb-ea-H53"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="btnComenzar" destination="VTd-Fg-FLK" id="RSt-Cv-bzv"/>
@@ -1801,19 +1820,18 @@
     </scenes>
     <resources>
         <image name="AvisoDePrivacidad.png" width="1242" height="199"/>
+        <image name="BePartOfComplete2.png" width="1241" height="174"/>
         <image name="Demuestra Que tanto sabes..png" width="963" height="438"/>
         <image name="Descubre más..png" width="963" height="438"/>
         <image name="Icon" width="182" height="204"/>
         <image name="Proximos Eventos..png" width="963" height="438"/>
         <image name="Text Icon" width="223" height="54"/>
         <image name="background.png" width="821" height="1158"/>
-        <image name="bePartOfComplete" width="1241" height="174"/>
         <image name="calendario.png" width="507" height="699"/>
         <image name="comenzar.png" width="653" height="172"/>
         <image name="enviarRespuesta.png" width="447" height="186"/>
         <image name="facebook.png" width="395" height="198"/>
         <image name="fondoBePartOf.png" width="1242" height="2208"/>
-        <image name="fondoSinMenu.png" width="1242" height="2208"/>
         <image name="ganaExperiencia.png" width="1242" height="202"/>
         <image name="home.png" width="22" height="22"/>
         <image name="imagenPregunta.png" width="545" height="363"/>
@@ -1832,8 +1850,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LtK-ws-bc8"/>
-        <segue reference="xV4-jr-hyF"/>
+        <segue reference="9u3-dl-9vp"/>
         <segue reference="ird-kz-Fot"/>
+        <segue reference="KkQ-3y-YRs"/>
         <segue reference="teF-gq-oPd"/>
     </inferredMetricsTieBreakers>
 </document>
