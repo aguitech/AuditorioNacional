@@ -55,10 +55,12 @@ class IniciarSesionController: UIViewController {
                 //print(json["result"]![1]!["id"]!)
                 //print(json["result"]![2]["nombre"]!)
                 //print(json["result"]![2]["nombre"])
-                print(json["id"]!)
-                print(json["nombre"]!)
+                
                 
                 if(json["success"]! as! NSObject == 1){
+                    print(json["id"]!)
+                    print(json["nombre"]!)
+                    
                     //Código que guarda el nombre de usuario
                     let nombreDefault = NSUserDefaults.standardUserDefaults()
                     nombreDefault.setValue(self.emailValue.text!, forKey: "usuario")
