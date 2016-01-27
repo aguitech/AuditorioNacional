@@ -51,12 +51,12 @@ class IniciarSesionController: UIViewController {
                 print(json["success"]!)
                 //print(json["result"])
                 //print(json["result"]!)
-                print(json["result"]![0])
-                print(json["result"]![1]!["id"]!)
-                print(json["result"]![2]["nombre"]!)
-                print(json["result"]![2]["nombre"])
-                print(json["result"]![2]!["nombre"])
-                print(json["result"]![2]!["nombre"]!)
+                //print(json["result"]![0])
+                //print(json["result"]![1]!["id"]!)
+                //print(json["result"]![2]["nombre"]!)
+                //print(json["result"]![2]["nombre"])
+                print(json["id"]!)
+                print(json["nombre"]!)
                 
                 if(json["success"]! as! NSObject == 1){
                     //Código que guarda el nombre de usuario
