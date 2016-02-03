@@ -24,7 +24,7 @@ class ViewInicio : UIViewController{
             })
         }else if (nombreDefault.valueForKey("usuario") != nil){
             let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
-            let pantallaMenu = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MyNavigationControllerSeleccion
+            let pantallaMenu = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MenuMyNavigationController
             
             dispatch_async(dispatch_get_main_queue(), {
                 self.presentViewController(pantallaMenu, animated:true, completion: nil)

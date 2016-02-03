@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="G1o-MG-MRh">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="G1o-MG-MRh">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logosLaunch.png" translatesAutoresizingMaskIntoConstraints="NO" id="6fS-04-AIu">
@@ -37,7 +37,7 @@
         </view>
     </objects>
     <resources>
-        <image name="background.png" width="821" height="1158"/>
+        <image name="fondo.png" width="821" height="1158"/>
         <image name="logosLaunch.png" width="820" height="150"/>
     </resources>
 </document>

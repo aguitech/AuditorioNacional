@@ -71,7 +71,7 @@ class IniciarSesionController: UIViewController {
                     
                     //Código que liga a otro View
                     let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
-                    let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MyNavigationControllerSeleccion
+                    let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as!   MenuMyNavigationController
                     
                     dispatch_async(dispatch_get_main_queue(), {
                         self.presentViewController(registroExitosoPantalla, animated:true, completion: nil)

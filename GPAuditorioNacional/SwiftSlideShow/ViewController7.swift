@@ -18,6 +18,7 @@ class ViewController7: UIViewController, ENSideMenuDelegate {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.tintColor = color
+        
         self.sideMenuController()?.sideMenu?.delegate = self
     }
     
