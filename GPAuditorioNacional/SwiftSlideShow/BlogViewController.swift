@@ -337,7 +337,7 @@ class BlogViewController: UIViewController, ENSideMenuDelegate {
             */
         })
         task.resume()
-    }
+    }//Fin del método ViewDidLoad
 
     @IBAction func entrada1(sender: AnyObject) {
         

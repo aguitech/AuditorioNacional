@@ -12,6 +12,8 @@ import UIKit
 
 class EventoViewController: UIViewController, ENSideMenuDelegate {
     
+    var numero_descarga : Int?
+    
     var color = UIColor(red: 0.234375, green: 0.74609375, blue: 0.6640625, alpha: 1.0)
     var color_fondo_navbar = UIColor(red: (10/255), green: (20/255), blue: (38/255), alpha: 1.0)
     
@@ -22,13 +24,15 @@ class EventoViewController: UIViewController, ENSideMenuDelegate {
     //@IBOutlet weak var informacion2: UITextView!
     
     //@IBOutlet weak var imagen: UIImageView!
-    @IBOutlet weak var informacion: UITextView!
-    @IBOutlet weak var informacion2: UITextView!
+    @IBOutlet weak var descripcion: UITextView!
     @IBOutlet weak var imagen: UIImageView!
-    @IBOutlet weak var imagen2: UIImageView!
+    @IBOutlet weak var fecha: UILabel!
+    
+    
     
     func load_image(urlString:String)
     {
+        
         let imgURL: NSURL = NSURL(string: urlString)!
         let request: NSURLRequest = NSURLRequest(URL: imgURL)
         
@@ -63,7 +67,7 @@ class EventoViewController: UIViewController, ENSideMenuDelegate {
             {
                 func display_image()
                 {
-                    self.imagen2.image = UIImage(data: data!)
+                    //self.imagen2.image = UIImage(data: data!)
                 }
                 
                 dispatch_async(dispatch_get_main_queue(), display_image)
@@ -97,7 +101,7 @@ class EventoViewController: UIViewController, ENSideMenuDelegate {
         //let appId = "455f3e37d059268550863c04efcc9805"
         //let apiUrl = "http://api.openweathermap.org/data/2.5/forecast/weather?q=\(ciudad!)&APPID=\(appId)" + "&es&lang=sp"
         
-        self.informacion.text = "Hola"
+        self.descripcion.text = "Hola"
         
         let apiUrl = "http://emocionganar.com/admin/panel/webservice_evento.php"
         
@@ -160,7 +164,7 @@ class EventoViewController: UIViewController, ENSideMenuDelegate {
                             dispatch_async(dispatch_get_main_queue(), {
                                 if index==0{
                                     let descripcion = objeto["descripcion"] as! String
-                                    self.informacion.text = descripcion
+                                    self.descripcion.text = descripcion
                                     let imagen_url = objeto["imagen"] as! String
                                     //self.load_image("http://www.kaleidosblog.com/tutorial/kaleidosblog.png")
                                     //self.load_image("http://enobra.com.mx/images/Imagen2.jpg")
@@ -169,7 +173,7 @@ class EventoViewController: UIViewController, ENSideMenuDelegate {
                                 }
                                 if index==1{
                                     let descripcion = objeto["descripcion"] as! String
-                                    self.informacion2.text = descripcion
+                                    //self.informacion2.text = descripcion
                                     let imagen_url = objeto["imagen"] as! String
                                     self.load_image2("\(imagen_url)")
                                 }

@@ -66,6 +66,8 @@
 		DCBFA10D1C5063DB0078F320 /* calendario.png in Resources */ = {isa = PBXBuildFile; fileRef = DCBFA10C1C5063DB0078F320 /* calendario.png */; };
 		DCBFA10F1C5067280078F320 /* MenuMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFA10E1C5067280078F320 /* MenuMyNavigationController.swift */; };
 		DCBFA1111C50682B0078F320 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFA1101C50682B0078F320 /* MenuViewController.swift */; };
+		E8F125D11C63195A00DD64FC /* TableEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F125D01C63195A00DD64FC /* TableEventoViewController.swift */; };
+		E8F125D41C631BD600DD64FC /* TableEventoMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F125D31C631BD600DD64FC /* TableEventoMyNavigationController.swift */; };
 		E8F157BC1C57E9B9005D7A09 /* ViewInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */; };
 		E8F157BE1C58230B005D7A09 /* ParticiparViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F157BD1C58230B005D7A09 /* ParticiparViewController.swift */; };
 		E8F157C01C5823F5005D7A09 /* ParticiparMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F157BF1C5823F5005D7A09 /* ParticiparMyNavigationController.swift */; };
@@ -148,6 +150,8 @@
 		DCBFA10C1C5063DB0078F320 /* calendario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendario.png; sourceTree = "<group>"; };
 		DCBFA10E1C5067280078F320 /* MenuMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuMyNavigationController.swift; sourceTree = "<group>"; };
 		DCBFA1101C50682B0078F320 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E8F125D01C63195A00DD64FC /* TableEventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableEventoViewController.swift; sourceTree = "<group>"; };
+		E8F125D31C631BD600DD64FC /* TableEventoMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableEventoMyNavigationController.swift; sourceTree = "<group>"; };
 		E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInicio.swift; sourceTree = "<group>"; };
 		E8F157BD1C58230B005D7A09 /* ParticiparViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticiparViewController.swift; sourceTree = "<group>"; };
 		E8F157BF1C5823F5005D7A09 /* ParticiparMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticiparMyNavigationController.swift; sourceTree = "<group>"; };
@@ -222,6 +226,8 @@
 				C4C6FE5B1ADBF8B200EAA7A9 /* Supporting Files */,
 				E86DFE361C5980CE00F89E41 /* participar */,
 				DC5B994B1C3CE4C300E947B5 /* CosasMenu */,
+				E8F125D21C63196400DD64FC /* TableEvento */,
+				C4C6FE451ADBF8B200EAA7A9 /* Supporting Files */,
 			);
 			path = SwiftSlideShow;
 			sourceTree = "<group>";
@@ -272,7 +278,6 @@
 		DC5B994B1C3CE4C300E947B5 /* CosasMenu */ = {
 			isa = PBXGroup;
 			children = (
-				C4C6FE451ADBF8B200EAA7A9 /* Supporting Files */,
 				DC5B994C1C3CE50B00E947B5 /* ENSideMenu.swift */,
 				DC5B994E1C3CE5C700E947B5 /* ENSideMenuNavigationController.swift */,
 				DC5B99521C3CE71B00E947B5 /* MyMenuTableViewController.swift */,
@@ -376,6 +381,15 @@
 				DC4AC5201C5098FC006A1995 /* terminos_condiciones.png */,
 			);
 			name = terminos_condiciones;
+			sourceTree = "<group>";
+		};
+		E8F125D21C63196400DD64FC /* TableEvento */ = {
+			isa = PBXGroup;
+			children = (
+				E8F125D01C63195A00DD64FC /* TableEventoViewController.swift */,
+				E8F125D31C631BD600DD64FC /* TableEventoMyNavigationController.swift */,
+			);
+			name = TableEvento;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,6 +527,7 @@
 				DC5B995F1C3DDBD400E947B5 /* TriviaViewController.swift in Sources */,
 				DC5B99671C3E3AB600E947B5 /* AvisoViewController.swift in Sources */,
 				DC5B99611C3DDBEC00E947B5 /* TerminosViewController.swift in Sources */,
+				E8F125D11C63195A00DD64FC /* TableEventoViewController.swift in Sources */,
 				DC5B995D1C3DC18900E947B5 /* EventoMyNavigationController.swift in Sources */,
 				DC5B994D1C3CE50B00E947B5 /* ENSideMenu.swift in Sources */,
 				E8F157BC1C57E9B9005D7A09 /* ViewInicio.swift in Sources */,
@@ -528,6 +543,7 @@
 				DC5B99791C3E3C1500E947B5 /* UsernameMyNavigationController.swift in Sources */,
 				DC5856E41C3B425D00DFDC5F /* RegistroController.swift in Sources */,
 				DC5B99711C3E3B8200E947B5 /* AvisoMyNavigationController.swift in Sources */,
+				E8F125D41C631BD600DD64FC /* TableEventoMyNavigationController.swift in Sources */,
 				DC5B99591C3D0D4700E947B5 /* EventoViewController.swift in Sources */,
 				DC5856EA1C3CFC0100DFDC5F /* IniciarSesionController.swift in Sources */,
 				DC5B99531C3CE71B00E947B5 /* MyMenuTableViewController.swift in Sources */,

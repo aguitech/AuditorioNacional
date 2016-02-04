@@ -121,7 +121,7 @@ class MyMenuTableViewController: UITableViewController {
             break
         case 2:
             print("Entra a esta parte 1")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("tableEvento")
             break
         case 3:
             print("Entra a esta parte 2")

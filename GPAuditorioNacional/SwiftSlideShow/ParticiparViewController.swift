@@ -20,20 +20,28 @@ class ParticiparViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var btnComenzar: UIButton!
     
     var color = UIColor(red: 0.234375, green: 0.74609375, blue: 0.6640625, alpha: 1.0)
-    
+    var color_fondo_navbar = UIColor(red: (10/255), green: (20/255), blue: (38/255), alpha: 1.0)
     //    @IBOutlet var startButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-                
+        
+        //Cambio de color
         self.navigationController?.navigationBar.tintColor = color
+        self.navigationController?.navigationBar.barTintColor = color_fondo_navbar
+        
+        //Agregar imagen como titulo
+        let logo = UIImage(named: "titulo_be_part_of")
+        let imageView = UIImageView(image: logo)
+        self.navigationItem.titleView = imageView
+        
         
             
         
         //1
-        self.scrollView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height*0.8)
+        self.scrollView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.maxY)
         let scrollViewWidth:CGFloat = self.scrollView.frame.width
-        let scrollViewHeight:CGFloat = self.scrollView.frame.height
+        let scrollViewHeight:CGFloat = self.scrollView.frame.maxY
         //2
         textView.textAlignment = .Center
         textView.text = ""
