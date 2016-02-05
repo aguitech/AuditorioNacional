@@ -130,6 +130,48 @@
             </objects>
             <point key="canvasLocation" x="835.5" y="427.5"/>
         </scene>
+        <!--Nuevo Inicio View Controller-->
+        <scene sceneID="BfO-fP-sz4">
+            <objects>
+                <viewController storyboardIdentifier="nuevo_inicio" id="54q-Nq-MTG" customClass="NuevoInicioViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ncG-ID-k84"/>
+                        <viewControllerLayoutGuide type="bottom" id="gGw-Fu-MO1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SsK-1x-aVB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nuevo_inicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="tPz-u7-EkE" customClass="Nue">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VQ-to-tEK">
+                                <rect key="frame" x="334" y="535" width="193" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="psB-cg-bqS"/>
+                                    <constraint firstAttribute="height" constant="30" id="xys-z4-rfL"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="comenzar.png"/>
+                                <connections>
+                                    <action selector="iniciarRegistro2:" destination="54q-Nq-MTG" eventType="touchUpInside" id="xk7-g2-1J4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gGw-Fu-MO1" firstAttribute="top" secondItem="6VQ-to-tEK" secondAttribute="bottom" constant="35" id="HDe-FT-mrb"/>
+                            <constraint firstItem="tPz-u7-EkE" firstAttribute="leading" secondItem="SsK-1x-aVB" secondAttribute="leading" id="INK-z9-G09"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6VQ-to-tEK" secondAttribute="trailing" constant="53" id="Kxz-Hk-fFG"/>
+                            <constraint firstItem="tPz-u7-EkE" firstAttribute="top" secondItem="SsK-1x-aVB" secondAttribute="top" id="Q4D-5I-y8R"/>
+                            <constraint firstItem="gGw-Fu-MO1" firstAttribute="top" secondItem="tPz-u7-EkE" secondAttribute="bottom" id="mH5-ek-I13"/>
+                            <constraint firstAttribute="trailing" secondItem="tPz-u7-EkE" secondAttribute="trailing" id="v1e-Nw-w9I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwK-mS-CiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="-249"/>
+        </scene>
         <!--Registro Controller-->
         <scene sceneID="aEW-im-Bqo">
             <objects>
@@ -652,10 +694,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Pj-tj-SDI">
-                                <rect key="frame" x="-4" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2g-UO-rDQ" userLabel="divParteTrasera">
-                                <rect key="frame" x="16" y="144" width="335" height="503"/>
+                                <rect key="frame" x="20" y="100" width="335" height="503"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="svc-2v-8Rh" userLabel="divSuperior">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="241"/>
@@ -876,7 +918,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yb5-KL-bQQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YCM-c7-V7l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="60z-y3-7TG">
@@ -1074,29 +1116,209 @@
                                     <rect key="frame" x="0.0" y="64" width="667" height="311"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="terminos_condiciones.png" translatesAutoresizingMaskIntoConstraints="NO" id="668-wY-4ld">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terminos_condiciones.png" translatesAutoresizingMaskIntoConstraints="NO" id="668-wY-4ld">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Eui-JD-Ay1">
-                                <rect key="frame" x="20" y="75" width="335" height="441"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="5IS-PI-Fny"/>
-                                    <constraint firstAttribute="height" constant="441" id="CdT-fM-usa"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <rect key="frame" x="20" y="75" width="335" height="10000"/>
+                                <string key="text">TÉRMINOS Y CONDICIONES
+ 
+IMPULSORA DE VACACIONES FIESTA S.A. DE C.V. GOP0112128B4 (que en lo sucesivo será denominado Grupo Posadas) con domicilio en Prolongación Paseo de Reforma #1015 Piso 9, Col. Santa Fe, Del. Álvaro Obregón, C.P. 01210, México D.F.PUBLICIDAD Y SOLUCIONES GREEN S.A. de C.V. PSG061123PQ9 (denominado P.GREEN, para los efectos de LA PROMOCIÓN) con domicilio en Santa Brígida 19, Jardines de Santa Mónica, C.P. 54055, Tlalnepantla de Baz Estado de México, ponen a disposición del público en general los siguientes términos y condiciones de la promoción “CONCIERTOS ÚNICOS, EXPERIENCIAS INOLVIDABLES” (que en lo sucesivo será denominada LA PROMOCIÓN).
+ 
+I. ACEPTACIÓN DE LOS TÉRMINOS Y CONDICIONES.
+Los presentes términos y condiciones rigen LA PROMOCIÓN. La participación del público consumidor en LA PROMOCIÓN, implica el conocimiento y aceptación de los presentes términos y condiciones.
+ 
+Al participar en LA PROMOCIÓN, el consumidor acepta quedar obligado por las reglas y decisiones del organizador, las cuales tendrán carácter definitivo y vinculante respecto de todos los asuntos relacionados con LA PROMOCIÓN. Cualquier violación a los presentes términos y condiciones, a las reglas de la PROMOCIÓN, así como a los procedimientos o sistemas establecidos, implicará la inmediata descalificación y exclusión del participante y/o la revocación de cualquiera de los incentivos.
+ 
+II. NATURALEZA DE LA PROMOCIÓN.
+LA PROMOCIÓN se lleva a cabo en términos del artículo 46 de la Ley Federal de Protección al Consumidor. La PROMOCION cuenta con el Aviso de promoción PCF.C.A. 3/005710/2015
+ 
+III. RESPONSABLE DE LA PROMOCIÓN.
+El organizador responsable y encargado de la promoción es PUBLICIDAD Y SOLUCIONES GREEN S.A DE C.V., PSG061123PQ9 (denominado PGREEN, para los efectos de LA PROMOCIÓN) con domicilio en Santa Brígida #19, Jardines de Santa Mónica, C.P. 54050, Tlalnepantla de Baz, Estado de México.
+ 
+IV. DENOMINACIÓN Y VIGENCIA DE LA PROMOCIÓN.
+La Denominación de la PROMOCIÓN es “ARTICULOS PROMOCIONALES GRATUITOS”. La PROMOCIÓN tendrá una vigencia del 29 de enero de 2016, al 29 de julio de 2016,  o hasta agotar existencias.
+ 
+ 
+V. PERSONAS PARTICIPANTES.
+En LA PROMOCIÓN únicamente podrán participar sólo personas físicas mayores de edad que tengan nacionalidad mexicana (o con FM2 vigente), residan en el territorio nacional y asistan a alguno de los eventos participantes en Auditorio Nacional.
+ 
+Quedan fuera de la promoción los accionistas, familiares de los accionistas, personal y/o socios de OPERADORA DE CENTRO DE ESPECTACULOS SA de CV, IMPULSORA DE VACACIONES FIESTA S.A. DE C.V. y PGREEN, así como cualquier otra persona que haya intervenido en la organización de la promoción.
+De igual forma, los empleados y/o socios de GRUPO POSADAS; OPERADORA DE CENTRO DE ESPECTACULOS SA de CV; y PGREEN, y los miembros de sus familias no son elegibles para ser designados ganadores del concurso, en la inteligencia de que por “familia” se entenderá únicamente al cónyuge, a los padres, los hermanos y a los hijos.
+ 
+VI. PRODUCTOS PARTICIPANTES.
+Artículos promocionales gratuitos de Fiesta Americana.
+ 
+VII. ESTABLECIMIENTOS PARTICIPANTES.
+Auditorio Nacional ubicado en Av. Paseo de la Reforma 50, Polanco, V  sección. Miguel Hidalgo, 11580 Ciudad de México, D.F.
+ 
+VIII. MECÁNICA DE LA PROMOCIÓN.
+ 
+A)    Off line:
+Cada asistente al Auditorio Nacional mayor de 18 años presentándose en el stand Fiesta Americana podrá participar en el concurso “Conciertos únicos, experiencias inolvidables”.
+ 
+Registro: Al interior del Auditorio Nacional,  podrán participar por una estancia en Hotel  Fiesta Americana por 4 días y  3 noches para 2 adultos y hasta dos menores de 12 años.
+El participante se registrará en el stand de Fiesta Americana Vacation Club para obtener un código alfanumérico que deberá registrar en la página www.participagana.com/auditorionacional
+ 
+Los datos que deberá registrar son:
+
+NOMBRE COMPLETO,
+TELEFONO DE CASA Y/O TELEFONO CELULAR Y/O TELEFONO DE OFICINA,
+MAIL,
+EDAD,
+C.P.,
+FIRMA AUTÓGRAFA y
+ACEPTAR DE CONFOMIDAD LOS TERMINOS SEÑALADOS EN EL AVISO DE PRIVACIDAD.  
+
+ 
+ 
+Participación: a partir de las 00:01 am horas del día siguiente al evento, y hasta las 12:00 pm del mismo día, los participantes podrán ingresar a www.participagana.com/auditorionacional para confirmar su registro y  obtener un Certificado 2x1 en noches en Hoteles Fiesta Americana Vacation Club. Adicionalmente podrán concursar por una estancia en Hotel Fiesta Americana con destino de playa o ciudad, bajo la siguiente dinámica: el registro número 100 que además responda correctamente a una pregunta de conocimiento sobre Fiesta Americana, será el ganador.
+ 
+Cada código ingresado es una oportunidad para concursar. Limitado a una estancia por por día, por evento.
+ 
+El ganador será publicado en las páginas de Facebook, dentro de los siguientes 5 días hábiles después del término del periodo diario por evento de participación.
+www.facebook.com/yaeresganador
+www.facebook.com/FiestamericanaVacationClub
+ 
+ 
+B) “Conciertos únicos, experiencias inolvidables” a través de dinámica On Line- Instant Win iPad,  Cada asistente al Auditorio Nacional mayor de 18 años podrá acercarse a alguna de las edecanes de Fiesta Americana para participar en la dinámica del día.
+Registro:
+El participante mayor de edad ingresa sus datos con el personal identificado de Fiesta Americana Vacation Club para poder elegir alguno de los incentivos.
+ 
+Los datos que deberá ingresar son:
+
+ 
+NOMBRE COMPLETO,
+TELEFONO 1 (CELULAR)
+TELÉFONO 2
+MAIL,
+EDAD,
+C.P.,
+FIRMA AUTÓGRAFA y
+ACEPTAR DE CONFOMIDAD LOS TERMINOS SEÑALADOS EN EL AVISO DE PRIVACIDAD
+ 
+
+ 
+Participación:
+El participante elegirá el incentivo por el que participará:
+·         Certificado 2x1
+·         Certificado de 40% de descuento
+·         Entre otros artículos promocionales Fiesta Americana
+ 
+Al confirmarlo, deberá contestar una pregunta relacionada con el evento al que asiste o al artista que se presentará.
+De las 4 (cuatro) respuestas posibles, deberá elegir la respuesta correcta.
+En caso de que conteste la pegunta correctamente, a uno de los teléfonos que registró le será enviado un SMS con un código de descarga para que ingrese a www.participagana.com/auditorionacional para obtener su incentivo elegido.
+ 
+Sí el participante contesta incorrectamente termina su participación. Limitado a una participación por registro.
+ 
+ 
+RESTRICCIONES PARA LA ENTREGA DE CERTIFICADOS 2x1 EN HOTELES FIESTA AMERICANA
+Dentro de los 20 días hábiles posteriores los participantes podrán ingresar a la página www.participagana.com/auditorionacional y descargar su incentivo.
+ 
+El participante  que seleccione este incentivo, se hace acreedor a un Certificado2x1, que se refiere a una segunda noche gratis en la compra mínima de una en Hoteles participantes de la Cadena Fiesta Americana. El incentivo no podrá ser canjeado por dinero en efectivo y no será de ninguna manera extendido.
+ 
+El incentivo no incluye: Transportación aérea o terrestre bebidas, alimentos, propinas, cargos hechos al hotel, espectáculos ni atracciones, no incluye seguro de viajero a favor del ganador y sus acompañantes, por lo que todos ellos aceptan viajar por su propia responsabilidad.
+ 
+Todo lo no previsto en este apartado será considerado como excluido.
+ 
+ 
+RESTRICCIONES PARA LA ENTREGA DE CERTIFICADOS 40% DE DESCUENTO PARA ESTANCIAS EN HOTELES FIESTA AMERICAN.
+Dentro de los 20 días hábiles posteriores los participantes podrán ingresar a la página www.participagana.com/auditorionacional y descargar su incentivo.
+ 
+El participante  que seleccione este incentivo, se hace acreedor a un Certificado válido por descuento del 40%  para su próxima estancia en Hoteles participantes Fiesta Americana, con vigencia de 6 meses a partir de la fecha de la promoción, y no son acumulables. Para hacer valido su descuento, llamar al 01800 504500 para toda la República, o al 59550306 para el Distrito Federal.
+ 
+ 
+Sujeto a disponibilidad y previa reservación. El descuento aplica sobre la tarifa pública disponible. La tarifa al momento de reservar ya tiene el descuento aplicado. No aplica en conjunto con otras promociones y es solamente para nuevas reservaciones. No aplica para grupos. Tarifas sujetas a disponibilidad y cambios sin previo aviso.
+ 
+El incentivo no podrá ser canjeado por dinero en efectivo y no será de ninguna manera extendido. El premio  no es  transferible.
+ 
+Hoteles  Fiesta Americana participantes: Villas Cancún, Condesa Cancún All Inclusive, Veracruz, Acapulco, Puerto Vallarta All Inclusive, Cozumel All Inclusive, Reforma, Querétaro, participantes*Hoteles Plan Europeo. Transportación aérea, alimentos, bebidas y propinas no incluidas. El paquete contempla hospedaje por 4 días y 3 noches para 2 adultos y hasta 2 niños menores de 12 años compartiendo habitación estándar con sus padres y transportación aeropuerto-hotel (excepto Acapulco y Veracruz). **Hoteles Todo Incluido. Transportación aérea y propinas no incluidas.
+En Live Aqua Cancún All Inclusive, Grand Fiesta Americana Los Cabos All Inclusive Golf &amp; Spa, Fiesta Americana Condesa Cancún All Inclusive, Fiesta Americana Cozumel All Inclusive y Fiesta Americana Puerto Vallarta All Inclusive; el paquete incluye alimentos tipo buffet y a la carta en nuestra variedad de restaurantes y barra libre. En Live Aqua Cancún All Inclusive y en The Explorean Kohunlich by Fiesta Americana la ocupación máxima es para 2 adultos. En The Explorean Kohunlich by Fiesta Americana el paquete incluye desayuno, comida y cena, barra libre internacional de 10 am a 10 pm, una actividad de aventura diaria, traslado desde y hacia el aeropuerto de Chetumal. Este hotel recomienda viajar con niños mayores de 10 años. Cualquier actividad adicional a la asignada diariamente por el hotel tiene un costo extra. Este paquete no es reembolsable y podrá ser aprovechado solamente una vez por familia. Promoción personal e intransferible. Tarifas por paquete sujetas a disponibilidad y cambios por temporada. Todos los impuestos incluidos. Esta tarifa no aplica para grupos (3, o más parejas viajando juntas). Detalles de participación: este programa está diseñado para parejas o familias mayores de 30 años y menores de 65 con un ingreso mancomunado mínimo mensual de $40,000. Es necesario contar con una tarjeta de crédito que garantice la reservación. Durante su estancia le será ofrecido un desayuno presentación patrocinado por Fiesta Americana Vacation Club.
+ 
+Cualquier cambio de fecha en su reservación generará un cargo de $380; si el cambio o cancelación se produce 4 días previos a su llegada, el cargo será de una noche de hospedaje. Esta oferta no es válida para Socios de Fiesta Americana Vacation Club. Aplica cambio de tarifa para reservaciones en Semana Santa, Pascua, verano, Navidad y Año Nuevo.
+ 
+Tarjetas participantes en esta promoción: American Express, Banamex, Bancomer, Santander, Scotiabank, HSBC. CAT 0%. Se invalida cualquier ofrecimiento verbal o escrito que no esté especificado en las condiciones de uso del presente documento.
+ 
+Todo lo no previsto en este apartado será considerado como excluido.
+ 
+RESTRICCIONES PARA LA ENTREGA DE ESTANCIAS EN HOTELES FIESTA AMERICANA PARTICIPANTES.
+Una vez publicados los ganadores, dentro de los 20 días hábiles posteriores el ganador deberá enviar al correo electrónico: promociones@publicidadgreen.com.mx  la siguiente documentación:
+·                    Copia simple por los dos lados IFE/INE o cualquier otra identificación oficial con firma autógrafa (para extranjeros FM2 vigente).
+·                    Copia simple de comprobante de domicilio con firma autógrafa
+·                    Certificado del incentivo
+·                    Carta de conformidad con firma autógrafa
+ 
+El canje del certificado se entrega vía correo electrónico una vez PGREEN haya constatado la entrega en su totalidad la documentación solicitada al ganador.
+ 
+La solicitud de fechas deberá realizarse con un mínimo de 30 días de anticipación, indicando los nombres y fechas de nacimiento de las personas que viajarán, contemplando que el incentivo incluye 2 adultos y 2 niños menores de 12 años.
+ 
+La fecha seleccionada para realizar la estancia no podrá ser modificada, por lo que en caso de que el ganador no viaje en esa fecha, perderá su derecho de reclamar el incentivo, y no  podrá ser utilizado en fechas de temporada alta, tales como: 20 de Marzo al 1 de abril del 2016 y vacaciones de VERANO 2016, y días festivos. Aplicará cargos. El incentivo tiene una vigencia de 6 meses a partir de la entrega del mismo.
+ 
+El incentivo no podrá ser canjeado por dinero en efectivo y no será de ninguna manera extendido. El incentivo no es transferible. El canje del certificado está sujeto a disponibilidad. Aplican restricciones.
+ 
+El incentivo incluye: hospedaje en Hotel Fiesta Americana participante, por 4 días y 3 noches para 2 adultos y hasta 2 menores de 12 años.
+ 
+El incentivo no incluye: propinas, transportes aéreos o terrestres, cargos hechos al hotel, espectáculos ni atracciones, no incluye seguro de viajero a favor del ganador y sus acompañantes, por lo que todos ellos aceptan viajar por su propia responsabilidad.
+ 
+Todo lo no previsto en este apartado será considerado como excluido.
+ 
+IX. PIRAMIDE DE INCENTIVOS DE LA PROMOCION.
+-Certificados de noches 2x1 en Hoteles Fiesta Americana
+-Descuentos del 40% para estancias en Hoteles participantes Fiesta Americana
+ -Estancias en Hotel Fiesta Americana, destino playa: Villas Cancún, Villas Acapulco para 2 adultos y 2 niños menores de 12 años.
+-Estancias en Hotel Fiesta Americana de ciudad: Querétaro, Monterrey, Guadalajara y Puebla para 2 adultos y hasta 2 niños menores de 12 años.
+ 
+X. AUTORIZACIÓN.
+El participante que resulte ganador de LA PROMOCIÓN, autoriza expresa e irrevocablemente a PUBLICIDAD Y SOLUCIONES GREEN S.A. de C.V. y/o IMPULSORA DE VACACIONES FIESTA S.A. DE .CV., y/o cualquier otra empresa que ésta determine, a difundir en los medios que estimen conveniente, su nombre y apellido completo, país y ciudad de origen, fotografías y uso de imagen o retrato, videos y en general todos aquellos datos que pudieran requerirse con motivo de la difusión de esta promoción, renunciando expresa e irrevocablemente, desde la aceptación de las bases, a cualquier tipo de compensación económica, remuneración, regalía o retribución alguna por dicho uso.
+ 
+El participante ganador cuyos datos, imagen, retrato, video y/o alguno de los señalados  anteriormente, entiende y acepta que el uso de dicha imagen no se lleva acabo con fines de lucro directo ni indirecto, sino para dar claridad y transparencia sobre los resultados de la presente promoción.
+ 
+ 
+XI.LIMITACIONES DE RESPONSABILIDAD / INTERNET
+GRUPO POSADAS y P.GREEN, y demás personas involucrados en la Promoción no son responsables por ilegibilidades, pérdidas, retardos o por cualquier mal funcionamiento de la computadora, teléfono, satélite, cable, red, hardware o software, Internet, fallas, conexiones, disponibilidad o transmisiones distorsionadas, sitio web del proveedor de servicios/ Internet / web / accesibilidad, disponibilidad, o congestión de tráfico, o cualquier error técnico o intervención humana no autorizada, o la captura incorrecta o inexacta de información de registro, o el fracaso en la captura, o la pérdida de dicha información.
+GRUPO POSADAS y P.GREEN, no son responsables por los errores tipográficos, errores técnicos, tecnológicos, mecánicos o de la información incorrecta o inexacta, ya sea causada por cualquier usuario del sitio Web, manipulación, piratería informática, o por cualquiera de los equipos o programas asociados y utilizados en la Promoción. No asumirán ninguna responsabilidad por cualquier omisión, interrupción, eliminación, defecto, retraso en la operación o transmisión, falla de comunicaciones técnicas, errores tecnológico, mecánicos o robos, destrucción o accesos no autorizado a cualquier sitio web.
+Además, no se hacen responsable por los actos de fuerza mayor u otros actos que interfieren con la buena administración prevista, el funcionamiento y el cumplimiento de esta Promoción. Cualquiera de las personas involucradas en la organización de la promoción no son responsables por lesiones o daños, ya sean personales o de propiedad, de la computadora de los participantes o de cualquier persona relacionada o que resulte de la participación de esta Promoción.
+El Organizador se reserva el derecho de cancelar o modificar el Concurso en caso de fraude, dificultades técnicas, o cualquier otra causa ajena a P.GREEN que pueda comprometer la integridad del Concurso conforme lo determine P.GREEN a su sola discreción.
+En ningún caso, se otorgarán más premios en la promoción de los que se establecen en las reglas oficiales de la misma.
+En caso de existir cualquier error técnico, tecnológico, mecánico en el que resulten más ganadores o participantes de los establecidos en las reglas oficiales de la promoción, se realizará una selección entre los ganadores y/o participantes acreedores a los premios por un jurado que GRUPO POSADAS determine en su momento.
+En caso de controversia en cuanto a la identidad de un ganador basándose en una dirección de correo electrónico, la obra ganadora será declarada hecha por el titular autorizado de la dirección de correo electrónico presentado al momento de participar. "Titular autorizado de la cuenta" se define como la persona natural asignada a una dirección de correo electrónico por un proveedor de acceso a Internet, proveedor de servicio de internet u otra organización (por ejemplo, negocio, institución educativa, etc.) que es responsable de asignar direcciones de correo electrónico para el dominio asociado con la dirección de correo electrónico enviada. En el caso de un dominio de propiedad individual, el propietario del nombre de dominio se considerará que el "titular autorizado de la cuenta."
+GRUPO POSADAS y P.GREEN, se reservan el derecho, de descalificar a cualquier participante, a su sola opinión, que manipule o intente manipular la operación de la Promoción; que actúe en violación de las Reglas Oficiales; o actúe con la intención de perturbar el funcionamiento normal de esta Promoción. Se anulará cualquier intento de participación robotizada o programada.
+Cualquier uso robotizado, automático, macro programados, de terceros o parecido para participar en la Promoción, se anulará cualquier intento de participación efectuada por tales métodos y la descalificación de la persona que utiliza el mismo.
+ADVERTENCIA: CUALQUIER INTENTO DE DAÑAR DELIBERADAMENTE LA PROMOCIÓN O EL MICROSITIO DE LA PROMOCIÓN O DE PERJUDICAR EL FUNCIONAMIENTO LEGÍTIMO DE LA MISMA ES UNA VIOLACIÓN DE LEYES PENALES Y CIVILES. SI DICHO INTENTO EXISTIESE, EL ADMINISTRADOR, ORGANIZADOR Y/O PATROCINADOR DE LA PROMOCIÓN SE RESERVA EL DERECHO DE RECLAMAR DAÑOS Y PERJUICIOS DE CUALQUIER PERSONA(S) RESPONSABLE DEL INTENTO EN LA MEDIDA MÁXIMA PERMITIDA POR LA LEY.
+El Organizador, P.GREEN no serán responsables de ningún tipo de daños o lesiones a las personas o bienes que surjan, directa o indirectamente, total o parcialmente, como consecuencia de la participación en el Concurso, la recepción y/o uso del premio y/o de la utilización de material de la página respuestas.
+NOTA: TODOS LOS PREMIOS SE ENTREGAN “TAL CUAL SON” Y EL ADMINISTRADOR, ORGANIZADOR Y/O PATROCINADOR DE LA PROMOCIÓN NO OFRECEN NINGUNA GARANTÍA DE NINGÚN TIPO, YA SEA EXPRESA O IMPLÍCITA, INCLUYENDO, PERO NO LIMITADO LAS GARANTÍAS IMPLÍCITAS DE COMERCIALIZACIÓN, IDONEIDAD PARA UN PROPÓSITO PARTICULAR O DE NO INFRACCIÓN EN LO REFERENTE A CUALQUIER PREMIO O CUALQUIER COMPONENTE DE CUALQUIER PREMIO.
+DEJANDO ESTABLECIDO QUE ALGUNAS JURISDICCIONES NO PERMITEN LIMITACIONES DE EXCLUSIÓN DE RESPONSABILIDAD POR DAÑOS O EXCLUSIÓN DE GARANTÍAS IMPLÍCITAS INCIDENTALES O INDIRECTOS. CONSULTE LAS LEYES LOCALES PARA SABER SI ALGUNA DE LAS LIMITACIONES O EXCLUSIONES ANTERIORES SON O NO APLICABLES.
+Asimismo, al aceptar un premio del Concurso, el ganador exime de toda responsabilidad presente o futura GRUPO POSADAS,  P.GREEN, a sus empresas controlantes, controladas, subsidiarias, afiliadas, a sus respectivos oficiales, directores, empleados, consultores y agentes, de toda y cualquier demanda o acción de responsabilidad legal de cualquier naturaleza que pudiera resultar de su participación en el Concurso o de la aceptación o uso del premio al igual que todas las costas, reclamos, daños, o cualquier otra lesión, sea por negligencia o hacia una persona o sus bienes (incluyendo, pero no limitado a muerte o violación los derechos personales, tal como la violación a los derechos de publicidad, privacidad, imagen, difamación, calumnia) debido en su totalidad o en parte, directa o indirectamente, a la participación en el Concurso, aceptación o uso de un premio, que surja de la participación en cualquier actividad relacionada con el Concurso o el premio, sea administrado por el Organizador o un tercero.
+En caso de existir premios no adjudicados, los mismos serán de propiedad de GRUPO POSADAS.
+ 
+XII. PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES.
+ 
+IMPULSORA DE VACACIONES FIESTA SA DE CV, pone a disposición de los consumidores y participantes de LA PROMOCIÓN su aviso de privacidad, que puede ser consultado íntegramente en la página web: www.posadas.com/es/privacidad
+ 
+Además, GRUPO POSADAS manifiesta que ha adoptado los niveles de seguridad de protección de datos personales legalmente requeridos y procura instalar aquellos otros medios y medidas técnicas adicionales a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo.
+ 
+PUBLICIDAD Y SOLUCIONES GREEN S.A. DE C.V. con domicilio en Santa Brígida 19, Jardines de Santa Mónica, C.P. 54055, Tlalnepantla de Baz Estado de México, es el responsable del tratamiento de sus datos personales, y se han adoptado los niveles de seguridad de protección de datos personales legalmente requeridos y procuran instalar aquellos otros medios y medidas técnicas adicionales a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los mismos. Usted podrá consultar el Aviso de Privacidad completo publicado en la página de internet, www.participagana.com
+ 
+ 
+XIII. MODIFICACIONES A LOS TÉRMINOS Y CONDICIONES.
+GRUPO POSADAS se reservan el derecho de ampliar o modificar en cualquier momento los presentes términos y condiciones, por lo que el participante deberá consultar las bases y condiciones constantemente y hasta el término de la promoción.
+ 
+XIV. MEDIOS DE DIFUSIÓN DE LA PROMOCIÓN.
+Para la difusión de la información relacionada con LA PROMOCIÓN, los únicos medios autorizados por GRUPO POSADAS son: Impresos en AUDITORIO NACIONAL: volantes, posters, Prensa, Radio y Páginas web  que estime conveniente.
+ 
+XV. PUBLICACIÓN DE LOS GANADORES.
+Los participantes que ganaron incentivos serán publicados, en la Página de Internet www.participagana.com/auditorionacional
+En donde el participante podrá consultar los ganadores e incentivos redimidos así como el Aviso de promoción.
+ 
+XVI. CONTACTO.
+Para cualquier aclaración o información relacionada con LA PROMOCIÓN, los únicos medios autorizados por GRUPO POSADAS son promociones@publicidadgreen.com.mx y el sistema telefónico de información 01-800-467187 de cobertura nacional.
+ 
+XVII.QUEJAS.
+En caso de queja derivada de LA PROMOCIÓN, favor de acudir a la Procuraduría Federal del Consumidor (PROFECO) ubicada en Av. José Vasconcelos No. 208, Piso 9, Col. Condesa, Del. Cuauhtémoc, C.P. 06140, México, D.F. o bien comunicarse a los teléfonos: (55) 5256 0854 y 5256 1284 de lunes a viernes de 09:00 a 18:00 horas.
+</string>
                                 <color key="textColor" red="1" green="0.98114015498277618" blue="0.99644951706909624" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="5IS-PI-Fny"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="5IS-PI-Fny"/>
-                                    </mask>
-                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1106,6 +1328,7 @@
                             <constraint firstItem="Eui-JD-Ay1" firstAttribute="top" secondItem="668-wY-4ld" secondAttribute="bottom" constant="18" id="Bbr-Ix-6Q4">
                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                             </constraint>
+                            <constraint firstItem="cym-TN-I4F" firstAttribute="top" secondItem="Eui-JD-Ay1" secondAttribute="bottom" constant="20" id="C9s-Ax-ILL"/>
                             <constraint firstItem="MjC-p7-2oR" firstAttribute="leading" secondItem="6BO-p5-qpa" secondAttribute="leadingMargin" constant="-20" id="H9T-Ma-t0N"/>
                             <constraint firstItem="MjC-p7-2oR" firstAttribute="top" secondItem="1nQ-0a-K6c" secondAttribute="bottom" id="IgH-NH-ISg"/>
                             <constraint firstItem="Eui-JD-Ay1" firstAttribute="leading" secondItem="6BO-p5-qpa" secondAttribute="leadingMargin" id="J3j-F2-lwg">
@@ -1117,11 +1340,12 @@
                             <constraint firstItem="Eui-JD-Ay1" firstAttribute="trailing" secondItem="6BO-p5-qpa" secondAttribute="trailingMargin" id="Qbw-xM-iuv">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-100"/>
                             </constraint>
+                            <constraint firstItem="668-wY-4ld" firstAttribute="top" secondItem="1nQ-0a-K6c" secondAttribute="bottom" id="SVa-m6-jhC"/>
                             <constraint firstItem="cym-TN-I4F" firstAttribute="top" secondItem="MjC-p7-2oR" secondAttribute="bottom" id="WT3-7k-U92"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="668-wY-4ld" secondAttribute="trailing" constant="-20" id="pNl-bR-CHw"/>
-                            <constraint firstItem="MjC-p7-2oR" firstAttribute="top" secondItem="668-wY-4ld" secondAttribute="bottom" constant="-57" id="ppo-fg-2PT"/>
+                            <constraint firstAttribute="trailing" secondItem="668-wY-4ld" secondAttribute="trailing" id="Yoq-HL-u7a"/>
+                            <constraint firstItem="668-wY-4ld" firstAttribute="leading" secondItem="6BO-p5-qpa" secondAttribute="leading" id="ZkD-GS-CcX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MjC-p7-2oR" secondAttribute="trailing" constant="-20" id="rfB-d8-rRg"/>
-                            <constraint firstItem="668-wY-4ld" firstAttribute="leading" secondItem="6BO-p5-qpa" secondAttribute="leadingMargin" constant="-20" id="slP-zN-3tQ"/>
+                            <constraint firstItem="MjC-p7-2oR" firstAttribute="top" secondItem="668-wY-4ld" secondAttribute="bottom" constant="-57" id="rsU-7n-HZJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MjC-p7-2oR" secondAttribute="trailing" constant="-20" id="znf-0k-FfW"/>
                         </constraints>
                     </view>
@@ -1158,37 +1382,160 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="NYH-Uc-H9R">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="aviso_privacidad.png" translatesAutoresizingMaskIntoConstraints="NO" id="j6e-67-5oF">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="Ec0-EQ-Msy"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eh4-Aw-FQW">
-                                <rect key="frame" x="55" y="548" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="Rly-JS-i42" kind="show" id="6yR-Lh-L7i"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L02-cs-CUF">
-                                <rect key="frame" x="20" y="73" width="335" height="458"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="458" id="h7U-hh-N4v"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <rect key="frame" x="20" y="73" width="335" height="7267"/>
+                                <string key="text">A. Identidad del Responsable
+
+GRUPO POSADAS, S.A.B. de C.V. y sus filiales y/o subsidiarias (en lo sucesivo, Posadas), con domicilio en Av. Prolongación Paseo de la Reforma 1015, Piso 9, Col. Santa Fe, Delegación Alvaro Obregón, C.P.01210, México, D.F. es una empresa comprometida en proteger su privacidad. Nuestro responsable de Protección de Datos es el Departamento de Datos Personales y se ubica en el mismo domicilio, usted podrá contactarlo en el correo electrónico: datos.personales@posadas.com
+
+Este Aviso de Privacidad corresponde a los siguientes sitios web pertenecientes a Posadas:
+
+posadas.com
+
+gammahoteles.com
+
+globogo.com
+
+liveaqua.com
+
+onehotels.com
+
+fiestarewards.com
+
+fiestamericanagrand.com
+
+favc.com
+
+apreciare.com
+
+fiestamericana.com
+
+kivac.com.mx
+
+motivatuventa.com
+
+fiestainn.com
+
+the-frontdoor.com
+
+B. Datos Personales
+
+Para los fines señalados en el presente Aviso de Privacidad, Posadas podrá recabar sus datos personales de diversas formas: cuando la información es proporcionada directamente por usted; cuando visita los sitios de internet de Posadas; cuando utiliza los servicios ofrecidos por Posadas en línea y cuando obtenemos información a través de otros medios distintos a los antes señalados y que están permitidos por las leyes aplicables.
+
+Los datos personales obtenidos por los medios antes indicados, son:
+
+1.Datos de identificación: nombre(s), apellido(s), domicilio, número telefónico de casa, celular y/o trabajo, estado civil, firma, correo electrónico, género, edad, fecha de nacimiento, nombre de usuario y contraseña.
+
+2.Datos Financieros: nombre del tarjetahabiente, número de tarjeta de crédito, fecha de expiración (en caso de transacciones en línea).
+
+3.Datos de Facturación: nombre o denominación o razón social, RFC, domicilio fiscal.
+
+4.Datos de Preferencias: Relacionados con la habitación, servicios requeridos y/o motivo y preferencias de viaje.
+
+C. Datos Personales Sensibles
+
+Se consideran datos personales sensibles aquellos datos personales que afecten a la esfera más intima de su titular, o cuya utilización indebida pueda dar origen a discriminación o conlleve un riesgo grave para éste. En particular, se consideran sensibles aquellos que puedan revelar aspectos como origen racial o étnico, estado de salud presente y futuro, información genética, creencias religiosas, filosóficas y morales, afiliación sindical, opiniones políticas, preferencias sexuales. En caso de hospedarse en cualquiera de nuestros hoteles, los datos personales sensibles que le solicitaremos nos proporcione serán aquellos relativos a salud o capacidades diferentes, mismos que se utilizarán únicamente para brindarle un mejor servicio y satisfacer sus necesidades específicas.
+
+D. Finalidad y Tratamiento de la Información Personal
+
+Finalidades que dan origen a la relación jurídica y son necesarias para la prestación de servicio:
+
+1.La información personal que nos proporciona será utilizada por Posadas para prestar los servicios que usted le solicita o que son parte de algún programa al que se ha inscrito o de una compra que ha realizado: reservaciones, compra de paquetes vacacionales, membresía de club vacacional, afiliación a nuestros programas de lealtad, organización de eventos y reuniones sociales, compra de productos y/o servicios turísticos.
+
+2.Posadas puede utilizar la información personal que nos proporciona para ofrecerle un mejor servicio y, en su caso, identificar sus preferencias durante su estancia y hacerla más placentera.
+
+Finalidades que no dan origen a la relación jurídica ni son necesarias para la prestación de servicio:
+
+1.Asimismo, puede utilizar la información para ofrecerle promociones y productos turísticos y comerciales, envío de promociones, servicios especiales, boletines informativos, encuestas, sorteos de premios y otros concursos en línea.
+
+E.Limitación al Uso o Divulgación de Información Personal
+
+En cualquier momento usted puede manifestar su negativa al tratamiento de las finalidades que no dan origen a la relación jurídica ni son necesarias para la prestación del servicio, o bien, la revocación del consentimiento que nos ha otorgado al tratamiento de sus datos personales, mediante una solicitud que deberá ser presentada por escrito al Departamento de Datos Personales al siguiente domicilio: Av. Prolongación Paseo de la Reforma 1015, Piso 9, Col. Santa Fe, Delegación Alvaro Obregón, C.P.01210, México, D.F. de 9 a 14 horas de lunes a viernes o al correo electrónico datos.personales@posadas.com.
+
+Dicha solicitud deberá contener cuando menos lo siguiente: (i) Nombre del Titular de los Datos Personales; (ii) Correo electrónico para recibir notificaciones; (iii) Documentos que acrediten su identidad o, en su caso, la representación legal del titular; (iv) Descripción clara y precisa de los datos personales respecto de los que se busca ejercer el derecho y del derecho que se pretende ejercer. (v) Cualquier otro elemento o documento que facilite la localización de los datos personales. En caso de que la solicitud no satisfaga alguno de los requisitos señalados anteriormente, el Departamento de Datos Personales podrá requerirle dentro de los 5 días a la recepción de la solicitud que aporte los elementos o documentos necesarios para dar trámite a la misma. Usted contará con 10 días para atender el requerimiento, en caso de no dar respuesta en dicho plazo, se tendrá por no presentada la solicitud correspondiente.
+
+Los plazos de atención serán de máximo 20 días contados desde la fecha en que se reciba la solicitud para comunicarle la determinación adoptada, a efecto de que, si resulta procedente, haga efectiva la misma dentro de los 15 días siguientes a la emisión de la respuesta. Con la finalidad de proteger su confidencialidad, Posadas enviará la respuesta a su solicitud al correo electrónico que haya proporcionado para tal fin y la conservará a disposición del solicitante en el domicilio señalado en el párrafo anterior.
+
+F. Del Ejercicio de los Derechos de Acceso, Rectificación, Cancelación y Oposición.
+
+El acceso, rectificación, cancelación u oposición respecto a la información que proporcione a Posadas señalados en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, lo podrá hacer mediante entrega de la solicitud que dirija a Posadas, en términos de lo establecido en el inciso E. anterior, misma que se le responderá en los términos ahí señalados.
+
+G. Control y Seguridad de información personal.
+
+Posadas se compromete a tomar las medidas necesarias para proteger la información recopilada, utilizando tecnologías de seguridad y procedimientos de control en el acceso, uso o divulgación de su información personal sin autorización, por ejemplo, almacenando la información personal proporcionada en servidores ubicados en Centros de Datos que cuentan con controles de acceso limitado. Para transacciones en línea, utilizamos también tecnologías de seguridad que protegen la información personal que nos sea transmitida a través de los diversos medios electrónicos como puede ser el uso de un servidor seguro bajo el protocolo Secure Socket Layer (SSL).
+
+Sin embargo, ningún sistema de seguridad o de transmisión de datos del cual la empresa no tenga el control absoluto y/o tenga dependencia con internet puede garantizar que sea totalmente seguro.
+
+H. Medios electrónicos y cookies.
+
+En el supuesto de que usted utilice medios electrónicos en relación a sus datos personales se generarán a efecto de proporcionarle un mejor servicio cookies.
+
+Los cookies son pequeñas piezas de información que son enviadas por el sitio Web a su navegador.
+
+Los cookies se almacenan en el disco duro de su equipo y se utilizan para determinar sus preferencias cuando se conecta a los servicios de nuestros sitios, así como para rastrear determinados comportamientos o actividades llevadas a cabo por usted dentro de nuestros sitios.
+
+En algunas secciones de nuestro sitio requerimos que el cliente tenga habilitados los cookies ya que algunas de las funcionalidades requieren de éstas para trabajar. Los cookies nos permiten: a) reconocerlo al momento de entrar a nuestros sitios y ofrecerle de una experiencia personalizada, b) conocer la configuración personal del sitio especificada por usted, por ejemplo, los cookies nos permiten detectar el ancho de banda que usted ha seleccionado al momento de ingresar al home page de nuestros sitios, de tal forma que sabemos qué tipo de información es aconsejable descargar, c) calcular el tamaño de nuestra audiencia y medir algunos parámetros de tráfico, pues cada navegador que obtiene acceso a nuestros sitios adquiere un cookie que se usa para determinar la frecuencia de uso y las secciones de los sitios visitadas, reflejando así sus hábitos y preferencias, información que nos es útil para mejorar el contenido, los titulares y las promociones para los usuarios. Los cookies también nos ayudan a rastrear algunas actividades, por ejemplo, en algunas de las encuestas que lanzamos en línea, podemos utilizar cookies para detectar si el usuario ya ha llenado la encuesta y evitar desplegarla nuevamente, en caso de que lo haya hecho. El botón de "ayuda" que se encuentra en la barra de herramientas de la mayoría de los navegadores, le dirá cómo evitar aceptar nuevos cookies, cómo hacer que el navegador le notifique cuando recibe un nuevo cookie o cómo deshabilitar todos los cookies. Sin embargo, las cookies le permitirán tomar ventaja de las características más benéficas que le ofrecemos, por lo que le recomendamos que las deje activadas.
+
+I. Cambios a este Aviso de Privacidad.
+
+Posadas podrá en cualquier momento actualizar este aviso de privacidad. En el caso de que se produzcan cambios sustanciales a este aviso, lo comunicaremos a través de nuestras páginas de internet señaladas en el inciso A de este Aviso de Privacidad.
+
+Por lo anterior, le sugerimos visitar periódicamente este aviso de privacidad para estar enterado de cualquier actualización.
+
+Me doy por enterado y acepto los términos y condiciones establecidas en el presente Aviso de Privacidad, y en caso contrario lo comunicaré a Posadas en términos de lo señalado en los incisos E. y F. de este Aviso de Privacidad.  
+
+En caso de alguna inconformidad o queja sobre el tratamiento de sus datos personales, usted se puede dirigir al Instituto Federal de Acceso a la Información y Protección de Datos.
+
+Fecha de última actualización: Noviembre 01, 2014
+
+
+
+ 
+ 
+ 
+Aviso de privacidad de PUBLICIDAD GREEN
+Con fundamento en los artículos 15 y 16 de la LEY FEDERAL DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE PARTICULARES, hacemos de su conocimiento que, PUBLICIDAD Y SOLUCIONES GREEN S.A. DE C.V., con domicilio en calle Convento de Santa Brigida #19, Colonia Jardines de Santa Mónica, Tlalnepantla, Estado de México, c.p. 54050, es responsable de recabar sus datos personales, del uso que se les dé a los mismos y de su protección.
+Su información personal será utilizada para las siguientes finalidades: proveer los servicios y productos que ha solicitado; notificarle sobre nuevos productos que tengan realción con los ya contratados o adquiridos; comunicarle en los cambios de los mismos; elaborar estudios y programas que son necesarios para determinar hábitos de consumo; realizar evaluaciones periódicas de nuestros productos y servicios para efecto de mejorar la calidad de los mismos; evaluar la calidad del servicio que brindamos, y en general  para dar cumplimiento a las obligaciones que hemos contraído para con Usted.
+Para las finalidades antes mencionadas, en forma enunciativa más no limitativa podríamos obtener alguno de los siguientes datos personales: nombre completo, teléfono fijo y/o teléfono celular, correo electrónico, dirección de facebook, twiter, y/o cualquier otra red social, así como domicilio particular y de trabajo.
+LIMITACIÓN DE USO Y DIVULGACIÓN
+El tratamiento de sus datos personales será el que resulte necesario, adecuado y relevante en relación con las finalidades previstas en esta Política de Privacidad.
+PUBLICIDAD Y SOLUCIONES GREEN S.A. DE C.V., cumple los principios de protección de datos personales establecidos en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y adopta las medidas necesarias para su aplicación. Lo anterior aplica aún y cuando estos datos fueren tratados por un tercero, a solicitud de PUBLICIDAD Y SOLUCIONES GREEN S.A. DE C.V., y con el fin de cubrir los servicios necesarios, manteniendo la confidencialidad en todo momento. PUBLICIDAD Y SOLUCIONES GREEN S.A. DE C.V., toma las medidas necesarias y suficientes para procurar que esta Política de Privacidad sea respetada, por él o por terceros con los que guarde alguna relación, para otorgar los servicios o productos establecidos con el titular.
+La obligación de acceso a la información se dará por cumplida cuando se ponga a disposición del titular los datos personales, o bien, mediante la expedición de copias simples, documentos electrónicos o cualquier otro medio que PUBLICIDAD Y SOLUCIONES GREEN S.A. DE C.V., provea al titular.
+ 
+En el caso de que el titular solicite acceso a los datos a una persona que presume es el responsable, y ésta resulta no serlo, bastará con que así se le indique al titular por cualquiera de los medios impresos (carta de procedencia) o electrónicos (correo electrónico, medios audiovisuales, etc.), para tener por cumplida la solicitud. 
+
+PUBLICIDAD Y SOLUCIONES GREEN S.A. DE C.V., limitará el uso de los datos personales sensibles a petición expresa del titular, y no estará obligada a cancelar los datos personales cuando:
+Se refiera a las partes de un contrato privado, social, administrativo, y sean necesarios para su desarrollo y cumplimiento.
+Deban ser tratados por disposición legal .
+Obstaculice actuaciones judiciales o administrativas vinculadas a obligaciones fiscales, la investigación y persecución de delitos, o la actualización de sanciones administrativas.
+Sean necesarios para proteger los intereses jurídicamente tutelados del titular.
+Sean necesarios para realizar una acción en función del interés público.
+Sean necesarios para cumplir con una obligación legalmente adquirida por el titular, o…
+Sean objeto de tratamiento para la prevención o el diagnóstico médico o la gestión de servicios de salud, siempre que dicho tratamiento se realice por un profesional de la salud sujeto a un deber secreto.
+ 
+Usted tiene derecho de acceder, rectificar y cancelar sus datos personales, así como de oponerse al tratamiento de los mismos o revocar su consentimiento, para lo cual se puede poner en contacto directamente a Publicidad y Soluciones Green S.A. de C.V., la cual puede localizar en la dirección ya señalada en el primer párrafo de este aviso, o al teléfono 24-87-01-01, y en el correo electrónico info@publicidadgreen.com.mx, o bien a través de un escrito libre acompañado de una copia de su identificación oficial, y especificando los datos personales que quiera proteger, entregándolo en la misma dirección ya citada, PUBLICIDAD Y SOLUCIONES GREEN S.A. DE C.V., contará con 20 días hábiles para atender su solicitud.
+Si usted no manifiesta su oposición para que sus datos personales sean transferidos, se entenderá que ha otorgado su consentimiento para ello.
+Es importante informarle que Usted tiene derecho al acceso, ratificación, y cancelación de sus datos personales, a oponerse al tratamiento de los mismos o a revocar el consentimiento que para dicho fin nos haya otorgado.
+
+Al aceptar las condiciones y términos establecidos por medio del presente aviso de privacidad se considera otorgado el consentimiento expreso para que PUBLICIDAD GREEN, haga uso de manejo tratamiento y transferencia de sus datos personales para los fines descritos.
+
+Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aviso_privacidad.png" translatesAutoresizingMaskIntoConstraints="NO" id="j6e-67-5oF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Vhg-sf-ube"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2Ga-bI-Cuk" firstAttribute="top" secondItem="Eh4-Aw-FQW" secondAttribute="bottom" constant="25" id="2PL-Ol-MK3"/>
+                            <constraint firstAttribute="trailing" secondItem="j6e-67-5oF" secondAttribute="trailing" id="4VE-9D-95R"/>
+                            <constraint firstItem="j6e-67-5oF" firstAttribute="top" secondItem="Y2l-eR-QV4" secondAttribute="bottom" id="Eab-nz-ZGJ"/>
                             <constraint firstItem="NYH-Uc-H9R" firstAttribute="top" secondItem="Y2l-eR-QV4" secondAttribute="bottom" id="Gjd-tM-WET"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="j6e-67-5oF" secondAttribute="trailing" constant="-20" id="I4n-YY-JVq"/>
-                            <constraint firstItem="NYH-Uc-H9R" firstAttribute="top" secondItem="j6e-67-5oF" secondAttribute="bottom" constant="-57" id="PGe-ty-zFP"/>
-                            <constraint firstItem="j6e-67-5oF" firstAttribute="leading" secondItem="qck-Zp-MO6" secondAttribute="leadingMargin" constant="-20" id="PeV-K5-LI7"/>
                             <constraint firstItem="2Ga-bI-Cuk" firstAttribute="top" secondItem="NYH-Uc-H9R" secondAttribute="bottom" id="ZNl-HC-VMK"/>
                             <constraint firstItem="NYH-Uc-H9R" firstAttribute="leading" secondItem="qck-Zp-MO6" secondAttribute="leadingMargin" constant="-20" id="cJw-X9-DWf"/>
                             <constraint firstItem="L02-cs-CUF" firstAttribute="centerX" secondItem="NYH-Uc-H9R" secondAttribute="centerX" id="l86-Pf-fFq"/>
@@ -1196,10 +1543,11 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="-100"/>
                             </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="NYH-Uc-H9R" secondAttribute="trailing" constant="-20" id="nUy-hh-NSx"/>
-                            <constraint firstItem="Eh4-Aw-FQW" firstAttribute="leading" secondItem="qck-Zp-MO6" secondAttribute="leadingMargin" constant="35" id="nnu-c2-22C"/>
+                            <constraint firstItem="2Ga-bI-Cuk" firstAttribute="top" secondItem="L02-cs-CUF" secondAttribute="bottom" constant="20" id="oVX-o8-GdE"/>
                             <constraint firstItem="L02-cs-CUF" firstAttribute="leading" secondItem="qck-Zp-MO6" secondAttribute="leadingMargin" id="pUg-fX-j4Z">
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
+                            <constraint firstItem="j6e-67-5oF" firstAttribute="leading" secondItem="qck-Zp-MO6" secondAttribute="leading" id="ryK-nU-ZT8"/>
                             <constraint firstItem="L02-cs-CUF" firstAttribute="top" secondItem="j6e-67-5oF" secondAttribute="bottom" constant="23" id="skH-Vz-hgG">
                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                             </constraint>
@@ -1238,26 +1586,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="CD9-nD-hok">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="be_part_of_pleca.png" translatesAutoresizingMaskIntoConstraints="NO" id="9dB-Gf-V8q">
-                                <rect key="frame" x="0.0" y="64" width="375" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="Lkp-0V-98e"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nombre_post_pleca.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ewj-hQ-pBh">
-                                <rect key="frame" x="0.0" y="121" width="375" height="55"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="nombre_post_pleca.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ewj-hQ-pBh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="brX-bf-PgF"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NOMBRE DEL POST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXY-aZ-Bp5">
-                                <rect key="frame" x="13" y="121" width="280" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="NOMBRE DEL POST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXY-aZ-Bp5">
+                                <rect key="frame" x="10" y="64" width="280" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="descubre_mas.png" translatesAutoresizingMaskIntoConstraints="NO" id="y63-ca-BKC">
-                                <rect key="frame" x="20" y="196" width="335" height="151"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="descubre_mas.png" translatesAutoresizingMaskIntoConstraints="NO" id="y63-ca-BKC">
+                                <rect key="frame" x="20" y="139" width="335" height="151"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="DWH-9K-MVX"/>
                                     <constraint firstAttribute="height" constant="151" id="ahu-Lm-ezq"/>
@@ -1268,8 +1610,8 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPR-vw-hDU">
-                                <rect key="frame" x="20" y="355" width="335" height="292"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPR-vw-hDU">
+                                <rect key="frame" x="20" y="307" width="335" height="292"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="292" id="N5c-iP-5JM"/>
                                 </constraints>
@@ -1285,17 +1627,12 @@
                             <constraint firstItem="IPR-vw-hDU" firstAttribute="trailing" secondItem="2PT-KM-uVj" secondAttribute="trailingMargin" id="9IJ-by-Xeb"/>
                             <constraint firstItem="Ewj-hQ-pBh" firstAttribute="leading" secondItem="TXY-aZ-Bp5" secondAttribute="trailing" constant="-293" id="EwJ-sU-Tmn"/>
                             <constraint firstItem="Ewj-hQ-pBh" firstAttribute="leading" secondItem="2PT-KM-uVj" secondAttribute="leadingMargin" constant="-20" id="GhA-M5-lyO"/>
-                            <constraint firstItem="9dB-Gf-V8q" firstAttribute="leading" secondItem="2PT-KM-uVj" secondAttribute="leadingMargin" constant="-20" id="HDU-PQ-OdN"/>
                             <constraint firstItem="CD9-nD-hok" firstAttribute="leading" secondItem="2PT-KM-uVj" secondAttribute="leadingMargin" constant="-20" id="Jmv-UA-3cL"/>
                             <constraint firstItem="CD9-nD-hok" firstAttribute="top" secondItem="NRg-Dg-ihE" secondAttribute="bottom" id="Na4-bL-J7j"/>
-                            <constraint firstItem="Ewj-hQ-pBh" firstAttribute="top" secondItem="9dB-Gf-V8q" secondAttribute="bottom" id="PEO-Oq-rwh"/>
                             <constraint firstItem="TXY-aZ-Bp5" firstAttribute="width" secondItem="Ewj-hQ-pBh" secondAttribute="width" multiplier="0.745" id="PhL-o9-pzN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ewj-hQ-pBh" secondAttribute="trailing" constant="-20" id="PpB-Dg-N8r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CD9-nD-hok" secondAttribute="trailing" constant="-20" id="RmU-A1-ygc"/>
-                            <constraint firstItem="9dB-Gf-V8q" firstAttribute="centerX" secondItem="CD9-nD-hok" secondAttribute="centerX" id="UTK-6j-fNP"/>
                             <constraint firstItem="Ewj-hQ-pBh" firstAttribute="centerX" secondItem="CD9-nD-hok" secondAttribute="centerX" id="UUE-kc-KSt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9dB-Gf-V8q" secondAttribute="trailing" constant="-20" id="YDJ-D9-jIa"/>
-                            <constraint firstItem="9dB-Gf-V8q" firstAttribute="top" secondItem="NRg-Dg-ihE" secondAttribute="bottom" id="ZS5-5K-R2y"/>
                             <constraint firstItem="y63-ca-BKC" firstAttribute="top" secondItem="Ewj-hQ-pBh" secondAttribute="bottom" constant="15" id="buv-I7-AL5"/>
                             <constraint firstItem="Zeg-7l-sky" firstAttribute="top" secondItem="CD9-nD-hok" secondAttribute="bottom" id="gz2-hh-Azb"/>
                             <constraint firstItem="TXY-aZ-Bp5" firstAttribute="height" secondItem="Ewj-hQ-pBh" secondAttribute="height" id="lTR-H5-JSf"/>
@@ -1323,7 +1660,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmw-7N-eZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4112.5" y="2640.5"/>
+            <point key="canvasLocation" x="3140.5" y="2429.5"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="hwi-nI-GEp">
@@ -1690,7 +2027,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gka-pZ-vjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3573.5" y="2640.5"/>
+            <point key="canvasLocation" x="3572.5" y="2658.5"/>
         </scene>
         <!--Extra2-->
         <scene sceneID="Zd4-MW-dk2">
@@ -2032,15 +2369,15 @@
             <objects>
                 <viewController id="RiC-5o-qhv" customClass="TableEventoViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z8q-9H-Hcf">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="Ye8-Bj-y3Z" detailTextLabel="BrI-il-kSP" style="IBUITableViewCellStyleValue1" id="Vsp-1v-ocl">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vsp-1v-ocl" id="iM1-Mz-Ha2">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ye8-Bj-y3Z">
@@ -2051,7 +2388,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BrI-il-kSP">
-                                            <rect key="frame" x="543.5" y="12" width="41.5" height="19.5"/>
+                                            <rect key="frame" x="318.5" y="12" width="41.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.87392607521401156" green="0.87163788878442516" blue="0.91160680618401202" alpha="1" colorSpace="calibratedRGB"/>
@@ -2083,6 +2420,43 @@
             </objects>
             <point key="canvasLocation" x="4225" y="6355"/>
         </scene>
+        <!--Nuevo Como Participar View Controller-->
+        <scene sceneID="RTC-jb-2sh">
+            <objects>
+                <viewController id="E8m-sf-hIe" customClass="NuevoComoParticiparViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="svz-H4-ca0"/>
+                        <viewControllerLayoutGuide type="bottom" id="hdu-4n-xjy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NHj-9a-Keb">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nuevo_como_participar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-lh-ay8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Haa-lh-ay8" secondAttribute="trailing" id="6Ul-0A-P48"/>
+                            <constraint firstItem="Haa-lh-ay8" firstAttribute="leading" secondItem="NHj-9a-Keb" secondAttribute="leading" id="B47-wU-jWP"/>
+                            <constraint firstItem="Haa-lh-ay8" firstAttribute="top" secondItem="svz-H4-ca0" secondAttribute="bottom" id="dJN-7x-6Hh"/>
+                            <constraint firstItem="hdu-4n-xjy" firstAttribute="top" secondItem="Haa-lh-ay8" secondAttribute="bottom" id="vZR-5r-2T9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5yx-nS-6Fh">
+                        <barButtonItem key="leftBarButtonItem" image="menu_logo" id="wLG-4z-L12">
+                            <connections>
+                                <action selector="toggleSideMenu:" destination="E8m-sf-hIe" id="BE6-LC-BrC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="home" id="uDv-EC-9Mj"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJk-KD-wP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5009" y="7146"/>
+        </scene>
         <!--Evento My Navigation Controller-->
         <scene sceneID="m3d-ZT-Rde">
             <objects>
@@ -2101,6 +2475,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nH-oc-ULj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3461" y="6355"/>
+        </scene>
+        <!--Nuevo Como Participar My Navigiation Controller-->
+        <scene sceneID="uRT-BX-qRJ">
+            <objects>
+                <navigationController storyboardIdentifier="nuevo_como_participar" automaticallyAdjustsScrollViewInsets="NO" id="UVN-Tz-ulF" customClass="NuevoComoParticiparMyNavigiationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Ran-3C-jCx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="E8m-sf-hIe" kind="relationship" relationship="rootViewController" id="ESf-iC-XoZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1V-M8-bvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4112" y="7146"/>
         </scene>
     </scenes>
     <resources>
@@ -2121,6 +2514,8 @@
         <image name="imagenPregunta.png" width="545" height="363"/>
         <image name="menu_logo" width="22" height="22"/>
         <image name="nombre_post_pleca.png" width="1242" height="197"/>
+        <image name="nuevo_como_participar.png" width="1242" height="2208"/>
+        <image name="nuevo_inicio.png" width="1242" height="2208"/>
         <image name="pregunta.png" width="1242" height="165"/>
         <image name="pregunta_hoy.png" width="507" height="699"/>
         <image name="proximos_eventos.png" width="963" height="438"/>
@@ -2135,9 +2530,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3eg-4M-hew"/>
-        <segue reference="kub-ze-7Wg"/>
-        <segue reference="LtK-ws-bc8"/>
         <segue reference="KkQ-3y-YRs"/>
         <segue reference="Jsp-qb-vt0"/>
+        <segue reference="9u3-dl-9vp"/>
+        <segue reference="LtK-ws-bc8"/>
     </inferredMetricsTieBreakers>
 </document>

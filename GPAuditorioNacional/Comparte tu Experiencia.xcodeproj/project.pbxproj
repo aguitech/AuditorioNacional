@@ -66,6 +66,12 @@
 		DCBFA10D1C5063DB0078F320 /* calendario.png in Resources */ = {isa = PBXBuildFile; fileRef = DCBFA10C1C5063DB0078F320 /* calendario.png */; };
 		DCBFA10F1C5067280078F320 /* MenuMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFA10E1C5067280078F320 /* MenuMyNavigationController.swift */; };
 		DCBFA1111C50682B0078F320 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFA1101C50682B0078F320 /* MenuViewController.swift */; };
+		E87AD9061C6471930009ECA2 /* nuevo_inicio.png in Resources */ = {isa = PBXBuildFile; fileRef = E87AD9051C6471930009ECA2 /* nuevo_inicio.png */; };
+		E87AD9081C64721D0009ECA2 /* NuevoInicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87AD9071C64721D0009ECA2 /* NuevoInicioViewController.swift */; };
+		E87AD90B1C6475360009ECA2 /* nuevo_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = E87AD90A1C6475360009ECA2 /* nuevo_menu.png */; };
+		E87AD90D1C6475790009ECA2 /* nuevo_como_participar.png in Resources */ = {isa = PBXBuildFile; fileRef = E87AD90C1C6475790009ECA2 /* nuevo_como_participar.png */; };
+		E87AD90F1C6475940009ECA2 /* NuevoComoParticiparViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87AD90E1C6475940009ECA2 /* NuevoComoParticiparViewController.swift */; };
+		E87AD9111C6475B00009ECA2 /* NuevoComoParticiparMyNavigiationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87AD9101C6475B00009ECA2 /* NuevoComoParticiparMyNavigiationController.swift */; };
 		E8F125D11C63195A00DD64FC /* TableEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F125D01C63195A00DD64FC /* TableEventoViewController.swift */; };
 		E8F125D41C631BD600DD64FC /* TableEventoMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F125D31C631BD600DD64FC /* TableEventoMyNavigationController.swift */; };
 		E8F157BC1C57E9B9005D7A09 /* ViewInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */; };
@@ -150,6 +156,12 @@
 		DCBFA10C1C5063DB0078F320 /* calendario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendario.png; sourceTree = "<group>"; };
 		DCBFA10E1C5067280078F320 /* MenuMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuMyNavigationController.swift; sourceTree = "<group>"; };
 		DCBFA1101C50682B0078F320 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E87AD9051C6471930009ECA2 /* nuevo_inicio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuevo_inicio.png; sourceTree = "<group>"; };
+		E87AD9071C64721D0009ECA2 /* NuevoInicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevoInicioViewController.swift; sourceTree = "<group>"; };
+		E87AD90A1C6475360009ECA2 /* nuevo_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuevo_menu.png; sourceTree = "<group>"; };
+		E87AD90C1C6475790009ECA2 /* nuevo_como_participar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuevo_como_participar.png; sourceTree = "<group>"; };
+		E87AD90E1C6475940009ECA2 /* NuevoComoParticiparViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevoComoParticiparViewController.swift; sourceTree = "<group>"; };
+		E87AD9101C6475B00009ECA2 /* NuevoComoParticiparMyNavigiationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevoComoParticiparMyNavigiationController.swift; sourceTree = "<group>"; };
 		E8F125D01C63195A00DD64FC /* TableEventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableEventoViewController.swift; sourceTree = "<group>"; };
 		E8F125D31C631BD600DD64FC /* TableEventoMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableEventoMyNavigationController.swift; sourceTree = "<group>"; };
 		E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInicio.swift; sourceTree = "<group>"; };
@@ -214,6 +226,9 @@
 				DCBFA0F91C4DC26D0078F320 /* menu_icon.png */,
 				DC4AC5771C51E850006A1995 /* comenzar.png */,
 				E8F157C81C588541005D7A09 /* be_part_of_pleca.png */,
+				E87AD90A1C6475360009ECA2 /* nuevo_menu.png */,
+				E87AD9121C6475BE0009ECA2 /* nuevo_como_participar */,
+				E87AD9091C6472660009ECA2 /* nuevo_inicio */,
 				E86DFE371C5980DF00F89E41 /* aviso_privacidad */,
 				DCBFA1031C4F0AF00078F320 /* menu */,
 				DC4AC5381C51698B006A1995 /* trivia */,
@@ -383,6 +398,25 @@
 			name = terminos_condiciones;
 			sourceTree = "<group>";
 		};
+		E87AD9091C6472660009ECA2 /* nuevo_inicio */ = {
+			isa = PBXGroup;
+			children = (
+				E87AD9051C6471930009ECA2 /* nuevo_inicio.png */,
+				E87AD9071C64721D0009ECA2 /* NuevoInicioViewController.swift */,
+			);
+			name = nuevo_inicio;
+			sourceTree = "<group>";
+		};
+		E87AD9121C6475BE0009ECA2 /* nuevo_como_participar */ = {
+			isa = PBXGroup;
+			children = (
+				E87AD90C1C6475790009ECA2 /* nuevo_como_participar.png */,
+				E87AD90E1C6475940009ECA2 /* NuevoComoParticiparViewController.swift */,
+				E87AD9101C6475B00009ECA2 /* NuevoComoParticiparMyNavigiationController.swift */,
+			);
+			name = nuevo_como_participar;
+			sourceTree = "<group>";
+		};
 		E8F125D21C63196400DD64FC /* TableEvento */ = {
 			isa = PBXGroup;
 			children = (
@@ -475,9 +509,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87AD9061C6471930009ECA2 /* nuevo_inicio.png in Resources */,
 				DC4AC5361C516980006A1995 /* respuesta3.png in Resources */,
+				E87AD90B1C6475360009ECA2 /* nuevo_menu.png in Resources */,
 				DCBFA0ED1C4D7ACE0078F320 /* fondoSinMenu.png in Resources */,
 				DCBFA1071C4F3B2E0078F320 /* proximos_eventos.png in Resources */,
+				E87AD90D1C6475790009ECA2 /* nuevo_como_participar.png in Resources */,
 				DC4AC5211C5098FC006A1995 /* terminos_condiciones.png in Resources */,
 				DC4AC5311C516980006A1995 /* imagenPregunta.png in Resources */,
 				DC4AC5331C516980006A1995 /* pregunta.png in Resources */,
@@ -527,6 +564,7 @@
 				DC5B995F1C3DDBD400E947B5 /* TriviaViewController.swift in Sources */,
 				DC5B99671C3E3AB600E947B5 /* AvisoViewController.swift in Sources */,
 				DC5B99611C3DDBEC00E947B5 /* TerminosViewController.swift in Sources */,
+				E87AD90F1C6475940009ECA2 /* NuevoComoParticiparViewController.swift in Sources */,
 				E8F125D11C63195A00DD64FC /* TableEventoViewController.swift in Sources */,
 				DC5B995D1C3DC18900E947B5 /* EventoMyNavigationController.swift in Sources */,
 				DC5B994D1C3CE50B00E947B5 /* ENSideMenu.swift in Sources */,
@@ -555,7 +593,9 @@
 				DC5B99491C3CE40E00E947B5 /* BlogViewController.swift in Sources */,
 				DC5B99691C3E3AC500E947B5 /* BlogDetalleViewController.swift in Sources */,
 				DCBFA1111C50682B0078F320 /* MenuViewController.swift in Sources */,
+				E87AD9111C6475B00009ECA2 /* NuevoComoParticiparMyNavigiationController.swift in Sources */,
 				DC5856E81C3BC07800DFDC5F /* VincularViewController.swift in Sources */,
+				E87AD9081C64721D0009ECA2 /* NuevoInicioViewController.swift in Sources */,
 				DCBFA10F1C5067280078F320 /* MenuMyNavigationController.swift in Sources */,
 				C4C6FE481ADBF8B200EAA7A9 /* AppDelegate.swift in Sources */,
 			);
