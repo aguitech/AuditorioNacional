@@ -690,7 +690,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1eI-mM-Rx0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5ja-x4-ZiJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Pj-tj-SDI">
@@ -918,7 +918,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yb5-KL-bQQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YCM-c7-V7l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="60z-y3-7TG">
@@ -1675,11 +1675,11 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                         <viewControllerLayoutGuide type="bottom" id="OR0-42-iBC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tOX-Rd-DYM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="K1G-KB-FJf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="64" width="399" height="603"/>
                                 </variation>
@@ -1704,7 +1704,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <rect key="frame" x="0.0" y="278" width="547" height="108"/>
                                         </variation>
                                         <connections>
-                                            <segue destination="IkV-zz-jeS" kind="show" id="teF-gq-oPd"/>
+                                            <segue destination="w7o-RF-wZh" kind="show" id="t2A-eM-IWP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2D-YP-9Fh">
@@ -1769,7 +1769,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vh8-Mb-FAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4112.5" y="-291.5"/>
+            <point key="canvasLocation" x="4356.5" y="-655.5"/>
         </scene>
         <!--Evento View Controller-->
         <scene sceneID="FIS-iP-H0c">
@@ -1780,10 +1780,10 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                         <viewControllerLayoutGuide type="bottom" id="pLF-Sd-EBC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ljw-1N-BBv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="NQv-DX-kOQ" userLabel="fondo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="NQv-DX-kOQ" userLabel="fondo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="64" width="667" height="603"/>
@@ -2486,7 +2486,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nH-oc-ULj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3461" y="6355"/>
+            <point key="canvasLocation" x="4689.5" y="248.5"/>
         </scene>
         <!--Nuevo Como Participar My Navigiation Controller-->
         <scene sceneID="uRT-BX-qRJ">
@@ -2541,8 +2541,9 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <image name="vincula.png" width="1106" height="177"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="teF-gq-oPd"/>
-        <segue reference="xV4-jr-hyF"/>
+        <segue reference="Tly-6t-9kZ"/>
+        <segue reference="t2A-eM-IWP"/>
+        <segue reference="c8s-mb-h4O"/>
         <segue reference="LtK-ws-bc8"/>
         <segue reference="ird-kz-Fot"/>
         <segue reference="KkQ-3y-YRs"/>

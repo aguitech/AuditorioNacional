@@ -15,6 +15,16 @@ class MenuViewController: UIViewController, ENSideMenuDelegate {
     var color = UIColor(red: 0.234375, green: 0.74609375, blue: 0.6640625, alpha: 1.0)
      var color_fondo_navbar = UIColor(red: (10/255), green: (20/255), blue: (38/255), alpha: 1.0)
     
+    /*@IBAction func proximos(sender: AnyObject) {
+        let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        let registroPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("tableEvento") as! TableEventoMyNavigationController
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.presentViewController(registroPantalla, animated:true, completion: nil)
+        })
+
+        
+    }*/
     override func viewDidLoad() {
         super.viewDidLoad()
         
