@@ -17,6 +17,14 @@ class NuevoComoParticiparViewController: UIViewController, ENSideMenuDelegate {
     var color_fondo_navbar = UIColor(red: (10/255), green: (20/255), blue: (38/255), alpha: 1.0)
     
     
+    @IBAction func toMenuView(sender: AnyObject) {
+        let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        let registroPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MenuMyNavigationController
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.presentViewController(registroPantalla, animated:true, completion: nil)
+        })
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

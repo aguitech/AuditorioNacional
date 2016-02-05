@@ -23,6 +23,14 @@ class BlogDetalleViewController: UIViewController, ENSideMenuDelegate {
     
     var id = String()
     
+    @IBAction func toMenuView(sender: AnyObject) {
+        let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        let registroPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MenuMyNavigationController
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.presentViewController(registroPantalla, animated:true, completion: nil)
+        })
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

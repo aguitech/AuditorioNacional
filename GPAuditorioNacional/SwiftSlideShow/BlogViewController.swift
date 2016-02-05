@@ -352,11 +352,20 @@ class BlogViewController: UIViewController, ENSideMenuDelegate {
         dispatch_async(dispatch_get_main_queue(), {
             self.presentViewController(nuevoView, animated:true, completion: nil)
         })*/
-        let VC1 = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController6id") as! BlogDetalleViewController
-        self.navigationController!.pushViewController(VC1, animated: true)
+        self.performSegueWithIdentifier("segue_superior", sender: id_a_blog)
     }
     
   
+    @IBAction func toMenuView(sender: AnyObject) {
+        
+        let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        let registroPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MenuMyNavigationController
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.presentViewController(registroPantalla, animated:true, completion: nil)
+        })
+
+    }
     @IBAction func entrada2(sender: AnyObject) {
         
         id_a_blog = id_blog_inf
@@ -369,8 +378,7 @@ class BlogViewController: UIViewController, ENSideMenuDelegate {
             self.presentViewController(nuevoView, animated:true, completion: nil)
         })*/
         
-        let VC1 = self.storyboard!.instantiateViewControllerWithIdentifier("ViewController6id") as! BlogDetalleViewController
-        self.navigationController!.pushViewController(VC1, animated: true)
+        self.performSegueWithIdentifier("segue_inferior", sender: id_a_blog)
     }
     
     

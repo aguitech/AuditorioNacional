@@ -112,11 +112,11 @@ class MyMenuTableViewController: UITableViewController {
         var destViewController : UIViewController
         switch (indexPath.row) {
         case 0:
-            print("Entra a esta parte 0")
+            print("Entra a USERNAME")
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewControllerUsername")
             break
         case 1:
-            print("Entra a esta parte 0")
+            print("Entra a blog")
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1")
             break
         case 2:
@@ -161,8 +161,7 @@ class MyMenuTableViewController: UITableViewController {
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4")
             break
         }
-        
-        self.presentViewController(destViewController, animated: true, completion: nil)
+            self.presentViewController(destViewController, animated: true, completion: nil)
         /*
         sideMenuController()?.setContentViewController(destViewController)
 */
