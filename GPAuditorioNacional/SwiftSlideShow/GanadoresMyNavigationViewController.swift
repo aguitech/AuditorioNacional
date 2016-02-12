@@ -8,22 +8,10 @@
 
 import UIKit
 
-class TriviaMyNavigationController: ENSideMenuNavigationController, ENSideMenuDelegate {
-    
-    var color_fondo_navbar = UIColor(red: (10/255), green: (20/255), blue: (38/255), alpha: 1.0)
-    var color = UIColor(red: 0.234375, green: 0.74609375, blue: 0.6640625, alpha: 1.0)
+class GanadoresMyNavigationController: ENSideMenuNavigationController, ENSideMenuDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Cambio Color
-        self.navigationController?.navigationBar.tintColor = color
-        self.navigationController?.navigationBar.barTintColor = color_fondo_navbar
-        
-        //Agregar imagen como titulo
-        let logo = UIImage(named: "titulo_be_part_of")
-        let imageView = UIImageView(image: logo)
-        self.navigationItem.titleView = imageView
         
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: MyMenuTableViewController(), menuPosition:.Left)
         //sideMenu?.delegate = self //optional

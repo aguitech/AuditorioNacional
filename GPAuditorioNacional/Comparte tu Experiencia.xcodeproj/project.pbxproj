@@ -38,9 +38,9 @@
 		DC5B99591C3D0D4700E947B5 /* EventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99581C3D0D4700E947B5 /* EventoViewController.swift */; };
 		DC5B995B1C3D51F100E947B5 /* logosLaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5B995A1C3D51F000E947B5 /* logosLaunch.png */; };
 		DC5B995D1C3DC18900E947B5 /* EventoMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B995C1C3DC18900E947B5 /* EventoMyNavigationController.swift */; };
-		DC5B995F1C3DDBD400E947B5 /* TriviaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B995E1C3DDBD400E947B5 /* TriviaViewController.swift */; };
+		DC5B995F1C3DDBD400E947B5 /* PreTriviaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B995E1C3DDBD400E947B5 /* PreTriviaViewController.swift */; };
 		DC5B99611C3DDBEC00E947B5 /* TerminosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99601C3DDBEC00E947B5 /* TerminosViewController.swift */; };
-		DC5B99631C3DDC0300E947B5 /* TriviaMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99621C3DDC0300E947B5 /* TriviaMyNavigationController.swift */; };
+		DC5B99631C3DDC0300E947B5 /* PreTriviaMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99621C3DDC0300E947B5 /* PreTriviaMyNavigationController.swift */; };
 		DC5B99651C3DDC1500E947B5 /* TerminosMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99641C3DDC1500E947B5 /* TerminosMyNavigationController.swift */; };
 		DC5B99671C3E3AB600E947B5 /* AvisoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99661C3E3AB600E947B5 /* AvisoViewController.swift */; };
 		DC5B99691C3E3AC500E947B5 /* BlogDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B99681C3E3AC500E947B5 /* BlogDetalleViewController.swift */; };
@@ -66,6 +66,24 @@
 		DCBFA10D1C5063DB0078F320 /* calendario.png in Resources */ = {isa = PBXBuildFile; fileRef = DCBFA10C1C5063DB0078F320 /* calendario.png */; };
 		DCBFA10F1C5067280078F320 /* MenuMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFA10E1C5067280078F320 /* MenuMyNavigationController.swift */; };
 		DCBFA1111C50682B0078F320 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFA1101C50682B0078F320 /* MenuViewController.swift */; };
+		E80E54191C6BCD510043A54D /* trivia_como_jugar.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E54181C6BCD510043A54D /* trivia_como_jugar.png */; };
+		E80E541B1C6BCD570043A54D /* trivia_iniciar.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E541A1C6BCD570043A54D /* trivia_iniciar.png */; };
+		E80E541D1C6BCFF30043A54D /* trivia_1_viaje.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E541C1C6BCFF30043A54D /* trivia_1_viaje.png */; };
+		E80E541F1C6BCFFD0043A54D /* trivia_el_destino.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E541E1C6BCFFD0043A54D /* trivia_el_destino.png */; };
+		E80E54211C6BD0080043A54D /* trivia_obten.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E54201C6BD0080043A54D /* trivia_obten.png */; };
+		E80E54231C6BD00F0043A54D /* trivia_responde.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E54221C6BD00F0043A54D /* trivia_responde.png */; };
+		E80E54251C6BD0160043A54D /* trivia_tienes_1_minuto.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E54241C6BD0160043A54D /* trivia_tienes_1_minuto.png */; };
+		E80E54271C6BDFAD0043A54D /* trivia_color_aqua.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E54261C6BDFAD0043A54D /* trivia_color_aqua.png */; };
+		E80E54291C6C02B90043A54D /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E54281C6C02B90043A54D /* Trivia.swift */; };
+		E80E542B1C6C084B0043A54D /* TriviaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E542A1C6C084B0043A54D /* TriviaViewController.swift */; };
+		E80E542D1C6C10330043A54D /* InicioDeTriviaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E542C1C6C10330043A54D /* InicioDeTriviaViewController.swift */; };
+		E80E542F1C6C10620043A54D /* InicioDeTriviaMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E542E1C6C10620043A54D /* InicioDeTriviaMyNavigationController.swift */; };
+		E80E54311C6C15F40043A54D /* trivia_fondo_pregunta.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E54301C6C15F40043A54D /* trivia_fondo_pregunta.png */; };
+		E80E54331C6C16F70043A54D /* trivia_fondo_preg.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E54321C6C16F70043A54D /* trivia_fondo_preg.png */; };
+		E80E54361C6E60330043A54D /* GanadoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E54351C6E60330043A54D /* GanadoresViewController.swift */; };
+		E80E54381C6E60600043A54D /* GanadoresMyNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E54371C6E60600043A54D /* GanadoresMyNavigationViewController.swift */; };
+		E80E543B1C6E67370043A54D /* ganadores_felicidades.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E543A1C6E67370043A54D /* ganadores_felicidades.png */; };
+		E80E543D1C6E67410043A54D /* ganadores_sigue_pendiente.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E543C1C6E67410043A54D /* ganadores_sigue_pendiente.png */; };
 		E83CBC6F1C65347D000A9E82 /* BlogDetalleNuevoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CBC6E1C65347D000A9E82 /* BlogDetalleNuevoViewController.swift */; };
 		E83CBC711C6534AE000A9E82 /* BlogDetalleNuevoMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CBC701C6534AE000A9E82 /* BlogDetalleNuevoMyNavigationController.swift */; };
 		E87AD9061C6471930009ECA2 /* nuevo_inicio.png in Resources */ = {isa = PBXBuildFile; fileRef = E87AD9051C6471930009ECA2 /* nuevo_inicio.png */; };
@@ -130,9 +148,9 @@
 		DC5B99581C3D0D4700E947B5 /* EventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventoViewController.swift; sourceTree = "<group>"; };
 		DC5B995A1C3D51F000E947B5 /* logosLaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logosLaunch.png; sourceTree = "<group>"; };
 		DC5B995C1C3DC18900E947B5 /* EventoMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventoMyNavigationController.swift; sourceTree = "<group>"; };
-		DC5B995E1C3DDBD400E947B5 /* TriviaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaViewController.swift; sourceTree = "<group>"; };
+		DC5B995E1C3DDBD400E947B5 /* PreTriviaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreTriviaViewController.swift; sourceTree = "<group>"; };
 		DC5B99601C3DDBEC00E947B5 /* TerminosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminosViewController.swift; sourceTree = "<group>"; };
-		DC5B99621C3DDC0300E947B5 /* TriviaMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaMyNavigationController.swift; sourceTree = "<group>"; };
+		DC5B99621C3DDC0300E947B5 /* PreTriviaMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreTriviaMyNavigationController.swift; sourceTree = "<group>"; };
 		DC5B99641C3DDC1500E947B5 /* TerminosMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminosMyNavigationController.swift; sourceTree = "<group>"; };
 		DC5B99661C3E3AB600E947B5 /* AvisoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvisoViewController.swift; sourceTree = "<group>"; };
 		DC5B99681C3E3AC500E947B5 /* BlogDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogDetalleViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +176,24 @@
 		DCBFA10C1C5063DB0078F320 /* calendario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendario.png; sourceTree = "<group>"; };
 		DCBFA10E1C5067280078F320 /* MenuMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuMyNavigationController.swift; sourceTree = "<group>"; };
 		DCBFA1101C50682B0078F320 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E80E54181C6BCD510043A54D /* trivia_como_jugar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_como_jugar.png; sourceTree = "<group>"; };
+		E80E541A1C6BCD570043A54D /* trivia_iniciar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_iniciar.png; sourceTree = "<group>"; };
+		E80E541C1C6BCFF30043A54D /* trivia_1_viaje.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_1_viaje.png; sourceTree = "<group>"; };
+		E80E541E1C6BCFFD0043A54D /* trivia_el_destino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_el_destino.png; sourceTree = "<group>"; };
+		E80E54201C6BD0080043A54D /* trivia_obten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_obten.png; sourceTree = "<group>"; };
+		E80E54221C6BD00F0043A54D /* trivia_responde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_responde.png; sourceTree = "<group>"; };
+		E80E54241C6BD0160043A54D /* trivia_tienes_1_minuto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_tienes_1_minuto.png; sourceTree = "<group>"; };
+		E80E54261C6BDFAD0043A54D /* trivia_color_aqua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_color_aqua.png; sourceTree = "<group>"; };
+		E80E54281C6C02B90043A54D /* Trivia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
+		E80E542A1C6C084B0043A54D /* TriviaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaViewController.swift; sourceTree = "<group>"; };
+		E80E542C1C6C10330043A54D /* InicioDeTriviaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioDeTriviaViewController.swift; sourceTree = "<group>"; };
+		E80E542E1C6C10620043A54D /* InicioDeTriviaMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioDeTriviaMyNavigationController.swift; sourceTree = "<group>"; };
+		E80E54301C6C15F40043A54D /* trivia_fondo_pregunta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_fondo_pregunta.png; sourceTree = "<group>"; };
+		E80E54321C6C16F70043A54D /* trivia_fondo_preg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_fondo_preg.png; sourceTree = "<group>"; };
+		E80E54351C6E60330043A54D /* GanadoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanadoresViewController.swift; sourceTree = "<group>"; };
+		E80E54371C6E60600043A54D /* GanadoresMyNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanadoresMyNavigationViewController.swift; sourceTree = "<group>"; };
+		E80E543A1C6E67370043A54D /* ganadores_felicidades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ganadores_felicidades.png; sourceTree = "<group>"; };
+		E80E543C1C6E67410043A54D /* ganadores_sigue_pendiente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ganadores_sigue_pendiente.png; sourceTree = "<group>"; };
 		E83CBC6E1C65347D000A9E82 /* BlogDetalleNuevoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogDetalleNuevoViewController.swift; sourceTree = "<group>"; };
 		E83CBC701C6534AE000A9E82 /* BlogDetalleNuevoMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogDetalleNuevoMyNavigationController.swift; sourceTree = "<group>"; };
 		E87AD9051C6471930009ECA2 /* nuevo_inicio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuevo_inicio.png; sourceTree = "<group>"; };
@@ -215,6 +251,7 @@
 		C4C6FE441ADBF8B200EAA7A9 /* SwiftSlideShow */ = {
 			isa = PBXGroup;
 			children = (
+				E80E54171C6BCCC40043A54D /* pretrivia */,
 				C4C6FE471ADBF8B200EAA7A9 /* AppDelegate.swift */,
 				E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */,
 				C4C6FE491ADBF8B200EAA7A9 /* ViewController.swift */,
@@ -248,6 +285,8 @@
 				DC5B994B1C3CE4C300E947B5 /* CosasMenu */,
 				E8F125D21C63196400DD64FC /* TableEvento */,
 				C4C6FE451ADBF8B200EAA7A9 /* Supporting Files */,
+				E80E54281C6C02B90043A54D /* Trivia.swift */,
+				E80E54391C6E60780043A54D /* ganadores */,
 			);
 			path = SwiftSlideShow;
 			sourceTree = "<group>";
@@ -280,8 +319,9 @@
 		DC4AC5381C51698B006A1995 /* trivia */ = {
 			isa = PBXGroup;
 			children = (
-				DC5B995E1C3DDBD400E947B5 /* TriviaViewController.swift */,
-				DC5B99621C3DDC0300E947B5 /* TriviaMyNavigationController.swift */,
+				E80E54321C6C16F70043A54D /* trivia_fondo_preg.png */,
+				E80E54301C6C15F40043A54D /* trivia_fondo_pregunta.png */,
+				E80E542A1C6C084B0043A54D /* TriviaViewController.swift */,
 				DC4AC5271C516980006A1995 /* ganaExperiencia.png */,
 				DC4AC5281C516980006A1995 /* imagenPregunta.png */,
 				DC4AC5291C516980006A1995 /* mecanica.png */,
@@ -333,6 +373,36 @@
 				DCBFA1061C4F3B2E0078F320 /* demuestra_sabes.png */,
 			);
 			name = menu;
+			sourceTree = "<group>";
+		};
+		E80E54171C6BCCC40043A54D /* pretrivia */ = {
+			isa = PBXGroup;
+			children = (
+				E80E54181C6BCD510043A54D /* trivia_como_jugar.png */,
+				E80E541A1C6BCD570043A54D /* trivia_iniciar.png */,
+				E80E541C1C6BCFF30043A54D /* trivia_1_viaje.png */,
+				E80E541E1C6BCFFD0043A54D /* trivia_el_destino.png */,
+				E80E54201C6BD0080043A54D /* trivia_obten.png */,
+				E80E54221C6BD00F0043A54D /* trivia_responde.png */,
+				E80E54261C6BDFAD0043A54D /* trivia_color_aqua.png */,
+				E80E54241C6BD0160043A54D /* trivia_tienes_1_minuto.png */,
+				DC5B995E1C3DDBD400E947B5 /* PreTriviaViewController.swift */,
+				DC5B99621C3DDC0300E947B5 /* PreTriviaMyNavigationController.swift */,
+				E80E542C1C6C10330043A54D /* InicioDeTriviaViewController.swift */,
+				E80E542E1C6C10620043A54D /* InicioDeTriviaMyNavigationController.swift */,
+			);
+			name = pretrivia;
+			sourceTree = "<group>";
+		};
+		E80E54391C6E60780043A54D /* ganadores */ = {
+			isa = PBXGroup;
+			children = (
+				E80E543C1C6E67410043A54D /* ganadores_sigue_pendiente.png */,
+				E80E543A1C6E67370043A54D /* ganadores_felicidades.png */,
+				E80E54351C6E60330043A54D /* GanadoresViewController.swift */,
+				E80E54371C6E60600043A54D /* GanadoresMyNavigationViewController.swift */,
+			);
+			name = ganadores;
 			sourceTree = "<group>";
 		};
 		E83CBC721C6534BA000A9E82 /* blog_detalle_nuevo */ = {
@@ -523,11 +593,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80E54191C6BCD510043A54D /* trivia_como_jugar.png in Resources */,
 				E87AD9061C6471930009ECA2 /* nuevo_inicio.png in Resources */,
 				DC4AC5361C516980006A1995 /* respuesta3.png in Resources */,
 				E87AD90B1C6475360009ECA2 /* nuevo_menu.png in Resources */,
 				DCBFA0ED1C4D7ACE0078F320 /* fondoSinMenu.png in Resources */,
 				DCBFA1071C4F3B2E0078F320 /* proximos_eventos.png in Resources */,
+				E80E54251C6BD0160043A54D /* trivia_tienes_1_minuto.png in Resources */,
 				E87AD90D1C6475790009ECA2 /* nuevo_como_participar.png in Resources */,
 				DC4AC5211C5098FC006A1995 /* terminos_condiciones.png in Resources */,
 				DC4AC5311C516980006A1995 /* imagenPregunta.png in Resources */,
@@ -539,23 +611,33 @@
 				DC4AC5321C516980006A1995 /* mecanica.png in Resources */,
 				DC4AC5781C51E850006A1995 /* comenzar.png in Resources */,
 				E8F157C71C584147005D7A09 /* fondo_pleca.png in Resources */,
+				E80E54211C6BD0080043A54D /* trivia_obten.png in Resources */,
+				E80E54231C6BD00F0043A54D /* trivia_responde.png in Resources */,
 				DCBFA0EF1C4D7AD60078F320 /* rectanguloRedesSociales.png in Resources */,
+				E80E541D1C6BCFF30043A54D /* trivia_1_viaje.png in Resources */,
 				DCBFA0FC1C4DFFA60078F320 /* home_icon.png in Resources */,
 				DCBFA10B1C5063C40078F320 /* pregunta_hoy.png in Resources */,
 				C4C6FE4D1ADBF8B200EAA7A9 /* Main.storyboard in Resources */,
+				E80E54311C6C15F40043A54D /* trivia_fondo_pregunta.png in Resources */,
 				DC4AC5351C516980006A1995 /* respuesta2.png in Resources */,
+				E80E54271C6BDFAD0043A54D /* trivia_color_aqua.png in Resources */,
 				DC5B99551C3CE8A600E947B5 /* fondo.png in Resources */,
+				E80E541F1C6BCFFD0043A54D /* trivia_el_destino.png in Resources */,
 				DC4AC5341C516980006A1995 /* respuesta1.png in Resources */,
 				DC4AC51F1C5098E8006A1995 /* aviso_privacidad.png in Resources */,
+				E80E543B1C6E67370043A54D /* ganadores_felicidades.png in Resources */,
 				DC4AC5371C516980006A1995 /* respuesta4.png in Resources */,
 				DC4AC5301C516980006A1995 /* ganaExperiencia.png in Resources */,
 				DCBFA0F31C4D7AEB0078F320 /* vincula.png in Resources */,
 				DCBFA0EB1C4D7AC40078F320 /* facebook.png in Resources */,
+				E80E54331C6C16F70043A54D /* trivia_fondo_preg.png in Resources */,
 				C4C6FE521ADBF8B200EAA7A9 /* LaunchScreen.xib in Resources */,
 				E8F157C91C588541005D7A09 /* be_part_of_pleca.png in Resources */,
+				E80E541B1C6BCD570043A54D /* trivia_iniciar.png in Resources */,
 				DCBFA0F11C4D7AE10078F320 /* twitter.png in Resources */,
 				DC4AC52F1C516980006A1995 /* enviar_respuesta.png in Resources */,
 				DCBFA0FA1C4DC26D0078F320 /* menu_icon.png in Resources */,
+				E80E543D1C6E67410043A54D /* ganadores_sigue_pendiente.png in Resources */,
 				C4C6FE4F1ADBF8B200EAA7A9 /* Images.xcassets in Resources */,
 				DC5B995B1C3D51F100E947B5 /* logosLaunch.png in Resources */,
 			);
@@ -575,7 +657,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC5B995F1C3DDBD400E947B5 /* TriviaViewController.swift in Sources */,
+				DC5B995F1C3DDBD400E947B5 /* PreTriviaViewController.swift in Sources */,
 				DC5B99671C3E3AB600E947B5 /* AvisoViewController.swift in Sources */,
 				DC5B99611C3DDBEC00E947B5 /* TerminosViewController.swift in Sources */,
 				E87AD90F1C6475940009ECA2 /* NuevoComoParticiparViewController.swift in Sources */,
@@ -589,18 +671,23 @@
 				DC5B99511C3CE6A200E947B5 /* BlogMyNavigationController.swift in Sources */,
 				E8F157BE1C58230B005D7A09 /* ParticiparViewController.swift in Sources */,
 				E8F157C01C5823F5005D7A09 /* ParticiparMyNavigationController.swift in Sources */,
-				DC5B99631C3DDC0300E947B5 /* TriviaMyNavigationController.swift in Sources */,
+				DC5B99631C3DDC0300E947B5 /* PreTriviaMyNavigationController.swift in Sources */,
+				E80E542D1C6C10330043A54D /* InicioDeTriviaViewController.swift in Sources */,
 				DC5B996D1C3E3ADE00E947B5 /* ViewController8.swift in Sources */,
 				DC5B99651C3DDC1500E947B5 /* TerminosMyNavigationController.swift in Sources */,
 				C4C6FE4A1ADBF8B200EAA7A9 /* ViewController.swift in Sources */,
+				E80E54361C6E60330043A54D /* GanadoresViewController.swift in Sources */,
 				DC5B99791C3E3C1500E947B5 /* UsernameMyNavigationController.swift in Sources */,
 				DC5856E41C3B425D00DFDC5F /* RegistroController.swift in Sources */,
 				DC5B99711C3E3B8200E947B5 /* AvisoMyNavigationController.swift in Sources */,
 				E8F125D41C631BD600DD64FC /* TableEventoMyNavigationController.swift in Sources */,
+				E80E54291C6C02B90043A54D /* Trivia.swift in Sources */,
 				DC5B99591C3D0D4700E947B5 /* EventoViewController.swift in Sources */,
+				E80E542F1C6C10620043A54D /* InicioDeTriviaMyNavigationController.swift in Sources */,
 				DC5856EA1C3CFC0100DFDC5F /* IniciarSesionController.swift in Sources */,
 				DC5B99531C3CE71B00E947B5 /* MyMenuTableViewController.swift in Sources */,
 				DC5B99771C3E3BF200E947B5 /* MyNavigationController8.swift in Sources */,
+				E80E542B1C6C084B0043A54D /* TriviaViewController.swift in Sources */,
 				DC5B996F1C3E3B3A00E947B5 /* UsernameViewController.swift in Sources */,
 				DC5B99751C3E3BC300E947B5 /* MyNavigationController7.swift in Sources */,
 				DC5B994F1C3CE5C700E947B5 /* ENSideMenuNavigationController.swift in Sources */,
@@ -610,6 +697,7 @@
 				DC5B99691C3E3AC500E947B5 /* BlogDetalleViewController.swift in Sources */,
 				DCBFA1111C50682B0078F320 /* MenuViewController.swift in Sources */,
 				E87AD9111C6475B00009ECA2 /* NuevoComoParticiparMyNavigiationController.swift in Sources */,
+				E80E54381C6E60600043A54D /* GanadoresMyNavigationViewController.swift in Sources */,
 				DC5856E81C3BC07800DFDC5F /* VincularViewController.swift in Sources */,
 				E87AD9081C64721D0009ECA2 /* NuevoInicioViewController.swift in Sources */,
 				DCBFA10F1C5067280078F320 /* MenuMyNavigationController.swift in Sources */,
