@@ -17,6 +17,7 @@ class InicioDeTriviaViewController: UIViewController, ENSideMenuDelegate {
     var color = UIColor(red: 0.234375, green: 0.74609375, blue: 0.6640625, alpha: 1.0)
     var color_fondo_navbar = UIColor(red: (10/255), green: (20/255), blue: (38/255), alpha: 1.0)
     
+    //La función view DidLoad comienza con la ejecuación del programa
     override func viewDidLoad() {
         super.viewDidLoad()
         print("-----------------------------------------------------------------------------------------------------------------------")
@@ -124,6 +125,17 @@ class InicioDeTriviaViewController: UIViewController, ENSideMenuDelegate {
         toggleSideMenuView()
         
     }
+    
+    @IBAction func toMenu(sender: AnyObject) {
+        let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        let registroPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MenuMyNavigationController
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.presentViewController(registroPantalla, animated:true, completion: nil)
+        })
+
+    }//Fin de la funcion to Menu
+    
     
     @IBAction func iniciar(sender: AnyObject) {
         self.performSegueWithIdentifier("hacia_trivia", sender: self)

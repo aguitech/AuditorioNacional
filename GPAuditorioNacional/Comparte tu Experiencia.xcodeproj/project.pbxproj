@@ -84,6 +84,9 @@
 		E80E54381C6E60600043A54D /* GanadoresMyNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E54371C6E60600043A54D /* GanadoresMyNavigationViewController.swift */; };
 		E80E543B1C6E67370043A54D /* ganadores_felicidades.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E543A1C6E67370043A54D /* ganadores_felicidades.png */; };
 		E80E543D1C6E67410043A54D /* ganadores_sigue_pendiente.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E543C1C6E67410043A54D /* ganadores_sigue_pendiente.png */; };
+		E80E543F1C6E7E690043A54D /* ganadores_titulo.png in Resources */ = {isa = PBXBuildFile; fileRef = E80E543E1C6E7E690043A54D /* ganadores_titulo.png */; };
+		E80E54411C6E8B700043A54D /* PostTriviaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E54401C6E8B6F0043A54D /* PostTriviaViewController.swift */; };
+		E80E54441C6E8B970043A54D /* PostTriviaMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E54431C6E8B970043A54D /* PostTriviaMyNavigationController.swift */; };
 		E83CBC6F1C65347D000A9E82 /* BlogDetalleNuevoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CBC6E1C65347D000A9E82 /* BlogDetalleNuevoViewController.swift */; };
 		E83CBC711C6534AE000A9E82 /* BlogDetalleNuevoMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CBC701C6534AE000A9E82 /* BlogDetalleNuevoMyNavigationController.swift */; };
 		E87AD9061C6471930009ECA2 /* nuevo_inicio.png in Resources */ = {isa = PBXBuildFile; fileRef = E87AD9051C6471930009ECA2 /* nuevo_inicio.png */; };
@@ -194,6 +197,9 @@
 		E80E54371C6E60600043A54D /* GanadoresMyNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanadoresMyNavigationViewController.swift; sourceTree = "<group>"; };
 		E80E543A1C6E67370043A54D /* ganadores_felicidades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ganadores_felicidades.png; sourceTree = "<group>"; };
 		E80E543C1C6E67410043A54D /* ganadores_sigue_pendiente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ganadores_sigue_pendiente.png; sourceTree = "<group>"; };
+		E80E543E1C6E7E690043A54D /* ganadores_titulo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ganadores_titulo.png; sourceTree = "<group>"; };
+		E80E54401C6E8B6F0043A54D /* PostTriviaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTriviaViewController.swift; sourceTree = "<group>"; };
+		E80E54431C6E8B970043A54D /* PostTriviaMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTriviaMyNavigationController.swift; sourceTree = "<group>"; };
 		E83CBC6E1C65347D000A9E82 /* BlogDetalleNuevoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogDetalleNuevoViewController.swift; sourceTree = "<group>"; };
 		E83CBC701C6534AE000A9E82 /* BlogDetalleNuevoMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogDetalleNuevoMyNavigationController.swift; sourceTree = "<group>"; };
 		E87AD9051C6471930009ECA2 /* nuevo_inicio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuevo_inicio.png; sourceTree = "<group>"; };
@@ -251,6 +257,7 @@
 		C4C6FE441ADBF8B200EAA7A9 /* SwiftSlideShow */ = {
 			isa = PBXGroup;
 			children = (
+				E80E54421C6E8B7B0043A54D /* postTrivia */,
 				E80E54171C6BCCC40043A54D /* pretrivia */,
 				C4C6FE471ADBF8B200EAA7A9 /* AppDelegate.swift */,
 				E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */,
@@ -397,12 +404,22 @@
 		E80E54391C6E60780043A54D /* ganadores */ = {
 			isa = PBXGroup;
 			children = (
+				E80E543E1C6E7E690043A54D /* ganadores_titulo.png */,
 				E80E543C1C6E67410043A54D /* ganadores_sigue_pendiente.png */,
 				E80E543A1C6E67370043A54D /* ganadores_felicidades.png */,
 				E80E54351C6E60330043A54D /* GanadoresViewController.swift */,
 				E80E54371C6E60600043A54D /* GanadoresMyNavigationViewController.swift */,
 			);
 			name = ganadores;
+			sourceTree = "<group>";
+		};
+		E80E54421C6E8B7B0043A54D /* postTrivia */ = {
+			isa = PBXGroup;
+			children = (
+				E80E54401C6E8B6F0043A54D /* PostTriviaViewController.swift */,
+				E80E54431C6E8B970043A54D /* PostTriviaMyNavigationController.swift */,
+			);
+			name = postTrivia;
 			sourceTree = "<group>";
 		};
 		E83CBC721C6534BA000A9E82 /* blog_detalle_nuevo */ = {
@@ -604,6 +621,7 @@
 				DC4AC5211C5098FC006A1995 /* terminos_condiciones.png in Resources */,
 				DC4AC5311C516980006A1995 /* imagenPregunta.png in Resources */,
 				DC4AC5331C516980006A1995 /* pregunta.png in Resources */,
+				E80E543F1C6E7E690043A54D /* ganadores_titulo.png in Resources */,
 				DCBFA1081C4F3B2E0078F320 /* descubre_mas.png in Resources */,
 				DCBFA1091C4F3B2E0078F320 /* demuestra_sabes.png in Resources */,
 				DCBFA10D1C5063DB0078F320 /* calendario.png in Resources */,
@@ -680,6 +698,7 @@
 				DC5B99791C3E3C1500E947B5 /* UsernameMyNavigationController.swift in Sources */,
 				DC5856E41C3B425D00DFDC5F /* RegistroController.swift in Sources */,
 				DC5B99711C3E3B8200E947B5 /* AvisoMyNavigationController.swift in Sources */,
+				E80E54411C6E8B700043A54D /* PostTriviaViewController.swift in Sources */,
 				E8F125D41C631BD600DD64FC /* TableEventoMyNavigationController.swift in Sources */,
 				E80E54291C6C02B90043A54D /* Trivia.swift in Sources */,
 				DC5B99591C3D0D4700E947B5 /* EventoViewController.swift in Sources */,
@@ -697,6 +716,7 @@
 				DC5B99691C3E3AC500E947B5 /* BlogDetalleViewController.swift in Sources */,
 				DCBFA1111C50682B0078F320 /* MenuViewController.swift in Sources */,
 				E87AD9111C6475B00009ECA2 /* NuevoComoParticiparMyNavigiationController.swift in Sources */,
+				E80E54441C6E8B970043A54D /* PostTriviaMyNavigationController.swift in Sources */,
 				E80E54381C6E60600043A54D /* GanadoresMyNavigationViewController.swift in Sources */,
 				DC5856E81C3BC07800DFDC5F /* VincularViewController.swift in Sources */,
 				E87AD9081C64721D0009ECA2 /* NuevoInicioViewController.swift in Sources */,

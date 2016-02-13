@@ -911,7 +911,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9G-FC-DfC">
                                         <rect key="frame" x="0.0" y="405" width="375" height="142"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyO-0v-jUS">
+                                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyO-0v-jUS">
                                                 <rect key="frame" x="116" y="44" width="142" height="54"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ZyO-0v-jUS" secondAttribute="height" multiplier="71:27" id="f00-kg-6yn"/>
@@ -1006,12 +1006,14 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="home" id="raF-ct-xlw">
                             <connections>
+                                <action selector="toMenu:" destination="7Rj-1l-QQE" id="xd8-Tq-2Qk"/>
                                 <segue destination="m0S-wi-CYc" kind="show" id="c8s-mb-h4O"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="btnComenzar" destination="ZyO-0v-jUS" id="zQ9-fh-ZzJ"/>
                         <segue destination="3W9-JK-HBy" kind="show" identifier="hacia_trivia" id="nbv-Kx-UBA"/>
                     </connections>
                 </viewController>
@@ -1042,6 +1044,22 @@
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPg-AO-Dns">
                                         <rect key="frame" x="0.0" y="59" width="375" height="211.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msX-xC-Nhh">
+                                                <rect key="frame" x="13" y="163" width="63" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="msX-xC-Nhh" secondAttribute="height" multiplier="7:4" id="PoR-qB-clV"/>
+                                                    <constraint firstAttribute="width" constant="63" id="q1a-Pk-xxx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="msX-xC-Nhh" firstAttribute="leading" secondItem="rPg-AO-Dns" secondAttribute="leading" constant="13" id="70D-WR-oEJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="msX-xC-Nhh" secondAttribute="bottom" constant="12.5" id="fl1-Sv-8cf"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-td-Qp8" userLabel="DivisorInferior">
                                         <rect key="frame" x="0.0" y="331" width="375" height="272"/>
@@ -1052,11 +1070,14 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clL-Fa-DE1" userLabel="PrimerBoton">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="54"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTH-K9-gsZ">
+                                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTH-K9-gsZ">
                                                                 <rect key="frame" x="0.0" y="12" width="300" height="30"/>
-                                                                <state key="normal" title="Button" backgroundImage="trivia_fondo_preg.png">
+                                                                <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="0.91329635718463997" green="0.98696366495518806" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="OprimirBoton:" destination="3W9-JK-HBy" eventType="touchUpInside" id="x9B-yO-KCN"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -1069,11 +1090,14 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYj-Ie-KTL" userLabel="SegundoBoton">
                                                         <rect key="frame" x="0.0" y="54" width="300" height="54"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7o-nB-wRD">
+                                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7o-nB-wRD">
                                                                 <rect key="frame" x="0.0" y="12" width="300" height="30"/>
-                                                                <state key="normal" title="Button" backgroundImage="trivia_fondo_preg.png">
+                                                                <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="0.91329635718463997" green="0.98696366495518806" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="OprimirBoton:" destination="3W9-JK-HBy" eventType="touchUpInside" id="zjP-Hl-cTo"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -1086,11 +1110,14 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TP9-bG-yzs" userLabel="TercerBoton">
                                                         <rect key="frame" x="0.0" y="108" width="300" height="54"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONJ-sf-CAh">
+                                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONJ-sf-CAh">
                                                                 <rect key="frame" x="0.0" y="12" width="300" height="30"/>
-                                                                <state key="normal" title="Button" backgroundImage="trivia_fondo_preg.png">
+                                                                <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="OprimirBoton:" destination="3W9-JK-HBy" eventType="touchUpInside" id="Kk2-hF-4fp"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -1103,11 +1130,14 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVH-45-600" userLabel="CuartoBoton">
                                                         <rect key="frame" x="0.0" y="162" width="300" height="55"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJZ-Nc-9ka">
+                                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJZ-Nc-9ka">
                                                                 <rect key="frame" x="0.0" y="12" width="300" height="30"/>
-                                                                <state key="normal" title="Button" backgroundImage="trivia_fondo_preg.png">
+                                                                <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="OprimirBoton:" destination="3W9-JK-HBy" eventType="touchUpInside" id="8cv-ri-keh"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -1151,7 +1181,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_color_aqua.png" translatesAutoresizingMaskIntoConstraints="NO" id="erD-1t-pjU">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregunta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f1-Bx-gUt">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f1-Bx-gUt">
                                                 <rect key="frame" x="0.0" y="14" width="375" height="33"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1207,6 +1237,15 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="contador" destination="msX-xC-Nhh" id="sxc-pf-Xii"/>
+                        <outlet property="pregunta" destination="6f1-Bx-gUt" id="jYW-z6-dJv"/>
+                        <outlet property="respuesta1Btn" destination="RTH-K9-gsZ" id="Fcv-6b-Dv7"/>
+                        <outlet property="respuesta2Btn" destination="k7o-nB-wRD" id="xrS-wX-8H8"/>
+                        <outlet property="respuesta3Btn" destination="ONJ-sf-CAh" id="yWL-e8-P4H"/>
+                        <outlet property="respuesta4Btn" destination="qJZ-Nc-9ka" id="AIS-Sq-dvp"/>
+                        <segue destination="4WP-wy-x7t" kind="show" identifier="hacia_post_trivia" id="Fbn-A4-MXi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z5j-q1-R9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2581,7 +2620,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJk-KD-wP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5009" y="7146"/>
+            <point key="canvasLocation" x="4898" y="7146"/>
         </scene>
         <!--Ganadores View Controller-->
         <scene sceneID="cg0-MM-KD4">
@@ -2614,49 +2653,185 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.26101594579999998" green="0.49814922550000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="hYs-7B-Idz" firstAttribute="height" secondItem="p4s-ZH-imM" secondAttribute="height" multiplier="0.24" id="2oB-aD-ifK"/>
                                             <constraint firstItem="hYs-7B-Idz" firstAttribute="centerY" secondItem="p4s-ZH-imM" secondAttribute="centerY" id="DQs-ar-jHN"/>
                                             <constraint firstItem="hYs-7B-Idz" firstAttribute="centerX" secondItem="p4s-ZH-imM" secondAttribute="centerX" id="GVL-Vc-Iji"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcS-eC-LY8">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcS-eC-LY8" userLabel="fondo_ganadores">
                                         <rect key="frame" x="0.0" y="146" width="600" height="300"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGy-Tp-CkN">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGy-Tp-CkN" userLabel="fondo_gandores_margen">
                                                 <rect key="frame" x="36" y="0.0" width="528" height="300"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97E-vn-Tel">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97E-vn-Tel" userLabel="parte_izquierda">
                                                         <rect key="frame" x="0.0" y="0.0" width="264" height="300"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSO-Hs-iJJ">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSO-Hs-iJJ" userLabel="ganador1">
                                                                 <rect key="frame" x="0.0" y="0.0" width="264" height="75"/>
-                                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOp-Cm-F19" userLabel="fondo_ganador1">
+                                                                        <rect key="frame" x="12.5" y="6" width="238" height="63"/>
+                                                                        <color key="backgroundColor" red="0.24313725490196078" green="0.77647058823529413" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="KOp-Cm-F19" firstAttribute="height" secondItem="gSO-Hs-iJJ" secondAttribute="height" multiplier="0.85" id="1m0-a5-zUi"/>
+                                                                    <constraint firstItem="KOp-Cm-F19" firstAttribute="width" secondItem="gSO-Hs-iJJ" secondAttribute="width" multiplier="0.9" id="Qbz-fL-JJq"/>
+                                                                    <constraint firstItem="KOp-Cm-F19" firstAttribute="centerX" secondItem="gSO-Hs-iJJ" secondAttribute="centerX" id="Si1-Nr-qTS"/>
+                                                                    <constraint firstItem="KOp-Cm-F19" firstAttribute="centerY" secondItem="gSO-Hs-iJJ" secondAttribute="centerY" id="sBP-ay-GR4"/>
+                                                                </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Owx-5j-SRm">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Owx-5j-SRm" userLabel="ganador2">
                                                                 <rect key="frame" x="0.0" y="75" width="264" height="75"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ZI-1E-6A8" userLabel="fondo_ganador2">
+                                                                        <rect key="frame" x="13" y="6" width="237" height="63"/>
+                                                                        <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="3ZI-1E-6A8" firstAttribute="width" secondItem="Owx-5j-SRm" secondAttribute="width" multiplier="0.9" id="5So-5k-HxE"/>
+                                                                    <constraint firstItem="3ZI-1E-6A8" firstAttribute="centerX" secondItem="Owx-5j-SRm" secondAttribute="centerX" id="ZVJ-5K-b0L"/>
+                                                                    <constraint firstItem="3ZI-1E-6A8" firstAttribute="centerY" secondItem="Owx-5j-SRm" secondAttribute="centerY" id="esY-ui-UCY"/>
+                                                                    <constraint firstItem="3ZI-1E-6A8" firstAttribute="height" secondItem="Owx-5j-SRm" secondAttribute="height" multiplier="0.85" id="xy5-be-6G7"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDD-H1-tlX" userLabel="ganador3">
+                                                                <rect key="frame" x="0.0" y="150" width="264" height="75"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaK-wT-8FY" userLabel="fondo_ganador3">
+                                                                        <rect key="frame" x="13" y="6" width="238" height="63"/>
+                                                                        <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="JaK-wT-8FY" firstAttribute="centerX" secondItem="fDD-H1-tlX" secondAttribute="centerX" id="N7H-AS-vD3"/>
+                                                                    <constraint firstItem="JaK-wT-8FY" firstAttribute="centerY" secondItem="fDD-H1-tlX" secondAttribute="centerY" id="Y5Y-ws-P3j"/>
+                                                                    <constraint firstItem="JaK-wT-8FY" firstAttribute="height" secondItem="fDD-H1-tlX" secondAttribute="height" multiplier="0.85" id="l7R-qq-tlF"/>
+                                                                    <constraint firstItem="JaK-wT-8FY" firstAttribute="width" secondItem="fDD-H1-tlX" secondAttribute="width" multiplier="0.9" id="sBx-ZL-599"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nR6-ou-E8T" userLabel="ganador4">
+                                                                <rect key="frame" x="0.0" y="225" width="264" height="75"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mM-Py-7kn" userLabel="fondo_ganador4">
+                                                                        <rect key="frame" x="12.5" y="6" width="238" height="63"/>
+                                                                        <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="3mM-Py-7kn" firstAttribute="width" secondItem="nR6-ou-E8T" secondAttribute="width" multiplier="0.9" id="110-M1-0hH"/>
+                                                                    <constraint firstItem="3mM-Py-7kn" firstAttribute="centerY" secondItem="nR6-ou-E8T" secondAttribute="centerY" id="Pxh-nh-jsL"/>
+                                                                    <constraint firstItem="3mM-Py-7kn" firstAttribute="height" secondItem="nR6-ou-E8T" secondAttribute="height" multiplier="0.85" id="T49-SQ-TBZ"/>
+                                                                    <constraint firstItem="3mM-Py-7kn" firstAttribute="centerX" secondItem="nR6-ou-E8T" secondAttribute="centerX" id="l3b-gN-OPe"/>
+                                                                </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.2767639925" green="0.90479826779999994" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
+                                                            <constraint firstItem="fDD-H1-tlX" firstAttribute="top" secondItem="Owx-5j-SRm" secondAttribute="bottom" id="0l7-2j-W4O"/>
                                                             <constraint firstItem="Owx-5j-SRm" firstAttribute="top" secondItem="gSO-Hs-iJJ" secondAttribute="bottom" id="3jY-X0-ocY"/>
                                                             <constraint firstItem="gSO-Hs-iJJ" firstAttribute="top" secondItem="97E-vn-Tel" secondAttribute="top" id="7lF-uC-74p"/>
                                                             <constraint firstItem="gSO-Hs-iJJ" firstAttribute="width" secondItem="97E-vn-Tel" secondAttribute="width" id="LXl-Sd-0Gq"/>
+                                                            <constraint firstItem="nR6-ou-E8T" firstAttribute="centerX" secondItem="97E-vn-Tel" secondAttribute="centerX" id="Lln-ri-X8z"/>
+                                                            <constraint firstItem="nR6-ou-E8T" firstAttribute="height" secondItem="97E-vn-Tel" secondAttribute="height" multiplier="0.25" id="SCa-pU-gMD"/>
                                                             <constraint firstItem="gSO-Hs-iJJ" firstAttribute="centerX" secondItem="97E-vn-Tel" secondAttribute="centerX" id="Xey-gR-eqF"/>
                                                             <constraint firstItem="Owx-5j-SRm" firstAttribute="width" secondItem="97E-vn-Tel" secondAttribute="width" id="bG7-gl-SBh"/>
                                                             <constraint firstItem="Owx-5j-SRm" firstAttribute="centerX" secondItem="97E-vn-Tel" secondAttribute="centerX" id="fMc-vK-mVa"/>
+                                                            <constraint firstItem="nR6-ou-E8T" firstAttribute="width" secondItem="97E-vn-Tel" secondAttribute="width" id="gtH-yo-aSY"/>
+                                                            <constraint firstItem="fDD-H1-tlX" firstAttribute="centerX" secondItem="97E-vn-Tel" secondAttribute="centerX" id="mRr-VH-McK"/>
+                                                            <constraint firstItem="nR6-ou-E8T" firstAttribute="top" secondItem="fDD-H1-tlX" secondAttribute="bottom" id="oYw-3L-05e"/>
+                                                            <constraint firstItem="fDD-H1-tlX" firstAttribute="width" secondItem="97E-vn-Tel" secondAttribute="width" id="szs-7E-ZWm"/>
                                                             <constraint firstItem="Owx-5j-SRm" firstAttribute="height" secondItem="97E-vn-Tel" secondAttribute="height" multiplier="0.25" id="who-Bt-n6j"/>
+                                                            <constraint firstItem="fDD-H1-tlX" firstAttribute="height" secondItem="97E-vn-Tel" secondAttribute="height" multiplier="0.25" id="xiv-Ra-hTy"/>
                                                             <constraint firstItem="gSO-Hs-iJJ" firstAttribute="height" secondItem="97E-vn-Tel" secondAttribute="height" multiplier="0.25" id="yyT-9K-fGg"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fs0-32-hxK">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fs0-32-hxK" userLabel="parte_derecha">
                                                         <rect key="frame" x="264" y="0.0" width="264" height="300"/>
-                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duH-eN-Ia8" userLabel="ganador1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="264" height="75"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VI9-DF-NCI" userLabel="fondo_ganador1">
+                                                                        <rect key="frame" x="13.5" y="6" width="238" height="63"/>
+                                                                        <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="VI9-DF-NCI" firstAttribute="centerY" secondItem="duH-eN-Ia8" secondAttribute="centerY" id="4Nh-sD-3yf"/>
+                                                                    <constraint firstItem="VI9-DF-NCI" firstAttribute="width" secondItem="duH-eN-Ia8" secondAttribute="width" multiplier="0.9" id="ayV-1L-3CZ"/>
+                                                                    <constraint firstItem="VI9-DF-NCI" firstAttribute="height" secondItem="duH-eN-Ia8" secondAttribute="height" multiplier="0.85" id="t0Y-K3-Ch8"/>
+                                                                    <constraint firstItem="VI9-DF-NCI" firstAttribute="centerX" secondItem="duH-eN-Ia8" secondAttribute="centerX" id="wXd-A0-reb"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZV-B9-Ozb" userLabel="ganador2">
+                                                                <rect key="frame" x="0.0" y="75" width="264" height="75"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8S-Yp-a9A" userLabel="fondo_ganador2">
+                                                                        <rect key="frame" x="13.5" y="6" width="238" height="63"/>
+                                                                        <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="M8S-Yp-a9A" firstAttribute="centerY" secondItem="rZV-B9-Ozb" secondAttribute="centerY" id="CQM-xF-zVq"/>
+                                                                    <constraint firstItem="M8S-Yp-a9A" firstAttribute="centerX" secondItem="rZV-B9-Ozb" secondAttribute="centerX" id="UUi-sS-3sg"/>
+                                                                    <constraint firstItem="M8S-Yp-a9A" firstAttribute="width" secondItem="rZV-B9-Ozb" secondAttribute="width" multiplier="0.9" id="foV-g5-S9j"/>
+                                                                    <constraint firstItem="M8S-Yp-a9A" firstAttribute="height" secondItem="rZV-B9-Ozb" secondAttribute="height" multiplier="0.85" id="zJG-hV-6AS"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSe-2p-nzv" userLabel="ganador3">
+                                                                <rect key="frame" x="0.0" y="150" width="264" height="75"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwl-LD-g93" userLabel="fondo_ganador3">
+                                                                        <rect key="frame" x="13.5" y="6" width="238" height="63"/>
+                                                                        <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="pwl-LD-g93" firstAttribute="height" secondItem="tSe-2p-nzv" secondAttribute="height" multiplier="0.85" id="IOe-Gk-O9W"/>
+                                                                    <constraint firstItem="pwl-LD-g93" firstAttribute="centerY" secondItem="tSe-2p-nzv" secondAttribute="centerY" id="JLL-S7-NKd"/>
+                                                                    <constraint firstItem="pwl-LD-g93" firstAttribute="width" secondItem="tSe-2p-nzv" secondAttribute="width" multiplier="0.9" id="bQs-BN-0YI"/>
+                                                                    <constraint firstItem="pwl-LD-g93" firstAttribute="centerX" secondItem="tSe-2p-nzv" secondAttribute="centerX" id="pIm-ds-VZ6"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFm-fX-HFU" userLabel="ganador4">
+                                                                <rect key="frame" x="0.0" y="225" width="264" height="75"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOz-pI-TpE" userLabel="fondo_ganador4">
+                                                                        <rect key="frame" x="13.5" y="6" width="238" height="63"/>
+                                                                        <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="dOz-pI-TpE" firstAttribute="width" secondItem="cFm-fX-HFU" secondAttribute="width" multiplier="0.9" id="6Kw-7m-769"/>
+                                                                    <constraint firstItem="dOz-pI-TpE" firstAttribute="height" secondItem="cFm-fX-HFU" secondAttribute="height" multiplier="0.85" id="Mf7-HX-AJU"/>
+                                                                    <constraint firstItem="dOz-pI-TpE" firstAttribute="centerX" secondItem="cFm-fX-HFU" secondAttribute="centerX" id="PXp-oz-Uph"/>
+                                                                    <constraint firstItem="dOz-pI-TpE" firstAttribute="centerY" secondItem="cFm-fX-HFU" secondAttribute="centerY" id="WOu-DW-V2r"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="duH-eN-Ia8" firstAttribute="top" secondItem="Fs0-32-hxK" secondAttribute="top" id="Fp5-bi-90i"/>
+                                                            <constraint firstItem="cFm-fX-HFU" firstAttribute="centerX" secondItem="Fs0-32-hxK" secondAttribute="centerX" id="HGF-0A-foi"/>
+                                                            <constraint firstItem="tSe-2p-nzv" firstAttribute="top" secondItem="rZV-B9-Ozb" secondAttribute="bottom" id="KPo-1Q-Ftu"/>
+                                                            <constraint firstItem="rZV-B9-Ozb" firstAttribute="height" secondItem="Fs0-32-hxK" secondAttribute="height" multiplier="0.25" id="QpH-NI-cqU"/>
+                                                            <constraint firstItem="tSe-2p-nzv" firstAttribute="width" secondItem="Fs0-32-hxK" secondAttribute="width" id="YoP-Pq-nk5"/>
+                                                            <constraint firstItem="rZV-B9-Ozb" firstAttribute="width" secondItem="Fs0-32-hxK" secondAttribute="width" id="Zgr-MS-3Hu"/>
+                                                            <constraint firstItem="duH-eN-Ia8" firstAttribute="centerX" secondItem="Fs0-32-hxK" secondAttribute="centerX" id="fHC-S3-QIG"/>
+                                                            <constraint firstItem="tSe-2p-nzv" firstAttribute="centerX" secondItem="Fs0-32-hxK" secondAttribute="centerX" id="hOb-Mu-0uQ"/>
+                                                            <constraint firstItem="duH-eN-Ia8" firstAttribute="height" secondItem="Fs0-32-hxK" secondAttribute="height" multiplier="0.25" id="k8O-jI-IlW"/>
+                                                            <constraint firstItem="cFm-fX-HFU" firstAttribute="top" secondItem="tSe-2p-nzv" secondAttribute="bottom" id="lKl-2L-Xqj"/>
+                                                            <constraint firstItem="rZV-B9-Ozb" firstAttribute="centerX" secondItem="Fs0-32-hxK" secondAttribute="centerX" id="pNY-sC-gSA"/>
+                                                            <constraint firstItem="tSe-2p-nzv" firstAttribute="height" secondItem="Fs0-32-hxK" secondAttribute="height" multiplier="0.25" id="pUV-Ar-2Hp"/>
+                                                            <constraint firstItem="duH-eN-Ia8" firstAttribute="width" secondItem="Fs0-32-hxK" secondAttribute="width" id="rca-q2-6Bb"/>
+                                                            <constraint firstItem="rZV-B9-Ozb" firstAttribute="top" secondItem="duH-eN-Ia8" secondAttribute="bottom" id="vmS-rB-ta2"/>
+                                                            <constraint firstItem="cFm-fX-HFU" firstAttribute="height" secondItem="Fs0-32-hxK" secondAttribute="height" multiplier="0.25" id="wch-IA-Pq2"/>
+                                                            <constraint firstItem="cFm-fX-HFU" firstAttribute="width" secondItem="Fs0-32-hxK" secondAttribute="width" id="z69-aH-QnV"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.91160680620000001" green="0.045847804380000003" blue="0.60823293560000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="97E-vn-Tel" firstAttribute="height" secondItem="UGy-Tp-CkN" secondAttribute="height" id="F2p-oE-C2s"/>
                                                     <constraint firstItem="97E-vn-Tel" firstAttribute="top" secondItem="UGy-Tp-CkN" secondAttribute="top" id="Gca-4B-ClO"/>
@@ -2671,7 +2846,6 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="0.20654916649999999" blue="0.1397343103" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="UGy-Tp-CkN" firstAttribute="centerY" secondItem="UcS-eC-LY8" secondAttribute="centerY" id="BLR-gV-gKD"/>
                                             <constraint firstItem="UGy-Tp-CkN" firstAttribute="centerX" secondItem="UcS-eC-LY8" secondAttribute="centerX" id="LbL-Qo-a7K"/>
@@ -2679,8 +2853,8 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <constraint firstItem="UGy-Tp-CkN" firstAttribute="width" secondItem="UcS-eC-LY8" secondAttribute="width" multiplier="0.88" id="zPM-GZ-186"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MoT-k6-us2">
-                                        <rect key="frame" x="0.0" y="446" width="600" height="91"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MoT-k6-us2" userLabel="fondo_inferior">
+                                        <rect key="frame" x="0.0" y="445" width="600" height="91"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ganadores_sigue_pendiente.png" translatesAutoresizingMaskIntoConstraints="NO" id="ycA-Kr-yuq">
                                                 <rect key="frame" x="180" y="35" width="240" height="21"/>
@@ -2689,15 +2863,19 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.43357520220000001" green="0.22971263459999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="ycA-Kr-yuq" firstAttribute="centerY" secondItem="MoT-k6-us2" secondAttribute="centerY" id="4er-gm-pib"/>
                                             <constraint firstItem="ycA-Kr-yuq" firstAttribute="centerX" secondItem="MoT-k6-us2" secondAttribute="centerX" id="Q4m-jP-213"/>
                                             <constraint firstItem="ycA-Kr-yuq" firstAttribute="height" secondItem="MoT-k6-us2" secondAttribute="height" multiplier="0.24" id="xSz-u2-yWp"/>
                                         </constraints>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ganadores_titulo.png" translatesAutoresizingMaskIntoConstraints="NO" id="JVD-VP-zZ0">
+                                        <rect key="frame" x="152" y="18" width="297" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="JVD-VP-zZ0" secondAttribute="height" multiplier="297:17" id="eYe-cc-Fnz"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="jgu-8p-wW7" firstAttribute="centerX" secondItem="1lE-Uw-A2u" secondAttribute="centerX" id="0Hz-d3-wR0"/>
                                     <constraint firstItem="MoT-k6-us2" firstAttribute="height" secondItem="1lE-Uw-A2u" secondAttribute="height" multiplier="0.17" id="18b-PX-JEg"/>
@@ -2709,8 +2887,11 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                     <constraint firstItem="MoT-k6-us2" firstAttribute="centerX" secondItem="1lE-Uw-A2u" secondAttribute="centerX" id="FPp-ju-rBx"/>
                                     <constraint firstItem="MoT-k6-us2" firstAttribute="top" secondItem="UcS-eC-LY8" secondAttribute="bottom" id="Fu3-AJ-pcg"/>
                                     <constraint firstItem="UcS-eC-LY8" firstAttribute="height" secondItem="1lE-Uw-A2u" secondAttribute="height" multiplier="0.56" id="HwO-8h-We1"/>
+                                    <constraint firstItem="JVD-VP-zZ0" firstAttribute="centerX" secondItem="jgu-8p-wW7" secondAttribute="centerX" id="Mcb-g2-JFr"/>
+                                    <constraint firstItem="JVD-VP-zZ0" firstAttribute="centerY" secondItem="jgu-8p-wW7" secondAttribute="centerY" id="TEB-il-xHb"/>
                                     <constraint firstItem="MoT-k6-us2" firstAttribute="width" secondItem="1lE-Uw-A2u" secondAttribute="width" id="Xhb-CB-t0u"/>
                                     <constraint firstItem="jgu-8p-wW7" firstAttribute="top" secondItem="1lE-Uw-A2u" secondAttribute="top" id="ZKP-d0-pc7"/>
+                                    <constraint firstItem="JVD-VP-zZ0" firstAttribute="height" secondItem="jgu-8p-wW7" secondAttribute="height" multiplier="0.33" id="gVq-eX-9QP"/>
                                     <constraint firstItem="p4s-ZH-imM" firstAttribute="height" secondItem="1lE-Uw-A2u" secondAttribute="height" multiplier="0.17" id="hcq-s7-mZZ"/>
                                     <constraint firstItem="UcS-eC-LY8" firstAttribute="width" secondItem="1lE-Uw-A2u" secondAttribute="width" id="ljR-fi-SEB"/>
                                     <constraint firstItem="p4s-ZH-imM" firstAttribute="width" secondItem="1lE-Uw-A2u" secondAttribute="width" id="sLj-KU-kkE"/>
@@ -2731,13 +2912,62 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rJF-LD-acD">
-                        <barButtonItem key="leftBarButtonItem" image="menu_logo" id="4U1-Ok-kvm"/>
-                        <barButtonItem key="rightBarButtonItem" image="home" id="3In-dX-zpe"/>
+                        <barButtonItem key="leftBarButtonItem" image="menu_logo" id="4U1-Ok-kvm">
+                            <connections>
+                                <action selector="toggleSideMenu:" destination="Bgo-T5-5il" id="MWf-YG-Pbe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="home" id="3In-dX-zpe">
+                            <connections>
+                                <action selector="toMenu:" destination="Bgo-T5-5il" id="9Qs-oH-iwk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYp-yE-f4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5009" y="7880"/>
+        </scene>
+        <!--Post Trivia View Controller-->
+        <scene sceneID="Fcj-6b-Acf">
+            <objects>
+                <viewController id="4WP-wy-x7t" customClass="PostTriviaViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pbw-oV-yCU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Exy-NQ-qNa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tB9-IN-672">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="FsU-U9-Hls">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FsU-U9-Hls" firstAttribute="leading" secondItem="tB9-IN-672" secondAttribute="leading" id="buJ-TD-gzL"/>
+                            <constraint firstItem="FsU-U9-Hls" firstAttribute="top" secondItem="Pbw-oV-yCU" secondAttribute="bottom" id="k6r-rm-Wtm"/>
+                            <constraint firstItem="Exy-NQ-qNa" firstAttribute="top" secondItem="FsU-U9-Hls" secondAttribute="bottom" id="q6Y-mM-CGK"/>
+                            <constraint firstAttribute="trailing" secondItem="FsU-U9-Hls" secondAttribute="trailing" id="tfq-bT-0Gb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="m0z-3G-yPs">
+                        <barButtonItem key="leftBarButtonItem" image="menu_logo" id="hSW-yy-OJ4">
+                            <connections>
+                                <action selector="toggleSideMenu:" destination="4WP-wy-x7t" id="cf2-2K-agK"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="home" id="aU4-89-t2I">
+                            <connections>
+                                <action selector="toMenu:" destination="4WP-wy-x7t" id="LPM-mt-h1e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fA-KP-Ogn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5183.5" y="421.5"/>
         </scene>
         <!--Evento My Navigation Controller-->
         <scene sceneID="m3d-ZT-Rde">
@@ -2942,7 +3172,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Ganadores My Navigation Controller-->
         <scene sceneID="vgF-SN-ZlU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xwi-14-4cz" customClass="GanadoresMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ganadores" automaticallyAdjustsScrollViewInsets="NO" id="Xwi-14-4cz" customClass="GanadoresMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="8C8-Ku-uSI">
@@ -2958,6 +3188,25 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
             </objects>
             <point key="canvasLocation" x="4112" y="7880"/>
         </scene>
+        <!--Post Trivia My Navigation Controller-->
+        <scene sceneID="b8a-Nf-hls">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eGe-YX-4Ms" customClass="PostTriviaMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="oPJ-I1-Gt7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4WP-wy-x7t" kind="relationship" relationship="rootViewController" id="gk1-pP-68w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5CW-2V-TiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4720" y="8562"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Icon" width="182" height="204"/>
@@ -2972,6 +3221,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <image name="fondo.png" width="821" height="1158"/>
         <image name="ganadores_felicidades.png" width="902" height="71"/>
         <image name="ganadores_sigue_pendiente.png" width="792" height="63"/>
+        <image name="ganadores_titulo.png" width="1109" height="59"/>
         <image name="home" width="22" height="22"/>
         <image name="menu_logo" width="22" height="22"/>
         <image name="nombre_post_pleca.png" width="1242" height="197"/>
@@ -2994,11 +3244,12 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <image name="vincula.png" width="1106" height="177"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jsp-qb-vt0"/>
-        <segue reference="0Hm-mh-610"/>
+        <segue reference="Tly-6t-9kZ"/>
+        <segue reference="7WK-Ps-2Me"/>
+        <segue reference="Fbn-A4-MXi"/>
         <segue reference="bFr-zj-I5w"/>
         <segue reference="c8s-mb-h4O"/>
-        <segue reference="7WK-Ps-2Me"/>
-        <segue reference="Tly-6t-9kZ"/>
+        <segue reference="Jsp-qb-vt0"/>
+        <segue reference="0Hm-mh-610"/>
     </inferredMetricsTieBreakers>
 </document>

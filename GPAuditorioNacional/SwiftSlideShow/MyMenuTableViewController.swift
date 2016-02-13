@@ -58,12 +58,14 @@ class MyMenuTableViewController: UITableViewController {
         
         //cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
         if(indexPath.row == 0){
-            let nombreDefault = NSUserDefaults.standardUserDefaults()
+            /*let nombreDefault = NSUserDefaults.standardUserDefaults()
             
             if (nombreDefault.valueForKey("nombre") != nil){
                 let nombre = nombreDefault.valueForKey("nombre") as! String
                 cell!.textLabel?.text = nombre
-            }
+            }*/
+            
+            cell!.textLabel?.text = "Ganadores"
             
             
         }
@@ -113,7 +115,7 @@ class MyMenuTableViewController: UITableViewController {
         switch (indexPath.row) {
         case 0:
             print("Entra a USERNAME")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewControllerUsername")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ganadores")
             break
         case 1:
             print("Entra a blog")
