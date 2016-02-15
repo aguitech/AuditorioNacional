@@ -17,7 +17,7 @@ class ViewInicio : UIViewController{
         
         if(nombreDefault.valueForKey("usuario") == nil){
             let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
-            let pantallaPuntitos = nuestroStoryBoard.instantiateViewControllerWithIdentifier("nuevo_inicio") as! NuevoInicioViewController
+            let pantallaPuntitos = nuestroStoryBoard.instantiateViewControllerWithIdentifier("nuevo_inicio") as! NuevoComoParticiparMyNavigiationController
             
             dispatch_async(dispatch_get_main_queue(), {
                 self.presentViewController(pantallaPuntitos, animated:true, completion: nil)

@@ -14,6 +14,8 @@ class InicioDeTriviaViewController: UIViewController, ENSideMenuDelegate {
     
     var arreglo_trivia : [Trivia] = [Trivia]()
     
+    @IBOutlet weak var btnIniciarOutlet: UIButton!
+    
     var color = UIColor(red: 0.234375, green: 0.74609375, blue: 0.6640625, alpha: 1.0)
     var color_fondo_navbar = UIColor(red: (10/255), green: (20/255), blue: (38/255), alpha: 1.0)
     
@@ -89,6 +91,11 @@ class InicioDeTriviaViewController: UIViewController, ENSideMenuDelegate {
                                         print("\(trivia_ayuda.respuesta3)")
                                         print("\(trivia_ayuda.respuesta4)")
                                         
+                                    }
+                                    if(nsArrayJsonList.count - 1 == index){
+                                        UIView.animateWithDuration(0.5, animations: { () -> Void in
+                                            self.btnIniciarOutlet.alpha = 1.0
+                                        })
                                     }
                                 }
                                 print(self.arreglo_trivia)
@@ -169,7 +176,8 @@ class InicioDeTriviaViewController: UIViewController, ENSideMenuDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     
-    let objetoView : TriviaViewController = segue.destinationViewController as! TriviaViewController
-    objetoView.arreglo_trivia = self.arreglo_trivia
+            let objetoView : TriviaViewController = segue.destinationViewController as! TriviaViewController
+            objetoView.arreglo_trivia = self.arreglo_trivia
+
     }
 }

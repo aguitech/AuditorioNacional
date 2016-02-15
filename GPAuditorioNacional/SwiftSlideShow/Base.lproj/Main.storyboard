@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfi-IJ-4Hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="811" y="-363"/>
+            <point key="canvasLocation" x="0.0" y="443"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -128,49 +128,141 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="835.5" y="427.5"/>
+            <point key="canvasLocation" x="91.5" y="3483.5"/>
         </scene>
         <!--Nuevo Inicio View Controller-->
         <scene sceneID="BfO-fP-sz4">
             <objects>
-                <viewController storyboardIdentifier="nuevo_inicio" id="54q-Nq-MTG" customClass="NuevoInicioViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="54q-Nq-MTG" customClass="NuevoInicioViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ncG-ID-k84"/>
                         <viewControllerLayoutGuide type="bottom" id="gGw-Fu-MO1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SsK-1x-aVB">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nuevo_inicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="tPz-u7-EkE" customClass="Nue">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tPz-u7-EkE" customClass="Nue">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VQ-to-tEK">
-                                <rect key="frame" x="334" y="535" width="193" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vbr-n5-Ts5" userLabel="parte_visible">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_color_aqua.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mum-54-kgN">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8j6-Qf-LLH">
+                                        <rect key="frame" x="185" y="12" width="231" height="30"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="como_participar_titulo.png" translatesAutoresizingMaskIntoConstraints="NO" id="WOV-SZ-O90">
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="WOV-SZ-O90" secondAttribute="height" multiplier="173:30" id="k7d-fh-3UL"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="WOV-SZ-O90" firstAttribute="height" secondItem="8j6-Qf-LLH" secondAttribute="height" id="1s1-y6-zhk"/>
+                                            <constraint firstItem="WOV-SZ-O90" firstAttribute="top" secondItem="8j6-Qf-LLH" secondAttribute="top" id="MxB-aa-9ol"/>
+                                            <constraint firstAttribute="bottom" secondItem="WOV-SZ-O90" secondAttribute="bottom" id="Ucq-bP-NAi"/>
+                                            <constraint firstAttribute="width" secondItem="8j6-Qf-LLH" secondAttribute="height" multiplier="77:10" id="WMI-73-jwm"/>
+                                            <constraint firstItem="WOV-SZ-O90" firstAttribute="leading" secondItem="8j6-Qf-LLH" secondAttribute="leading" id="ad2-Mp-WYU"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBG-l0-s8v">
+                                        <rect key="frame" x="0.0" y="54" width="600" height="375"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yoo-tx-dtA">
+                                                <rect key="frame" x="0.0" y="37" width="600" height="300"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="como_participar_ganaste.png" translatesAutoresizingMaskIntoConstraints="NO" id="QGj-r4-Oz0">
+                                                        <rect key="frame" x="150" y="173" width="300" height="127"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="QGj-r4-Oz0" secondAttribute="height" multiplier="111:47" id="SQ5-Oq-jXu"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="como_participar_trivia.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tph-y2-iWJ">
+                                                        <rect key="frame" x="150" y="0.0" width="300" height="127"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Tph-y2-iWJ" secondAttribute="height" multiplier="111:47" id="Yux-b2-Thc"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Tph-y2-iWJ" firstAttribute="top" secondItem="Yoo-tx-dtA" secondAttribute="top" id="BOA-2w-ECu"/>
+                                                    <constraint firstItem="Tph-y2-iWJ" firstAttribute="centerX" secondItem="Yoo-tx-dtA" secondAttribute="centerX" id="a1C-is-rIj"/>
+                                                    <constraint firstAttribute="bottom" secondItem="QGj-r4-Oz0" secondAttribute="bottom" id="fgs-Sy-pMI"/>
+                                                    <constraint firstItem="QGj-r4-Oz0" firstAttribute="height" secondItem="Yoo-tx-dtA" secondAttribute="height" multiplier="0.425" id="n4Q-ze-sEq"/>
+                                                    <constraint firstItem="Tph-y2-iWJ" firstAttribute="height" secondItem="Yoo-tx-dtA" secondAttribute="height" multiplier="0.425" id="xVl-vE-4Cm"/>
+                                                    <constraint firstItem="QGj-r4-Oz0" firstAttribute="centerX" secondItem="Yoo-tx-dtA" secondAttribute="centerX" id="y0J-XK-5jj"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Yoo-tx-dtA" firstAttribute="height" secondItem="PBG-l0-s8v" secondAttribute="height" multiplier="0.8" id="Ms4-1g-mxB"/>
+                                            <constraint firstItem="Yoo-tx-dtA" firstAttribute="centerX" secondItem="PBG-l0-s8v" secondAttribute="centerX" id="YQI-fa-erc"/>
+                                            <constraint firstItem="Yoo-tx-dtA" firstAttribute="width" secondItem="PBG-l0-s8v" secondAttribute="width" id="YgJ-CU-t2p"/>
+                                            <constraint firstItem="Yoo-tx-dtA" firstAttribute="centerY" secondItem="PBG-l0-s8v" secondAttribute="centerY" id="gY8-iq-TMJ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Joj-TO-2fi" userLabel="division_inferior">
+                                        <rect key="frame" x="0.0" y="429" width="600" height="107"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VQ-to-tEK">
+                                                <rect key="frame" x="300" y="40" width="150" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="6VQ-to-tEK" secondAttribute="height" multiplier="75:14" id="kbx-Ls-WyL"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="comenzar.png"/>
+                                                <connections>
+                                                    <action selector="iniciarRegistro2:" destination="54q-Nq-MTG" eventType="touchUpInside" id="xk7-g2-1J4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6VQ-to-tEK" firstAttribute="centerY" secondItem="Joj-TO-2fi" secondAttribute="centerY" id="ygN-kM-5mG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="193" id="psB-cg-bqS"/>
-                                    <constraint firstAttribute="height" constant="30" id="xys-z4-rfL"/>
+                                    <constraint firstItem="PBG-l0-s8v" firstAttribute="height" secondItem="Vbr-n5-Ts5" secondAttribute="height" multiplier="0.7" id="3oB-H4-WDM"/>
+                                    <constraint firstItem="Joj-TO-2fi" firstAttribute="centerX" secondItem="Vbr-n5-Ts5" secondAttribute="centerX" id="BeZ-Cb-U5c"/>
+                                    <constraint firstItem="6VQ-to-tEK" firstAttribute="width" secondItem="QGj-r4-Oz0" secondAttribute="width" multiplier="0.5" id="CHK-Wo-jd7"/>
+                                    <constraint firstItem="PBG-l0-s8v" firstAttribute="width" secondItem="Vbr-n5-Ts5" secondAttribute="width" id="CNW-ag-1lO"/>
+                                    <constraint firstItem="Mum-54-kgN" firstAttribute="centerX" secondItem="Vbr-n5-Ts5" secondAttribute="centerX" id="MET-R9-dJh"/>
+                                    <constraint firstItem="6VQ-to-tEK" firstAttribute="leading" secondItem="QGj-r4-Oz0" secondAttribute="trailing" constant="-150" id="McD-J7-rqw"/>
+                                    <constraint firstItem="Mum-54-kgN" firstAttribute="height" secondItem="Vbr-n5-Ts5" secondAttribute="height" multiplier="0.1" id="Nt6-oO-lUe"/>
+                                    <constraint firstItem="Mum-54-kgN" firstAttribute="width" secondItem="Vbr-n5-Ts5" secondAttribute="width" id="TAc-lO-CO6"/>
+                                    <constraint firstItem="Mum-54-kgN" firstAttribute="top" secondItem="Vbr-n5-Ts5" secondAttribute="top" id="Un4-Wr-ibC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Joj-TO-2fi" secondAttribute="bottom" id="ctW-ri-fPF"/>
+                                    <constraint firstItem="PBG-l0-s8v" firstAttribute="centerX" secondItem="Vbr-n5-Ts5" secondAttribute="centerX" id="eBL-I5-jgT"/>
+                                    <constraint firstItem="8j6-Qf-LLH" firstAttribute="centerX" secondItem="Mum-54-kgN" secondAttribute="centerX" id="eUm-Wt-uXX"/>
+                                    <constraint firstItem="8j6-Qf-LLH" firstAttribute="centerY" secondItem="Mum-54-kgN" secondAttribute="centerY" id="jIg-hb-CDP"/>
+                                    <constraint firstItem="Joj-TO-2fi" firstAttribute="width" secondItem="Vbr-n5-Ts5" secondAttribute="width" id="r4C-KA-4jM"/>
+                                    <constraint firstItem="8j6-Qf-LLH" firstAttribute="height" secondItem="Mum-54-kgN" secondAttribute="height" multiplier="0.55" id="s12-15-65F"/>
+                                    <constraint firstItem="Joj-TO-2fi" firstAttribute="height" secondItem="Vbr-n5-Ts5" secondAttribute="height" multiplier="0.2" id="ukd-8C-4dK"/>
+                                    <constraint firstItem="PBG-l0-s8v" firstAttribute="top" secondItem="Mum-54-kgN" secondAttribute="bottom" id="xau-nv-htg"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="comenzar.png"/>
-                                <connections>
-                                    <action selector="iniciarRegistro2:" destination="54q-Nq-MTG" eventType="touchUpInside" id="xk7-g2-1J4"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gGw-Fu-MO1" firstAttribute="top" secondItem="6VQ-to-tEK" secondAttribute="bottom" constant="35" id="HDe-FT-mrb"/>
                             <constraint firstItem="tPz-u7-EkE" firstAttribute="leading" secondItem="SsK-1x-aVB" secondAttribute="leading" id="INK-z9-G09"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6VQ-to-tEK" secondAttribute="trailing" constant="53" id="Kxz-Hk-fFG"/>
+                            <constraint firstItem="Vbr-n5-Ts5" firstAttribute="top" secondItem="ncG-ID-k84" secondAttribute="bottom" id="IdA-AZ-ROx"/>
                             <constraint firstItem="tPz-u7-EkE" firstAttribute="top" secondItem="SsK-1x-aVB" secondAttribute="top" id="Q4D-5I-y8R"/>
+                            <constraint firstItem="Vbr-n5-Ts5" firstAttribute="leading" secondItem="SsK-1x-aVB" secondAttribute="leading" id="VII-kT-P5m"/>
+                            <constraint firstAttribute="trailing" secondItem="Vbr-n5-Ts5" secondAttribute="trailing" id="XPc-0j-7qN"/>
+                            <constraint firstItem="gGw-Fu-MO1" firstAttribute="top" secondItem="Vbr-n5-Ts5" secondAttribute="bottom" id="Ztb-Td-ncM"/>
                             <constraint firstItem="gGw-Fu-MO1" firstAttribute="top" secondItem="tPz-u7-EkE" secondAttribute="bottom" id="mH5-ek-I13"/>
                             <constraint firstAttribute="trailing" secondItem="tPz-u7-EkE" secondAttribute="trailing" id="v1e-Nw-w9I"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6hR-3C-dEy"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwK-mS-CiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="-249"/>
+            <point key="canvasLocation" x="1579" y="438"/>
         </scene>
         <!--Registro Controller-->
         <scene sceneID="aEW-im-Bqo">
@@ -499,7 +591,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NpG-Xc-4rP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348.5" y="426.5"/>
+            <point key="canvasLocation" x="2232.5" y="-85.5"/>
         </scene>
         <!--Vincular View Controller-->
         <scene sceneID="cfH-j5-uqs">
@@ -597,7 +689,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Fc-qd-5eV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3065.5" y="1257.5"/>
+            <point key="canvasLocation" x="4192.5" y="3280.5"/>
         </scene>
         <!--Iniciar Sesion Controller-->
         <scene sceneID="jUF-jO-FSt">
@@ -685,7 +777,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZ9-2z-wNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348.5" y="1442.5"/>
+            <point key="canvasLocation" x="2232.5" y="890.5"/>
         </scene>
         <!--Blog View Controller-->
         <scene sceneID="coI-Go-c0g">
@@ -696,11 +788,11 @@
                         <viewControllerLayoutGuide type="bottom" id="1eI-mM-Rx0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5ja-x4-ZiJ">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Pj-tj-SDI">
-                                <rect key="frame" x="-4" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2g-UO-rDQ" userLabel="divParteTrasera">
                                 <rect key="frame" x="20" y="28" width="335" height="503"/>
@@ -829,7 +921,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRp-B1-NbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2842.5" y="421.5"/>
+            <point key="canvasLocation" x="4192.5" y="-340.5"/>
         </scene>
         <!--Trivas-->
         <scene sceneID="DTi-KF-v1m">
@@ -840,28 +932,28 @@
                         <viewControllerLayoutGuide type="bottom" id="yb5-KL-bQQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YCM-c7-V7l">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="60z-y3-7TG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="60z-y3-7TG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="-5" y="64" width="672" height="603"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_como_jugar.png" translatesAutoresizingMaskIntoConstraints="NO" id="v0l-SE-CUD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="trivia_como_jugar.png" translatesAutoresizingMaskIntoConstraints="NO" id="v0l-SE-CUD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="CFS-El-W54"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0m-dq-avD">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E0m-dq-avD">
                                 <rect key="frame" x="0.0" y="57" width="375" height="546"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fqe-Jn-l9V">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fqe-Jn-l9V">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_responde.png" translatesAutoresizingMaskIntoConstraints="NO" id="OXk-na-bB7">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="trivia_responde.png" translatesAutoresizingMaskIntoConstraints="NO" id="OXk-na-bB7">
                                                 <rect key="frame" x="8" y="37" width="359" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OXk-na-bB7" secondAttribute="height" multiplier="359:36" id="EVc-bD-Ug7"/>
@@ -875,19 +967,19 @@
                                             <constraint firstItem="OXk-na-bB7" firstAttribute="centerY" secondItem="Fqe-Jn-l9V" secondAttribute="centerY" id="zDF-RR-G9J"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dhi-tl-Q5V">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dhi-tl-Q5V">
                                         <rect key="frame" x="0.0" y="285" width="375" height="120"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_color_aqua.png" translatesAutoresizingMaskIntoConstraints="NO" id="gRw-lq-s1w">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="trivia_color_aqua.png" translatesAutoresizingMaskIntoConstraints="NO" id="gRw-lq-s1w">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_1_viaje.png" translatesAutoresizingMaskIntoConstraints="NO" id="axm-kQ-aqU">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="trivia_1_viaje.png" translatesAutoresizingMaskIntoConstraints="NO" id="axm-kQ-aqU">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="axm-kQ-aqU" secondAttribute="height" multiplier="15:4" id="TOQ-go-rUE"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_el_destino.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Zc-JB-lZV">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="trivia_el_destino.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Zc-JB-lZV">
                                                 <rect key="frame" x="127" y="108" width="240" height="12"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="4Zc-JB-lZV" secondAttribute="height" multiplier="20:1" id="3kf-ta-buf"/>
@@ -908,10 +1000,10 @@
                                             <constraint firstAttribute="trailing" secondItem="4Zc-JB-lZV" secondAttribute="trailing" constant="8" id="y1o-6L-bI9"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9G-FC-DfC">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k9G-FC-DfC">
                                         <rect key="frame" x="0.0" y="405" width="375" height="142"/>
                                         <subviews>
-                                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyO-0v-jUS">
+                                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="iniciar" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyO-0v-jUS">
                                                 <rect key="frame" x="116" y="44" width="142" height="54"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ZyO-0v-jUS" secondAttribute="height" multiplier="71:27" id="f00-kg-6yn"/>
@@ -928,16 +1020,16 @@
                                             <constraint firstItem="ZyO-0v-jUS" firstAttribute="centerX" secondItem="k9G-FC-DfC" secondAttribute="centerX" id="nDE-f9-Geu"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zc-e9-vMQ">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Zc-e9-vMQ">
                                         <rect key="frame" x="0.0" y="110" width="375" height="175"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_tienes_1_minuto.png" translatesAutoresizingMaskIntoConstraints="NO" id="PCd-Va-DQE">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="trivia_tienes_1_minuto.png" translatesAutoresizingMaskIntoConstraints="NO" id="PCd-Va-DQE">
                                                 <rect key="frame" x="107" y="0.0" width="161" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="PCd-Va-DQE" secondAttribute="height" multiplier="161:94" id="ecD-0G-g6X"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_obten.png" translatesAutoresizingMaskIntoConstraints="NO" id="qVf-V7-82H">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="trivia_obten.png" translatesAutoresizingMaskIntoConstraints="NO" id="qVf-V7-82H">
                                                 <rect key="frame" x="75" y="117" width="225" height="37"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="qVf-V7-82H" secondAttribute="height" multiplier="225:37" id="QGC-hz-4df"/>
@@ -1013,13 +1105,13 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="btnComenzar" destination="ZyO-0v-jUS" id="zQ9-fh-ZzJ"/>
+                        <outlet property="btnIniciarOutlet" destination="ZyO-0v-jUS" id="UI3-ud-EJh"/>
                         <segue destination="3W9-JK-HBy" kind="show" identifier="hacia_trivia" id="nbv-Kx-UBA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcL-fq-2nC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4073.5" y="442.5"/>
+            <point key="canvasLocation" x="4192.5" y="1498.5"/>
         </scene>
         <!--Trivia View Controller-->
         <scene sceneID="kua-3g-RUM">
@@ -1030,23 +1122,23 @@
                         <viewControllerLayoutGuide type="bottom" id="hWO-8Y-pad"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cGH-QD-1CU">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="db2-H1-PuG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="db2-H1-PuG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5h0-mO-uec" userLabel="DivisorParteVisible">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5h0-mO-uec" userLabel="DivisorParteVisible">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_color_aqua.png" translatesAutoresizingMaskIntoConstraints="NO" id="vMi-yA-7mH">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="trivia_color_aqua.png" translatesAutoresizingMaskIntoConstraints="NO" id="vMi-yA-7mH">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPg-AO-Dns">
-                                        <rect key="frame" x="0.0" y="59" width="375" height="211.5"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rPg-AO-Dns">
+                                        <rect key="frame" x="0.0" y="52" width="375" height="211.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msX-xC-Nhh">
-                                                <rect key="frame" x="13" y="163" width="63" height="36"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msX-xC-Nhh">
+                                                <rect key="frame" x="13" y="162" width="63" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="msX-xC-Nhh" secondAttribute="height" multiplier="7:4" id="PoR-qB-clV"/>
                                                     <constraint firstAttribute="width" constant="63" id="q1a-Pk-xxx"/>
@@ -1061,16 +1153,16 @@
                                             <constraint firstAttribute="bottom" secondItem="msX-xC-Nhh" secondAttribute="bottom" constant="12.5" id="fl1-Sv-8cf"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-td-Qp8" userLabel="DivisorInferior">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-td-Qp8" userLabel="DivisorInferior">
                                         <rect key="frame" x="0.0" y="331" width="375" height="272"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFB-bV-UIu" userLabel="FondoBotones">
-                                                <rect key="frame" x="38" y="28" width="300" height="217"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFB-bV-UIu" userLabel="FondoBotones">
+                                                <rect key="frame" x="59" y="28" width="300" height="217"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clL-Fa-DE1" userLabel="PrimerBoton">
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clL-Fa-DE1" userLabel="PrimerBoton">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="54"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTH-K9-gsZ">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="respuesta1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTH-K9-gsZ">
                                                                 <rect key="frame" x="0.0" y="12" width="300" height="30"/>
                                                                 <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="0.91329635718463997" green="0.98696366495518806" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1087,10 +1179,10 @@
                                                             <constraint firstItem="RTH-K9-gsZ" firstAttribute="centerY" secondItem="clL-Fa-DE1" secondAttribute="centerY" id="j8V-3t-f1Z"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYj-Ie-KTL" userLabel="SegundoBoton">
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fYj-Ie-KTL" userLabel="SegundoBoton">
                                                         <rect key="frame" x="0.0" y="54" width="300" height="54"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7o-nB-wRD">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="respuesta2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7o-nB-wRD">
                                                                 <rect key="frame" x="0.0" y="12" width="300" height="30"/>
                                                                 <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="0.91329635718463997" green="0.98696366495518806" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1107,10 +1199,10 @@
                                                             <constraint firstItem="k7o-nB-wRD" firstAttribute="centerY" secondItem="fYj-Ie-KTL" secondAttribute="centerY" id="fKN-yc-dYN"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TP9-bG-yzs" userLabel="TercerBoton">
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TP9-bG-yzs" userLabel="TercerBoton">
                                                         <rect key="frame" x="0.0" y="108" width="300" height="54"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONJ-sf-CAh">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="respuesta3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONJ-sf-CAh">
                                                                 <rect key="frame" x="0.0" y="12" width="300" height="30"/>
                                                                 <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1127,11 +1219,11 @@
                                                             <constraint firstItem="ONJ-sf-CAh" firstAttribute="height" secondItem="TP9-bG-yzs" secondAttribute="height" multiplier="0.55" id="adp-D6-Der"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVH-45-600" userLabel="CuartoBoton">
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XVH-45-600" userLabel="CuartoBoton">
                                                         <rect key="frame" x="0.0" y="162" width="300" height="55"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJZ-Nc-9ka">
-                                                                <rect key="frame" x="0.0" y="12" width="300" height="30"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="respuesta4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJZ-Nc-9ka">
+                                                                <rect key="frame" x="0.0" y="10" width="300" height="30"/>
                                                                 <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
@@ -1175,14 +1267,14 @@
                                             <constraint firstItem="AFB-bV-UIu" firstAttribute="centerX" secondItem="dQV-td-Qp8" secondAttribute="centerX" id="w1Y-KU-nKm"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbp-vk-PKS">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wbp-vk-PKS">
                                         <rect key="frame" x="0.0" y="271" width="375" height="60"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_color_aqua.png" translatesAutoresizingMaskIntoConstraints="NO" id="erD-1t-pjU">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="trivia_color_aqua.png" translatesAutoresizingMaskIntoConstraints="NO" id="erD-1t-pjU">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f1-Bx-gUt">
-                                                <rect key="frame" x="0.0" y="14" width="375" height="33"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f1-Bx-gUt">
+                                                <rect key="frame" x="0.0" y="11" width="375" height="33"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1249,7 +1341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z5j-q1-R9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4662.5" y="442.5"/>
+            <point key="canvasLocation" x="6386.5" y="1498.5"/>
         </scene>
         <!--Términos y Condiciones-->
         <scene sceneID="EYH-9e-YlN">
@@ -1518,7 +1610,7 @@ En caso de queja derivada de LA PROMOCIÓN, favor de acudir a la Procuraduría F
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ur2-Px-efm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4112.5" y="1163.5"/>
+            <point key="canvasLocation" x="4192.5" y="4139.5"/>
         </scene>
         <!--Aviso de Privacidad-->
         <scene sceneID="RRA-pq-8Na">
@@ -1722,7 +1814,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yav-jA-MyH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4924.5" y="1907.5"/>
+            <point key="canvasLocation" x="4192.5" y="5043.5"/>
         </scene>
         <!--Blog-->
         <scene sceneID="6W8-u6-aJX">
@@ -1817,7 +1909,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmw-7N-eZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4924.5" y="2658.5"/>
+            <point key="canvasLocation" x="616.5" y="7810.5"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="hwi-nI-GEp">
@@ -1828,7 +1920,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                         <viewControllerLayoutGuide type="bottom" id="OR0-42-iBC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tOX-Rd-DYM">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="K1G-KB-FJf">
@@ -1838,11 +1930,11 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                 </variation>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdR-2S-haN">
-                                <rect key="frame" x="36" y="96" width="303" height="518"/>
+                                <rect key="frame" x="36" y="43" width="303" height="518"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jc-FN-chV">
-                                        <rect key="frame" x="0.0" y="168" width="303" height="130"/>
-                                        <state key="normal" title="Button" image="demuestra_sabes.png"/>
+                                        <rect key="frame" x="0.0" y="168" width="303" height="165"/>
+                                        <state key="normal" title="Button" image="menu_trivia_mensual.png"/>
                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                             <rect key="frame" x="0.0" y="79" width="595" height="60"/>
                                         </variation>
@@ -1851,8 +1943,8 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="606-nC-Xtn">
-                                        <rect key="frame" x="0.0" y="336" width="303" height="130"/>
-                                        <state key="normal" title="Button" image="proximos_eventos.png"/>
+                                        <rect key="frame" x="0.0" y="336" width="303" height="165"/>
+                                        <state key="normal" title="Button" image="menu_calendario_eventos.png"/>
                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                             <rect key="frame" x="0.0" y="278" width="547" height="108"/>
                                         </variation>
@@ -1861,8 +1953,8 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2D-YP-9Fh">
-                                        <rect key="frame" x="0.0" y="0.0" width="303" height="130"/>
-                                        <state key="normal" title="Button" image="descubre_mas.png"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="165"/>
+                                        <state key="normal" title="Button" image="menu_blog_auditorio.png"/>
                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="547" height="108"/>
                                         </variation>
@@ -1873,15 +1965,15 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="2Jc-FN-chV" firstAttribute="centerY" secondItem="tdR-2S-haN" secondAttribute="centerY" id="202-3w-Jkh"/>
-                                    <constraint firstItem="Q2D-YP-9Fh" firstAttribute="height" secondItem="tdR-2S-haN" secondAttribute="height" multiplier="0.28" id="8Ap-w9-gOY"/>
+                                    <constraint firstItem="Q2D-YP-9Fh" firstAttribute="height" secondItem="tdR-2S-haN" secondAttribute="height" multiplier="0.32" id="8Ap-w9-gOY"/>
                                     <constraint firstItem="Q2D-YP-9Fh" firstAttribute="top" secondItem="tdR-2S-haN" secondAttribute="top" id="Blg-sB-H7x"/>
                                     <constraint firstItem="Q2D-YP-9Fh" firstAttribute="centerX" secondItem="tdR-2S-haN" secondAttribute="centerX" id="KoK-dL-JD6"/>
-                                    <constraint firstItem="2Jc-FN-chV" firstAttribute="height" secondItem="tdR-2S-haN" secondAttribute="height" multiplier="0.28" id="Rm2-HH-ers"/>
+                                    <constraint firstItem="2Jc-FN-chV" firstAttribute="height" secondItem="tdR-2S-haN" secondAttribute="height" multiplier="0.32" id="Rm2-HH-ers"/>
                                     <constraint firstItem="2Jc-FN-chV" firstAttribute="centerX" secondItem="tdR-2S-haN" secondAttribute="centerX" id="aVn-j4-24s"/>
                                     <constraint firstItem="Q2D-YP-9Fh" firstAttribute="width" secondItem="tdR-2S-haN" secondAttribute="width" id="caG-cL-ygm"/>
                                     <constraint firstItem="606-nC-Xtn" firstAttribute="centerX" secondItem="tdR-2S-haN" secondAttribute="centerX" id="eqb-ja-Asr"/>
                                     <constraint firstItem="2Jc-FN-chV" firstAttribute="width" secondItem="tdR-2S-haN" secondAttribute="width" id="lNx-Sc-mif"/>
-                                    <constraint firstItem="606-nC-Xtn" firstAttribute="height" secondItem="tdR-2S-haN" secondAttribute="height" multiplier="0.28" id="m9i-Wr-R6e"/>
+                                    <constraint firstItem="606-nC-Xtn" firstAttribute="height" secondItem="tdR-2S-haN" secondAttribute="height" multiplier="0.32" id="m9i-Wr-R6e"/>
                                     <constraint firstItem="606-nC-Xtn" firstAttribute="width" secondItem="tdR-2S-haN" secondAttribute="width" id="nDI-fI-Yq7"/>
                                     <constraint firstAttribute="bottom" secondItem="606-nC-Xtn" secondAttribute="bottom" id="uBE-Bl-RDa"/>
                                 </constraints>
@@ -1922,7 +2014,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vh8-Mb-FAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4356.5" y="-655.5"/>
+            <point key="canvasLocation" x="3376.5" y="520.5"/>
         </scene>
         <!--Evento View Controller-->
         <scene sceneID="FIS-iP-H0c">
@@ -1945,7 +2037,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gX7-87-wQF">
                                 <rect key="frame" x="20" y="20" width="335" height="563"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swd-Ip-Br3">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swd-Ip-Br3">
                                         <rect key="frame" x="17" y="8" width="318" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="318" id="6Cz-BZ-Xik"/>
@@ -1955,7 +2047,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-dc-ZQb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-dc-ZQb">
                                         <rect key="frame" x="17" y="36" width="318" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="318" id="KLF-Kq-MEB"/>
@@ -1975,7 +2067,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <rect key="frame" x="20" y="143" width="163.5" height="159"/>
                                         </variation>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5C-v4-s5I">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5C-v4-s5I">
                                         <rect key="frame" x="17" y="249" width="318" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="318" id="489-gh-6Kb"/>
@@ -1991,7 +2083,6 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <constraint firstAttribute="height" constant="285" id="5rv-8t-9hG"/>
                                             <constraint firstAttribute="width" constant="299" id="BKE-u9-MmH"/>
                                         </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2065,7 +2156,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lef-fR-z8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4907.5" y="6354.5"/>
+            <point key="canvasLocation" x="7198.5" y="520.5"/>
         </scene>
         <!--Blog My Navigation Controller-->
         <scene sceneID="DBo-6a-CWP">
@@ -2085,7 +2176,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4j-RM-ean" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2437.5" y="427.5"/>
+            <point key="canvasLocation" x="3562.5" y="-348.5"/>
         </scene>
         <!--Evento My Navigation Controller-->
         <scene sceneID="kZO-U5-I9H">
@@ -2105,7 +2196,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fOk-bc-FVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3572.5" y="-291.5"/>
+            <point key="canvasLocation" x="6646.5" y="520.5"/>
         </scene>
         <!--Inicio De Trivia My Navigation Controller-->
         <scene sceneID="ATA-Ht-vVU">
@@ -2125,7 +2216,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWo-TG-V79" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3589.5" y="442.5"/>
+            <point key="canvasLocation" x="3562.5" y="1498.5"/>
         </scene>
         <!--Terminos My Navigation Controller-->
         <scene sceneID="34H-Pc-Gyf">
@@ -2145,7 +2236,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNN-kR-S9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3572.5" y="1163.5"/>
+            <point key="canvasLocation" x="3562.5" y="4139.5"/>
         </scene>
         <!--Aviso My Navigation Controller-->
         <scene sceneID="zlO-Qe-awj">
@@ -2165,7 +2256,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CKI-rA-oBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4385.5" y="1907.5"/>
+            <point key="canvasLocation" x="3548.5" y="5075.5"/>
         </scene>
         <!--Blog Detalle My Navigation Controller-->
         <scene sceneID="h7L-AX-thc">
@@ -2184,7 +2275,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gka-pZ-vjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4384.5" y="2658.5"/>
+            <point key="canvasLocation" x="91.5" y="7810.5"/>
         </scene>
         <!--Extra2-->
         <scene sceneID="Zd4-MW-dk2">
@@ -2221,7 +2312,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nKa-zk-j09" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4112.5" y="3376.5"/>
+            <point key="canvasLocation" x="616.5" y="6080.5"/>
         </scene>
         <!--My Navigation Controller7-->
         <scene sceneID="KU9-Yv-65J">
@@ -2240,7 +2331,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z70-eh-d9b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3573.5" y="3376.5"/>
+            <point key="canvasLocation" x="91.5" y="6088.5"/>
         </scene>
         <!--Extra3-->
         <scene sceneID="Ggu-hQ-D2a">
@@ -2277,7 +2368,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrs-e4-X0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4112.5" y="4121.5"/>
+            <point key="canvasLocation" x="616.5" y="6977.5"/>
         </scene>
         <!--USER-->
         <scene sceneID="17p-XA-Xe2">
@@ -2319,7 +2410,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cf3-jm-hDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4112.5" y="4858.5"/>
+            <point key="canvasLocation" x="616.5" y="5274.5"/>
         </scene>
         <!--My Navigation Controller8-->
         <scene sceneID="Yhw-Yq-fvK">
@@ -2338,7 +2429,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qk2-y0-C06" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3573.5" y="4121.5"/>
+            <point key="canvasLocation" x="91.5" y="6977.5"/>
         </scene>
         <!--Username My Navigation Controller-->
         <scene sceneID="2tm-ek-9CM">
@@ -2357,7 +2448,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCR-t4-S5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3573.5" y="4858.5"/>
+            <point key="canvasLocation" x="91.5" y="5250.5"/>
         </scene>
         <!--Menu My Navigation Controller-->
         <scene sceneID="Gzr-uK-ABB">
@@ -2377,7 +2468,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G94-Qx-Qz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3613.5" y="-1055.5"/>
+            <point key="canvasLocation" x="2849.5" y="520.5"/>
         </scene>
         <!--Vincular My Navigation Controller-->
         <scene sceneID="vpH-Cy-N3h">
@@ -2396,7 +2487,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VY0-8u-B3a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2117" y="1247"/>
+            <point key="canvasLocation" x="3436" y="3247"/>
         </scene>
         <!--Title-->
         <scene sceneID="QGg-cg-HFg">
@@ -2499,7 +2590,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W79-g5-VPt" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4112.5" y="5616.5"/>
+            <point key="canvasLocation" x="616.5" y="4304.5"/>
         </scene>
         <!--Participar My Navigation Controller-->
         <scene sceneID="CnY-pv-khO">
@@ -2519,22 +2610,22 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RwA-r2-k6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3573.5" y="5616.5"/>
+            <point key="canvasLocation" x="91.5" y="4304.5"/>
         </scene>
         <!--Table Evento View Controller-->
         <scene sceneID="z4n-af-af5">
             <objects>
                 <viewController id="RiC-5o-qhv" customClass="TableEventoViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z8q-9H-Hcf">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="Ye8-Bj-y3Z" detailTextLabel="BrI-il-kSP" style="IBUITableViewCellStyleValue1" id="Vsp-1v-ocl">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vsp-1v-ocl" id="iM1-Mz-Ha2">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ye8-Bj-y3Z">
@@ -2545,7 +2636,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BrI-il-kSP">
-                                            <rect key="frame" x="318.5" y="12" width="41.5" height="19.5"/>
+                                            <rect key="frame" x="543.5" y="12" width="41.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.87392607521401156" green="0.87163788878442516" blue="0.91160680618401202" alpha="1" colorSpace="calibratedRGB"/>
@@ -2579,7 +2670,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flQ-td-xNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4225" y="6355"/>
+            <point key="canvasLocation" x="5004.5" y="520.5"/>
         </scene>
         <!--Nuevo Como Participar View Controller-->
         <scene sceneID="RTC-jb-2sh">
@@ -2620,7 +2711,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJk-KD-wP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4898" y="7146"/>
+            <point key="canvasLocation" x="4305" y="2330"/>
         </scene>
         <!--Ganadores View Controller-->
         <scene sceneID="cg0-MM-KD4">
@@ -2926,7 +3017,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYp-yE-f4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5009" y="7880"/>
+            <point key="canvasLocation" x="4305" y="-1178"/>
         </scene>
         <!--Post Trivia View Controller-->
         <scene sceneID="Fcj-6b-Acf">
@@ -2937,10 +3028,10 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                         <viewControllerLayoutGuide type="bottom" id="Exy-NQ-qNa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tB9-IN-672">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="FsU-U9-Hls">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="FsU-U9-Hls">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                         </subviews>
@@ -2967,7 +3058,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9fA-KP-Ogn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5183.5" y="421.5"/>
+            <point key="canvasLocation" x="8563" y="1465"/>
         </scene>
         <!--Evento My Navigation Controller-->
         <scene sceneID="m3d-ZT-Rde">
@@ -2986,7 +3077,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nH-oc-ULj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4762.5" y="-296.5"/>
+            <point key="canvasLocation" x="4519.5" y="520.5"/>
         </scene>
         <!--Nuevo Como Participar My Navigiation Controller-->
         <scene sceneID="uRT-BX-qRJ">
@@ -3005,7 +3096,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1V-M8-bvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4112" y="7146"/>
+            <point key="canvasLocation" x="3450" y="2330"/>
         </scene>
         <!--Blog Detalle Nuevo View Controller-->
         <scene sceneID="3Gc-mZ-1UC">
@@ -3028,7 +3119,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u6y-ar-wrU">
                                 <rect key="frame" x="20" y="20" width="335" height="563"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70x-vo-nR9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70x-vo-nR9">
                                         <rect key="frame" x="17" y="8" width="318" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="318" id="OFW-7r-xjY"/>
@@ -3038,7 +3129,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXh-6L-TrG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXh-6L-TrG">
                                         <rect key="frame" x="17" y="36" width="318" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="318" id="Njs-9w-0cH"/>
@@ -3058,7 +3149,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <rect key="frame" x="20" y="143" width="163.5" height="159"/>
                                         </variation>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ml-bM-IDK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ml-bM-IDK">
                                         <rect key="frame" x="17" y="249" width="318" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="318" id="EDv-g2-b87"/>
@@ -3074,7 +3165,6 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <constraint firstAttribute="height" constant="285" id="0mD-Ae-bsS"/>
                                             <constraint firstAttribute="width" constant="299" id="CDA-7I-K5T"/>
                                         </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -3148,7 +3238,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jno-Xq-Bdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2787.5" y="2232.5"/>
+            <point key="canvasLocation" x="6386.5" y="-364.5"/>
         </scene>
         <!--Blog Detalle Nuevo My Navigation Controller-->
         <scene sceneID="roq-NP-qYN">
@@ -3167,7 +3257,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ok5-gy-Vqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037" y="2233"/>
+            <point key="canvasLocation" x="5722" y="-382"/>
         </scene>
         <!--Ganadores My Navigation Controller-->
         <scene sceneID="vgF-SN-ZlU">
@@ -3186,7 +3276,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ApY-3w-tmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4112" y="7880"/>
+            <point key="canvasLocation" x="3450" y="-1178"/>
         </scene>
         <!--Post Trivia My Navigation Controller-->
         <scene sceneID="b8a-Nf-hls">
@@ -3205,7 +3295,25 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CW-2V-TiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4720" y="8562"/>
+            <point key="canvasLocation" x="7848" y="1465"/>
+        </scene>
+        <!--Nuevo Como Participar My Navigiation Controller-->
+        <scene sceneID="gFX-LJ-qwN">
+            <objects>
+                <navigationController storyboardIdentifier="nuevo_inicio" automaticallyAdjustsScrollViewInsets="NO" id="GWZ-oY-w87" customClass="NuevoComoParticiparMyNavigiationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ps0-Tj-nS6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="54q-Nq-MTG" kind="relationship" relationship="rootViewController" id="mOQ-YF-jWL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSY-Kl-xTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="438"/>
         </scene>
     </scenes>
     <resources>
@@ -3215,7 +3323,9 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <image name="back" width="22" height="22"/>
         <image name="calendario.png" width="507" height="699"/>
         <image name="comenzar.png" width="653" height="172"/>
-        <image name="demuestra_sabes.png" width="963" height="438"/>
+        <image name="como_participar_ganaste.png" width="1067" height="453"/>
+        <image name="como_participar_titulo.png" width="676" height="71"/>
+        <image name="como_participar_trivia.png" width="1067" height="453"/>
         <image name="descubre_mas.png" width="963" height="438"/>
         <image name="facebook.png" width="395" height="198"/>
         <image name="fondo.png" width="821" height="1158"/>
@@ -3223,12 +3333,13 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <image name="ganadores_sigue_pendiente.png" width="792" height="63"/>
         <image name="ganadores_titulo.png" width="1109" height="59"/>
         <image name="home" width="22" height="22"/>
+        <image name="menu_blog_auditorio.png" width="1191" height="612"/>
+        <image name="menu_calendario_eventos.png" width="1191" height="612"/>
         <image name="menu_logo" width="22" height="22"/>
+        <image name="menu_trivia_mensual.png" width="1191" height="612"/>
         <image name="nombre_post_pleca.png" width="1242" height="197"/>
         <image name="nuevo_como_participar.png" width="1242" height="2208"/>
-        <image name="nuevo_inicio.png" width="1242" height="2208"/>
         <image name="pregunta_hoy.png" width="507" height="699"/>
-        <image name="proximos_eventos.png" width="963" height="438"/>
         <image name="rectanguloRedesSociales.png" width="1242" height="208"/>
         <image name="terminos_condiciones.png" width="1242" height="199"/>
         <image name="trivia_1_viaje.png" width="1242" height="331"/>
@@ -3244,12 +3355,12 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <image name="vincula.png" width="1106" height="177"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tly-6t-9kZ"/>
-        <segue reference="7WK-Ps-2Me"/>
-        <segue reference="Fbn-A4-MXi"/>
-        <segue reference="bFr-zj-I5w"/>
+        <segue reference="t2A-eM-IWP"/>
         <segue reference="c8s-mb-h4O"/>
-        <segue reference="Jsp-qb-vt0"/>
-        <segue reference="0Hm-mh-610"/>
+        <segue reference="LtK-ws-bc8"/>
+        <segue reference="Fbn-A4-MXi"/>
+        <segue reference="ird-kz-Fot"/>
+        <segue reference="3ws-Tm-mgv"/>
+        <segue reference="Tly-6t-9kZ"/>
     </inferredMetricsTieBreakers>
 </document>
