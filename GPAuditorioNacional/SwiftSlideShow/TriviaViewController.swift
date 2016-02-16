@@ -86,17 +86,17 @@ class TriviaViewController : UIViewController{
         respuestas_correctas++
         }*/
         
-        respuestas = respuestas + "id_preg=" + arreglo_trivia[pregunta_actual].id_pregunta + ","
+        respuestas = respuestas + arreglo_trivia[pregunta_actual].id_pregunta + ","
         
         switch sender.restorationIdentifier!{
         case "respuesta1":
-            respuestas = respuestas + "id_resp=" + arreglo_trivia[pregunta_actual].id_respuesta1 + ","
+            respuestas = respuestas + arreglo_trivia[pregunta_actual].id_respuesta1 + ";"
         case "respuesta2":
-            respuestas = respuestas + "id_resp=" + arreglo_trivia[pregunta_actual].id_respuesta2 + ","
+            respuestas = respuestas + arreglo_trivia[pregunta_actual].id_respuesta2 + ";"
         case "respuesta3":
-            respuestas = respuestas + "id_resp=" + arreglo_trivia[pregunta_actual].id_respuesta3 + ","
+            respuestas = respuestas + arreglo_trivia[pregunta_actual].id_respuesta3 + ";"
         case "respuesta4":
-            respuestas = respuestas + "id_resp=" + arreglo_trivia[pregunta_actual].id_respuesta4 + ","
+            respuestas = respuestas + arreglo_trivia[pregunta_actual].id_respuesta4 + ";"
         default:
             print("No pasa nada")
         }//Fin de switch
