@@ -38,6 +38,12 @@ class BlogDetalleViewController: UIViewController, ENSideMenuDelegate {
         
         self.sideMenuController()?.sideMenu?.delegate = self
         
+        let usuarioDefault = NSUserDefaults.standardUserDefaults()
+        
+        let usuario : String = usuarioDefault.valueForKey("usuario") as! String
+        
+        print(usuario)
+        
         print("asdfasdfasdfasdfasdfasdfasdfasdfsadfasdfasdfsdfasdf")
         print(id)
         

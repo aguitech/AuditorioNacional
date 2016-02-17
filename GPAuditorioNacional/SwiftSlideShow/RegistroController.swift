@@ -44,24 +44,30 @@ class RegistroController: UIViewController {
     
 
     @IBAction func crearRegistro(sender: AnyObject) {
-        
-        enum JSONError: String, ErrorType {
-            case NoData = "ERROR: no data"
-            case ConversionFailed = "ERROR: conversion from JSON failed"
-        }
-        
-        let nombreField = nombreValue.text
-        let celularField = celularValue.text
-        let telefonoField = telefonoValue.text
-        let emailField = emailValue.text
-        let codigoPostalField = codigoPostalValue.text
-        let edadField = edadValue.text
-        let usernameField = usernameValue.text
-        let passwordField = passwordValue.text
-        
-        
-        
-        let request = NSMutableURLRequest(URL: NSURL(string: "http://emocionganar.com/admin/panel/registro_ios_new.php")!)
+        if Reachability.isConnectedToNetwork() == false {
+            let alertController = UIAlertController(title: "Conexión fallida", message:
+                "Necesitas conexión a internet para poder registrarte.", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        } else {
+            enum JSONError: String, ErrorType {
+                case NoData = "ERROR: no data"
+                case ConversionFailed = "ERROR: conversion from JSON failed"
+            }
+            
+            let nombreField = nombreValue.text
+            let celularField = celularValue.text
+            let telefonoField = telefonoValue.text
+            let emailField = emailValue.text
+            let codigoPostalField = codigoPostalValue.text
+            let edadField = edadValue.text
+            let usernameField = usernameValue.text
+            let passwordField = passwordValue.text
+            
+            
+            
+            let request = NSMutableURLRequest(URL: NSURL(string: "http://emocionganar.com/admin/panel/registro_ios_new.php")!)
             request.HTTPMethod = "POST"
             let postString = "email=\(emailField!)&nombre=\(nombreField!)&celular=\(celularField!)&telefono=\(telefonoField!)&codigo_postal=\(codigoPostalField!)&edad=\(edadField!)&username=\(usernameField!)&password=\(passwordField!)"
             request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
@@ -78,7 +84,7 @@ class RegistroController: UIViewController {
                     //print(json["result"]![2]["nombre"]!)
                     //print(json["result"]![2]["nombre"])
                     
-                
+                    
                     if(json["success"]! as! NSObject == 1){
                         
                         print(json["id"]!)
@@ -90,16 +96,16 @@ class RegistroController: UIViewController {
                         nombreDefault.setValue(json["id"]!, forKey: "id")
                         nombreDefault.setValue(json["nombre"]!, forKey: "nombre")
                         nombreDefault.synchronize()
-                    
-                    
+                        
+                        
                         //Código que liga a otro View
                         let nuestroStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle:nil)
                         let registroExitosoPantalla = nuestroStoryBoard.instantiateViewControllerWithIdentifier("NavigationSeleccion") as! MenuMyNavigationController
-                    
+                        
                         dispatch_async(dispatch_get_main_queue(), {
                             self.presentViewController(registroExitosoPantalla, animated:true, completion: nil)
                         })
-                    
+                        
                     }
                     if(json["success"]! as! NSObject == 2){
                         print("El registro ya esta registrado")
@@ -113,11 +119,11 @@ class RegistroController: UIViewController {
                         dispatch_async(dispatch_get_main_queue(), {
                             self.avisoLabel.text = "Es necesario llenar todos los campos."
                         })
-
+                        
                     }
                     
-                
-                
+                    
+                    
                 } catch let error as JSONError {
                     print(error.rawValue)
                 } catch {
@@ -125,6 +131,8 @@ class RegistroController: UIViewController {
                 }
             }
             task.resume()
+
+        }
         
 
         

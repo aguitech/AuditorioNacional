@@ -480,6 +480,11 @@ class BlogViewController: UIViewController, ENSideMenuDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func hacia_trivia(sender: AnyObject) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+        let destViewController : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3")
+        self.presentViewController(destViewController, animated: true, completion: nil)
+    }
     
     @IBAction func toggleSideMenu(sender: AnyObject) {
         

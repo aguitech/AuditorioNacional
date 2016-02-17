@@ -41,6 +41,13 @@ class NuevoComoParticiparViewController: UIViewController, ENSideMenuDelegate {
         self.sideMenuController()?.sideMenu?.delegate = self
     }
     
+    @IBAction func hacia_trivia(sender: AnyObject) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+        let destViewController : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3")
+        self.presentViewController(destViewController, animated: true, completion: nil)
+    }//Fin de la funcion hacia_trivia
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
