@@ -18,6 +18,7 @@ class MyMenuTableViewController: UITableViewController {
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
         tableView.separatorStyle = .None
         tableView.backgroundColor = UIColor.clearColor()
+        
         tableView.scrollsToTop = false
         
         // Preserve selection between presentations
@@ -40,12 +41,13 @@ class MyMenuTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 9
+        return 10
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell = tableView.dequeueReusableCellWithIdentifier("CELL")
+        
         
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
@@ -54,6 +56,8 @@ class MyMenuTableViewController: UITableViewController {
             let selectedBackgroundView = UIView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
             selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
             cell!.selectedBackgroundView = selectedBackgroundView
+            cell!.textLabel?.textColor = UIColor.whiteColor()
+            
         }
         
         //cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"

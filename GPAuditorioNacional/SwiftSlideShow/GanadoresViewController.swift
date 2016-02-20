@@ -73,7 +73,7 @@ class GanadoresViewController: UIViewController, ENSideMenuDelegate {
                                     
                                     ganador_de_ayuda.id_resultado_trivia = objeto["id_resultado_trivia"] as! String
                                     ganador_de_ayuda.puntos = objeto ["puntos"] as! String
-                                    //ganador_de_ayuda.nombre = objeto["nombre"] as! String
+                                    ganador_de_ayuda.nombre = objeto["nombre"] as! String
                                     ganador_de_ayuda.fecha_creacion = objeto["fecha_creacion"] as! String
                                     ganador_de_ayuda.hora_creacion = objeto["hora_creacion"] as! String
                                     
@@ -116,7 +116,7 @@ class GanadoresViewController: UIViewController, ENSideMenuDelegate {
         print("dentro de cell")
         dispatch_async(dispatch_get_main_queue(), {
             cell.textLabel!.textColor = UIColor.whiteColor()
-            cell.textLabel!.text = self.arreglo_ganadores[indexPath.row].fecha_creacion
+            cell.textLabel!.text = self.arreglo_ganadores[indexPath.row].nombre
             //cell.detailTextLabel!.text = self.arreglo_ganadores[indexPath.row].hora_creacion
             cell.detailTextLabel!.text = self.arreglo_ganadores[indexPath.row].puntos
             cell.detailTextLabel!.textColor = UIColor(red: 48/255, green: 106/255, blue: 122/255, alpha: 1.0)
