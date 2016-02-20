@@ -112,6 +112,7 @@ class TriviaViewController : UIViewController{
         let objetoView : PostTriviaViewController = segue.destinationViewController as! PostTriviaViewController
         print("----------------------\(self.respuestas)")
         objetoView.respuestas_post = self.respuestas
+        objetoView.tiempo_segundos = self.seconds
         
         /*let objetoView : PantallaSiguiente = segue.destinationViewController as! PantallaSiguiente
         objetoView.*/

@@ -65,18 +65,18 @@ class MyMenuTableViewController: UITableViewController {
                 cell!.textLabel?.text = nombre
             }*/
             
-            cell!.textLabel?.text = "Ganadores"
+            cell!.textLabel?.text = "Blog"
             
             
         }
         if(indexPath.row == 1){
-            cell!.textLabel?.text = "Blog"
-        }
-        if(indexPath.row == 2){
             cell!.textLabel?.text = "Eventos"
         }
-        if(indexPath.row == 3){
+        if(indexPath.row == 2){
             cell!.textLabel?.text = "Trivias"
+        }
+        if(indexPath.row == 3){
+            cell!.textLabel?.text = "Ganadores"
         }
         if(indexPath.row == 4){
             cell!.textLabel?.text = "¿Cómo participar?"
@@ -85,12 +85,15 @@ class MyMenuTableViewController: UITableViewController {
             cell!.textLabel?.text = "Vincular Redes"
         }
         if(indexPath.row == 6){
-            cell!.textLabel?.text = "Terminos y Condiciones"
+            cell!.textLabel?.text = "Contacto"
         }
         if(indexPath.row == 7){
-            cell!.textLabel?.text = "Aviso de Privacidad"
+            cell!.textLabel?.text = "Terminos y Condiciones"
         }
         if(indexPath.row == 8){
+            cell!.textLabel?.text = "Aviso de Privacidad"
+        }
+        if(indexPath.row == 9){
             cell!.textLabel?.text = "Cerrar sesión"
         }
         
@@ -115,19 +118,19 @@ class MyMenuTableViewController: UITableViewController {
         switch (indexPath.row) {
         case 0:
             print("Entra a USERNAME")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ganadores")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1")
             break
         case 1:
             print("Entra a blog")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("tableEvento")
             break
         case 2:
             print("Entra a esta parte 1")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("tableEvento")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3")
             break
         case 3:
             print("Entra a esta parte 2")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ganadores")
             break
         case 4:
             print("Entra a esta parte 2")
@@ -139,15 +142,17 @@ class MyMenuTableViewController: UITableViewController {
             break
         case 6:
             print("Entra a esta parte 2")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("contacto")
             break
         case 7:
             print("Entra a esta parte 2")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5")
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4")
             break
             
-        //Cerrar Sesión
         case 8:
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5")
+        //Cerrar Sesión
+        case 9:
             print("Entra a esta parte 2")
             let nombreDefault = NSUserDefaults.standardUserDefaults()
             nombreDefault.setValue(nil, forKey: "usuario")
