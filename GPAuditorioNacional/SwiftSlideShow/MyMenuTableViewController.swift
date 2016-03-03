@@ -98,7 +98,9 @@ class MyMenuTableViewController: UITableViewController {
             cell!.textLabel?.text = "Aviso de Privacidad"
         }
         if(indexPath.row == 9){
-            cell!.textLabel?.text = "Cerrar sesión"
+            cell!.textLabel?.text = "Salir"
+            //Para cerrar sesión
+            //cell!.textLabel?.text = "Cerrar sesión"
         }
         
         
@@ -157,7 +159,9 @@ class MyMenuTableViewController: UITableViewController {
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5")
         //Cerrar Sesión
         case 9:
-            print("Entra a esta parte 2")
+            exit(0)
+            //Para cerrar sesión
+            /*print("Entra a esta parte 2")
             let nombreDefault = NSUserDefaults.standardUserDefaults()
             nombreDefault.setValue(nil, forKey: "usuario")
             nombreDefault.setValue(nil, forKey: "id")
@@ -166,7 +170,7 @@ class MyMenuTableViewController: UITableViewController {
             
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewInicio")
             break
-            
+            */
         default:
             print("Entra a esta parte default")
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4")
