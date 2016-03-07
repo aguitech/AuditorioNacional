@@ -86,16 +86,16 @@ class MyMenuTableViewController: UITableViewController {
             cell!.textLabel?.text = "¿Cómo participar?"
         }
         if(indexPath.row == 5){
-            cell!.textLabel?.text = "Vincular Redes"
+            cell!.textLabel?.text = "Compatir"
         }
         if(indexPath.row == 6){
-            cell!.textLabel?.text = "Contacto"
-        }
-        if(indexPath.row == 7){
             cell!.textLabel?.text = "Terminos y Condiciones"
         }
-        if(indexPath.row == 8){
+        if(indexPath.row == 7){
             cell!.textLabel?.text = "Aviso de Privacidad"
+        }
+        if(indexPath.row == 8){
+            cell!.textLabel?.text = "Contacto"
         }
         if(indexPath.row == 9){
             cell!.textLabel?.text = "Salir"
@@ -123,40 +123,41 @@ class MyMenuTableViewController: UITableViewController {
         var destViewController : UIViewController
         switch (indexPath.row) {
         case 0:
-            print("Entra a USERNAME")
+            //Blog
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1")
             break
         case 1:
-            print("Entra a blog")
+            //Eventos
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("tableEvento")
             break
         case 2:
-            print("Entra a esta parte 1")
+            //Trivia
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3")
             break
         case 3:
-            print("Entra a esta parte 2")
+            //Ganadores
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ganadores")
             break
         case 4:
-            print("Entra a esta parte 2")
+            //Como participar
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("nuevo_como_participar")
             break
         case 5:
-            print("Entra a esta parte 2")
+            //Compatir
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("NavRegistroExitoso")
             break
         case 6:
-            print("Entra a esta parte 2")
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("contacto")
-            break
-        case 7:
-            print("Entra a esta parte 2")
+            //Terminos y Condiciones
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4")
+        case 7:
+            //Aviso de privacidad
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5")
             break
             
         case 8:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5")
+            //Contacto
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("contacto")
+            break
         //Cerrar Sesión
         case 9:
             exit(0)
