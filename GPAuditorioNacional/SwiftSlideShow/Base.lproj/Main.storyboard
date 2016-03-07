@@ -1152,23 +1152,36 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5h0-mO-uec" userLabel="DivisorParteVisible">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_color_aqua.png" translatesAutoresizingMaskIntoConstraints="NO" id="vMi-yA-7mH">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
-                                    </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPg-AO-Dns">
-                                        <rect key="frame" x="0.0" y="59" width="375" height="211.5"/>
+                                        <rect key="frame" x="0.0" y="59" width="375" height="151"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msX-xC-Nhh">
+                                                <rect key="frame" x="109" y="19" width="157" height="114"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="msX-xC-Nhh" secondAttribute="height" multiplier="157:114" id="WK9-Q1-q4d"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="77"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="msX-xC-Nhh" firstAttribute="centerX" secondItem="rPg-AO-Dns" secondAttribute="centerX" id="D2R-cY-br9"/>
+                                            <constraint firstItem="msX-xC-Nhh" firstAttribute="centerY" secondItem="rPg-AO-Dns" secondAttribute="centerY" id="dxK-J8-Tg7"/>
+                                            <constraint firstItem="msX-xC-Nhh" firstAttribute="height" secondItem="rPg-AO-Dns" secondAttribute="height" multiplier="0.75" id="pMB-bW-lIJ"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-td-Qp8" userLabel="DivisorInferior">
-                                        <rect key="frame" x="0.0" y="331" width="375" height="272"/>
+                                        <rect key="frame" x="0.0" y="270.5" width="375" height="272"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFB-bV-UIu" userLabel="FondoBotones">
                                                 <rect key="frame" x="59" y="28" width="300" height="217"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clL-Fa-DE1" userLabel="PrimerBoton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="54"/>
+                                                        <rect key="frame" x="0.0" y="0.5" width="300" height="54"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTH-K9-gsZ">
-                                                                <rect key="frame" x="0.0" y="12" width="300" height="30"/>
+                                                                <rect key="frame" x="0.0" y="12.5" width="300" height="30"/>
                                                                 <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="0.91329635718463997" green="0.98696366495518806" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
@@ -1185,10 +1198,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYj-Ie-KTL" userLabel="SegundoBoton">
-                                                        <rect key="frame" x="0.0" y="54" width="300" height="54"/>
+                                                        <rect key="frame" x="0.0" y="54.5" width="300" height="54"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7o-nB-wRD">
-                                                                <rect key="frame" x="0.0" y="12" width="300" height="30"/>
+                                                                <rect key="frame" x="0.0" y="12.5" width="300" height="30"/>
                                                                 <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="0.91329635718463997" green="0.98696366495518806" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
@@ -1205,10 +1218,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TP9-bG-yzs" userLabel="TercerBoton">
-                                                        <rect key="frame" x="0.0" y="108" width="300" height="54"/>
+                                                        <rect key="frame" x="0.0" y="108.5" width="300" height="54"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONJ-sf-CAh">
-                                                                <rect key="frame" x="0.0" y="12" width="300" height="30"/>
+                                                                <rect key="frame" x="0.0" y="12.5" width="300" height="30"/>
                                                                 <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
@@ -1225,7 +1238,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVH-45-600" userLabel="CuartoBoton">
-                                                        <rect key="frame" x="0.0" y="162" width="300" height="55"/>
+                                                        <rect key="frame" x="0.0" y="162.5" width="300" height="55"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="respuesta4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJZ-Nc-9ka">
                                                                 <rect key="frame" x="0.0" y="10" width="300" height="30"/>
@@ -1273,7 +1286,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbp-vk-PKS">
-                                        <rect key="frame" x="0.0" y="271" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="210.5" width="375" height="60"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_color_aqua.png" translatesAutoresizingMaskIntoConstraints="NO" id="erD-1t-pjU">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -1300,26 +1313,18 @@
                                             <constraint firstItem="6f1-Bx-gUt" firstAttribute="centerY" secondItem="erD-1t-pjU" secondAttribute="centerY" id="n2n-Xm-xNa"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msX-xC-Nhh">
-                                        <rect key="frame" x="156" y="227" width="63" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="msX-xC-Nhh" secondAttribute="height" multiplier="7:4" id="Iz7-l6-tZc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transparencai.png" translatesAutoresizingMaskIntoConstraints="NO" id="vMi-yA-7mH">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wbp-vk-PKS" firstAttribute="centerX" secondItem="5h0-mO-uec" secondAttribute="centerX" id="1TQ-iE-Iyg"/>
-                                    <constraint firstItem="msX-xC-Nhh" firstAttribute="height" secondItem="rPg-AO-Dns" secondAttribute="height" multiplier="0.17" id="3NL-cl-2Op"/>
                                     <constraint firstItem="wbp-vk-PKS" firstAttribute="height" secondItem="5h0-mO-uec" secondAttribute="height" multiplier="0.1" id="3T1-rc-Po9"/>
                                     <constraint firstItem="dQV-td-Qp8" firstAttribute="centerX" secondItem="5h0-mO-uec" secondAttribute="centerX" id="3ix-tQ-huH"/>
                                     <constraint firstItem="vMi-yA-7mH" firstAttribute="top" secondItem="5h0-mO-uec" secondAttribute="top" id="Ahj-F9-oHx"/>
                                     <constraint firstItem="dQV-td-Qp8" firstAttribute="top" secondItem="wbp-vk-PKS" secondAttribute="bottom" id="B6W-k2-iyg"/>
                                     <constraint firstItem="vMi-yA-7mH" firstAttribute="height" secondItem="5h0-mO-uec" secondAttribute="height" multiplier="0.1" id="CRx-EH-dzs"/>
                                     <constraint firstItem="vMi-yA-7mH" firstAttribute="centerX" secondItem="5h0-mO-uec" secondAttribute="centerX" id="Dr6-kS-fNL"/>
-                                    <constraint firstItem="wbp-vk-PKS" firstAttribute="top" secondItem="msX-xC-Nhh" secondAttribute="bottom" constant="8" id="E87-Jy-idl"/>
                                     <constraint firstItem="rPg-AO-Dns" firstAttribute="centerX" secondItem="5h0-mO-uec" secondAttribute="centerX" id="Iix-wF-Wv9"/>
                                     <constraint firstItem="rPg-AO-Dns" firstAttribute="top" secondItem="vMi-yA-7mH" secondAttribute="bottom" id="W2I-Ro-vLC"/>
                                     <constraint firstItem="dQV-td-Qp8" firstAttribute="height" secondItem="5h0-mO-uec" secondAttribute="height" multiplier="0.45" id="aCE-kM-p9U"/>
@@ -1328,8 +1333,7 @@
                                     <constraint firstItem="dQV-td-Qp8" firstAttribute="width" secondItem="5h0-mO-uec" secondAttribute="width" id="nc6-9M-tzu"/>
                                     <constraint firstItem="rPg-AO-Dns" firstAttribute="width" secondItem="5h0-mO-uec" secondAttribute="width" id="pJG-iT-avT"/>
                                     <constraint firstItem="wbp-vk-PKS" firstAttribute="top" secondItem="rPg-AO-Dns" secondAttribute="bottom" id="sCC-Wf-Vuq"/>
-                                    <constraint firstItem="rPg-AO-Dns" firstAttribute="height" secondItem="5h0-mO-uec" secondAttribute="height" multiplier="0.35" id="vMt-ou-S5x"/>
-                                    <constraint firstItem="msX-xC-Nhh" firstAttribute="centerX" secondItem="rPg-AO-Dns" secondAttribute="centerX" id="xj0-1i-gW8"/>
+                                    <constraint firstItem="rPg-AO-Dns" firstAttribute="height" secondItem="5h0-mO-uec" secondAttribute="height" multiplier="0.25" id="vMt-ou-S5x"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -4216,6 +4220,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <image name="pregunta_hoy.png" width="507" height="699"/>
         <image name="rectanguloRedesSociales.png" width="1242" height="208"/>
         <image name="terminos_condiciones.png" width="1242" height="199"/>
+        <image name="transparencai.png" width="10" height="10"/>
         <image name="trivia_1_viaje.png" width="1242" height="331"/>
         <image name="trivia_color_aqua.png" width="1242" height="331"/>
         <image name="trivia_como_jugar.png" width="1242" height="199"/>
