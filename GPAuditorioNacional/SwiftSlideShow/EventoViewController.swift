@@ -72,7 +72,6 @@ class EventoViewController: UIViewController, ENSideMenuDelegate {
     
         print("El numero de la descarga: \(self.numero_descarga!)")
         
-        self.informacion.text = "Hola"
         
         let apiUrl = "http://emocionganar.com/admin/panel/webservice_evento.php"
         
@@ -110,6 +109,7 @@ class EventoViewController: UIViewController, ENSideMenuDelegate {
                                 if (index == self.numero_descarga!){
                                     let descripcion = objeto["descripcion"] as! String
                                     self.informacion.text = descripcion
+                                    print(descripcion)
                                     self.evento.text = objeto["evento"] as? String
                                     self.fecha.text = objeto["fecha"] as? String
                                     self.nombre.text = objeto["nombre"] as? String

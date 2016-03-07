@@ -115,7 +115,7 @@ class TableEventoViewController: UIViewController, ENSideMenuDelegate {
         cell.backgroundColor = UIColor.clearColor()
         print("dentro de cell")
         dispatch_async(dispatch_get_main_queue(), {
-            cell.textLabel!.text = self.arreglo_eventos[indexPath.row].evento
+            cell.textLabel!.text = self.arreglo_eventos[indexPath.row].nombre
             cell.detailTextLabel!.text = self.arreglo_eventos[indexPath.row].fecha
             
         })

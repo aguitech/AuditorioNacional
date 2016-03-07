@@ -89,7 +89,6 @@ class BlogDetalleNuevoViewController: UIViewController, ENSideMenuDelegate {
         
         print("El numero de la descarga: \(self.numero_descarga!)")
         
-        self.informacion.text = "Hola"
         
         let apiUrl = "http://emocionganar.com/admin/panel/webservice_blog.php"
         

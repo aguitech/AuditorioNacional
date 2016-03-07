@@ -2197,7 +2197,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                         <viewControllerLayoutGuide type="bottom" id="OR0-42-iBC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tOX-Rd-DYM">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="K1G-KB-FJf">
@@ -2209,7 +2209,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdR-2S-haN">
                                 <rect key="frame" x="20" y="94" width="335" height="543"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="606-nC-Xtn">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="606-nC-Xtn">
                                         <rect key="frame" x="0.0" y="369" width="335" height="174"/>
                                         <state key="normal" title="Button" image="menu_calendario_eventos.png"/>
                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
@@ -2219,7 +2219,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <segue destination="w7o-RF-wZh" kind="show" id="t2A-eM-IWP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2D-YP-9Fh">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2D-YP-9Fh">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="174"/>
                                         <state key="normal" title="Button" image="menu_blog_auditorio.png"/>
                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
@@ -2229,7 +2229,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <segue destination="0U9-K9-uxf" kind="show" id="ird-kz-Fot"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jc-FN-chV">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jc-FN-chV">
                                         <rect key="frame" x="0.0" y="185" width="335" height="174"/>
                                         <state key="normal" title="Button" image="menu_trivia_mensual.png"/>
                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
@@ -2348,10 +2348,9 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KVH-D3-667">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="sdfdfefadsfef" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KVH-D3-667">
                                         <rect key="frame" x="17" y="278" width="299" height="285"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="285" id="5rv-8t-9hG"/>
                                             <constraint firstAttribute="width" constant="299" id="BKE-u9-MmH"/>
                                         </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -2366,6 +2365,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                     <constraint firstAttribute="trailing" secondItem="g2G-Bn-8wc" secondAttribute="trailing" id="1Ix-Dh-eD1"/>
                                     <constraint firstItem="FZP-dc-ZQb" firstAttribute="leading" secondItem="gX7-87-wQF" secondAttribute="leading" constant="17" id="2G6-ur-uKl"/>
                                     <constraint firstItem="KVH-D3-667" firstAttribute="leading" secondItem="gX7-87-wQF" secondAttribute="leading" constant="17" id="4d4-Lh-z7X"/>
+                                    <constraint firstAttribute="bottom" secondItem="KVH-D3-667" secondAttribute="bottom" id="61G-hN-dNa"/>
                                     <constraint firstItem="FZP-dc-ZQb" firstAttribute="top" secondItem="swd-Ip-Br3" secondAttribute="bottom" constant="1" id="EVg-dx-cIk"/>
                                     <constraint firstItem="swd-Ip-Br3" firstAttribute="top" secondItem="gX7-87-wQF" secondAttribute="top" constant="8" id="NLE-Q8-90g"/>
                                     <constraint firstAttribute="trailing" secondItem="FZP-dc-ZQb" secondAttribute="trailing" id="TfX-hG-6j4"/>
@@ -3998,7 +3998,6 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U60-DC-LhK">
                                         <rect key="frame" x="17" y="278" width="299" height="285"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="285" id="0mD-Ae-bsS"/>
                                             <constraint firstAttribute="width" constant="299" id="CDA-7I-K5T"/>
                                         </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -4024,6 +4023,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                     <constraint firstItem="ZXh-6L-TrG" firstAttribute="top" secondItem="70x-vo-nR9" secondAttribute="bottom" constant="1" id="jzh-dA-UtD"/>
                                     <constraint firstItem="U60-DC-LhK" firstAttribute="top" secondItem="4ml-bM-IDK" secondAttribute="bottom" constant="8" id="rb1-eM-I9B"/>
                                     <constraint firstItem="70x-vo-nR9" firstAttribute="leading" secondItem="u6y-ar-wrU" secondAttribute="leading" constant="17" id="tda-wn-iek"/>
+                                    <constraint firstAttribute="bottom" secondItem="U60-DC-LhK" secondAttribute="bottom" id="yIM-LP-1z2"/>
                                     <constraint firstItem="cPT-kd-3Ua" firstAttribute="leading" secondItem="u6y-ar-wrU" secondAttribute="leading" id="zTs-2g-kSU"/>
                                 </constraints>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
@@ -4234,11 +4234,11 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <image name="vincula.png" width="1106" height="177"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cqk-r0-oA7"/>
-        <segue reference="3eg-4M-hew"/>
-        <segue reference="7WK-Ps-2Me"/>
         <segue reference="bFr-zj-I5w"/>
         <segue reference="Fbn-A4-MXi"/>
+        <segue reference="kub-ze-7Wg"/>
+        <segue reference="3eg-4M-hew"/>
+        <segue reference="7WK-Ps-2Me"/>
         <segue reference="0Hm-mh-610"/>
         <segue reference="Jsp-qb-vt0"/>
     </inferredMetricsTieBreakers>
