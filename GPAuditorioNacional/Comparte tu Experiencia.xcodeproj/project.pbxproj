@@ -113,6 +113,8 @@
 		E85995DD1C77E569004909B8 /* contacto_correo.png in Resources */ = {isa = PBXBuildFile; fileRef = E85995DC1C77E569004909B8 /* contacto_correo.png */; };
 		E85995DF1C77E633004909B8 /* ContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85995DE1C77E633004909B8 /* ContactoViewController.swift */; };
 		E85995E11C77E645004909B8 /* ContactoMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85995E01C77E645004909B8 /* ContactoMyNavigationController.swift */; };
+		E86EFC921C8E203E00A88EFB /* fondo_blog.png in Resources */ = {isa = PBXBuildFile; fileRef = E86EFC911C8E203E00A88EFB /* fondo_blog.png */; };
+		E86EFC941C8E21B000A88EFB /* fondo_blog2.png in Resources */ = {isa = PBXBuildFile; fileRef = E86EFC931C8E21B000A88EFB /* fondo_blog2.png */; };
 		E87AD9061C6471930009ECA2 /* nuevo_inicio.png in Resources */ = {isa = PBXBuildFile; fileRef = E87AD9051C6471930009ECA2 /* nuevo_inicio.png */; };
 		E87AD9081C64721D0009ECA2 /* NuevoInicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87AD9071C64721D0009ECA2 /* NuevoInicioViewController.swift */; };
 		E87AD90B1C6475360009ECA2 /* nuevo_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = E87AD90A1C6475360009ECA2 /* nuevo_menu.png */; };
@@ -260,6 +262,8 @@
 		E85995DC1C77E569004909B8 /* contacto_correo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacto_correo.png; sourceTree = "<group>"; };
 		E85995DE1C77E633004909B8 /* ContactoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactoViewController.swift; sourceTree = "<group>"; };
 		E85995E01C77E645004909B8 /* ContactoMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactoMyNavigationController.swift; sourceTree = "<group>"; };
+		E86EFC911C8E203E00A88EFB /* fondo_blog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo_blog.png; sourceTree = "<group>"; };
+		E86EFC931C8E21B000A88EFB /* fondo_blog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo_blog2.png; sourceTree = "<group>"; };
 		E87AD9051C6471930009ECA2 /* nuevo_inicio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuevo_inicio.png; sourceTree = "<group>"; };
 		E87AD9071C64721D0009ECA2 /* NuevoInicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevoInicioViewController.swift; sourceTree = "<group>"; };
 		E87AD90A1C6475360009ECA2 /* nuevo_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuevo_menu.png; sourceTree = "<group>"; };
@@ -336,6 +340,8 @@
 				DC5856E91C3CFC0100DFDC5F /* IniciarSesionController.swift */,
 				C4C6FE4B1ADBF8B200EAA7A9 /* Main.storyboard */,
 				C4C6FE4E1ADBF8B200EAA7A9 /* Images.xcassets */,
+				E86EFC911C8E203E00A88EFB /* fondo_blog.png */,
+				E86EFC931C8E21B000A88EFB /* fondo_blog2.png */,
 				C4C6FE501ADBF8B200EAA7A9 /* LaunchScreen.xib */,
 				DC5B99541C3CE8A600E947B5 /* fondo.png */,
 				E8F157C61C584147005D7A09 /* fondo_pleca.png */,
@@ -778,6 +784,7 @@
 				DC4AC5341C516980006A1995 /* respuesta1.png in Resources */,
 				E83A90951C72424E00E0746C /* menu_calendario_eventos.png in Resources */,
 				DC4AC51F1C5098E8006A1995 /* aviso_privacidad.png in Resources */,
+				E86EFC921C8E203E00A88EFB /* fondo_blog.png in Resources */,
 				E80E543B1C6E67370043A54D /* ganadores_felicidades.png in Resources */,
 				E88A68B51C7434720030112B /* post_trivia_gracias.png in Resources */,
 				E81EE6951C752CF500C43EF0 /* post_trivia_terminar.png in Resources */,
@@ -793,6 +800,7 @@
 				E83A90981C7246CE00E0746C /* como_participar_titulo.png in Resources */,
 				E81EE68B1C74DEA400C43EF0 /* post_trivia_puntos.png in Resources */,
 				DCBFA0F11C4D7AE10078F320 /* twitter.png in Resources */,
+				E86EFC941C8E21B000A88EFB /* fondo_blog2.png in Resources */,
 				E83A909E1C724B5400E0746C /* como_participar_ganaste.png in Resources */,
 				DC4AC52F1C516980006A1995 /* enviar_respuesta.png in Resources */,
 				DCBFA0FA1C4DC26D0078F320 /* menu_icon.png in Resources */,

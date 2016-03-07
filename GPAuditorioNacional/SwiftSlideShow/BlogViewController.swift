@@ -105,7 +105,7 @@ class BlogViewController: UIViewController, ENSideMenuDelegate {
         
         self.sideMenuController()?.sideMenu?.delegate = self
         
-        
+        tableView.backgroundView = UIImageView(image: UIImage(named: "fondo_blog2.png"))
         
         //let ciudad = ciudadTextField.text
         //let appId = "455f3e37d059268550863c04efcc9805"

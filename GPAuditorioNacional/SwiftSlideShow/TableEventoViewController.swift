@@ -116,6 +116,8 @@ class TableEventoViewController: UIViewController, ENSideMenuDelegate {
         print("dentro de cell")
         dispatch_async(dispatch_get_main_queue(), {
             cell.textLabel!.text = self.arreglo_eventos[indexPath.row].nombre
+            cell.textLabel!.numberOfLines = 2;
+            //cell.textLabel!.lineBreakMode = NSLineBreakByWordWrapping;
             cell.detailTextLabel!.text = self.arreglo_eventos[indexPath.row].fecha
             
         })
