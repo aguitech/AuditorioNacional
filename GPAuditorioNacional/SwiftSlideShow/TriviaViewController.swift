@@ -54,14 +54,23 @@ class TriviaViewController : UIViewController{
         seconds--
         contador.text = "\(seconds)"
         
+        
+        if(self.pregunta_actual == arreglo_trivia.count){
+            timer.invalidate()
+            self.performSegueWithIdentifier("hacia_post_trivia", sender: self)
+        }
+        
+        if(self.pregunta_actual < arreglo_trivia.count){
         self.pregunta.text = self.arreglo_trivia[self.pregunta_actual].pregunta
         respuesta1Btn.setTitle("\(arreglo_trivia[pregunta_actual].respuesta1)", forState: UIControlState.Normal)
         respuesta2Btn.setTitle("\(arreglo_trivia[pregunta_actual].respuesta2)", forState: UIControlState.Normal)
         respuesta3Btn.setTitle("\(arreglo_trivia[pregunta_actual].respuesta3)", forState: UIControlState.Normal)
         respuesta4Btn.setTitle("\(arreglo_trivia[pregunta_actual].respuesta4)", forState: UIControlState.Normal)
         
+        print("valor de pregunta actual: \(self.pregunta_actual)")
         
-        
+        print("arreglo_trivia.count: \(arreglo_trivia.count - 1)")
+        }
         
         if(seconds == 5){
             contador.textColor = UIColor.redColor()
@@ -77,6 +86,8 @@ class TriviaViewController : UIViewController{
             
             self.performSegueWithIdentifier("hacia_post_trivia", sender: self)
         }
+        
+        
     }//Fin de funcion actualizarTimer
     
     //Funcion que realiza un acción al oprimir algún boton de respuesta
