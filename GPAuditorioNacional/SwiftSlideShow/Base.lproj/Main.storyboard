@@ -849,13 +849,26 @@
                                                     <rect key="frame" x="327" y="0.0" width="300" height="101"/>
                                                 </variation>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbZ-Bz-8IY">
+                                                <rect key="frame" x="175" y="0.0" width="160" height="241"/>
+                                                <connections>
+                                                    <action selector="hacia_eventos:" destination="0U9-K9-uxf" eventType="touchUpInside" id="Pjs-2k-C2h"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="HVf-EY-UHM" secondAttribute="bottom" id="0sE-e3-F6p"/>
                                             <constraint firstItem="HVf-EY-UHM" firstAttribute="height" secondItem="8Yf-70-f27" secondAttribute="height" id="7DU-7O-DWA"/>
                                             <constraint firstAttribute="trailing" secondItem="HVf-EY-UHM" secondAttribute="trailing" id="Ea1-qi-oFV"/>
+                                            <constraint firstItem="GbZ-Bz-8IY" firstAttribute="width" secondItem="HVf-EY-UHM" secondAttribute="width" id="JHs-hy-x2T"/>
+                                            <constraint firstItem="GbZ-Bz-8IY" firstAttribute="height" secondItem="HVf-EY-UHM" secondAttribute="height" id="Rgz-Ue-Bzi"/>
+                                            <constraint firstItem="GbZ-Bz-8IY" firstAttribute="top" secondItem="8Yf-70-f27" secondAttribute="top" id="XHD-fv-ucD"/>
                                             <constraint firstItem="HVf-EY-UHM" firstAttribute="width" secondItem="8Yf-70-f27" secondAttribute="width" multiplier="0.48" id="bIv-G4-ym4"/>
+                                            <constraint firstItem="GbZ-Bz-8IY" firstAttribute="centerX" secondItem="HVf-EY-UHM" secondAttribute="centerX" id="bmn-5T-CEg"/>
+                                            <constraint firstAttribute="trailing" secondItem="GbZ-Bz-8IY" secondAttribute="trailing" id="ee4-dM-zHG"/>
+                                            <constraint firstAttribute="bottom" secondItem="GbZ-Bz-8IY" secondAttribute="bottom" id="gMC-gS-hDg"/>
                                             <constraint firstItem="HVf-EY-UHM" firstAttribute="top" secondItem="8Yf-70-f27" secondAttribute="top" id="pr4-vV-1mn"/>
+                                            <constraint firstItem="GbZ-Bz-8IY" firstAttribute="centerY" secondItem="HVf-EY-UHM" secondAttribute="centerY" id="tUo-HG-6qS"/>
                                         </constraints>
                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                             <rect key="frame" x="-30" y="110" width="627" height="101"/>
@@ -2206,7 +2219,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                         <viewControllerLayoutGuide type="bottom" id="OR0-42-iBC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tOX-Rd-DYM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="K1G-KB-FJf">
@@ -2218,7 +2231,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdR-2S-haN">
                                 <rect key="frame" x="20" y="94" width="335" height="543"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="606-nC-Xtn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="606-nC-Xtn">
                                         <rect key="frame" x="0.0" y="369" width="335" height="174"/>
                                         <state key="normal" title="Button" image="menu_calendario_eventos.png"/>
                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
@@ -2228,7 +2241,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <segue destination="w7o-RF-wZh" kind="show" id="t2A-eM-IWP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2D-YP-9Fh">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2D-YP-9Fh">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="174"/>
                                         <state key="normal" title="Button" image="menu_blog_auditorio.png"/>
                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
@@ -2238,7 +2251,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <segue destination="0U9-K9-uxf" kind="show" id="ird-kz-Fot"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jc-FN-chV">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jc-FN-chV">
                                         <rect key="frame" x="0.0" y="185" width="335" height="174"/>
                                         <state key="normal" title="Button" image="menu_trivia_mensual.png"/>
                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
@@ -4325,10 +4338,10 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
     <inferredMetricsTieBreakers>
         <segue reference="bFr-zj-I5w"/>
         <segue reference="Fbn-A4-MXi"/>
-        <segue reference="kub-ze-7Wg"/>
-        <segue reference="3eg-4M-hew"/>
-        <segue reference="7WK-Ps-2Me"/>
-        <segue reference="0Hm-mh-610"/>
         <segue reference="Jsp-qb-vt0"/>
+        <segue reference="0Hm-mh-610"/>
+        <segue reference="Tly-6t-9kZ"/>
+        <segue reference="kub-ze-7Wg"/>
+        <segue reference="7WK-Ps-2Me"/>
     </inferredMetricsTieBreakers>
 </document>

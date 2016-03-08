@@ -486,6 +486,11 @@ class BlogViewController: UIViewController, ENSideMenuDelegate {
         self.presentViewController(destViewController, animated: true, completion: nil)
     }
     
+    @IBAction func hacia_eventos(sender: AnyObject) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+        let destViewController : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("tableEvento")
+        self.presentViewController(destViewController, animated: true, completion: nil)
+    }
     @IBAction func toggleSideMenu(sender: AnyObject) {
         
         toggleSideMenuView()
