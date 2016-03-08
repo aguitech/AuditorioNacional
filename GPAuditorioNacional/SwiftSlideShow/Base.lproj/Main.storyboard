@@ -2328,20 +2328,10 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                 </variation>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gX7-87-wQF">
-                                <rect key="frame" x="20" y="20" width="335" height="563"/>
+                                <rect key="frame" x="20" y="0.0" width="335" height="583"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swd-Ip-Br3">
-                                        <rect key="frame" x="17" y="8" width="318" height="51"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="318" id="6Cz-BZ-Xik"/>
-                                            <constraint firstAttribute="height" constant="51" id="YRY-L6-JHd"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-dc-ZQb">
-                                        <rect key="frame" x="17" y="60" width="318" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-dc-ZQb">
+                                        <rect key="frame" x="17" y="80" width="318" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="318" id="KLF-Kq-MEB"/>
                                             <constraint firstAttribute="height" constant="21" id="v3A-Jj-MFd"/>
@@ -2350,8 +2340,8 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                         <color key="textColor" red="0.89543269230769229" green="0.89543269230769229" blue="0.89543269230769229" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g2G-Bn-8wc">
-                                        <rect key="frame" x="0.0" y="89" width="335" height="176"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g2G-Bn-8wc">
+                                        <rect key="frame" x="0.0" y="109" width="335" height="176"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="176" id="EvI-KF-xau"/>
                                             <constraint firstAttribute="width" constant="335" id="ItM-Kc-s5g"/>
@@ -2360,18 +2350,8 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <rect key="frame" x="20" y="143" width="163.5" height="159"/>
                                         </variation>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5C-v4-s5I">
-                                        <rect key="frame" x="17" y="273" width="318" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="318" id="489-gh-6Kb"/>
-                                            <constraint firstAttribute="height" constant="21" id="PkX-Lj-h1M"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KVH-D3-667">
-                                        <rect key="frame" x="17" y="302" width="299" height="261"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KVH-D3-667">
+                                        <rect key="frame" x="18" y="293" width="299" height="290"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="299" id="BKE-u9-MmH"/>
                                         </constraints>
@@ -2382,6 +2362,16 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <rect key="frame" x="0.0" y="158" width="163.5" height="83"/>
                                         </variation>
                                     </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swd-Ip-Br3">
+                                        <rect key="frame" x="17" y="28" width="318" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="318" id="6Cz-BZ-Xik"/>
+                                            <constraint firstAttribute="height" constant="51" id="YRY-L6-JHd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="g2G-Bn-8wc" secondAttribute="trailing" id="1Ix-Dh-eD1"/>
@@ -2389,17 +2379,14 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                     <constraint firstItem="KVH-D3-667" firstAttribute="leading" secondItem="gX7-87-wQF" secondAttribute="leading" constant="17" id="4d4-Lh-z7X"/>
                                     <constraint firstAttribute="bottom" secondItem="KVH-D3-667" secondAttribute="bottom" id="61G-hN-dNa"/>
                                     <constraint firstItem="FZP-dc-ZQb" firstAttribute="top" secondItem="swd-Ip-Br3" secondAttribute="bottom" constant="1" id="EVg-dx-cIk"/>
-                                    <constraint firstItem="swd-Ip-Br3" firstAttribute="top" secondItem="gX7-87-wQF" secondAttribute="top" constant="8" id="NLE-Q8-90g"/>
+                                    <constraint firstItem="swd-Ip-Br3" firstAttribute="top" secondItem="gX7-87-wQF" secondAttribute="top" constant="4" id="NLE-Q8-90g"/>
                                     <constraint firstAttribute="trailing" secondItem="FZP-dc-ZQb" secondAttribute="trailing" id="TfX-hG-6j4"/>
                                     <constraint firstItem="g2G-Bn-8wc" firstAttribute="leading" secondItem="gX7-87-wQF" secondAttribute="leading" id="VDr-MR-05g"/>
+                                    <constraint firstItem="KVH-D3-667" firstAttribute="top" secondItem="g2G-Bn-8wc" secondAttribute="bottom" constant="8" id="XdN-Wh-h8K"/>
                                     <constraint firstAttribute="trailing" secondItem="swd-Ip-Br3" secondAttribute="trailing" id="XxF-st-saB"/>
-                                    <constraint firstItem="L5C-v4-s5I" firstAttribute="top" secondItem="g2G-Bn-8wc" secondAttribute="bottom" constant="8" id="d1u-Vw-sWZ"/>
                                     <constraint firstItem="swd-Ip-Br3" firstAttribute="leading" secondItem="gX7-87-wQF" secondAttribute="leading" constant="17" id="icE-8X-lnp"/>
                                     <constraint firstAttribute="trailing" secondItem="KVH-D3-667" secondAttribute="trailing" constant="19" id="knW-HQ-Qfs"/>
-                                    <constraint firstItem="KVH-D3-667" firstAttribute="top" secondItem="L5C-v4-s5I" secondAttribute="bottom" constant="8" id="q4d-cN-hp9"/>
-                                    <constraint firstItem="L5C-v4-s5I" firstAttribute="leading" secondItem="gX7-87-wQF" secondAttribute="leading" constant="17" id="sCN-WE-iTn"/>
-                                    <constraint firstItem="g2G-Bn-8wc" firstAttribute="top" secondItem="FZP-dc-ZQb" secondAttribute="bottom" constant="8" id="vja-MY-MzQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="L5C-v4-s5I" secondAttribute="trailing" id="zzA-hL-4LK"/>
+                                    <constraint firstItem="g2G-Bn-8wc" firstAttribute="top" secondItem="FZP-dc-ZQb" secondAttribute="bottom" constant="5" id="vja-MY-MzQ"/>
                                 </constraints>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="143" width="627" height="241"/>
@@ -2415,8 +2402,14 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                             <constraint firstItem="NQv-DX-kOQ" firstAttribute="leading" secondItem="ljw-1N-BBv" secondAttribute="leading" id="YbR-DU-MGT"/>
                             <constraint firstItem="gX7-87-wQF" firstAttribute="top" secondItem="Zac-5t-H5D" secondAttribute="bottom" constant="20" id="avf-lq-NEj"/>
                             <constraint firstAttribute="trailing" secondItem="NQv-DX-kOQ" secondAttribute="trailing" id="bOx-Ta-u0X"/>
+                            <constraint firstItem="gX7-87-wQF" firstAttribute="top" secondItem="Zac-5t-H5D" secondAttribute="bottom" id="p6K-WB-f4p"/>
                             <constraint firstItem="pLF-Sd-EBC" firstAttribute="top" secondItem="gX7-87-wQF" secondAttribute="bottom" constant="20" id="r7A-AE-T0u"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="avf-lq-NEj"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="26N-NL-Gnx">
                         <leftBarButtonItems>
@@ -2440,7 +2433,6 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="Evento" destination="NQv-DX-kOQ" id="vBk-tw-mv6"/>
-                        <outlet property="evento" destination="L5C-v4-s5I" id="ezs-b9-yMj"/>
                         <outlet property="fecha" destination="FZP-dc-ZQb" id="MSb-VA-muW"/>
                         <outlet property="imagen" destination="g2G-Bn-8wc" id="fu3-SK-NvZ"/>
                         <outlet property="informacion" destination="KVH-D3-667" id="XWC-YB-6hn"/>
@@ -4036,10 +4028,10 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                 </variation>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u6y-ar-wrU">
-                                <rect key="frame" x="20" y="20" width="335" height="563"/>
+                                <rect key="frame" x="20" y="0.0" width="335" height="583"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70x-vo-nR9">
-                                        <rect key="frame" x="17" y="8" width="318" height="51"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70x-vo-nR9">
+                                        <rect key="frame" x="17" y="28" width="318" height="51"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="318" id="OFW-7r-xjY"/>
                                             <constraint firstAttribute="height" constant="51" id="pdd-ia-ZLQ"/>
@@ -4048,28 +4040,18 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXh-6L-TrG">
-                                        <rect key="frame" x="17" y="60" width="318" height="21"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPT-kd-3Ua">
+                                        <rect key="frame" x="0.0" y="87" width="335" height="176"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="318" id="Njs-9w-0cH"/>
-                                            <constraint firstAttribute="height" constant="21" id="kwh-W4-JK7"/>
+                                            <constraint firstAttribute="width" constant="335" id="5zc-3q-RdI"/>
+                                            <constraint firstAttribute="height" constant="176" id="iZC-eX-lxf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.8954326923" green="0.8954326923" blue="0.8954326923" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ml-bM-IDK">
-                                        <rect key="frame" x="17" y="273" width="318" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="318" id="EDv-g2-b87"/>
-                                            <constraint firstAttribute="height" constant="21" id="jb6-er-2J5"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U60-DC-LhK">
-                                        <rect key="frame" x="17" y="302" width="299" height="261"/>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="20" y="143" width="163.5" height="159"/>
+                                        </variation>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U60-DC-LhK">
+                                        <rect key="frame" x="18" y="271" width="299" height="312"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="299" id="CDA-7I-K5T"/>
                                         </constraints>
@@ -4080,31 +4062,15 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <rect key="frame" x="0.0" y="158" width="163.5" height="83"/>
                                         </variation>
                                     </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cPT-kd-3Ua">
-                                        <rect key="frame" x="0.0" y="89" width="335" height="176"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="335" id="5zc-3q-RdI"/>
-                                            <constraint firstAttribute="height" constant="176" id="iZC-eX-lxf"/>
-                                        </constraints>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="20" y="143" width="163.5" height="159"/>
-                                        </variation>
-                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="U60-DC-LhK" firstAttribute="leading" secondItem="u6y-ar-wrU" secondAttribute="leading" constant="17" id="0CH-dS-5bI"/>
                                     <constraint firstAttribute="trailing" secondItem="70x-vo-nR9" secondAttribute="trailing" id="65P-gP-MiB"/>
-                                    <constraint firstItem="ZXh-6L-TrG" firstAttribute="leading" secondItem="u6y-ar-wrU" secondAttribute="leading" constant="17" id="AJp-5Z-93W"/>
-                                    <constraint firstItem="4ml-bM-IDK" firstAttribute="leading" secondItem="u6y-ar-wrU" secondAttribute="leading" constant="17" id="APK-jK-vrV"/>
-                                    <constraint firstItem="cPT-kd-3Ua" firstAttribute="top" secondItem="ZXh-6L-TrG" secondAttribute="bottom" constant="8" id="It2-XV-8kD"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZXh-6L-TrG" secondAttribute="trailing" id="J3a-7H-ICt"/>
+                                    <constraint firstItem="cPT-kd-3Ua" firstAttribute="top" secondItem="70x-vo-nR9" secondAttribute="bottom" constant="8" id="OX5-z0-0Fh"/>
                                     <constraint firstItem="70x-vo-nR9" firstAttribute="top" secondItem="u6y-ar-wrU" secondAttribute="top" constant="8" id="PYg-NP-M7j"/>
                                     <constraint firstAttribute="trailing" secondItem="U60-DC-LhK" secondAttribute="trailing" constant="19" id="bsB-R5-zCG"/>
-                                    <constraint firstItem="4ml-bM-IDK" firstAttribute="top" secondItem="cPT-kd-3Ua" secondAttribute="bottom" constant="8" id="fmo-eE-v2s"/>
-                                    <constraint firstAttribute="trailing" secondItem="4ml-bM-IDK" secondAttribute="trailing" id="gYo-o0-HRQ"/>
+                                    <constraint firstItem="U60-DC-LhK" firstAttribute="top" secondItem="cPT-kd-3Ua" secondAttribute="bottom" constant="8" id="eHu-sh-lNP"/>
                                     <constraint firstAttribute="trailing" secondItem="cPT-kd-3Ua" secondAttribute="trailing" id="gj9-iU-tbr"/>
-                                    <constraint firstItem="ZXh-6L-TrG" firstAttribute="top" secondItem="70x-vo-nR9" secondAttribute="bottom" constant="1" id="jzh-dA-UtD"/>
-                                    <constraint firstItem="U60-DC-LhK" firstAttribute="top" secondItem="4ml-bM-IDK" secondAttribute="bottom" constant="8" id="rb1-eM-I9B"/>
                                     <constraint firstItem="70x-vo-nR9" firstAttribute="leading" secondItem="u6y-ar-wrU" secondAttribute="leading" constant="17" id="tda-wn-iek"/>
                                     <constraint firstAttribute="bottom" secondItem="U60-DC-LhK" secondAttribute="bottom" id="v1J-v8-Vwl"/>
                                     <constraint firstAttribute="bottom" secondItem="U60-DC-LhK" secondAttribute="bottom" id="yIM-LP-1z2"/>
@@ -4121,11 +4087,17 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                             <constraint firstAttribute="trailing" secondItem="mtF-PX-1AT" secondAttribute="trailing" id="2bS-q6-7Zg"/>
                             <constraint firstItem="u6y-ar-wrU" firstAttribute="trailing" secondItem="UXn-Pv-ijN" secondAttribute="trailingMargin" id="ETA-qW-GuT"/>
                             <constraint firstItem="mtF-PX-1AT" firstAttribute="leading" secondItem="UXn-Pv-ijN" secondAttribute="leading" id="HcQ-It-Pgy"/>
+                            <constraint firstItem="u6y-ar-wrU" firstAttribute="top" secondItem="nqi-gH-get" secondAttribute="bottom" id="NzB-pG-hKR"/>
                             <constraint firstItem="u6y-ar-wrU" firstAttribute="top" secondItem="nqi-gH-get" secondAttribute="bottom" constant="20" id="hXA-qN-tNu"/>
                             <constraint firstItem="bs3-3p-Wi8" firstAttribute="top" secondItem="u6y-ar-wrU" secondAttribute="bottom" constant="20" id="qDV-dn-sm2"/>
                             <constraint firstItem="u6y-ar-wrU" firstAttribute="leading" secondItem="UXn-Pv-ijN" secondAttribute="leadingMargin" id="tUu-D7-lcH"/>
                             <constraint firstItem="mtF-PX-1AT" firstAttribute="top" secondItem="nqi-gH-get" secondAttribute="bottom" id="zvI-Yl-aiS"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hXA-qN-tNu"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="4La-3r-W1m">
                         <leftBarButtonItems>
@@ -4149,8 +4121,6 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="Evento" destination="mtF-PX-1AT" id="Lco-mH-xXs"/>
-                        <outlet property="evento" destination="4ml-bM-IDK" id="QHM-LS-tvh"/>
-                        <outlet property="fecha" destination="ZXh-6L-TrG" id="jaC-FC-TTN"/>
                         <outlet property="imagen" destination="cPT-kd-3Ua" id="286-hd-sRN"/>
                         <outlet property="informacion" destination="U60-DC-LhK" id="BF5-nf-r7x"/>
                         <outlet property="nombre" destination="70x-vo-nR9" id="T3P-C7-81d"/>
