@@ -124,9 +124,17 @@ class BlogDetalleNuevoViewController: UIViewController, ENSideMenuDelegate {
                             
                             dispatch_async(dispatch_get_main_queue(), {
                                 if (index == self.numero_descarga!){
+                                    
                                     let descripcion = objeto["descripcion"] as! String
-                                    self.informacion.text = descripcion
-                                    self.evento.text = objeto["blog"] as? String
+                                    //self.informacion.text = descripcion
+                                    //self.informacion.sizeToFit()
+                                    //self.evento.text = objeto["blog"] as? String
+                                    var concatenacion = (objeto["blog"] as? String)! + "\n\n"
+                                    concatenacion = concatenacion + descripcion
+                                    
+                                    self.informacion.text = concatenacion
+                                    
+
                                     //self.fecha.text = objeto["fecha"] as? String
                                     self.nombre.text = objeto["titulo"] as? String
                                     let imagen_url = objeto["imagen"] as! String
