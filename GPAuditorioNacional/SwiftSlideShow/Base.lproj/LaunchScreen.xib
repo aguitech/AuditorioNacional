@@ -11,25 +11,16 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="G1o-MG-MRh">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cargando.png" translatesAutoresizingMaskIntoConstraints="NO" id="G1o-MG-MRh">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logosLaunch.png" translatesAutoresizingMaskIntoConstraints="NO" id="6fS-04-AIu">
-                    <rect key="frame" x="0.0" y="189" width="480" height="102"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="102" id="b0x-Vj-UKt"/>
-                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="G1o-MG-MRh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Ro-Km-eS7"/>
                 <constraint firstItem="G1o-MG-MRh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5uz-8p-LAG"/>
-                <constraint firstItem="6fS-04-AIu" firstAttribute="width" secondItem="G1o-MG-MRh" secondAttribute="width" id="DoF-Ns-jWU"/>
                 <constraint firstAttribute="bottom" secondItem="G1o-MG-MRh" secondAttribute="bottom" id="cFZ-om-XNs"/>
                 <constraint firstAttribute="trailing" secondItem="G1o-MG-MRh" secondAttribute="trailing" id="quq-FV-bmo"/>
-                <constraint firstItem="6fS-04-AIu" firstAttribute="centerX" secondItem="G1o-MG-MRh" secondAttribute="centerX" id="wmC-gF-2WG"/>
-                <constraint firstItem="6fS-04-AIu" firstAttribute="centerY" secondItem="G1o-MG-MRh" secondAttribute="centerY" id="zpH-mE-vOO"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -37,7 +28,6 @@
         </view>
     </objects>
     <resources>
-        <image name="fondo.png" width="821" height="1158"/>
-        <image name="logosLaunch.png" width="820" height="150"/>
+        <image name="cargando.png" width="1242" height="2208"/>
     </resources>
 </document>

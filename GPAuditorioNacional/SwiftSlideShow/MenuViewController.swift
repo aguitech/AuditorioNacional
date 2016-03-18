@@ -22,9 +22,15 @@ class MenuViewController: UIViewController, ENSideMenuDelegate {
         dispatch_async(dispatch_get_main_queue(), {
             self.presentViewController(registroPantalla, animated:true, completion: nil)
         })
-
+ }*/
+    @IBAction func prueba_evento(sender: AnyObject) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+        let destViewController : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("scroll_evento")
+        self.presentViewController(destViewController, animated: true, completion: nil)
+         
+    }
         
-    }*/
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -104,6 +104,8 @@
 		E83A909E1C724B5400E0746C /* como_participar_ganaste.png in Resources */ = {isa = PBXBuildFile; fileRef = E83A909D1C724B5400E0746C /* como_participar_ganaste.png */; };
 		E83CBC6F1C65347D000A9E82 /* BlogDetalleNuevoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CBC6E1C65347D000A9E82 /* BlogDetalleNuevoViewController.swift */; };
 		E83CBC711C6534AE000A9E82 /* BlogDetalleNuevoMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CBC701C6534AE000A9E82 /* BlogDetalleNuevoMyNavigationController.swift */; };
+		E85278091C8F91770068993A /* ScrollEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85278081C8F91770068993A /* ScrollEventoViewController.swift */; };
+		E852780B1C8F91C60068993A /* ScrollEventoMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852780A1C8F91C60068993A /* ScrollEventoMyNavigationController.swift */; };
 		E85995D11C77D5ED004909B8 /* contacto_nos_interesa.png in Resources */ = {isa = PBXBuildFile; fileRef = E85995D01C77D5ED004909B8 /* contacto_nos_interesa.png */; };
 		E85995D31C77DDD2004909B8 /* contacto_telefonos.png in Resources */ = {isa = PBXBuildFile; fileRef = E85995D21C77DDD2004909B8 /* contacto_telefonos.png */; };
 		E85995D51C77E0D2004909B8 /* contacto_primer_telefono.png in Resources */ = {isa = PBXBuildFile; fileRef = E85995D41C77E0D2004909B8 /* contacto_primer_telefono.png */; };
@@ -131,6 +133,7 @@
 		E88A68B31C740F3E0030112B /* como_participar_siguiente.png in Resources */ = {isa = PBXBuildFile; fileRef = E88A68B21C740F3E0030112B /* como_participar_siguiente.png */; };
 		E88A68B51C7434720030112B /* post_trivia_gracias.png in Resources */ = {isa = PBXBuildFile; fileRef = E88A68B41C7434720030112B /* post_trivia_gracias.png */; };
 		E88A68B71C74350F0030112B /* post_trivia_te_deseamos.png in Resources */ = {isa = PBXBuildFile; fileRef = E88A68B61C74350F0030112B /* post_trivia_te_deseamos.png */; };
+		E897522F1C9BBC4A00FB8D09 /* cargando.png in Resources */ = {isa = PBXBuildFile; fileRef = E897522E1C9BBC4A00FB8D09 /* cargando.png */; };
 		E8F125D11C63195A00DD64FC /* TableEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F125D01C63195A00DD64FC /* TableEventoViewController.swift */; };
 		E8F125D41C631BD600DD64FC /* TableEventoMyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F125D31C631BD600DD64FC /* TableEventoMyNavigationController.swift */; };
 		E8F157BC1C57E9B9005D7A09 /* ViewInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */; };
@@ -253,6 +256,8 @@
 		E83A909D1C724B5400E0746C /* como_participar_ganaste.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = como_participar_ganaste.png; sourceTree = "<group>"; };
 		E83CBC6E1C65347D000A9E82 /* BlogDetalleNuevoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogDetalleNuevoViewController.swift; sourceTree = "<group>"; };
 		E83CBC701C6534AE000A9E82 /* BlogDetalleNuevoMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogDetalleNuevoMyNavigationController.swift; sourceTree = "<group>"; };
+		E85278081C8F91770068993A /* ScrollEventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollEventoViewController.swift; path = ../ScrollEventoViewController.swift; sourceTree = "<group>"; };
+		E852780A1C8F91C60068993A /* ScrollEventoMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollEventoMyNavigationController.swift; path = ../ScrollEventoMyNavigationController.swift; sourceTree = "<group>"; };
 		E85995D01C77D5ED004909B8 /* contacto_nos_interesa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacto_nos_interesa.png; sourceTree = "<group>"; };
 		E85995D21C77DDD2004909B8 /* contacto_telefonos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacto_telefonos.png; sourceTree = "<group>"; };
 		E85995D41C77E0D2004909B8 /* contacto_primer_telefono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacto_primer_telefono.png; sourceTree = "<group>"; };
@@ -280,6 +285,7 @@
 		E88A68B21C740F3E0030112B /* como_participar_siguiente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = como_participar_siguiente.png; sourceTree = "<group>"; };
 		E88A68B41C7434720030112B /* post_trivia_gracias.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post_trivia_gracias.png; sourceTree = "<group>"; };
 		E88A68B61C74350F0030112B /* post_trivia_te_deseamos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post_trivia_te_deseamos.png; sourceTree = "<group>"; };
+		E897522E1C9BBC4A00FB8D09 /* cargando.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cargando.png; sourceTree = "<group>"; };
 		E8F125D01C63195A00DD64FC /* TableEventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableEventoViewController.swift; sourceTree = "<group>"; };
 		E8F125D31C631BD600DD64FC /* TableEventoMyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableEventoMyNavigationController.swift; sourceTree = "<group>"; };
 		E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInicio.swift; sourceTree = "<group>"; };
@@ -335,6 +341,8 @@
 				E80E54171C6BCCC40043A54D /* pretrivia */,
 				C4C6FE471ADBF8B200EAA7A9 /* AppDelegate.swift */,
 				E8F157BB1C57E9B9005D7A09 /* ViewInicio.swift */,
+				E85278081C8F91770068993A /* ScrollEventoViewController.swift */,
+				E852780A1C8F91C60068993A /* ScrollEventoMyNavigationController.swift */,
 				C4C6FE491ADBF8B200EAA7A9 /* ViewController.swift */,
 				DC5856E31C3B425D00DFDC5F /* RegistroController.swift */,
 				DC5856E91C3CFC0100DFDC5F /* IniciarSesionController.swift */,
@@ -342,6 +350,7 @@
 				C4C6FE4E1ADBF8B200EAA7A9 /* Images.xcassets */,
 				E86EFC911C8E203E00A88EFB /* fondo_blog.png */,
 				E86EFC931C8E21B000A88EFB /* fondo_blog2.png */,
+				E897522E1C9BBC4A00FB8D09 /* cargando.png */,
 				C4C6FE501ADBF8B200EAA7A9 /* LaunchScreen.xib */,
 				DC5B99541C3CE8A600E947B5 /* fondo.png */,
 				E8F157C61C584147005D7A09 /* fondo_pleca.png */,
@@ -770,6 +779,7 @@
 				E83A909C1C724AF800E0746C /* como_participar_trivia.png in Resources */,
 				E81EE6891C74DB5700C43EF0 /* post_trivia_te_notificaremos.png in Resources */,
 				E88A68AD1C740B740030112B /* como_participar_enmedio.png in Resources */,
+				E897522F1C9BBC4A00FB8D09 /* cargando.png in Resources */,
 				E83A90941C72424E00E0746C /* menu_blog_auditorio.png in Resources */,
 				E83A90961C72424E00E0746C /* menu_trivia_mensual.png in Resources */,
 				E81EE68D1C74EFBD00C43EF0 /* post_trivia_tiempo.png in Resources */,
@@ -838,6 +848,7 @@
 				DC5B99511C3CE6A200E947B5 /* BlogMyNavigationController.swift in Sources */,
 				E85995E11C77E645004909B8 /* ContactoMyNavigationController.swift in Sources */,
 				E8F157BE1C58230B005D7A09 /* ParticiparViewController.swift in Sources */,
+				E85278091C8F91770068993A /* ScrollEventoViewController.swift in Sources */,
 				E8F157C01C5823F5005D7A09 /* ParticiparMyNavigationController.swift in Sources */,
 				E88A68A51C73F7060030112B /* Reachability.swift in Sources */,
 				DC5B99631C3DDC0300E947B5 /* PreTriviaMyNavigationController.swift in Sources */,
@@ -864,6 +875,7 @@
 				DC5B994F1C3CE5C700E947B5 /* ENSideMenuNavigationController.swift in Sources */,
 				DC5B996B1C3E3AD000E947B5 /* ViewController7.swift in Sources */,
 				DC5B99491C3CE40E00E947B5 /* BlogViewController.swift in Sources */,
+				E852780B1C8F91C60068993A /* ScrollEventoMyNavigationController.swift in Sources */,
 				E83CBC6F1C65347D000A9E82 /* BlogDetalleNuevoViewController.swift in Sources */,
 				DC5B99691C3E3AC500E947B5 /* BlogDetalleViewController.swift in Sources */,
 				DCBFA1111C50682B0078F320 /* MenuViewController.swift in Sources */,
