@@ -15,6 +15,8 @@ class PostTriviaViewController: UIViewController, ENSideMenuDelegate {
     @IBOutlet weak var puntos_realizados_label: UILabel!
     @IBOutlet weak var tiempo_label: UILabel!
     @IBOutlet weak var fecha_label: UILabel!
+    @IBOutlet weak var evento: UILabel!
+    @IBOutlet weak var premio: UILabel!
     
     var respuestas_post : String = String()
     var tiempo_segundos : Int = 0
@@ -179,6 +181,8 @@ class PostTriviaViewController: UIViewController, ENSideMenuDelegate {
                         self.puntos_realizados_label.text = (json["resultado"]![0]["respuestas_correctas"] as! String) + " PUNTOS"
                         self.tiempo_label.text = ("\(self.tiempo_segundos) SEGUNDOS")
                         self.fecha_label.text = (json["resultado"]![0]["fecha_creacion"] as! String) + " " + (json["resultado"]![0]["hora_creacion"] as! String) + "HRS"
+                        self.evento.text = (json["resultado"]![0]["evento"] as! String)
+                        self.premio.text = (json["resultado"]![0]["premio"] as! String)
                     })
                     
                 }else{

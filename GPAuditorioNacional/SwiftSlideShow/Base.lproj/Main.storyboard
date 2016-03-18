@@ -2301,14 +2301,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                 <action selector="toggleSideMenu:" destination="m0S-wi-CYc" id="P7N-HE-Bcy"/>
                             </connections>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem image="home" id="dK6-jQ-FiH"/>
-                            <barButtonItem title="Item" id="kSN-cM-gYL">
-                                <connections>
-                                    <action selector="prueba_evento:" destination="m0S-wi-CYc" id="UB3-81-bjd"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" image="home" id="dK6-jQ-FiH"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -3563,7 +3556,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                                             <constraint firstAttribute="width" secondItem="8F4-aj-gNp" secondAttribute="height" multiplier="11:1" id="Ebh-4c-5h6"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESTANCIA EN MONTERREY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z30-9h-ieo">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z30-9h-ieo">
                                                                         <rect key="frame" x="0.0" y="26" width="164" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -3590,7 +3583,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPk-Y8-Sax" userLabel="espacio_blanco">
                                                                         <rect key="frame" x="0.0" y="0.0" width="164" height="17.5"/>
                                                                     </view>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Alejandro Sanz 14 de marzo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnD-hI-4Xd">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnD-hI-4Xd">
                                                                         <rect key="frame" x="7" y="26" width="148" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -3914,7 +3907,9 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="evento" destination="jnD-hI-4Xd" id="703-Lo-bqb"/>
                         <outlet property="fecha_label" destination="kcL-Ae-hkY" id="FoN-TY-4TQ"/>
+                        <outlet property="premio" destination="z30-9h-ieo" id="D82-Dz-mdM"/>
                         <outlet property="puntos_realizados_label" destination="knS-Dc-bI6" id="ZNg-1u-Xwg"/>
                         <outlet property="tiempo_label" destination="xAg-IE-V71" id="cev-AS-TVu"/>
                     </connections>
