@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xiI-7r-IoE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xiI-7r-IoE">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -12,7 +12,7 @@
         <!--View Inicio-->
         <scene sceneID="lrB-Lm-8sT">
             <objects>
-                <viewController storyboardIdentifier="ViewInicio" id="xiI-7r-IoE" customClass="ViewInicio" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewInicio" id="xiI-7r-IoE" customClass="ViewInicio" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="puH-dd-Ph5"/>
                         <viewControllerLayoutGuide type="bottom" id="4SF-JQ-9BX"/>
@@ -41,7 +41,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -133,7 +133,7 @@
         <!--Nuevo Inicio View Controller-->
         <scene sceneID="BfO-fP-sz4">
             <objects>
-                <viewController id="54q-Nq-MTG" customClass="NuevoInicioViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="54q-Nq-MTG" customClass="NuevoInicioViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ncG-ID-k84"/>
                         <viewControllerLayoutGuide type="bottom" id="gGw-Fu-MO1"/>
@@ -267,7 +267,7 @@
         <!--Registro Controller-->
         <scene sceneID="aEW-im-Bqo">
             <objects>
-                <viewController storyboardIdentifier="pantallaRegistro" id="iKN-rs-40U" customClass="RegistroController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pantallaRegistro" id="iKN-rs-40U" customClass="RegistroController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wMY-pK-w86"/>
                         <viewControllerLayoutGuide type="bottom" id="fVk-Er-dCY"/>
@@ -362,34 +362,14 @@
                                     <rect key="frame" x="244" y="430.5" width="403" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9a1-zB-Gp0">
-                                <rect key="frame" x="264" y="295" width="87" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="268" y="480.5" width="379" height="30"/>
-                                </variation>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fya-yf-KwD">
-                                <rect key="frame" x="16" y="295" width="235" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="235" id="gge-sd-Muc"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="295" width="335" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="12" y="501.5" width="247" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EDAD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R28-A4-LiA">
-                                <rect key="frame" x="268" y="278" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="612" y="468.5" width="35" height="16"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XL7-Wx-rKF">
                                 <rect key="frame" x="20" y="79" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -505,6 +485,7 @@
                             <constraint firstItem="PG6-As-7eQ" firstAttribute="trailing" secondItem="P8l-FH-Rhd" secondAttribute="trailingMargin" id="06d-vb-w8V"/>
                             <constraint firstItem="Tf1-DR-Pmm" firstAttribute="centerX" secondItem="XL7-Wx-rKF" secondAttribute="centerX" id="0YH-NG-DrF"/>
                             <constraint firstItem="nZF-Ze-IHh" firstAttribute="centerX" secondItem="P8l-FH-Rhd" secondAttribute="centerX" id="115-wd-ZwM"/>
+                            <constraint firstItem="Fya-yf-KwD" firstAttribute="width" secondItem="Rww-JD-pgL" secondAttribute="width" id="39O-UI-MtU"/>
                             <constraint firstItem="dKL-hs-CMv" firstAttribute="top" secondItem="Hcc-ub-X4b" secondAttribute="bottom" constant="8" id="3Jc-8v-DTW"/>
                             <constraint firstItem="LTu-Yi-Qea" firstAttribute="top" secondItem="LZ9-4i-oHZ" secondAttribute="bottom" id="3Lt-ME-jFT"/>
                             <constraint firstItem="fVk-Er-dCY" firstAttribute="top" secondItem="f2R-w9-P3F" secondAttribute="bottom" id="3V7-fI-iCu"/>
@@ -514,12 +495,10 @@
                             <constraint firstItem="XL7-Wx-rKF" firstAttribute="centerX" secondItem="nZF-Ze-IHh" secondAttribute="centerX" id="62C-7K-U0y"/>
                             <constraint firstItem="TLQ-e0-QWN" firstAttribute="top" secondItem="cXl-o1-A8Q" secondAttribute="bottom" constant="7" id="77s-GO-emV"/>
                             <constraint firstItem="wP3-6m-FjN" firstAttribute="leading" secondItem="P8l-FH-Rhd" secondAttribute="leadingMargin" id="7YY-LJ-jzd"/>
-                            <constraint firstItem="9a1-zB-Gp0" firstAttribute="leading" secondItem="Fya-yf-KwD" secondAttribute="trailing" constant="13" id="82S-Ix-4Om"/>
                             <constraint firstItem="Hcc-ub-X4b" firstAttribute="leading" secondItem="P8l-FH-Rhd" secondAttribute="leadingMargin" id="8Dw-sD-cia"/>
                             <constraint firstAttribute="trailing" secondItem="f2R-w9-P3F" secondAttribute="trailing" id="A6v-OT-aGX"/>
                             <constraint firstItem="Awh-2Q-8nT" firstAttribute="leading" secondItem="P8l-FH-Rhd" secondAttribute="leadingMargin" id="AvB-rP-ny3"/>
                             <constraint firstItem="Tf1-DR-Pmm" firstAttribute="leading" secondItem="P8l-FH-Rhd" secondAttribute="leadingMargin" id="BOR-AK-exb"/>
-                            <constraint firstItem="R28-A4-LiA" firstAttribute="top" secondItem="yM8-Al-Lxx" secondAttribute="bottom" constant="8" id="Ccb-mV-AlS"/>
                             <constraint firstItem="Vtu-zK-lf6" firstAttribute="top" secondItem="Nmu-JK-Tkb" secondAttribute="bottom" constant="21" id="ETM-bb-xNz"/>
                             <constraint firstItem="LTu-Yi-Qea" firstAttribute="trailing" secondItem="P8l-FH-Rhd" secondAttribute="trailingMargin" id="EWj-qp-Roq"/>
                             <constraint firstItem="Rww-JD-pgL" firstAttribute="centerX" secondItem="Tf1-DR-Pmm" secondAttribute="centerX" id="FV4-Am-16g"/>
@@ -529,7 +508,6 @@
                             <constraint firstItem="4VZ-J9-Oq9" firstAttribute="top" secondItem="LTu-Yi-Qea" secondAttribute="bottom" constant="8" id="Lvp-qF-fIa"/>
                             <constraint firstItem="Xyn-Ci-Aje" firstAttribute="trailing" secondItem="P8l-FH-Rhd" secondAttribute="trailingMargin" id="MJ2-KW-2ys"/>
                             <constraint firstItem="Fya-yf-KwD" firstAttribute="top" secondItem="dKL-hs-CMv" secondAttribute="bottom" constant="-1" id="Mnj-5T-RLu"/>
-                            <constraint firstItem="9a1-zB-Gp0" firstAttribute="trailing" secondItem="P8l-FH-Rhd" secondAttribute="trailingMargin" id="Qkd-K4-vvA"/>
                             <constraint firstItem="Hcc-ub-X4b" firstAttribute="top" secondItem="TLQ-e0-QWN" secondAttribute="bottom" constant="-1" id="Qs0-mn-xBt"/>
                             <constraint firstItem="Tf1-DR-Pmm" firstAttribute="top" secondItem="XL7-Wx-rKF" secondAttribute="bottom" constant="8" id="Ttb-xm-P8J"/>
                             <constraint firstItem="PG6-As-7eQ" firstAttribute="top" secondItem="Xyn-Ci-Aje" secondAttribute="bottom" constant="7" id="U80-OS-lF5"/>
@@ -540,7 +518,6 @@
                             <constraint firstItem="Nmu-JK-Tkb" firstAttribute="leading" secondItem="Awh-2Q-8nT" secondAttribute="trailing" constant="21" id="Zwr-BB-YOf"/>
                             <constraint firstItem="cXl-o1-A8Q" firstAttribute="top" secondItem="wP3-6m-FjN" secondAttribute="bottom" id="a8C-o3-OQy"/>
                             <constraint firstItem="XL7-Wx-rKF" firstAttribute="top" secondItem="nZF-Ze-IHh" secondAttribute="bottom" constant="8" id="bNK-pd-igK"/>
-                            <constraint firstItem="R28-A4-LiA" firstAttribute="trailing" secondItem="P8l-FH-Rhd" secondAttribute="trailingMargin" id="dfd-YI-Adt"/>
                             <constraint firstItem="IXK-FD-5gy" firstAttribute="trailing" secondItem="P8l-FH-Rhd" secondAttribute="trailingMargin" id="dqW-Sr-EgK"/>
                             <constraint firstItem="dKL-hs-CMv" firstAttribute="leading" secondItem="P8l-FH-Rhd" secondAttribute="leadingMargin" id="ffS-VL-Qky"/>
                             <constraint firstItem="Rww-JD-pgL" firstAttribute="top" secondItem="Tf1-DR-Pmm" secondAttribute="bottom" id="hrC-G7-GN3"/>
@@ -551,7 +528,6 @@
                             <constraint firstItem="Xyn-Ci-Aje" firstAttribute="top" secondItem="IXK-FD-5gy" secondAttribute="bottom" id="kWV-1h-PDZ"/>
                             <constraint firstItem="TLQ-e0-QWN" firstAttribute="leading" secondItem="P8l-FH-Rhd" secondAttribute="leadingMargin" id="kdl-FV-zDh"/>
                             <constraint firstItem="LZ9-4i-oHZ" firstAttribute="leading" secondItem="P8l-FH-Rhd" secondAttribute="leadingMargin" id="lEL-9c-70R"/>
-                            <constraint firstItem="9a1-zB-Gp0" firstAttribute="top" secondItem="R28-A4-LiA" secondAttribute="bottom" constant="-1" id="m5E-kr-vbw"/>
                             <constraint firstItem="Nmu-JK-Tkb" firstAttribute="trailing" secondItem="P8l-FH-Rhd" secondAttribute="trailingMargin" id="nWC-6t-py0"/>
                             <constraint firstItem="Nmu-JK-Tkb" firstAttribute="top" secondItem="qun-YI-2fp" secondAttribute="bottom" constant="-1" id="oOf-zM-Zx6"/>
                             <constraint firstItem="wP3-6m-FjN" firstAttribute="top" secondItem="Rww-JD-pgL" secondAttribute="bottom" constant="8" id="ous-i7-Vdi"/>
@@ -581,7 +557,6 @@
                         <outlet property="celularValue" destination="cXl-o1-A8Q" id="qRd-iY-YoH"/>
                         <outlet property="codigoPostalValue" destination="yM8-Al-Lxx" id="XW8-ps-pB2"/>
                         <outlet property="confirmarEmailValue" destination="Fya-yf-KwD" id="Mzu-pg-jCc"/>
-                        <outlet property="edadValue" destination="9a1-zB-Gp0" id="Qmt-JF-Jc0"/>
                         <outlet property="emailValue" destination="Hcc-ub-X4b" id="6xU-rI-8P1"/>
                         <outlet property="nombreValue" destination="Rww-JD-pgL" id="z7w-NW-Oop"/>
                         <outlet property="passwordValue" destination="Awh-2Q-8nT" id="PmT-Tb-AQG"/>
@@ -596,7 +571,7 @@
         <!--Vincular View Controller-->
         <scene sceneID="cfH-j5-uqs">
             <objects>
-                <viewController storyboardIdentifier="registroExitoso" id="GUl-Tq-Bxh" customClass="VincularViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registroExitoso" id="GUl-Tq-Bxh" customClass="VincularViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rJB-CR-9Sm"/>
                         <viewControllerLayoutGuide type="bottom" id="yvS-6R-DcJ"/>
@@ -706,7 +681,7 @@
         <!--Iniciar Sesion Controller-->
         <scene sceneID="jUF-jO-FSt">
             <objects>
-                <viewController id="ufv-bs-ZjV" customClass="IniciarSesionController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ufv-bs-ZjV" customClass="IniciarSesionController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q91-3Q-3Az"/>
                         <viewControllerLayoutGuide type="bottom" id="bwr-Ss-A0V"/>
@@ -794,7 +769,7 @@
         <!--Blog View Controller-->
         <scene sceneID="coI-Go-c0g">
             <objects>
-                <viewController id="0U9-K9-uxf" customClass="BlogViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0U9-K9-uxf" customClass="BlogViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ro9-FD-ebA"/>
                         <viewControllerLayoutGuide type="bottom" id="1eI-mM-Rx0"/>
@@ -879,11 +854,11 @@
                                                         <rect key="frame" x="0.0" y="28" width="160" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OmB-4f-0zc" id="uZo-cv-Jm4">
-                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="43.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="43"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="NvL-0k-iLz">
-                                                                    <rect key="frame" x="15" y="0.0" width="130" height="43.5"/>
+                                                                    <rect key="frame" x="15" y="0.0" width="130" height="43"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -964,7 +939,7 @@
         <!--Trivas-->
         <scene sceneID="DTi-KF-v1m">
             <objects>
-                <viewController id="7Rj-1l-QQE" customClass="InicioDeTriviaViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Rj-1l-QQE" customClass="InicioDeTriviaViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CjL-92-mfw"/>
                         <viewControllerLayoutGuide type="bottom" id="yb5-KL-bQQ"/>
@@ -1153,7 +1128,7 @@
         <!--Trivia View Controller-->
         <scene sceneID="kua-3g-RUM">
             <objects>
-                <viewController id="3W9-JK-HBy" customClass="TriviaViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3W9-JK-HBy" customClass="TriviaViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l65-xH-ZSd"/>
                         <viewControllerLayoutGuide type="bottom" id="hWO-8Y-pad"/>
@@ -1168,7 +1143,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5h0-mO-uec" userLabel="DivisorParteVisible">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPg-AO-Dns">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rPg-AO-Dns">
                                         <rect key="frame" x="0.0" y="59" width="375" height="151"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msX-xC-Nhh">
@@ -1188,16 +1163,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-td-Qp8" userLabel="DivisorInferior">
-                                        <rect key="frame" x="0.0" y="270.5" width="375" height="272"/>
+                                        <rect key="frame" x="0.0" y="271" width="375" height="272"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFB-bV-UIu" userLabel="FondoBotones">
                                                 <rect key="frame" x="59" y="28" width="300" height="217"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clL-Fa-DE1" userLabel="PrimerBoton">
-                                                        <rect key="frame" x="0.0" y="0.5" width="300" height="54"/>
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clL-Fa-DE1" userLabel="PrimerBoton">
+                                                        <rect key="frame" x="0.0" y="1" width="300" height="54"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTH-K9-gsZ">
-                                                                <rect key="frame" x="0.0" y="12.5" width="300" height="30"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="respuesta1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTH-K9-gsZ">
+                                                                <rect key="frame" x="0.0" y="13" width="300" height="30"/>
                                                                 <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="0.91329635718463997" green="0.98696366495518806" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
@@ -1213,11 +1188,11 @@
                                                             <constraint firstItem="RTH-K9-gsZ" firstAttribute="centerY" secondItem="clL-Fa-DE1" secondAttribute="centerY" id="j8V-3t-f1Z"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYj-Ie-KTL" userLabel="SegundoBoton">
-                                                        <rect key="frame" x="0.0" y="54.5" width="300" height="54"/>
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fYj-Ie-KTL" userLabel="SegundoBoton">
+                                                        <rect key="frame" x="0.0" y="55" width="300" height="54"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7o-nB-wRD">
-                                                                <rect key="frame" x="0.0" y="12.5" width="300" height="30"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="respuesta2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7o-nB-wRD">
+                                                                <rect key="frame" x="0.0" y="13" width="300" height="30"/>
                                                                 <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="0.91329635718463997" green="0.98696366495518806" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
@@ -1233,11 +1208,11 @@
                                                             <constraint firstItem="k7o-nB-wRD" firstAttribute="centerY" secondItem="fYj-Ie-KTL" secondAttribute="centerY" id="fKN-yc-dYN"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TP9-bG-yzs" userLabel="TercerBoton">
-                                                        <rect key="frame" x="0.0" y="108.5" width="300" height="54"/>
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TP9-bG-yzs" userLabel="TercerBoton">
+                                                        <rect key="frame" x="0.0" y="109" width="300" height="54"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="respuesta3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONJ-sf-CAh">
-                                                                <rect key="frame" x="0.0" y="12.5" width="300" height="30"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="respuesta3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONJ-sf-CAh">
+                                                                <rect key="frame" x="0.0" y="13" width="300" height="30"/>
                                                                 <state key="normal" backgroundImage="trivia_fondo_preg.png">
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
@@ -1253,8 +1228,8 @@
                                                             <constraint firstItem="ONJ-sf-CAh" firstAttribute="height" secondItem="TP9-bG-yzs" secondAttribute="height" multiplier="0.55" id="adp-D6-Der"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVH-45-600" userLabel="CuartoBoton">
-                                                        <rect key="frame" x="0.0" y="162.5" width="300" height="55"/>
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XVH-45-600" userLabel="CuartoBoton">
+                                                        <rect key="frame" x="0.0" y="163" width="300" height="55"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="respuesta4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJZ-Nc-9ka">
                                                                 <rect key="frame" x="0.0" y="10" width="300" height="30"/>
@@ -1302,7 +1277,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbp-vk-PKS">
-                                        <rect key="frame" x="0.0" y="210.5" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="211" width="375" height="60"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trivia_color_aqua.png" translatesAutoresizingMaskIntoConstraints="NO" id="erD-1t-pjU">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -1330,7 +1305,7 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transparencai.png" translatesAutoresizingMaskIntoConstraints="NO" id="vMi-yA-7mH">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -1383,7 +1358,7 @@
         <!--Términos y Condiciones-->
         <scene sceneID="EYH-9e-YlN">
             <objects>
-                <viewController id="rCc-dq-8je" customClass="TerminosViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rCc-dq-8je" customClass="TerminosViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1nQ-0a-K6c"/>
                         <viewControllerLayoutGuide type="bottom" id="cym-TN-I4F"/>
@@ -1401,10 +1376,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terminos_condiciones.png" translatesAutoresizingMaskIntoConstraints="NO" id="668-wY-4ld">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Eui-JD-Ay1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eui-JD-Ay1">
                                 <rect key="frame" x="20" y="75" width="335" height="10000"/>
                                 <string key="text">TÉRMINOS Y CONDICIONES
- 
+
+Apple Inc. no es patrocinador oficial ni se encuentra involucrado con los concursos de está aplicación.
+
 IMPULSORA DE VACACIONES FIESTA S.A. DE C.V. GOP0112128B4 (que en lo sucesivo será denominado Grupo Posadas) con domicilio en Prolongación Paseo de Reforma #1015 Piso 9, Col. Santa Fe, Del. Álvaro Obregón, C.P. 01210, México D.F.PUBLICIDAD Y SOLUCIONES GREEN S.A. de C.V. PSG061123PQ9 (denominado P.GREEN, para los efectos de LA PROMOCIÓN) con domicilio en Santa Brígida 19, Jardines de Santa Mónica, C.P. 54055, Tlalnepantla de Baz Estado de México, ponen a disposición del público en general los siguientes términos y condiciones de la promoción “CONCIERTOS ÚNICOS, EXPERIENCIAS INOLVIDABLES” (que en lo sucesivo será denominada LA PROMOCIÓN).
  
 I. ACEPTACIÓN DE LOS TÉRMINOS Y CONDICIONES.
@@ -1652,7 +1629,7 @@ En caso de queja derivada de LA PROMOCIÓN, favor de acudir a la Procuraduría F
         <!--Aviso de Privacidad-->
         <scene sceneID="RRA-pq-8Na">
             <objects>
-                <viewController id="Iot-mD-Jri" customClass="AvisoViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Iot-mD-Jri" customClass="AvisoViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y2l-eR-QV4"/>
                         <viewControllerLayoutGuide type="bottom" id="2Ga-bI-Cuk"/>
@@ -1664,9 +1641,11 @@ En caso de queja derivada de LA PROMOCIÓN, favor de acudir a la Procuraduría F
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="NYH-Uc-H9R">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L02-cs-CUF">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L02-cs-CUF">
                                 <rect key="frame" x="20" y="73" width="335" height="7267"/>
-                                <string key="text">A. Identidad del Responsable
+                                <string key="text">Apple Inc. no es patrocinador oficial ni se encuentra involucrado con los concursos de está aplicación.
+
+A. Identidad del Responsable
 
 GRUPO POSADAS, S.A.B. de C.V. y sus filiales y/o subsidiarias (en lo sucesivo, Posadas), con domicilio en Av. Prolongación Paseo de la Reforma 1015, Piso 9, Col. Santa Fe, Delegación Alvaro Obregón, C.P.01210, México, D.F. es una empresa comprometida en proteger su privacidad. Nuestro responsable de Protección de Datos es el Departamento de Datos Personales y se ubica en el mismo domicilio, usted podrá contactarlo en el correo electrónico: datos.personales@posadas.com
 
@@ -1856,7 +1835,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Contacto View Controller-->
         <scene sceneID="rGW-l4-9sh">
             <objects>
-                <viewController id="wNB-z6-eXp" customClass="ContactoViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wNB-z6-eXp" customClass="ContactoViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bl1-Sk-WMt"/>
                         <viewControllerLayoutGuide type="bottom" id="7yY-pv-xMP"/>
@@ -2118,7 +2097,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Blog-->
         <scene sceneID="6W8-u6-aJX">
             <objects>
-                <viewController storyboardIdentifier="ViewController6id" id="tTT-ot-FVg" customClass="BlogDetalleViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController6id" id="tTT-ot-FVg" customClass="BlogDetalleViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NRg-Dg-ihE"/>
                         <viewControllerLayoutGuide type="bottom" id="Zeg-7l-sky"/>
@@ -2213,7 +2192,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Menu View Controller-->
         <scene sceneID="hwi-nI-GEp">
             <objects>
-                <viewController id="m0S-wi-CYc" customClass="MenuViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m0S-wi-CYc" customClass="MenuViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WGm-r3-SpC"/>
                         <viewControllerLayoutGuide type="bottom" id="OR0-42-iBC"/>
@@ -2312,7 +2291,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Evento View Controller-->
         <scene sceneID="FIS-iP-H0c">
             <objects>
-                <viewController id="IkV-zz-jeS" customClass="EventoViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IkV-zz-jeS" customClass="EventoViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zac-5t-H5D"/>
                         <viewControllerLayoutGuide type="bottom" id="pLF-Sd-EBC"/>
@@ -2446,7 +2425,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Blog My Navigation Controller-->
         <scene sceneID="DBo-6a-CWP">
             <objects>
-                <navigationController storyboardIdentifier="ViewController1" automaticallyAdjustsScrollViewInsets="NO" id="IWv-0x-sa6" customClass="BlogMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewController1" automaticallyAdjustsScrollViewInsets="NO" id="IWv-0x-sa6" customClass="BlogMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -2466,7 +2445,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Evento My Navigation Controller-->
         <scene sceneID="kZO-U5-I9H">
             <objects>
-                <navigationController storyboardIdentifier="ViewController2" automaticallyAdjustsScrollViewInsets="NO" id="Q29-VV-pKK" customClass="EventoMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewController2" automaticallyAdjustsScrollViewInsets="NO" id="Q29-VV-pKK" customClass="EventoMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -2486,7 +2465,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Inicio De Trivia My Navigation Controller-->
         <scene sceneID="ATA-Ht-vVU">
             <objects>
-                <navigationController storyboardIdentifier="ViewController3" automaticallyAdjustsScrollViewInsets="NO" id="TmV-z3-6xz" customClass="InicioDeTriviaMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewController3" automaticallyAdjustsScrollViewInsets="NO" id="TmV-z3-6xz" customClass="InicioDeTriviaMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -2506,7 +2485,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Terminos My Navigation Controller-->
         <scene sceneID="34H-Pc-Gyf">
             <objects>
-                <navigationController storyboardIdentifier="ViewController4" automaticallyAdjustsScrollViewInsets="NO" id="eMd-ba-gy3" customClass="TerminosMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewController4" automaticallyAdjustsScrollViewInsets="NO" id="eMd-ba-gy3" customClass="TerminosMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -2526,7 +2505,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Aviso My Navigation Controller-->
         <scene sceneID="zlO-Qe-awj">
             <objects>
-                <navigationController storyboardIdentifier="ViewController5" automaticallyAdjustsScrollViewInsets="NO" id="GCa-ei-yBp" customClass="AvisoMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewController5" automaticallyAdjustsScrollViewInsets="NO" id="GCa-ei-yBp" customClass="AvisoMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -2546,7 +2525,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Blog Detalle My Navigation Controller-->
         <scene sceneID="h7L-AX-thc">
             <objects>
-                <navigationController storyboardIdentifier="ViewController6" automaticallyAdjustsScrollViewInsets="NO" id="dok-3F-Rrp" customClass="BlogDetalleMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewController6" automaticallyAdjustsScrollViewInsets="NO" id="dok-3F-Rrp" customClass="BlogDetalleMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bhp-hU-0Bq">
@@ -2565,7 +2544,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Extra2-->
         <scene sceneID="Zd4-MW-dk2">
             <objects>
-                <viewController id="B5z-yJ-uzL" customClass="ViewController7" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B5z-yJ-uzL" customClass="ViewController7" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6ya-J4-q3V"/>
                         <viewControllerLayoutGuide type="bottom" id="6sa-qv-BPK"/>
@@ -2602,7 +2581,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--My Navigation Controller7-->
         <scene sceneID="KU9-Yv-65J">
             <objects>
-                <navigationController storyboardIdentifier="ViewController7" automaticallyAdjustsScrollViewInsets="NO" id="Rly-JS-i42" customClass="MyNavigationController7" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewController7" automaticallyAdjustsScrollViewInsets="NO" id="Rly-JS-i42" customClass="MyNavigationController7" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PU3-zd-agX">
@@ -2621,7 +2600,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Extra3-->
         <scene sceneID="Ggu-hQ-D2a">
             <objects>
-                <viewController id="een-1f-pHh" customClass="ViewController8" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="een-1f-pHh" customClass="ViewController8" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z7y-f1-day"/>
                         <viewControllerLayoutGuide type="bottom" id="5DF-33-kpl"/>
@@ -2658,7 +2637,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--USER-->
         <scene sceneID="17p-XA-Xe2">
             <objects>
-                <viewController id="LDz-fz-dLe" customClass="UsernameViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LDz-fz-dLe" customClass="UsernameViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ApR-5a-jgd"/>
                         <viewControllerLayoutGuide type="bottom" id="GSP-uf-kkf"/>
@@ -2700,7 +2679,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--My Navigation Controller8-->
         <scene sceneID="Yhw-Yq-fvK">
             <objects>
-                <navigationController storyboardIdentifier="ViewController8" automaticallyAdjustsScrollViewInsets="NO" id="vQx-cU-OQJ" customClass="MyNavigationController8" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewController8" automaticallyAdjustsScrollViewInsets="NO" id="vQx-cU-OQJ" customClass="MyNavigationController8" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ciV-nc-tlx">
@@ -2719,7 +2698,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Username My Navigation Controller-->
         <scene sceneID="2tm-ek-9CM">
             <objects>
-                <navigationController storyboardIdentifier="ViewControllerUsername" automaticallyAdjustsScrollViewInsets="NO" id="ENE-nT-dB4" customClass="UsernameMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewControllerUsername" automaticallyAdjustsScrollViewInsets="NO" id="ENE-nT-dB4" customClass="UsernameMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HiD-0l-NIh">
@@ -2738,7 +2717,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Menu My Navigation Controller-->
         <scene sceneID="Gzr-uK-ABB">
             <objects>
-                <navigationController storyboardIdentifier="NavigationSeleccion" automaticallyAdjustsScrollViewInsets="NO" id="pUn-EM-veC" customClass="MenuMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationSeleccion" automaticallyAdjustsScrollViewInsets="NO" id="pUn-EM-veC" customClass="MenuMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -2758,7 +2737,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Vincular My Navigation Controller-->
         <scene sceneID="vpH-Cy-N3h">
             <objects>
-                <navigationController storyboardIdentifier="NavRegistroExitoso" automaticallyAdjustsScrollViewInsets="NO" id="yOV-wc-DLm" customClass="VincularMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavRegistroExitoso" automaticallyAdjustsScrollViewInsets="NO" id="yOV-wc-DLm" customClass="VincularMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Nqb-Wh-sJS">
@@ -2777,7 +2756,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Title-->
         <scene sceneID="QGg-cg-HFg">
             <objects>
-                <viewController id="8s9-ZM-eXb" customClass="ParticiparViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8s9-ZM-eXb" customClass="ParticiparViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="95x-1I-vOr"/>
                         <viewControllerLayoutGuide type="bottom" id="I4D-UR-hq7"/>
@@ -2880,7 +2859,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Participar My Navigation Controller-->
         <scene sceneID="CnY-pv-khO">
             <objects>
-                <navigationController storyboardIdentifier="ViewControllerParticipa" automaticallyAdjustsScrollViewInsets="NO" id="oaK-25-pEn" customClass="ParticiparMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewControllerParticipa" automaticallyAdjustsScrollViewInsets="NO" id="oaK-25-pEn" customClass="ParticiparMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -2900,7 +2879,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Table Evento View Controller-->
         <scene sceneID="z4n-af-af5">
             <objects>
-                <viewController id="RiC-5o-qhv" customClass="TableEventoViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RiC-5o-qhv" customClass="TableEventoViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z8q-9H-Hcf">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2910,7 +2889,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vsp-1v-ocl" id="iM1-Mz-Ha2">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ye8-Bj-y3Z">
@@ -2921,7 +2900,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BrI-il-kSP">
-                                            <rect key="frame" x="329.5" y="17" width="30.5" height="13.5"/>
+                                            <rect key="frame" x="329" y="17" width="31" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" red="0.87392607521401156" green="0.87163788878442516" blue="0.91160680618401202" alpha="1" colorSpace="calibratedRGB"/>
@@ -2960,7 +2939,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Nuevo Como Participar View Controller-->
         <scene sceneID="RTC-jb-2sh">
             <objects>
-                <viewController id="E8m-sf-hIe" customClass="NuevoComoParticiparViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="E8m-sf-hIe" customClass="NuevoComoParticiparViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="svz-H4-ca0"/>
                         <viewControllerLayoutGuide type="bottom" id="hdu-4n-xjy"/>
@@ -3007,8 +2986,8 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="como_participar_enmedio_barra.png" translatesAutoresizingMaskIntoConstraints="NO" id="L64-8F-ufs">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="118"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="como_participar_enmedio.png" translatesAutoresizingMaskIntoConstraints="NO" id="XGi-Ny-XEO">
-                                                <rect key="frame" x="129.5" y="0.0" width="342" height="118"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="como_participar_enmedio.png" translatesAutoresizingMaskIntoConstraints="NO" id="XGi-Ny-XEO">
+                                                <rect key="frame" x="130" y="0.0" width="342" height="118"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="XGi-Ny-XEO" secondAttribute="height" multiplier="313:108" id="Xbu-4m-Zu6"/>
                                                 </constraints>
@@ -3025,10 +3004,10 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZR-vn-CBU" userLabel="espacio_blanco">
-                                        <rect key="frame" x="0.0" y="311" width="600" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="311" width="600" height="38"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHq-Ri-isc" userLabel="inferior">
-                                        <rect key="frame" x="0.0" y="348.5" width="600" height="91"/>
+                                        <rect key="frame" x="0.0" y="349" width="600" height="91"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="como_participar_inferior_barra.png" translatesAutoresizingMaskIntoConstraints="NO" id="oaz-g4-3rn">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="91"/>
@@ -3052,7 +3031,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chh-c1-Man" userLabel="boton">
-                                        <rect key="frame" x="0.0" y="439.5" width="600" height="96"/>
+                                        <rect key="frame" x="0.0" y="440" width="600" height="96"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDE-EY-S9u">
                                                 <rect key="frame" x="236" y="31" width="129" height="34"/>
@@ -3132,7 +3111,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Ganadores View Controller-->
         <scene sceneID="cg0-MM-KD4">
             <objects>
-                <viewController id="Bgo-T5-5il" customClass="GanadoresViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bgo-T5-5il" customClass="GanadoresViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QRS-wW-4QY"/>
                         <viewControllerLayoutGuide type="bottom" id="Gf1-Ss-71w"/>
@@ -3179,7 +3158,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                                 <rect key="frame" x="0.0" y="0.0" width="264" height="75"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOp-Cm-F19" userLabel="fondo_ganador1">
-                                                                        <rect key="frame" x="12.5" y="6" width="238" height="63"/>
+                                                                        <rect key="frame" x="13" y="6" width="238" height="63"/>
                                                                         <color key="backgroundColor" red="0.24313725490196078" green="0.77647058823529413" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </view>
                                                                 </subviews>
@@ -3224,7 +3203,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                                 <rect key="frame" x="0.0" y="225" width="264" height="75"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mM-Py-7kn" userLabel="fondo_ganador4">
-                                                                        <rect key="frame" x="12.5" y="6" width="238" height="63"/>
+                                                                        <rect key="frame" x="13" y="6" width="238" height="63"/>
                                                                         <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </view>
                                                                 </subviews>
@@ -3261,8 +3240,8 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duH-eN-Ia8" userLabel="ganador1">
                                                                 <rect key="frame" x="0.0" y="0.0" width="264" height="75"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VI9-DF-NCI" userLabel="fondo_ganador1">
-                                                                        <rect key="frame" x="13.5" y="6" width="238" height="63"/>
+                                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VI9-DF-NCI" userLabel="fondo_ganador1">
+                                                                        <rect key="frame" x="14" y="6" width="238" height="63"/>
                                                                         <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </view>
                                                                 </subviews>
@@ -3276,8 +3255,8 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZV-B9-Ozb" userLabel="ganador2">
                                                                 <rect key="frame" x="0.0" y="75" width="264" height="75"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8S-Yp-a9A" userLabel="fondo_ganador2">
-                                                                        <rect key="frame" x="13.5" y="6" width="238" height="63"/>
+                                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M8S-Yp-a9A" userLabel="fondo_ganador2">
+                                                                        <rect key="frame" x="14" y="6" width="238" height="63"/>
                                                                         <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </view>
                                                                 </subviews>
@@ -3291,8 +3270,8 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSe-2p-nzv" userLabel="ganador3">
                                                                 <rect key="frame" x="0.0" y="150" width="264" height="75"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwl-LD-g93" userLabel="fondo_ganador3">
-                                                                        <rect key="frame" x="13.5" y="6" width="238" height="63"/>
+                                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pwl-LD-g93" userLabel="fondo_ganador3">
+                                                                        <rect key="frame" x="14" y="6" width="238" height="63"/>
                                                                         <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </view>
                                                                 </subviews>
@@ -3306,8 +3285,8 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFm-fX-HFU" userLabel="ganador4">
                                                                 <rect key="frame" x="0.0" y="225" width="264" height="75"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOz-pI-TpE" userLabel="fondo_ganador4">
-                                                                        <rect key="frame" x="13.5" y="6" width="238" height="63"/>
+                                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOz-pI-TpE" userLabel="fondo_ganador4">
+                                                                        <rect key="frame" x="14" y="6" width="238" height="63"/>
                                                                         <color key="backgroundColor" red="0.24313725489999999" green="0.77647058820000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </view>
                                                                 </subviews>
@@ -3346,18 +3325,18 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                                 <rect key="frame" x="0.0" y="28" width="528" height="44"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s03-ms-3Dn" id="MP9-BY-lMO">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="528" height="43.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="528" height="43"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="exk-Gm-CL9">
-                                                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lke-PP-ZwN">
-                                                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -3480,7 +3459,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Post Trivia View Controller-->
         <scene sceneID="Fcj-6b-Acf">
             <objects>
-                <viewController id="4WP-wy-x7t" customClass="PostTriviaViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4WP-wy-x7t" customClass="PostTriviaViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pbw-oV-yCU"/>
                         <viewControllerLayoutGuide type="bottom" id="Exy-NQ-qNa"/>
@@ -3520,7 +3499,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Try-Hd-Xi5" userLabel="te_deseamos">
-                                        <rect key="frame" x="0.0" y="60" width="375" height="91.5"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="92"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="post_trivia_te_deseamos.png" translatesAutoresizingMaskIntoConstraints="NO" id="fIv-Cd-wla">
                                                 <rect key="frame" x="90" y="25" width="195" height="42"/>
@@ -3535,28 +3514,28 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                             <constraint firstItem="fIv-Cd-wla" firstAttribute="height" secondItem="Try-Hd-Xi5" secondAttribute="height" multiplier="0.46" id="yOq-So-ric"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kj-xr-EZ0" userLabel="resultados">
-                                        <rect key="frame" x="0.0" y="152" width="375" height="373.5"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9kj-xr-EZ0" userLabel="resultados">
+                                        <rect key="frame" x="0.0" y="152" width="375" height="374"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gAB-XW-sQX">
-                                                <rect key="frame" x="153" y="0.0" width="328" height="373.5"/>
+                                                <rect key="frame" x="153" y="0.0" width="328" height="374"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="384-tL-AY4" userLabel="superior">
-                                                        <rect key="frame" x="0.0" y="0.0" width="328" height="74.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="328" height="75"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TmN-oM-4Qk">
-                                                                <rect key="frame" x="164" y="0.0" width="164" height="74.5"/>
+                                                                <rect key="frame" x="164" y="0.0" width="164" height="75"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ub-XC-CHh" userLabel="espacio_blanco">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="17.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="18"/>
                                                                     </view>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post_trivia_participas_por.png" translatesAutoresizingMaskIntoConstraints="NO" id="8F4-aj-gNp">
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="post_trivia_participas_por.png" translatesAutoresizingMaskIntoConstraints="NO" id="8F4-aj-gNp">
                                                                         <rect key="frame" x="32" y="17" width="99" height="9"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="8F4-aj-gNp" secondAttribute="height" multiplier="11:1" id="Ebh-4c-5h6"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z30-9h-ieo">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z30-9h-ieo">
                                                                         <rect key="frame" x="0.0" y="26" width="164" height="48"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -3578,10 +3557,10 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wD-Ra-llh" userLabel="lado_izquierdo">
-                                                                <rect key="frame" x="0.0" y="0.0" width="164" height="74.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="164" height="75"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPk-Y8-Sax" userLabel="espacio_blanco">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="17.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="18"/>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnD-hI-4Xd">
                                                                         <rect key="frame" x="7" y="26" width="148" height="48"/>
@@ -3589,7 +3568,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post_trivia_evento.png" translatesAutoresizingMaskIntoConstraints="NO" id="UFS-hi-U3q">
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="post_trivia_evento.png" translatesAutoresizingMaskIntoConstraints="NO" id="UFS-hi-U3q">
                                                                         <rect key="frame" x="58" y="17" width="48" height="9"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="UFS-hi-U3q" secondAttribute="height" multiplier="65:12" id="umz-JL-bfz"/>
@@ -3622,7 +3601,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                             <constraint firstItem="7wD-Ra-llh" firstAttribute="width" secondItem="384-tL-AY4" secondAttribute="width" multiplier="0.5" id="tRv-g4-bVp"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="The-MW-Y9A" userLabel="fecha">
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="The-MW-Y9A" userLabel="fecha">
                                                         <rect key="frame" x="0.0" y="74" width="328" height="49"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcL-Ae-hkY">
@@ -3659,7 +3638,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                             <constraint firstItem="0gR-ew-27c" firstAttribute="height" secondItem="The-MW-Y9A" secondAttribute="height" multiplier="0.42" id="yX9-WB-PjJ"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGU-so-lFK" userLabel="tiempo">
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QGU-so-lFK" userLabel="tiempo">
                                                         <rect key="frame" x="0.0" y="123" width="328" height="49"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyW-8d-cj4">
@@ -3696,11 +3675,11 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                             <constraint firstItem="lyW-8d-cj4" firstAttribute="width" secondItem="QGU-so-lFK" secondAttribute="width" id="nwh-yB-f8a"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVG-cd-FEc" userLabel="puntos">
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BVG-cd-FEc" userLabel="puntos">
                                                         <rect key="frame" x="0.0" y="172" width="328" height="60"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RH1-4l-Txp" userLabel="leyenda">
-                                                                <rect key="frame" x="0.0" y="0.0" width="328" height="23.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="328" height="24"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="post_trivia_puntos.png" translatesAutoresizingMaskIntoConstraints="NO" id="NET-AS-RmA">
                                                                         <rect key="frame" x="88" y="7" width="116" height="9"/>
@@ -3750,7 +3729,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                             <constraint firstItem="RH1-4l-Txp" firstAttribute="top" secondItem="BVG-cd-FEc" secondAttribute="top" id="u8p-3g-kYG"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTZ-0K-Y2t" userLabel="te_notificaremos">
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DTZ-0K-Y2t" userLabel="te_notificaremos">
                                                         <rect key="frame" x="0.0" y="232" width="328" height="75"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="post_trivia_te_notificaremos.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZaA-Fy-rQ0">
@@ -3766,7 +3745,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
                                                             <constraint firstItem="ZaA-Fy-rQ0" firstAttribute="centerY" secondItem="DTZ-0K-Y2t" secondAttribute="centerY" id="fXu-8Z-dVs"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chP-mM-Ul9">
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chP-mM-Ul9">
                                                         <rect key="frame" x="0.0" y="307" width="328" height="67"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCQ-ns-TL4">
@@ -3921,7 +3900,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Evento My Navigation Controller-->
         <scene sceneID="m3d-ZT-Rde">
             <objects>
-                <navigationController storyboardIdentifier="tableEvento" automaticallyAdjustsScrollViewInsets="NO" id="w7o-RF-wZh" customClass="EventoMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="tableEvento" automaticallyAdjustsScrollViewInsets="NO" id="w7o-RF-wZh" customClass="EventoMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="a8A-xt-lLD">
@@ -3940,7 +3919,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Nuevo Como Participar My Navigiation Controller-->
         <scene sceneID="uRT-BX-qRJ">
             <objects>
-                <navigationController storyboardIdentifier="nuevo_como_participar" automaticallyAdjustsScrollViewInsets="NO" id="UVN-Tz-ulF" customClass="NuevoComoParticiparMyNavigiationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="nuevo_como_participar" automaticallyAdjustsScrollViewInsets="NO" id="UVN-Tz-ulF" customClass="NuevoComoParticiparMyNavigiationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Ran-3C-jCx">
@@ -3959,7 +3938,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Scroll Evento View Controller-->
         <scene sceneID="G1P-dS-cHd">
             <objects>
-                <viewController id="glo-lt-ebp" customClass="ScrollEventoViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="glo-lt-ebp" customClass="ScrollEventoViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dkp-ca-mW8"/>
                         <viewControllerLayoutGuide type="bottom" id="y60-Pw-0bu"/>
@@ -4058,7 +4037,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Blog Detalle Nuevo View Controller-->
         <scene sceneID="3Gc-mZ-1UC">
             <objects>
-                <viewController id="9aN-E4-Qth" customClass="BlogDetalleNuevoViewController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9aN-E4-Qth" customClass="BlogDetalleNuevoViewController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nqi-gH-get"/>
                         <viewControllerLayoutGuide type="bottom" id="bs3-3p-Wi8"/>
@@ -4179,7 +4158,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Blog Detalle Nuevo My Navigation Controller-->
         <scene sceneID="roq-NP-qYN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TLQ-zL-7fH" customClass="BlogDetalleNuevoMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TLQ-zL-7fH" customClass="BlogDetalleNuevoMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="IWi-Df-tbd">
@@ -4198,7 +4177,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Ganadores My Navigation Controller-->
         <scene sceneID="vgF-SN-ZlU">
             <objects>
-                <navigationController storyboardIdentifier="ganadores" automaticallyAdjustsScrollViewInsets="NO" id="Xwi-14-4cz" customClass="GanadoresMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ganadores" automaticallyAdjustsScrollViewInsets="NO" id="Xwi-14-4cz" customClass="GanadoresMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="8C8-Ku-uSI">
@@ -4217,7 +4196,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Post Trivia My Navigation Controller-->
         <scene sceneID="b8a-Nf-hls">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eGe-YX-4Ms" customClass="PostTriviaMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eGe-YX-4Ms" customClass="PostTriviaMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="oPJ-I1-Gt7">
@@ -4236,7 +4215,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Nuevo Como Participar My Navigiation Controller-->
         <scene sceneID="gFX-LJ-qwN">
             <objects>
-                <navigationController storyboardIdentifier="nuevo_inicio" automaticallyAdjustsScrollViewInsets="NO" id="GWZ-oY-w87" customClass="NuevoComoParticiparMyNavigiationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="nuevo_inicio" automaticallyAdjustsScrollViewInsets="NO" id="GWZ-oY-w87" customClass="NuevoComoParticiparMyNavigiationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ps0-Tj-nS6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -4254,7 +4233,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Contacto My Navigation Controller-->
         <scene sceneID="ds1-nu-OB0">
             <objects>
-                <navigationController storyboardIdentifier="contacto" automaticallyAdjustsScrollViewInsets="NO" id="fE6-rG-C9d" customClass="ContactoMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="contacto" automaticallyAdjustsScrollViewInsets="NO" id="fE6-rG-C9d" customClass="ContactoMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="cjW-Nh-bLu">
@@ -4273,7 +4252,7 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <!--Scroll Evento My Navigation Controller-->
         <scene sceneID="vL9-Op-Y7y">
             <objects>
-                <navigationController storyboardIdentifier="scroll_evento" automaticallyAdjustsScrollViewInsets="NO" id="5Lv-Jg-33Q" customClass="ScrollEventoMyNavigationController" customModule="Comparte_tu_Experiencia" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="scroll_evento" automaticallyAdjustsScrollViewInsets="NO" id="5Lv-Jg-33Q" customClass="ScrollEventoMyNavigationController" customModule="BePartOf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5lG-r4-lWJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -4352,12 +4331,12 @@ Contacto PUBLICIDAD GREEN: info@publicidadgreen.com.mx</string>
         <image name="vincula.png" width="1106" height="177"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LtK-ws-bc8"/>
-        <segue reference="kub-ze-7Wg"/>
-        <segue reference="Tly-6t-9kZ"/>
+        <segue reference="Cqk-r0-oA7"/>
         <segue reference="t2A-eM-IWP"/>
         <segue reference="ird-kz-Fot"/>
+        <segue reference="LtK-ws-bc8"/>
         <segue reference="0Hm-mh-610"/>
         <segue reference="Fbn-A4-MXi"/>
+        <segue reference="Tly-6t-9kZ"/>
     </inferredMetricsTieBreakers>
 </document>

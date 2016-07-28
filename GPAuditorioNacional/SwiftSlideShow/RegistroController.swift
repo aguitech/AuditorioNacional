@@ -16,7 +16,6 @@ class RegistroController: UIViewController {
     @IBOutlet weak var emailValue: UITextField!
     @IBOutlet weak var codigoPostalValue: UITextField!
     @IBOutlet weak var confirmarEmailValue: UITextField!
-    @IBOutlet weak var edadValue: UITextField!
     @IBOutlet weak var avisoLabel: UILabel!
     @IBOutlet weak var usernameValue: UITextField!
     @IBOutlet weak var passwordValue: UITextField!
@@ -61,7 +60,6 @@ class RegistroController: UIViewController {
             let telefonoField = telefonoValue.text
             let emailField = emailValue.text
             let codigoPostalField = codigoPostalValue.text
-            let edadField = edadValue.text
             let usernameField = usernameValue.text
             let passwordField = passwordValue.text
             
@@ -69,7 +67,7 @@ class RegistroController: UIViewController {
             
             let request = NSMutableURLRequest(URL: NSURL(string: "http://emocionganar.com/admin/panel/registro_ios_new.php")!)
             request.HTTPMethod = "POST"
-            let postString = "email=\(emailField!)&nombre=\(nombreField!)&celular=\(celularField!)&telefono=\(telefonoField!)&codigo_postal=\(codigoPostalField!)&edad=\(edadField!)&username=\(usernameField!)&password=\(passwordField!)"
+            let postString = "email=\(emailField!)&nombre=\(nombreField!)&celular=\(celularField!)&telefono=\(telefonoField!)&codigo_postal=\(codigoPostalField!)&username=\(usernameField!)&password=\(passwordField!)"
             request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
             let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
                 do {

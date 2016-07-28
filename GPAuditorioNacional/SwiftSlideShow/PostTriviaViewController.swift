@@ -96,7 +96,7 @@ class PostTriviaViewController: UIViewController, ENSideMenuDelegate {
                     //print(json["nombre"]!)
                     print("Aqui va el sucess")
                     print(json["resultado"]!)
-                    print(json["resultado"]![0])
+                    //print(json["resultado"]![0])
                     print(json["resultado"]![0]["respuestas_correctas"] as! String)
                     
                     

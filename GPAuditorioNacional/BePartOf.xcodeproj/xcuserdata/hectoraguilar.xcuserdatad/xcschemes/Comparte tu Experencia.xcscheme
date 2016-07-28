@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
-               BuildableName = "Comparte tu Experiencia.app"
+               BuildableName = "BePartOf.app"
                BlueprintName = "SwiftSlideShow"
-               ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
+               ReferencedContainer = "container:BePartOf.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
-            BuildableName = "Comparte tu Experiencia.app"
+            BuildableName = "BePartOf.app"
             BlueprintName = "SwiftSlideShow"
-            ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
+            ReferencedContainer = "container:BePartOf.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
-            BuildableName = "Comparte tu Experiencia.app"
+            BuildableName = "BePartOf.app"
             BlueprintName = "SwiftSlideShow"
-            ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
+            ReferencedContainer = "container:BePartOf.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C4C6FE411ADBF8B200EAA7A9"
-            BuildableName = "Comparte tu Experiencia.app"
+            BuildableName = "BePartOf.app"
             BlueprintName = "SwiftSlideShow"
-            ReferencedContainer = "container:Comparte tu Experiencia.xcodeproj">
+            ReferencedContainer = "container:BePartOf.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

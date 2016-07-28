@@ -155,7 +155,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C4C6FE421ADBF8B200EAA7A9 /* Comparte tu Experiencia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Comparte tu Experiencia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C6FE421ADBF8B200EAA7A9 /* BePartOf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BePartOf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C6FE461ADBF8B200EAA7A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4C6FE471ADBF8B200EAA7A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C6FE491ADBF8B200EAA7A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -327,7 +327,7 @@
 		C4C6FE431ADBF8B200EAA7A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4C6FE421ADBF8B200EAA7A9 /* Comparte tu Experiencia.app */,
+				C4C6FE421ADBF8B200EAA7A9 /* BePartOf.app */,
 				C4C6FE571ADBF8B200EAA7A9 /* SwiftSlideShowTests.xctest */,
 			);
 			name = Products;
@@ -669,7 +669,7 @@
 			);
 			name = SwiftSlideShow;
 			productName = SwiftSlideShow;
-			productReference = C4C6FE421ADBF8B200EAA7A9 /* Comparte tu Experiencia.app */;
+			productReference = C4C6FE421ADBF8B200EAA7A9 /* BePartOf.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C4C6FE561ADBF8B200EAA7A9 /* SwiftSlideShowTests */ = {
@@ -703,7 +703,7 @@
 				TargetAttributes = {
 					C4C6FE411ADBF8B200EAA7A9 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = AC5V69576P;
+						DevelopmentTeam = A5443CL234;
 					};
 					C4C6FE561ADBF8B200EAA7A9 = {
 						CreatedOnToolsVersion = 6.2;
@@ -711,7 +711,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C4C6FE3D1ADBF8B100EAA7A9 /* Build configuration list for PBXProject "Comparte tu Experiencia" */;
+			buildConfigurationList = C4C6FE3D1ADBF8B100EAA7A9 /* Build configuration list for PBXProject "BePartOf" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -944,7 +944,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hector Aguilar (A5443CL234)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hector Aguilar (A5443CL234)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -965,6 +966,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "e73dbbce-010b-470a-8241-476483f9694e";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -988,7 +990,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hector Aguilar (A5443CL234)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hector Aguilar (A5443CL234)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1001,6 +1004,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "e73dbbce-010b-470a-8241-476483f9694e";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1015,9 +1019,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftSlideShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aguitech.GPAuditorioNacional;
-				PRODUCT_NAME = "Comparte tu Experiencia";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aguitech.AuditorioNacional;
+				PRODUCT_NAME = BePartOf;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1029,9 +1034,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftSlideShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aguitech.GPAuditorioNacional;
-				PRODUCT_NAME = "Comparte tu Experiencia";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aguitech.AuditorioNacional;
+				PRODUCT_NAME = BePartOf;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1074,7 +1080,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C4C6FE3D1ADBF8B100EAA7A9 /* Build configuration list for PBXProject "Comparte tu Experiencia" */ = {
+		C4C6FE3D1ADBF8B100EAA7A9 /* Build configuration list for PBXProject "BePartOf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4C6FE5F1ADBF8B200EAA7A9 /* Debug */,
